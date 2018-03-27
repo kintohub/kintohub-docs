@@ -3,11 +3,25 @@
     "Getting Started": [
       "apidoc"
     ],
-    "First Category": [
-      "doc2"
+    "Applications": [
+      "what-is-an-application",
+      "creating-an-application",
+      "adding-a-dependency",
+      "tagging-and-deploying",
+      "talking-to-applications"
     ],
-    "Second Category": [
-      "doc3"
+    "KintoBlocks": [
+      "what-is-a-kintoblock",
+      "creating-a-kintoblock",
+      "adding-dependencies-kintoblock",
+      "tagging-a-commit"
+    ],
+    "Workspaces": [
+      "creating-a-workspace",
+      "connecting-a-github-organisation",
+      "managing-members",
+      "revoking-access",
+      "leaving-a-workspace"
     ]
   }
 }
