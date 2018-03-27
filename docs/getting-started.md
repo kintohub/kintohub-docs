@@ -1,3 +1,8 @@
+---
+id: getting-started
+title: Getting Started
+---
+
 This guide will show you from start to finish how to create a microservice from scratch and get it up and running on Kintohub
 
 ## How can my code work on Kintohub
@@ -110,7 +115,7 @@ The last step is creating a `Dockerfile` that Kintohub needs to understand how t
 You can read more about `Dockerfile` samples [here](docker-samples.md)
 
 create `Dockerfile` with the following
-```
+```dockerfile
 FROM node:8.9.4
 
 RUN mkdir -p app

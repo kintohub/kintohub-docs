@@ -1,7 +1,6 @@
 ---
 id: apidoc
 title: How to document your code to work with Kintohub
-sidebar_label: How to document your code to work with Kintohub
 ---
 
 To document your code you need to follow the [apidoc](http://apidocjs.com/) conventions
