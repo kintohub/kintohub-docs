@@ -16,7 +16,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: '' /* title for your website */,
+  title: 'Help Center' /* title for your website */,
   tagline: 'Microservices made simple',
   url: 'https://kintohub.com' /* your website url */,
   baseUrl: '/kintohub-docs/' /* base url for your project */,
@@ -26,12 +26,12 @@ const siteConfig = {
   ],
   users,
   /* path to images for header/footer */
-  headerIcon: 'img/logo-full-color-horizontal.svg',
+  headerIcon: 'img/logo-full-color.svg',
   footerIcon: 'img/docusaurus.svg',
   favicon: 'img/favicon.png',
   /* colors for website */
   colors: {
-    primaryColor: '#2E8555',
+    primaryColor: '#22424b',
     secondaryColor: '#205C3B',
   },
   /* custom fonts for website */
@@ -60,7 +60,7 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your template.
   repoUrl: 'https://github.com/kintohub/kintohub-docs',
   /* On page navigation for the current documentation page */
-  // onPageNav: 'separate',
+  onPageNav: 'separate',
 };
 
 module.exports = siteConfig;

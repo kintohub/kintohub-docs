@@ -4,7 +4,6 @@ title: How to document your code to work with Kintohub
 sidebar_label: How to document your code to work with Kintohub
 ---
 
-
 To document your code you need to follow the [apidoc](http://apidocjs.com/) conventions
 
 > apidoc is a way to document your api endpoints in code, that way your endpoint documentation is literally part of the code and it is going to always be up to date.

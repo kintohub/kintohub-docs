@@ -1,7 +1,8 @@
 {
   "scripts": {
     "examples": "docusaurus-examples",
-    "start": "docusaurus-start",
+    "start": "nodemon --exec npm run dev",
+    "dev": "docusaurus-start",
     "build": "docusaurus-build",
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
@@ -9,6 +10,10 @@
     "rename-version": "docusaurus-rename-version"
   },
   "devDependencies": {
-    "docusaurus": "^1.0.9"
+    "docusaurus": "^1.0.9",
+    "nodemon": "^1.17.2"
+  },
+  "nodemonConfig": {
+    "ignore": ["i18n/*"]
   }
 }
