@@ -1,6 +1,8 @@
 {
   "docs": {
     "Getting Started": [
+      "getting-started",
+      "docker-examples",
       "apidoc"
     ],
     "KintoBlocks": [

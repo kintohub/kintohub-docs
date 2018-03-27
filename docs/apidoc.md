@@ -1,8 +1,13 @@
 ---
 id: apidoc
 title: How to document your code to work with Kintohub
-sidebar_label: How to document your code to work with Kintohub
 ---
+
+> As of this point the following features are different
+> - Default Groups are not implemented yet. You need to specify a group for everything
+> - Group name for `apiSuccess` and `apiError` is different it must start with `Success_` or `Error_`, instead of `200` it is going to be `Success_200`
+>
+> These wil be fixed in the near future and will be exactly like what is described in the doc page
 
 To document your code you need to follow the [apidoc](http://apidocjs.com/) conventions
 
@@ -36,9 +41,9 @@ Each endpoint should have a documentation block that consists of these sections
 - Request info (required) - `@apiParam` and `@apiHeader`
 - Response info (optional) - `@apiSuccess` and `apiError`
 
-# Endpoint Info
+## Endpoint Info
 
-## `@api`
+### @api
 
 the url and description for the endpoint
 
@@ -52,7 +57,7 @@ Example:
  */
 ```
 
-## `@apiName`
+### @apiName
 
 Name for the endpoint, acts as an identifier
 
@@ -63,11 +68,11 @@ Example
  */
 ```
 
-# Request Info
+## Request Info
 
-## `apiHeader`
+### apiHeader
 
-### Groups
+#### Groups
 - `Header` When the clients sends data a header with the request
 - `Session` When the endpoints wants to read data from the session (that has been exposed by another microservice). Will be inject in the request headers
 - `Config` read the config data from kintohub
@@ -85,9 +90,9 @@ Example:
 ```
 
 
-## `apiParam`
+### apiParam
 
-### Groups
+#### Groups
 - `Url`: Url param - Ex: `/users/1`
 - `QueryString`: Query String Param - Ex: `/users?sort=desc`
 - `Body`: Request body field
@@ -105,19 +110,19 @@ Example:
 ```
 
 
-# Response Info
+## Response Info
 
 What the endpoint is sending back in the body or saving in the session
 
 
-## `@apiSuccess`, `@apiError`
+### @apiSuccess & @apiError
 
-### Groups
+#### Groups
 - status code
 - `Session`
 
 
-#### Default Group
+##### Default Group
 - `apiSuccess`: `200`
 - `apiError`: `400`
 
