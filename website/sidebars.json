@@ -3,6 +3,12 @@
     "Getting Started": [
       "apidoc"
     ],
+    "KintoBlocks": [
+      "what-is-a-kintoblock",
+      "creating-a-kintoblock",
+      "adding-dependencies-kintoblock",
+      "tagging-a-commit"
+    ],
     "Applications": [
       "what-is-an-application",
       "creating-an-application",
@@ -10,18 +16,10 @@
       "tagging-and-deploying",
       "talking-to-applications"
     ],
-    "KintoBlocks": [
-      "what-is-a-kintoblock",
-      "creating-a-kintoblock",
-      "adding-dependencies-kintoblock",
-      "tagging-a-commit"
-    ],
     "Workspaces": [
       "creating-a-workspace",
       "connecting-a-github-organisation",
-      "managing-members",
-      "revoking-access",
-      "leaving-a-workspace"
+      "managing-members"
     ],
     "Frequently Asked Questions": [
       "product-roadmap",
