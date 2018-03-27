@@ -21,6 +21,7 @@
     "doc4": "Other Document",
     "doc5": "Fifth Document",
     "feedback": "How do I provide feedback?",
+    "getting-started": "Getting Started",
     "How do I provide feedback?": "How do I provide feedback?",
     "leaving-a-workspace": "leaving-a-workspace",
     "managing-members": "Managing members’ roles on a project basis",
@@ -42,9 +43,9 @@
     "What is a KintoBlock?": "What is a KintoBlock?",
     "what-is-an-application": "What is an application?",
     "What is an application?": "What is an application?",
-    "Docs": "Docs",
     "Getting Started": "Getting Started",
     "KintoBlocks": "KintoBlocks",
+    "Docs": "Docs",
     "Applications": "Applications",
     "Workspaces": "Workspaces",
     "Frequently Asked Questions": "Frequently Asked Questions"
