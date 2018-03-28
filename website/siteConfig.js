@@ -24,7 +24,7 @@ const siteConfig = {
   baseUrl: '/' /* base url for your project */,
   projectName: 'Kintohub Docs',
   disableHeaderTitle: true,
-  headerLinks: [{ doc: 'apidoc', label: 'Docs' }],
+  headerLinks: [{ doc: 'getting-started', label: 'Docs' }],
   // algolia: {
   //   apiKey: "waiting-for-email",
   //   indexName: "waiting-for-email"
