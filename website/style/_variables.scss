@@ -1,0 +1,160 @@
+// ---------- FONT SIZES ---------- //
+$font-size-label: 14px;
+$font-size-input: 14px;
+$font-size-input-lg: 16px;
+$font-size-btn: 14px;
+$font-size-btn-lg: 16px;
+
+// ---------- SIZE VARIABLES ---------- //
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$content-width: 940px;
+$tablet-content-width: 640px;
+$smaller-tablet-content-width: 460px;
+$dashboard-content-width: 1060px;
+$column-width: 60px;
+$margin-base: 10px;
+$desktop-card-3: 300px;
+$tablet-card-2: 314px;
+
+// ---------- COLOR VARIABLES ---------- //
+
+
+$kinto-black:       rgba(0,0,0,1);
+$kinto-white:       rgba(255,255,255,1);
+
+$kinto-turquoise:       rgba(0,188,152,1);
+$kinto-green:       rgba(25,191,123,1);
+$kinto-lime:        rgba(122,203,83,1);
+$kinto-blue:        rgba(30,196,233,1);
+$kinto-lapis:       rgba(78,130,238,1);
+$kinto-purple:      rgba(122,104,232,1);
+$kinto-yellow:      rgba(255,219,24,1);
+$kinto-orange:      rgba(255,148,60,1);
+$kinto-coral:       rgba(244,100,100,1);
+
+$kinto-turquoise-dark:       rgba(0,131,106,1);
+$kinto-green-dark:       rgba(17,133,85,1);
+$kinto-lime-dark:        rgba(85,141,57,1);
+$kinto-blue-dark:        rgba(20,136,162,1);
+$kinto-lapis-dark:       rgba(54,90,166,1);
+$kinto-purple-dark:      rgba(103,89,183,1);
+$kinto-yellow-dark:      rgba(178,152,16,1);
+$kinto-orange-dark:      rgba(214,121,44,1);
+$kinto-coral-dark:       rgba(170,69,69,1);
+
+$kinto-turquoise-light:       rgba(77,208,183,1);
+$kinto-green-light:       rgba(94,210,162,1);
+$kinto-lime-light:        rgba(162,218,134,1);
+$kinto-blue-light:        rgba(83,217,235,1);
+$kinto-lapis-light:       rgba(131,167,243,1);
+$kinto-purple-light:      rgba(162,149,238,1);
+$kinto-yellow-light:      rgba(255,233,21,1);
+$kinto-orange-light:      rgba(255,180,118,1);
+$kinto-coral-light:       rgba(247,132,150,1);
+
+$kinto-turquoise-muted:       rgba(0,215,141,1);
+$kinto-green-muted:       rgba(36,217,110,1);
+$kinto-lime-muted:        rgba(179,224,74,1);
+$kinto-blue-muted:        rgba(62,207,240,1);
+$kinto-lapis-muted:       rgba(93,158,255,1);
+$kinto-purple-muted:      rgba(173,138,229,1);
+$kinto-yellow-muted:      rgba(245,215,57,1);
+$kinto-orange-muted:      rgba(255,175,72,1);
+$kinto-coral-muted:       rgba(239,120,147,1);
+
+$kinto-turquoise-bright:       rgba(0,242,130,1);
+$kinto-green-bright:       rgba(48,243,97,1);
+$kinto-lime-bright:        rgba(222,249,47,1);
+$kinto-blue-bright:        rgba(6,236,254,1);
+$kinto-lapis-bright:       rgba(73,191,255,1);
+$kinto-purple-bright:      rgba(245,185,234,1);
+$kinto-yellow-bright:      rgba(255,248,23,1);
+$kinto-orange-bright:      rgba(255,217,120,1);
+$kinto-coral-bright:       rgba(255,158,158,1);
+
+$kinto-tinted-grayscale-1:       rgba(245,249,255,1);
+$kinto-tinted-grayscale-2:       rgba(237,243,253,1);
+$kinto-tinted-grayscale-3:       rgba(219,232,251,1);
+$kinto-tinted-grayscale-4:       rgba(203,227,249,1);
+$kinto-tinted-grayscale-5:       rgba(185,213,236,1);
+$kinto-tinted-grayscale-6:       rgba(152,180,205,1);
+$kinto-tinted-grayscale-7:       rgba(66,118,146,1);
+$kinto-tinted-grayscale-8:       rgba(36,91,112,1);
+$kinto-tinted-grayscale-9:       rgba(12,75,93,1);
+$kinto-tinted-grayscale-10:     rgba(8,58,69,1);
+$kinto-tinted-grayscale-11:     rgba(6,39,46,1);
+
+$kinto-grayscale-1:       rgba(246,248,252,1);
+$kinto-grayscale-2:       rgba(239,242,247,1);
+$kinto-grayscale-3:       rgba(224,230,240,1);
+$kinto-grayscale-4:       rgba(211,224,235,1);
+$kinto-grayscale-5:       rgba(195,209,221,1);
+$kinto-grayscale-6:       rgba(162,176,189,1);
+$kinto-grayscale-7:       rgba(85,111,125,1);
+$kinto-grayscale-8:       rgba(56,83,94,1);
+$kinto-grayscale-9:       rgba(34,66,75,1);
+$kinto-grayscale-10:     rgba(25,50,55,1);
+$kinto-grayscale-11:     rgba(17,34,37,1);
+
+$input-label: $kinto-tinted-grayscale-7;
+$input: $kinto-tinted-grayscale-4;
+$input-focus: $kinto-blue-muted;
+$input-error: $kinto-coral-light;
+
+$text-link: $kinto-blue-dark;
+$text-link-focus: $kinto-blue;
+$text-link-clicked: $kinto-tinted-grayscale-7;
+
+$ui-button-primary-regular-top: rgba(86,223,255,1);
+$ui-button-primary-regular-bottom: rgba(74,217,255,1);
+
+
+$ui-button-primary-hover-top: rgba(118,231,255,1);
+$ui-button-primary-hover-bottom: rgba(101,225,255,1);
+
+$ui-button-primary-clicked-top: rgba(61,181,223,1);
+$ui-button-primary-clicked-bottom: rgba(71,193,228,1);
+
+$ui-button-secondary-regular-top: rgba(222,234,251,1);
+$ui-button-secondary-regular-bottom: rgba(216,230,250,1);
+
+$ui-button-secondary-hover-top: rgba(238,244,253,1);
+$ui-button-secondary-hover-bottom: rgba(235,241,252,1);
+
+$ui-button-secondary-clicked-top: rgba(198,223,248,1);
+$ui-button-secondary-clicked-bottom: rgba(208,229,249,1);
+
+$ui-button-secondary-dark-regular-top: rgba(58,86,98,1);
+$ui-button-secondary-dark-regular-bottom: rgba(53,79,89,1);
+
+$ui-button-secondary-dark-hover-top: rgba(89,116,130,1);
+$ui-button-secondary-dark-hover-bottom: rgba(81,105,119,1);
+
+$ui-button-secondary-dark-clicked-top: rgba(32,63,71,1);
+$ui-button-secondary-dark-clicked-bottom: rgba(35,69,78,1);
+
+$ui-button-destructive-top: rgba(241,80,80,1);
+$ui-button-destructive-bottom: rgba(240,73,73,1);
+
+$ui-button-submitted-top: rgba(27,202,136,1);
+$ui-button-submitted-bottom: rgba(29,210,155,1);
+
+
+$ui-switch-regular-top: rgba(29,219,129,1);
+$ui-switch-regular-bottom: rgba(31,225,150,1);
+
+$ui-switch-hover-top: rgba(34,225,132,1);
+$ui-switch-hover-bottom: rgba(73,244,180,1);
+
+
+
+
+// ---------- COLOR STATE ---------- //
+
+
+$kinto-blue-hover: rgba($kinto-blue, 0.2);
+$kinto-white-transparent: rgba($kinto-white, 0.9);
+$kinto-grey-transparent: rgba($kinto-tinted-grayscale-1, 0.9);
+$kinto-box-shadow: rgba($kinto-tinted-grayscale-7, 0.1)
