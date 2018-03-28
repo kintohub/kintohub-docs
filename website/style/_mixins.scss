@@ -1,0 +1,60 @@
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin abovetablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin placeholder($color, $size:"") {
+  &::-webkit-input-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+    }
+  }
+  &:-moz-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+    }
+  }
+  &::-moz-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+    }
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+    }
+  }
+}
+
+@mixin backgroundImage($url, $width: null, $height: null){
+  background-image: url($url);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: $width;
+  height: $height;
+}
+
+@mixin dividerLine($color) {
+  width: 100%;
+  border-top: solid 1px $color;
+  border-bottom: solid 1px $color;
+  margin-bottom: 40px;
+}

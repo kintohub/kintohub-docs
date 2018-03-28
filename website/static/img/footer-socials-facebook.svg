@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>footer-socials-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer/3-quarters-and-half" transform="translate(-265.000000, -120.000000)" fill="#E0E6F0">
+            <g id="socials">
+                <g transform="translate(225.000000, 120.000000)">
+                    <path d="M65,23 C65,24.1045695 64.1045695,25 63,25 L55,25 L47,25 C45.8954305,25 45,24.1045695 45,23 L45,7 C45,5.8954305 45.8954305,5 47,5 L47,5 L63,5 C64.1045695,5 65,5.8954305 65,7 L65,7 L65,23 Z M59.0693732,24.9929199 L59.0693732,17.0716381 L61.6691426,17.0716381 L62.0583624,14.0532227 L59.0693732,14.0532227 L59.0693732,12.1260978 C59.0693732,11.252196 59.3120174,10.6566809 60.5652541,10.6566809 L62.1636481,10.6559316 L62.1636481,7.95629315 C61.8871327,7.91957459 60.9383626,7.83736998 59.8345491,7.83736998 C57.5300292,7.83736998 55.9523926,9.24399056 55.9523926,11.8272536 L55.9523926,14.0532227 L53.3460288,14.0532227 L53.3460288,17.0716381 L55.9523926,17.0716381 L55.9523926,24.9929199 L59.0693732,24.9929199 Z" id="facebook"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

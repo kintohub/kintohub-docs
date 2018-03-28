@@ -1,16 +1,116 @@
-/* your custom css */
+.footer-background {
+  background-color: #f6f8fc; }
+  .footer-background .line {
+    width: 100%;
+    border-top: solid 1px #edf3fd;
+    border-bottom: solid 1px #edf3fd;
+    margin-bottom: 40px; }
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
-}
+h6.byline {
+  font-weight: normal;
+  font-size: 12px;
+  color: #a2b0bd;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: 10px; }
+  h6.byline.bold {
+    font-weight: bold; }
+  h6.byline a {
+    color: #a2b0bd;
+    font-size: 12px; }
 
-@media only screen and (min-width: 1024px) {
-}
+footer {
+  min-height: 140px;
+  width: 100%; }
+  footer .left {
+    text-align: center; }
+  @media (min-width: 1024px) {
+    footer .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 66px; }
+      footer .footer .left {
+        display: flex;
+        flex-direction: column;
+        text-align: left; }
+        footer .footer .left .unstyled-list li.list-item {
+          display: inline-block;
+          margin-right: 20px; }
+        footer .footer .left .byline {
+          text-align: left;
+          line-height: 16px; }
+      footer .footer .right {
+        display: flex;
+        align-items: baseline; }
+        footer .footer .right .social-icons {
+          margin-right: 20px; }
+        footer .footer .right .footer-logo {
+          padding-bottom: 0;
+          height: 30px; } }
+  footer .content {
+    margin-top: 0; }
+  footer .unstyled-list {
+    margin-bottom: 20px; }
+    footer .unstyled-list .list-item {
+      text-align: center; }
+      footer .unstyled-list .list-item a {
+        color: #98b4cd;
+        font-weight: bold; }
+        footer .unstyled-list .list-item a:hover {
+          color: #1ec4e9; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        footer .unstyled-list .list-item {
+          display: inline-block;
+          margin: 0 10px; } }
+  footer .byline {
+    text-align: center;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      footer .byline {
+        font-weight: normal; } }
+  footer .social-icons {
+    text-align: center;
+    margin-bottom: 20px; }
+    footer .social-icons li.social-icon {
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      transition: all 0.1s linear;
+      margin: 0 5px; }
+      footer .social-icons li.social-icon:hover {
+        opacity: 0.8; }
+      footer .social-icons li.social-icon:active {
+        filter: brightness(80%); }
+  footer .footer-logo {
+    margin: 0 auto;
+    padding-bottom: 90px;
+    width: 54px;
+    text-align: center;
+    transition: all 0.1s linear; }
+    footer .footer-logo img {
+      margin: 0; }
+    footer .footer-logo:hover {
+      opacity: 0.8; }
+    footer .footer-logo:active {
+      filter: brightness(80%); }
 
-@media only screen and (max-width: 1023px) {
-}
-
-@media only screen and (min-width: 1400px) {
-}
-
-@media only screen and (min-width: 1500px) {
-}
+@media (min-width: 1024px) {
+  footer .content .left {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start; }
+    footer .content .left li h5 {
+      margin: 0 20px 10px 0; }
+    footer .content .left h6 {
+      text-align: left;
+      width: 100%; }
+  footer .content .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline; }
+    footer .content .right ul {
+      margin: 0; }
+    footer .content .right .footer-logo {
+      margin-left: 20px; } }
