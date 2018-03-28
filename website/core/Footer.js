@@ -17,7 +17,6 @@ class Footer extends React.Component {
   }
 
   render() {
-    const currentYear = new Date().getFullYear()
     return (
       <div className="footer-background">
         <div className="line" />
@@ -28,7 +27,7 @@ class Footer extends React.Component {
                 <div className="left">
                   <ul className="unstyled-list" />
                   <h6 className="byline">
-                    Copyright © {currentYear} KintoHub. All rights reserved.
+                    {this.props.config.copyright}
                   </h6>
                 </div>
 

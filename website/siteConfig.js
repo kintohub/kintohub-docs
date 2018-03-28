@@ -11,9 +11,11 @@ const users = [
     caption: 'User1',
     image: 'img/docusaurus.svg',
     infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-];
+    pinned: true
+  }
+]
+
+const GITHUB_URL = `https://github.com/kintohub/kintohub-docs`;
 
 const siteConfig = {
   title: 'Help Center' /* title for your website */,
@@ -22,24 +24,21 @@ const siteConfig = {
   baseUrl: '/' /* base url for your project */,
   projectName: 'Kintohub Docs',
   disableHeaderTitle: true,
+  headerLinks: [{ doc: 'getting-started', label: 'Docs' }],
   // algolia: {
   //   apiKey: "waiting-for-email",
   //   indexName: "waiting-for-email"
   // },
-  headerLinks: [
-    {doc: 'apidoc', label: 'Docs'},
     // { search: true }
-  ],
   users,
-  /* path to images for header/footer */
   headerIcon: 'img/kintohub-title-text.svg',
-  footerIcon: 'img/docusaurus.svg',
   favicon: 'img/favicon.png',
   /* colors for website */
   colors: {
     primaryColor: '#22424b',
-    secondaryColor: '#205C3B',
+    secondaryColor: '#205C3B'
   },
+  editUrl: `${GITHUB_URL}/edit/master/docs/`,
   /* custom fonts for website */
   /*fonts: {
     myFont: [
@@ -51,22 +50,21 @@ const siteConfig = {
       "system-ui"
     ]
   },*/
-  // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
   copyright:
     'Copyright © ' +
     new Date().getFullYear() +
-    'Your Name or Your Company Name',
-   organizationName: 'kintohub',
+    ' KintoHub. All rights reserved',
+  organizationName: 'kintohub',
   projectName: 'kintohub-docs',
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
-    theme: 'default',
+    theme: 'default'
   },
   scripts: ['https://buttons.github.io/buttons.js'],
   // You may provide arbitrary config keys to be used as needed by your template.
   repoUrl: 'https://github.com/kintohub/kintohub-docs',
   /* On page navigation for the current documentation page */
-  onPageNav: 'separate',
-};
+  onPageNav: 'separate'
+}
 
-module.exports = siteConfig;
+module.exports = siteConfig
