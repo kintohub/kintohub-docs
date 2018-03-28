@@ -19,7 +19,7 @@ const siteConfig = {
   title: 'Help Center' /* title for your website */,
   tagline: 'Microservices made simple',
   url: 'https://kintohub.com' /* your website url */,
-  baseUrl: '/kintohub-docs/' /* base url for your project */,
+  baseUrl: '/' /* base url for your project */,
   projectName: 'Kintohub Docs',
   headerLinks: [
     {doc: 'apidoc', label: 'Docs'},

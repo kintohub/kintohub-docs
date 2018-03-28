@@ -1,6 +1,6 @@
 # Kintohub help center
 
-[url](https://kintohub.github.io/kintohub-docs/docs/apidoc.html)
+[url](https://help.kintohub.com/docs/getting-started.html)
 
 ## Setup
 
