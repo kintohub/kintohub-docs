@@ -1,0 +1,29 @@
+.navPusher {
+  background-color: $kinto-white;
+  height: auto;
+}
+
+// home page styles //
+
+.projectTitle {
+  margin-bottom: 74px;
+}
+
+.homeContainer {
+  height: 74vh;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  border: 1px solid $kinto-tinted-grayscale-6;
+  border-radius: 4px;
+  font-size: 14px;
+  color: $kinto-tinted-grayscale-6;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px;
+  text-transform: inherit;
+}
