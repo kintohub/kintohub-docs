@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>help-center-applications</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M50,100 C22.3857625,100 0,77.6142375 0,50 C0,22.3857625 22.3857625,0 50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 Z" id="path-1"></path>
+        <path d="M52.1015625,1.16591519e-15 C61.9875,1.16591519e-15 68.4,6.4125 68.4,16.2984375 L68.4,52.1015625 C68.4,61.9875 61.9875,68.4 52.1015625,68.4 L16.2984375,68.4 C6.4125,68.4 0,61.9875 0,52.1015625 L0,16.2984375 C0,6.4125 6.4125,1.1659152e-15 16.2984375,1.1659152e-15 L52.1015625,1.16591519e-15 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="help-center-applications">
+            <g id="Combined-Shape" opacity="0.197067482">
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#000000" stroke-width="4" d="M50,98 C76.509668,98 98,76.509668 98,50 C98,23.490332 76.509668,2 50,2 C23.490332,2 2,23.490332 2,50 C2,76.509668 23.490332,98 50,98 Z"></path>
+            </g>
+            <g id="icon/generic/application/regular" transform="translate(12.000000, 12.000000)">
+                <g id="icon/generic/application" transform="translate(3.800000, 3.800000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="#DBE8FB" xlink:href="#path-2"></use>
+                    <polygon id="Rectangle-2-Copy" fill="#EDF3FD" mask="url(#mask-3)" points="34.2 34.2 72.2 -3.8 72.2 72.2 -3.8 72.2"></polygon>
+                    <polygon id="Rectangle-2" fill="#F5F9FF" mask="url(#mask-3)" points="34.2 34.2 72.2 -3.8 72.2 72.2"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

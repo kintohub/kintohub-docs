@@ -3,7 +3,6 @@ h1, .h1 {
   font-size: 28px;
   line-height: 46px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
   color: #0c4b5d; }
   @media (min-width: 768px) {
     h1, .h1 {
@@ -13,16 +12,24 @@ h2, .h2 {
   font-size: 24px;
   line-height: 32px;
   font-family: 'Raleway', sans-serif;
-  color: #083a45;
-  font-weight: 600; }
+  color: #083a45; }
   @media (min-width: 768px) {
     h2, .h2 {
       font-size: 28px; } }
 
+.mainContainer h1, .mainContainer h2, .mainContainer .h1, .mainContainer .h2 {
+  margin-top: 40px !important;
+  margin-bottom: 20px !important;
+  font-weight: 500 !important; }
+
+.mainContainer h3, .mainContainer .h3 {
+  color: #a2b0bd !important;
+  margin-top: 30px !important; }
+
 h3, .h3 {
   font-size: 20px;
   line-height: 24px;
-  color: #a2b0bd;
+  margin-top: 30px;
   font-weight: normal; }
 
 p, h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
@@ -251,11 +258,17 @@ nav.toc .toggleNav .navGroup {
 .toc-headings li ul li a {
   font-weight: normal; }
 
-blockquote ul li {
-  font-size: 16px;
-  color: #556F7D;
-  letter-spacing: 0;
-  line-height: 24px; }
+blockquote {
+  background-color: rgba(244, 100, 100, 0.1);
+  border-left: none;
+  box-shadow: inset 4px 0 0 0 #F46464;
+  border-radius: 4px;
+  padding-left: 30px; }
+  blockquote ul li {
+    font-size: 16px;
+    color: #556F7D;
+    letter-spacing: 0;
+    line-height: 24px; }
 
 ul li {
   font-size: 16px;
@@ -264,6 +277,43 @@ ul li {
   line-height: 24px; }
   ul li a {
     font-weight: normal; }
+
+.doc.separateOnPageNav.sideNavVisible .navPusher .mainContainer {
+  padding-left: 100px;
+  background-color: white; }
+
+pre code, pre code.hljs {
+  background: #f6f8fc;
+  box-shadow: inset 4px 0 0 0 #1488A2;
+  border-radius: 4px;
+  border: none;
+  padding: 0.5em 0.5em 0.5em 30px;
+  font-size: 16px;
+  color: #556F7D;
+  letter-spacing: 0;
+  line-height: 24px; }
+
+code {
+  background-color: rgba(30, 196, 233, 0.2);
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: none; }
+
+.fixedHeaderContainer {
+  height: 60px; }
+  .fixedHeaderContainer header img {
+    margin-top: 10px; }
+
+input#search_input_react {
+  border-radius: 4px;
+  padding: 16px 16px 16px 35px;
+  height: 40px; }
+
+.navSearchWrapper:before {
+  left: 20px; }
+
+.navSearchWrapper:after {
+  left: 30px; }
 
 .mainContainer .wrapper a:hover, .mainContainer .wrapper a:focus, .inner .projectIntro a:hover, .inner .projectIntro a:focus {
   text-decoration: none; }

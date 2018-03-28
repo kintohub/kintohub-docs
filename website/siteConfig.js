@@ -21,12 +21,18 @@ const siteConfig = {
   url: 'https://kintohub.com' /* your website url */,
   baseUrl: '/' /* base url for your project */,
   projectName: 'Kintohub Docs',
+  disableHeaderTitle: true,
+  // algolia: {
+  //   apiKey: "waiting-for-email",
+  //   indexName: "waiting-for-email"
+  // },
   headerLinks: [
     {doc: 'apidoc', label: 'Docs'},
+    // { search: true }
   ],
   users,
   /* path to images for header/footer */
-  headerIcon: 'img/logo-full-color.svg',
+  headerIcon: 'img/kintohub-title-text.svg',
   footerIcon: 'img/docusaurus.svg',
   favicon: 'img/favicon.png',
   /* colors for website */
@@ -49,7 +55,7 @@ const siteConfig = {
   copyright:
     'Copyright © ' +
     new Date().getFullYear() +
-    ' Your Name or Your Company Name',
+    'Your Name or Your Company Name',
    organizationName: 'kintohub',
   projectName: 'kintohub-docs',
   highlight: {
