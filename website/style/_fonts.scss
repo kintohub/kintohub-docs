@@ -74,6 +74,7 @@ a {
   line-height: 24px;
   &:hover{
     color: $text-link-focus;
+    text-decoration: none;
   }
 }
 

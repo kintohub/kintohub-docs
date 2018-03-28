@@ -1,10 +1,10 @@
 ---
 id: creating-a-workspace
-title: creating-a-workspace
-sidebar_label: creating-a-workspace
+title: Creating a workspace
+sidebar_label: Creating a workspace
 ---
 
-## creating-a-workspace
+## Creating a workspace
 
 1. Select Workspaces from the sidebar
 

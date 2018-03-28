@@ -62,7 +62,8 @@ a {
   letter-spacing: 0;
   line-height: 24px; }
   a:hover {
-    color: #1ec4e9; }
+    color: #1ec4e9;
+    text-decoration: none; }
 
 .fonts .section {
   width: 50%;
@@ -218,3 +219,51 @@ footer {
   text-align: center;
   line-height: 24px;
   text-transform: inherit; }
+
+nav.toc .toggleNav ul li a {
+  font-weight: normal;
+  font-size: 16px;
+  color: #556f7d;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-bottom: 0; }
+  nav.toc .toggleNav ul li a:hover {
+    color: rgba(85, 111, 125, 0.4); }
+  nav.toc .toggleNav ul li a.navItemActive {
+    font-size: 16px;
+    color: #1ec4e9;
+    letter-spacing: 0;
+    line-height: 24px; }
+
+nav.toc .toggleNav .navGroup.navGroupActive {
+  background-color: white; }
+  nav.toc .toggleNav .navGroup.navGroupActive h3 {
+    font-size: 20px;
+    color: #38535e;
+    letter-spacing: 0;
+    line-height: 24px;
+    background-color: white; }
+
+nav.toc .toggleNav .navGroup {
+  margin: 0;
+  padding-bottom: 24px; }
+
+.toc-headings li ul li a {
+  font-weight: normal; }
+
+blockquote ul li {
+  font-size: 16px;
+  color: #556F7D;
+  letter-spacing: 0;
+  line-height: 24px; }
+
+ul li {
+  font-size: 16px;
+  color: #556F7D;
+  letter-spacing: 0;
+  line-height: 24px; }
+  ul li a {
+    font-weight: normal; }
+
+.mainContainer .wrapper a:hover, .mainContainer .wrapper a:focus, .inner .projectIntro a:hover, .inner .projectIntro a:focus {
+  text-decoration: none; }
