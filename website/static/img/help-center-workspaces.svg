@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>help-center-workspaces</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M50,100 C22.3857625,100 0,77.6142375 0,50 C0,22.3857625 22.3857625,0 50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="help-center-workspaces">
+            <g id="Combined-Shape" opacity="0.197067482">
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#000000" stroke-width="4" d="M50,98 C76.509668,98 98,76.509668 98,50 C98,23.490332 76.509668,2 50,2 C23.490332,2 2,23.490332 2,50 C2,76.509668 23.490332,98 50,98 Z"></path>
+            </g>
+            <rect id="Combined-Shape" fill="#D3E0EB" x="23.2" y="22.4" width="32" height="51.2"></rect>
+            <path d="M29.6,28.8 L36,28.8 L36,35.2 L29.6,35.2 L29.6,28.8 Z M42.4,28.8 L48.8,28.8 L48.8,35.2 L42.4,35.2 L42.4,28.8 Z M29.6,41.6 L36,41.6 L36,48 L29.6,48 L29.6,41.6 Z M42.4,41.6 L48.8,41.6 L48.8,48 L42.4,48 L42.4,41.6 Z" id="Combined-Shape" fill="#F5F9FF"></path>
+            <rect id="Rectangle-16-Copy" fill="#F5F9FF" x="59.6" y="35.2" width="19.2" height="38.4"></rect>
+            <polygon id="Rectangle-18" fill="#DBE8FB" points="62.8 38.4 75.6 38.4 62.8 51.2"></polygon>
+        </g>
+    </g>
+</svg>

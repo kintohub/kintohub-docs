@@ -41,7 +41,7 @@ Finally, create a new repository in GitHub, there are steps on how to connect to
 
 ### Create a simple hello world app
 
-> You can check the source code for that app [here](http://github/kintohub/node-example)
+> You can check the source code for that app [here](http://github/kintohub/node-examples)
 
 create `index.js` and add the following
 ```javascript

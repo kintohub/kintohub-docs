@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>help-center-analytics</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M50,100 C22.3857625,100 0,77.6142375 0,50 C0,22.3857625 22.3857625,0 50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="help-center-analytics">
+            <g id="Combined-Shape" opacity="0.197067482">
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#000000" stroke-width="4" d="M50,98 C76.509668,98 98,76.509668 98,50 C98,23.490332 76.509668,2 50,2 C23.490332,2 2,23.490332 2,50 C2,76.509668 23.490332,98 50,98 Z"></path>
+            </g>
+            <rect id="Rectangle-14" fill="#D3E0EC" x="20" y="47" width="15" height="30"></rect>
+            <rect id="Rectangle-14-Copy-3" fill="#DBE8FB" x="35" y="33" width="15" height="44"></rect>
+            <rect id="Rectangle-14-Copy" fill="#EDF3FD" x="50" y="18" width="15" height="59"></rect>
+            <rect id="Rectangle-14-Copy-2" fill="#F5F9FF" x="65" y="33" width="15" height="44"></rect>
+        </g>
+    </g>
+</svg>

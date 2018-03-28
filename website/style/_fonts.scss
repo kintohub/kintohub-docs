@@ -7,7 +7,6 @@ h1, .h1 {
   font-size: 28px;
   line-height: 46px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
   color: $kinto-tinted-grayscale-9;
   @include abovetablet {
     font-size: 42px;
@@ -19,16 +18,27 @@ h2, .h2 {
   line-height: 32px;
   font-family: 'Raleway', sans-serif;
   color: $kinto-tinted-grayscale-10;
-  font-weight: 600;
   @include abovetablet {
     font-size: 28px;
+  }
+}
+
+.mainContainer {
+  h1, h2, .h1, .h2 {
+  margin-top: 40px !important;
+  margin-bottom: 20px !important;
+  font-weight: 500 !important;
+  }
+  h3, .h3 {
+    color: $kinto-grayscale-6 !important;
+    margin-top: 30px !important;
   }
 }
 
 h3, .h3 {
   font-size: 20px;
   line-height: 24px;
-  color: $kinto-grayscale-6;
+  margin-top: 30px ;
   font-weight: normal;
 }
 

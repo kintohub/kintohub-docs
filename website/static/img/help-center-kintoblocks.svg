@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>help-center-kintoblocks</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M50,100 C22.3857625,100 0,77.6142375 0,50 C0,22.3857625 22.3857625,0 50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 Z" id="path-1"></path>
+        <path d="M39,1.30940108 L65.6410162,16.6905989 C68.1162248,18.1196613 69.6410162,20.7606774 69.6410162,23.6188022 L69.6410162,54.3811978 C69.6410162,57.2393226 68.1162248,59.8803387 65.6410162,61.3094011 L39,76.6905989 C36.5247914,78.1196613 33.4752086,78.1196613 31,76.6905989 L4.35898385,61.3094011 C1.88377523,59.8803387 0.358983849,57.2393226 0.358983849,54.3811978 L0.358983849,23.6188022 C0.358983849,20.7606774 1.88377523,18.1196613 4.35898385,16.6905989 L31,1.30940108 C33.4752086,-0.119661283 36.5247914,-0.119661283 39,1.30940108 Z" id="path-2"></path>
+        <path d="M68.6697268,19.7981639 C69.2967095,20.9515206 69.6410162,22.2606492 69.6410162,23.6188022 L69.6410162,54.3811978 C69.6410162,57.2393226 68.1162248,59.8803387 65.6410162,61.3094011 L39,76.6905989 C37.7623957,77.4051301 36.3811978,77.7623957 35,77.7623957 L35,42.2647615 C35,40.8597101 35.7371953,39.5576828 36.942017,38.8347898 L68.6697268,19.7981639 Z" id="path-4"></path>
+        <path d="M68.6031643,58.3218195 C67.9115687,59.5436763 66.899049,60.5830755 65.6410162,61.3094011 L39,76.6905989 C37.7623957,77.4051301 36.3811978,77.7623957 35,77.7623957 L35,42.2647615 C35,41.2633355 35.3744862,40.3142445 36.0258587,39.5898687 L68.6031643,58.3218195 Z" id="path-6"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="help-center-kintoblocks">
+            <g id="Combined-Shape" opacity="0.197067482">
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#000000" stroke-width="4" d="M50,98 C76.509668,98 98,76.509668 98,50 C98,23.490332 76.509668,2 50,2 C23.490332,2 2,23.490332 2,50 C2,76.509668 23.490332,98 50,98 Z"></path>
+            </g>
+            <g id="icon/generic/kintoblock/regular" transform="translate(10.000000, 10.000000)">
+                <g id="icon/generic/kintoblock" transform="translate(5.000000, 1.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="#DBE8FB" xlink:href="#path-2"></use>
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#F5F9FF" xlink:href="#path-4"></use>
+                    <mask id="mask-7" fill="white">
+                        <use xlink:href="#path-6"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#EDF3FD" xlink:href="#path-6"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

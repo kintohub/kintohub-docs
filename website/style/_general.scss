@@ -68,11 +68,18 @@ nav.toc .toggleNav .navGroup {
   }
 }
 
-blockquote ul li {
-  font-size: 16px;
-  color: #556F7D;
-  letter-spacing: 0;
-  line-height: 24px;
+blockquote {
+  background-color: rgba($kinto-coral, 0.1);
+  border-left: none;
+  box-shadow: inset 4px 0 0 0 #F46464;
+  border-radius: 4px;
+  padding-left: 30px;
+  ul li {
+    font-size: 16px;
+    color: #556F7D;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
 }
 
 ul li {
@@ -82,6 +89,52 @@ ul li {
   line-height: 24px;
   a {
     font-weight: normal;
+  }
+}
+
+.doc.separateOnPageNav.sideNavVisible .navPusher .mainContainer {
+  padding-left: 100px;
+  background-color: $kinto-white;
+}
+
+pre code, pre code.hljs {
+  background: $kinto-grayscale-1;
+  box-shadow: inset 4px 0 0 0 #1488A2;
+  border-radius: 4px;
+  border: none;
+  padding: 0.5em 0.5em 0.5em 30px;
+  font-size: 16px;
+  color: #556F7D;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+code {
+  background-color: rgba($kinto-blue, 0.2);
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: none;
+}
+
+.fixedHeaderContainer {
+  height: 60px;
+  header img {
+    margin-top: 10px;
+  }
+}
+
+input#search_input_react {
+  border-radius: 4px;
+  padding: 16px 16px 16px 35px;
+  height: 40px;
+}
+
+.navSearchWrapper{
+  &:before {
+    left: 20px;
+  }
+  &:after {
+    left: 30px;
   }
 }
 
