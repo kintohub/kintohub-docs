@@ -7,7 +7,7 @@ sidebar_label: Tagging a commit
 You cannot add a KintoBlock to an application without having tagged the latest commit. This is a similar concept to tagging in GitHub.
 This means that if you tag something in KintoHub this will preserve the state of the KintoBlock at the time of tagging. You can no longer change the dependencies of this KintoBlock.
 
-> You can only create a tag fron a branch
+> You can only create a tag from a branch
 
 The steps to tag a commit are:
 
