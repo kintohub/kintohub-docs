@@ -44,7 +44,8 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your template.
   repoUrl: 'https://github.com/kintohub/kintohub-docs',
   /* On page navigation for the current documentation page */
-  onPageNav: 'separate'
+  onPageNav: 'separate',
+  cname: 'help.kintohub.com'
 }
 
 module.exports = siteConfig
