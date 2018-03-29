@@ -14,12 +14,13 @@ This is useful if, for example, you add a dependency and everything breaks, you 
 
 1. Open the **Application** you want to tag and deploy
 2. Click **Tag & Deploy**  
-[image]
+![Screenshot - Tag and Deploy](/docs/images/tagging-and-deploying-1-2.png)
 3. Choose the environment, enter a desired tag number and notes, then click Tag & Deploy
+![Screenshot - Enter Info](/docs/images/tagging-and-deploying-3.png)
 
-#### Related Articles
+### Related Articles
 
 * [What is an application?](what-is-an-application.md)
 * [Talking to an application](talking-to-applications.md)
 * [Creating an application](creating-an-application.md)
-* [Adding dependencies to an application](adding-a-dependency.md)
+* [Adding dependencies to an application](adding-a-dependency-application.md)

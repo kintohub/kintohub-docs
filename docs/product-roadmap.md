@@ -4,8 +4,6 @@ title: What's on the product roadmap?
 sidebar_label: What's on the product roadmap?
 ---
 
-## What's on the product roadmap?
-
 We don't talk about future products... just kidding.
 
 *  Ability to create teams within each workspace
@@ -20,7 +18,7 @@ We don't talk about future products... just kidding.
 
 You can always contact us if there's a feature you would like to see.
 
-#### Related Articles
+### Related Articles
 
 * [Creating a KintoBlock](creating-a-kintoblock.md)
 

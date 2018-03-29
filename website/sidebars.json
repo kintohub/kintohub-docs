@@ -14,13 +14,13 @@
     "Applications": [
       "what-is-an-application",
       "creating-an-application",
-      "adding-a-dependency",
+      "adding-a-dependency-application",
       "tagging-and-deploying",
       "talking-to-applications"
     ],
     "Workspaces": [
       "creating-a-workspace",
-      "connecting-a-github-organisation",
+      "connecting-a-github-organization",
       "managing-members"
     ],
     "Common Questions": [
