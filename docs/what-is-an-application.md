@@ -14,4 +14,4 @@ They are composed of KintoBlocks and services with unique configuration paramete
 * [Creating an application](creating-an-application.md)
 * [Talking to an application](talking-to-applications.md)
 * [Tagging & deploying an application](tagging-and-deploying.md)
-* [Adding dependencies to an application](adding-a-dependency.md)
+* [Adding dependencies to an application](adding-a-dependency-application.md)

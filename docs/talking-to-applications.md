@@ -52,4 +52,4 @@ To make a call to gRPC, talk to grpc.prod.kintohub.com with your gRPC service pr
 * [What is an application?](what-is-an-application.md)
 * [Creating an application](creating-an-application.md)
 * [Tagging & deploying an application](tagging-and-deploying.md)
-* [Adding dependencies to an application](adding-a-dependency.md)
+* [Adding dependencies to an application](adding-a-dependency-application.md)

@@ -15,5 +15,5 @@ _That's it! You have created your first application!_
 
 ### Whats Next?
 
-* Make your application more powerful by [adding dependencies](adding-a-dependency.md).
+* Make your application more powerful by [adding dependencies](adding-a-dependency-application.md).
 * [Tag and deploy](tagging-and-deploying.md) to your environments

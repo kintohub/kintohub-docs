@@ -23,4 +23,4 @@ This is useful if, for example, you add a dependency and everything breaks, you 
 * [What is an application?](what-is-an-application.md)
 * [Talking to an application](talking-to-applications.md)
 * [Creating an application](creating-an-application.md)
-* [Adding dependencies to an application](adding-a-dependency.md)
+* [Adding dependencies to an application](adding-a-dependency-application.md)

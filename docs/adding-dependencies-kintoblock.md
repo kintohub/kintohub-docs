@@ -15,6 +15,6 @@ Once you've created a KintoBlock, you can add additional KintoBlocks to extend i
 
 ### Related Articles
 
-* [Adding dependencies to an application](adding-a-dependency.md)
+* [Adding dependencies to an application](adding-a-dependency-application.md)
 * [Adding dependencies to KintoBlock](adding-dependencies-kintoblock.md)
 * [Creating a KintoBlock](creating-a-kintoblock.md)
