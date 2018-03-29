@@ -62,3 +62,22 @@ ENTRYPOINT ["dotnet", "{Enter-Project-Output}.dll"]
 
 - We only support `dotnet 2.0`
 - need to be modified to reference the correct dll and path
+
+## Golang
+
+Dockerfile:
+```dockerfile
+FROM golang:1.10.0
+
+WORKDIR /go/src/app
+
+COPY . .
+
+RUN go get -d -v ./...
+
+RUN go install -v ./...
+
+ENTRYPOINT ["app"]
+```
+
+- `ENTRYPOINT ["app"]` line can't change, meaning you have to call your service `app`
