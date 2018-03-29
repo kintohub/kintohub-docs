@@ -77,44 +77,44 @@ nav.toc .toggleNav .navGroup {
 }
 
 blockquote {
-  background-color: rgba($kinto-coral, 0.1);
-  border-left: none;
-  box-shadow: inset 4px 0 0 0 #F46464;
-  border-radius: 4px;
-  padding-left: 30px;
-  ul li {
-    font-size: 16px;
-    color: #556F7D;
-    letter-spacing: 0;
-    line-height: 24px;
-  }
+ background-color: rgba($kinto-orange-bright, 0.2);
+ border-left: none;
+ box-shadow: inset 4px 0 0 0 #FFDB18;
+ border-radius: 4px;
+ padding-left: 30px;
+ ul li {
+   font-size: 16px;
+   color: #556F7D;
+   letter-spacing: 0;
+   line-height: 24px;
+ }
 }
 
 ul li {
-  font-size: 16px;
-  color: #556F7D;
-  letter-spacing: 0;
-  line-height: 24px;
-  a {
-    font-weight: normal;
-  }
+ font-size: 16px;
+ color: #556F7D;
+ letter-spacing: 0;
+ line-height: 24px;
+ a {
+   font-weight: normal;
+ }
 }
 
 .doc.separateOnPageNav.sideNavVisible .navPusher .mainContainer {
-  padding-left: 100px;
-  background-color: $kinto-white;
+ padding-left: 100px;
+ background-color: $kinto-white;
 }
 
 pre code, pre code.hljs {
-  background: $kinto-grayscale-1;
-  box-shadow: inset 4px 0 0 0 #1488A2;
-  border-radius: 4px;
-  border: none;
-  padding: 0.5em 0.5em 0.5em 30px;
-  font-size: 16px;
-  color: #556F7D;
-  letter-spacing: 0;
-  line-height: 24px;
+ background: $kinto-grayscale-1;
+ box-shadow: inset 4px 0 0 0 #A2B0BD;
+ border-radius: 4px;
+ border: none;
+ padding: 0.5em 0.5em 0.5em 30px;
+ font-size: 16px;
+ color: #556F7D;
+ letter-spacing: 0;
+ line-height: 24px;
 }
 
 code {

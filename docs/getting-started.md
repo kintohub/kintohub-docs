@@ -42,7 +42,7 @@ initialize as a git repo by running `git init`
 Finally, create a new repository in GitHub, there are steps on how to connect to an existing repository in Github after you create one.
 
 
-### Create a simple hello world app
+### Create a simple hello world service
 
 > You can check the source code for that app [here](http://github/kintohub/node-examples)
 
