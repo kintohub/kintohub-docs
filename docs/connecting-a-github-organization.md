@@ -1,25 +1,20 @@
 ---
-id: connecting-a-github-organisation
+id: connecting-a-github-organization
 title: Connecting a GitHub organization
 sidebar_label: Connecting a GitHub organization
 ---
 
-## Connecting a GitHub organization
-
 1. Click the **Edit** icon for the workspace you want to modify
-[image]
+![Screenshot - Edit Workspace](/docs/images/connecting-a-github-organization-1.png)
 2. Click **Link GitHub Organization** under the GitHub Connection section
-[image]
-
+![Screenshot - Link GitHub Organization](/docs/images/connecting-a-github-organization-2.png)
 3. You will be promoted to log in to GitHub
-
+![Screenshot - Authorize KintoHub](/docs/images/connecting-a-github-organization-3.png)
 4. Click on **Grant** to give KintoHub permission to your organization
 5. Click **Authorize KintoHub**
-[image]
+![Screenshot - Authorize KintoHub](/docs/images/connecting-a-github-organization-4-5.png)
 
-
-
-#### Related Articles
+### Related Articles
 
 * [Creating a workspace](creating-a-workspace.md)
 * [Creating a KintoBlock](creating-a-kintoblock.md)
