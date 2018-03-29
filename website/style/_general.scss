@@ -46,6 +46,14 @@ nav.toc .toggleNav ul li a{
   }
 }
 
+.navWrapper {
+  margin-top: 40px;
+}
+
+.edit-page-link.button {
+  margin-top: 0;
+}
+
 nav.toc .toggleNav .navGroup.navGroupActive {
   background-color: $kinto-white;
   h3 {
@@ -117,9 +125,9 @@ code {
 }
 
 .fixedHeaderContainer {
-  height: 60px;
+  height: 80px;
   header img {
-    margin-top: 10px;
+    margin-top: 30px;
   }
 }
 
@@ -127,6 +135,10 @@ input#search_input_react {
   border-radius: 4px;
   padding: 16px 16px 16px 35px;
   height: 40px;
+}
+
+.navigationWrapper {
+  margin-top: 10px;
 }
 
 .navSearchWrapper{

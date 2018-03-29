@@ -242,6 +242,12 @@ nav.toc .toggleNav ul li a {
     letter-spacing: 0;
     line-height: 24px; }
 
+.navWrapper {
+  margin-top: 40px; }
+
+.edit-page-link.button {
+  margin-top: 0; }
+
 nav.toc .toggleNav .navGroup.navGroupActive {
   background-color: white; }
   nav.toc .toggleNav .navGroup.navGroupActive h3 {
@@ -300,14 +306,17 @@ code {
   box-shadow: none; }
 
 .fixedHeaderContainer {
-  height: 60px; }
+  height: 80px; }
   .fixedHeaderContainer header img {
-    margin-top: 10px; }
+    margin-top: 30px; }
 
 input#search_input_react {
   border-radius: 4px;
   padding: 16px 16px 16px 35px;
   height: 40px; }
+
+.navigationWrapper {
+  margin-top: 10px; }
 
 .navSearchWrapper:before {
   left: 20px; }

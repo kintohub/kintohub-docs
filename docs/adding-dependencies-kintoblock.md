@@ -6,7 +6,7 @@ sidebar_label: Adding dependencies to a KintoBlock
 
 ## Adding dependencies to a KintoBlock
 
-1. Open the **KintoBlock** or **Application** you want to edit
+1. Open the **KintoBlock** you want to edit
 2. Under the **Dependencies** section, search for the Kintoblock you would like to add
 3. Click **Edit Dependencies** to modify their custom parameters and hardware requirements
 4. You can choose any **Tag** for each dependency

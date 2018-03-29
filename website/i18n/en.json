@@ -8,6 +8,8 @@
     "Adding dependencies to an application": "Adding dependencies to an application",
     "adding-dependencies-kintoblock": "Adding dependencies to a KintoBlock",
     "Adding dependencies to a KintoBlock": "Adding dependencies to a KintoBlock",
+    "answers": "Answers",
+    "Answers": "Answers",
     "apidoc": "How to document your code to work with Kintohub",
     "connecting-a-github-organisation": "Connecting a GitHub organization",
     "Connecting a GitHub organization": "Connecting a GitHub organization",
@@ -33,10 +35,6 @@
     "Tagging & deploying an application": "Tagging & deploying an application",
     "talking-to-applications": "Talking to an application",
     "Talking to an application": "Talking to an application",
-    "usage-limit": "Is there a usage limit during alpha testing period?",
-    "Is there a usage limit during alpha testing period?": "Is there a usage limit during alpha testing period?",
-    "use-during-alpha": "Is KintoHub free to use during alpha testing period?",
-    "Is KintoHub free to use during alpha testing period?": "Is KintoHub free to use during alpha testing period?",
     "what-is-a-kintoblock": "What is a KintoBlock?",
     "What is a KintoBlock?": "What is a KintoBlock?",
     "what-is-an-application": "What is an application?",
@@ -45,7 +43,7 @@
     "KintoBlocks": "KintoBlocks",
     "Applications": "Applications",
     "Workspaces": "Workspaces",
-    "Frequently Asked Questions": "Frequently Asked Questions"
+    "Common Questions": "Common Questions"
   },
   "pages-strings": {
     "Help Translate|recruit community translators for your project": "Help Translate",
