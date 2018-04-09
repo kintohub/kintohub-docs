@@ -5,10 +5,10 @@ sidebar_label: Creating a workspace
 ---
 
 1. Select Workspaces from the sidebar
-![Screenshot - Select Workspace](/docs/images/creating-a-workspace-1.png)
+![Screenshot - Select Workspace](/docs/assets/creating-a-workspace-1.png)
 2. Enter the desired name and invite members
 3. Click **Create New Workspace**
-![Screenshot - Create New Workspace](/docs/images/creating-a-workspace-2-3.png)
+![Screenshot - Create New Workspace](/docs/assets/creating-a-workspace-2-3.png)
 
 ### Whats next?
 * [Connect a GitHub organization](connecting-a-github-organization.md) to to sync repositories

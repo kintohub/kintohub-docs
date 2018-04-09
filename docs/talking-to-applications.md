@@ -9,11 +9,11 @@ After you have deployed your application, you can either talk to it in gRPC or H
 
 1. Go to **Applications**, click the menu icon
 2. Select **View Environments**
-![Screenshot - View Environment](/docs/images/talking-to-applications-1-2.png)
+![Screenshot - View Environment](/docs/assets/talking-to-applications-1-2.png)
 3. Click Edit on the environment you wish to talk to
-![Screenshot - Edit Environment](/docs/images/talking-to-applications-3.png)
+![Screenshot - Edit Environment](/docs/assets/talking-to-applications-3.png)
 4. Here you can get the **client ID** and **secret key**
-![Screenshot - Client ID and Secret Key](/docs/images/talking-to-applications-4.png)
+![Screenshot - Client ID and Secret Key](/docs/assets/talking-to-applications-4.png)
 5. Authenticate to KintoHub with:
 
 ```
