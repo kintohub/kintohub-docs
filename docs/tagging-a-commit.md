@@ -13,9 +13,9 @@ The steps to tag a commit are:
 
 1. Open the **KintoBlock** you want to tag
 2. Click **Tag Latest Commit**
-![Screenshot - Tag Lastest Commit](/docs/images/tagging-a-commit-1-2.png)
+![Screenshot - Tag Lastest Commit](/docs/assets/tagging-a-commit-1-2.png)
 3. Enter a desired tag number and notes, then click Tag Latest Commit
-![Screenshot - Enter Info](/docs/images/tagging-a-commit-3.png)
+![Screenshot - Enter Info](/docs/assets/tagging-a-commit-3.png)
 
 ## Why would I want to tag my KintoBlock?
 

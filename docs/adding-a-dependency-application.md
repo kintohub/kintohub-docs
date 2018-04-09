@@ -11,7 +11,7 @@ Once you've created an application, you can add additional KintoBlocks to extend
 3. Click **Edit Dependencies** to modify their custom parameters and hardware requirements
 4. You can choose any **Tag** for each dependency
 5. You can also choose a **Branch** - the latest from the branch will be used
-![Screenshot - Create New Application](/docs/images/adding-dependencies-4-5.png)
+![Screenshot - Create New Application](/docs/assets/adding-dependencies-4-5.png)
 
 ### Related Articles
 
