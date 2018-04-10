@@ -1,7 +1,7 @@
 const GITHUB_URL = `https://github.com/kintohub/kintohub-docs`
 
 const siteConfig = {
-  title: 'Help Center' /* title for your website */,
+  title: 'Kintohub Docs',
   tagline: 'Microservices made simple',
   url: 'https://kintohub.com' /* your website url */,
   baseUrl: '/' /* base url for your project */,
@@ -45,7 +45,7 @@ const siteConfig = {
   repoUrl: 'https://github.com/kintohub/kintohub-docs',
   /* On page navigation for the current documentation page */
   onPageNav: 'separate',
-  cname: 'help.kintohub.com'
+  cname: 'docs.kintohub.com'
 }
 
 module.exports = siteConfig

@@ -58,7 +58,7 @@ const Logo = props => (
 
 const ProjectTitle = props => (
   <h2 className="projectTitle">
-    Welcome to KintoHub Help Center.
+    Welcome to KintoHub Docs.
   </h2>
 );
 
