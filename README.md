@@ -1,4 +1,4 @@
-# Kintohub Docs ([url](https://docs.kintohub.com/docs/getting-started.html))
+# KintoHub Docs ([url](https://docs.kintohub.com/docs/getting-started.html))
 
 ## Setup
 

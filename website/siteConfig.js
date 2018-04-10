@@ -1,11 +1,11 @@
 const GITHUB_URL = `https://github.com/kintohub/kintohub-docs`
 
 const siteConfig = {
-  title: 'Kintohub Docs',
+  title: 'KintoHub Docs',
   tagline: 'Microservices made simple',
   url: 'https://kintohub.com' /* your website url */,
   baseUrl: '/' /* base url for your project */,
-  projectName: 'Kintohub Docs',
+  projectName: 'KintoHub Docs',
   disableHeaderTitle: true,
   headerLinks: [],
   algolia: {
