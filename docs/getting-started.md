@@ -3,7 +3,7 @@ id: getting-started
 title: Getting Started
 ---
 
-This start-to-finish guide will walk you through creating a first microservice from scratch and getting it up and running on Kintohub. It should take you about 15-30min. Have fun!
+This start-to-finish guide will walk you through creating a first microservice from scratch and getting it up and running on KintoHub. It should take you about 15-30min. Have fun!
 
 ## Getting your code ready for KintoHub - overview
 
@@ -26,7 +26,7 @@ Now, let's get to the nitty-gritty of it by creating your first KintoBlock.
 
 > Please note that at this moment we only support node version 8.9.4
 
-Let us create a simple hello world microservice locally and see how we would move that to a Kintohub to deploy and host it.
+Let us create a simple hello world microservice locally and see how we would move that to a KintoHub to deploy and host it.
 
 ### Initialize git and npm
 
@@ -82,9 +82,10 @@ the difference is `npm start` now will run the app on port `8000` but `npm run p
 
 ### Comment your code for compatibility and autodoc
 
-you can read more about documenting your code to work with kintohub [here](apidoc.md).
+*you can read more about documenting your code to work with kintohub [here](apidoc.md).*
 
-In order for your microservice to work with Kintohub and automatically generate user-friendly documentation for your endpoints, you need to comment your code in a way that follows apidoc standard.
+
+In order for your microservice to work with KintoHub and automatically generate user-friendly documentation for your endpoints, you need to comment your code in a way that follows apidoc standard.
 
 here is the updated `index.js` after documenting it
 
@@ -110,7 +111,7 @@ app.get('/sample/:message', (req, res) =>
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
 ```
 
-The last step is creating a `Dockerfile` so Kintohub can understand how to compile and run your app
+The last step is creating a `Dockerfile` so KintoHub can understand how to compile and run your app
 
 > you don't need to use docker locally for this
 
@@ -146,7 +147,9 @@ For our example `npm run prod` is running `PORT=80 node index.js` which satisfie
 
 ## Create a Kintoblock on KintoHub from the service we just created
 
-By this point, you should already have a GitHub repository that is compatible with Kintohub
+*For more details and screenshots about creating KintoBlocks read more [here](creating-a-kintoblock.md)*
+
+By this point, you should already have a GitHub repository that is compatible with KintoHub
 
 Next step is connecting your workspace to your GitHub account. Go to edit workspace and click on connect GitHub button.
 
@@ -160,6 +163,8 @@ Now go to create Kintoblock page. Add a Kintoblock name *(name must be unique ac
 
 ### Tag Latest Commit
 
+*For more details and screenshots about tagging latest commit read more [here](tagging-a-commit.md)*
+
 After creating the Kintoblock, when you are in the Kintoblock manage page, navigate to the branch that you added your code to. And go to the **Commits** section.
 
 Make sure that the last commit you had is in recent commits and wait until it successfully builds. *(you have to refresh the page to get the latest build status update)*.
@@ -168,6 +173,8 @@ After it successfully builds click `Tag Latest Commit` this allows you to add a 
 
 
 ## Create an Application
+
+*For more details and screenshots about creating an Application read more [here](creating-an-application.md)*
 
 We need to finally create a Application that includes `nodeexample`
 
@@ -178,6 +185,8 @@ Go to create Application page. Add a name and description. in the dependencies s
 Click `Save Changes`
 
 ### Tag and Deploy
+
+*For more details and screenshots about tagging and deploying Applications read more [here](tagging-and-deploying.md)*
 
 after hitting `Save Changes` it should change to `Tag and Deploy`. tagging and deploying will bring our app online, let's click it and select the default `master` environment and add a version for the app *(Application version is not related to kintoblock version)*. After clicking Create now we have a live version that we can access
 
@@ -192,16 +201,20 @@ The endpoint for authenticating the env is
 POST http://api.staging.kintohub.com/auth
 ```
 
-> We are using [HTTPie](https://httpie.org/) here (similar to CRUD) the samples below should work if you have it installed
+> We are going to use cURL for testing the endpoints
 
 calling `/auth` and passing it the client and secret should return a token
 ```bash
-http -v POST http://api.staging.kintohub.com/auth clientId=<clientId> clientSecret=<clientSecret>
+curl -H "Content-Type: application/json" -X POST -d '{"clientId":"<clientId>","clientSecret":"<clientSecret>"}'http://api.staging.kintohub.com/auth
 ```
 
 **returns**
 ```
-{"data":{"token": "<token>"}}
+{
+    "data": {
+        "token": "<token>"
+    }
+}
 ```
 
 if we used that token and pass it as an Authorization header when we call any Kintoblock inside that Application it should work *(need to add 'Bearer' before the actual token)*
@@ -210,10 +223,13 @@ if we used that token and pass it as an Authorization header when we call any Ki
 Finally, the following should work
 
 ```bash
-http -v GET http://nodeexample.api.staging.kintohub.com/sample/hello Authorization:"Bearer <token>"
+curl -H "Authorization: Bearer <token>" http://nodeexample.api.staging.kintohub.com/sample/hello
 ```
 
 Should return
 ```
-{"data":"Hello World","output":"hello"}
+{
+    "data": "Hello World",
+    "output": "hello"
+}
 ```

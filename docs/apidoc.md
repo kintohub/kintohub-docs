@@ -1,6 +1,6 @@
 ---
 id: apidoc
-title: How to document your code to work with Kintohub
+title: How to document your code to work with KintoHub
 ---
 
 > As of this point the following features are different
