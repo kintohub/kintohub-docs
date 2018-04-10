@@ -22,6 +22,8 @@ Now, let's get to the nitty-gritty of it by creating your first KintoBlock.
 
 ## Build your first Microservice (NodeJs) on Github - detailed
 
+*You can find the source code [here](http://github.com/kintohub/node-examples)*
+
 > Please note that at this moment we only support node version 8.9.4
 
 Let us create a simple hello world microservice locally and see how we would move that to a Kintohub to deploy and host it.
@@ -44,7 +46,6 @@ Finally, create a new repository in GitHub, there are steps on how to connect to
 
 ### Create a simple hello world service
 
-> You can check the source code for that app [here](http://github/kintohub/node-examples)
 
 create `index.js` and add the following
 ```javascript
@@ -113,8 +114,6 @@ The last step is creating a `Dockerfile` so Kintohub can understand how to compi
 
 > you don't need to use docker locally for this
 
-You can read more about `Dockerfile` samples [here](docker-samples.md).
-
 create `Dockerfile` with the following
 ```dockerfile
 FROM node:8.9.4
@@ -134,6 +133,7 @@ EXPOSE 80
 ENTRYPOINT ["npm","run","start"]
 ```
 
+*You can find all the different `Dockerfile` samples for all languages [here](docker-examples.md).*
 
 The interesting part is the last line, you need to update the entry point depending on the project you are using
 
