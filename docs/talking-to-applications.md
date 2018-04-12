@@ -1,5 +1,4 @@
 ---
-id: talking-to-applications
 title: Talking to an application
 sidebar_label: Talking to an application
 ---

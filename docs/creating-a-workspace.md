@@ -1,5 +1,4 @@
 ---
-id: creating-a-workspace
 title: Creating a workspace
 sidebar_label: Creating a workspace
 ---

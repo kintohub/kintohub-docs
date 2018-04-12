@@ -1,5 +1,4 @@
 ---
-id: answers
 title: Answers
 sidebar_label: Answers
 ---

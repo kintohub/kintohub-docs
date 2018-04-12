@@ -1,5 +1,4 @@
 ---
-id: managing-members
 title: Managing members’ roles on a project basis
 sidebar_label: Managing members’ roles on a project basis
 ---

@@ -1,5 +1,4 @@
 ---
-id: creating-an-application
 title: Creating an application
 sidebar_label: Creating an application
 ---

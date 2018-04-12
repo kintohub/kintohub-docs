@@ -1,5 +1,4 @@
 ---
-id: adding-dependencies-kintoblock
 title: Adding dependencies to a KintoBlock
 sidebar_label: Adding dependencies to a KintoBlock
 ---

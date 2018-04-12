@@ -1,5 +1,4 @@
 ---
-id: feedback
 title: How do I provide feedback?
 sidebar_label: How do I provide feedback?
 ---

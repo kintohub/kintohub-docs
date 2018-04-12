@@ -1,5 +1,4 @@
 ---
-id: custom-params
 title: Custom Parameters
 sidebar_label: Custom Parameters
 ---

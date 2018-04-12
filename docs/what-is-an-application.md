@@ -1,5 +1,4 @@
 ---
-id: what-is-an-application
 title: What is an application?
 sidebar_label: What is an application?
 ---

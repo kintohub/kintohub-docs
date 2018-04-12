@@ -1,5 +1,4 @@
 ---
-id: revoking-access
 title: Revoking Access to a Workspace
 sidebar_label: Revoking Access to a Workspace
 ---

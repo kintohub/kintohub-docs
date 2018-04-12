@@ -1,5 +1,4 @@
 ---
-id: tagging-and-deploying
 title: Tagging & deploying an application
 sidebar_label: Tagging & deploying an application
 ---

@@ -1,5 +1,4 @@
 ---
-id: connecting-a-github-organization
 title: Connecting a GitHub organization
 sidebar_label: Connecting a GitHub organization
 ---

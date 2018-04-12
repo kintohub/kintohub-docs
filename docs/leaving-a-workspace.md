@@ -1,5 +1,4 @@
 ---
-id: leaving-a-workspace
 title: Leaving a Workspace
 sidebar_label: Leaving a Workspace
 ---

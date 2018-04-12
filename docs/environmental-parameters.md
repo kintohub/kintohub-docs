@@ -1,5 +1,4 @@
 ---
-id: environmental-parameters
 title: Environmental Parameters
 sidebar_label: Environmental Parameters
 ---

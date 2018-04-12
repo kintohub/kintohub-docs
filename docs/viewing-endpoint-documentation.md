@@ -1,5 +1,4 @@
 ---
-id: viewing-endpoint-documentation
 title: Viewing Endpoint Documentation
 sidebar_label: Viewing Endpoint Documentation
 ---

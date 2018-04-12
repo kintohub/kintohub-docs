@@ -1,5 +1,4 @@
 ---
-id: adding-a-dependency-application
 title: Adding dependencies to an application
 sidebar_label: Adding dependencies to an application
 ---

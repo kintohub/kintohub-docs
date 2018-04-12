@@ -1,5 +1,4 @@
 ---
-id: deleting-a-kintoblock
 title: Deleting A KintoBlock
 sidebar_label: Deleting A KintoBlock
 ---

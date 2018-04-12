@@ -1,5 +1,4 @@
 ---
-id: docker-examples
 title: Dockerfile examples
 ---
 

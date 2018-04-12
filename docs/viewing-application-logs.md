@@ -1,5 +1,4 @@
 ---
-id: viewing-application-logs
 title: Viewing Application Logs
 sidebar_label: Viewing Application Logs
 ---

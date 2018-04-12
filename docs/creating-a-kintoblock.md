@@ -1,5 +1,4 @@
 ---
-id: creating-a-kintoblock
 title: Creating a KintoBlock
 sidebar_label: Creating a KintoBlock
 ---

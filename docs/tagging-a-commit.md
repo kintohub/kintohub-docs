@@ -1,5 +1,4 @@
 ---
-id: tagging-a-commit
 title: Tagging a commit
 sidebar_label: Tagging a commit
 ---
