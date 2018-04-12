@@ -13,6 +13,8 @@
     "answers": "Answers",
     "Answers": "Answers",
     "apidoc": "How to document your code to work with KintoHub",
+    "behind-the-scenes": "Behind the Scenes",
+    "Behind the Scenes": "Behind the Scenes",
     "billing": "Billing",
     "Billing": "Billing",
     "connecting-a-github-organization": "Connecting a GitHub organization",
@@ -69,6 +71,7 @@
     "Dependencies": "Dependencies",
     "Workspaces": "Workspaces",
     "Accounts and Billing": "Accounts and Billing",
+    "Behind The Scenes": "Behind The Scenes",
     "Common Questions": "Common Questions"
   },
   "pages-strings": {
