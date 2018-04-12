@@ -18,5 +18,5 @@ _That's it! You have created your first KintoBlock!_
 
 ### Related Articles
 
-* [Creating a KintoBlock](creating-a-kintoblock.md)
+* [Creating an Application](creating-an-application.md)
 * [Adding dependencies to an application](adding-dependencies-kintoblock.md)

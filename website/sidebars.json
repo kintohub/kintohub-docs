@@ -9,19 +9,34 @@
       "what-is-a-kintoblock",
       "creating-a-kintoblock",
       "adding-dependencies-kintoblock",
-      "tagging-a-commit"
+      "tagging-a-commit",
+      "deleting-a-kintoblock"
     ],
     "Applications": [
       "what-is-an-application",
       "creating-an-application",
       "adding-a-dependency-application",
       "tagging-and-deploying",
-      "talking-to-applications"
+      "talking-to-applications",
+      "deleting-an-application",
+      "viewing-endpoint-documentation",
+      "viewing-application-logs"
+    ],
+    "Dependencies": [
+      "custom-params",
+      "environmental-parameters"
     ],
     "Workspaces": [
       "creating-a-workspace",
       "connecting-a-github-organization",
-      "managing-members"
+      "managing-members",
+      "revoking-access",
+      "leaving-a-workspace",
+      "deleting-a-workspace"
+    ],
+    "Accounts and Billing": [
+      "accounts",
+      "billing"
     ],
     "Common Questions": [
       "answers"
