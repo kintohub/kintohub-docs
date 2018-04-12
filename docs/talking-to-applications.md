@@ -1,7 +1,5 @@
 ---
-id: talking-to-applications
 title: Talking to an application
-sidebar_label: Talking to an application
 ---
 
 After you have deployed your application, you can either talk to it in gRPC or HTTP.

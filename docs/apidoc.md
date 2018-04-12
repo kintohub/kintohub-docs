@@ -1,5 +1,4 @@
 ---
-id: apidoc
 title: How to document your code to work with KintoHub
 ---
 

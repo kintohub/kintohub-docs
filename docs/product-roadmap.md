@@ -1,7 +1,5 @@
 ---
-id: product-roadmap
 title: What's on the product roadmap?
-sidebar_label: What's on the product roadmap?
 ---
 
 We don't talk about future products... just kidding.
@@ -16,7 +14,7 @@ We don't talk about future products... just kidding.
 
 *  And so much more...
 
-You can always contact us if there's a feature you would like to see.
+You can always contact us if there's a feature you would like to see, or add it to our [GitHub backlog](https://github.com/kintohub/backlog).
 
 ### Related Articles
 

@@ -1,7 +1,5 @@
 ---
-id: use-during-alpha
 title: Is KintoHub free to use during alpha testing period?
-sidebar_label: Is KintoHub free to use during alpha testing period?
 ---
 
 Yes! KintoHub is completely free of charge during private alpha testing period.

@@ -1,7 +1,5 @@
 ---
-id: answers
 title: Answers
-sidebar_label: Answers
 ---
 
 ## Is there a usage limit during alpha testing period?

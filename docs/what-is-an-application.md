@@ -1,7 +1,5 @@
 ---
-id: what-is-an-application
 title: What is an application?
-sidebar_label: What is an application?
 ---
 
 Applications are tailored back-end features packages, ready to be consumed by your clients and whose feature can scale independently to fit your needs.

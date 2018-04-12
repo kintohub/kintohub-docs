@@ -1,7 +1,5 @@
 ---
-id: creating-an-application
 title: Creating an application
-sidebar_label: Creating an application
 ---
 
 Creating your first application is super easy.

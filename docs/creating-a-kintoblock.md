@@ -1,7 +1,5 @@
 ---
-id: creating-a-kintoblock
 title: Creating a KintoBlock
-sidebar_label: Creating a KintoBlock
 ---
 
 Creating your first KintoBlock is super easy.
@@ -18,5 +16,5 @@ _That's it! You have created your first KintoBlock!_
 
 ### Related Articles
 
-* [Creating a KintoBlock](creating-a-kintoblock.md)
+* [Creating an Application](creating-an-application.md)
 * [Adding dependencies to an application](adding-dependencies-kintoblock.md)
