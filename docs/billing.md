@@ -1,6 +1,5 @@
 ---
 title: Billing
-sidebar_label: Billing
 ---
 
 ## Coming soon!

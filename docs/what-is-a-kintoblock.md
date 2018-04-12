@@ -1,6 +1,5 @@
 ---
 title: What is a KintoBlock?
-sidebar_label: What is a KintoBlock?
 ---
 
 KintoBlocks are the new standard format for microservices.

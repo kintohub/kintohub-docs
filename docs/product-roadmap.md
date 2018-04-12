@@ -1,6 +1,5 @@
 ---
 title: What's on the product roadmap?
-sidebar_label: What's on the product roadmap?
 ---
 
 We don't talk about future products... just kidding.

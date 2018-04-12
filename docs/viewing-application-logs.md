@@ -1,6 +1,5 @@
 ---
 title: Viewing Application Logs
-sidebar_label: Viewing Application Logs
 ---
 
 ## Coming soon!

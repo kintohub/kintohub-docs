@@ -1,6 +1,5 @@
 ---
 title: Behind the Scenes
-sidebar_label: Behind the Scenes
 ---
 
 ## Coming soon!

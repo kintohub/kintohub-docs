@@ -1,6 +1,5 @@
 ---
 title: Viewing Endpoint Documentation
-sidebar_label: Viewing Endpoint Documentation
 ---
 
 ## Coming soon!

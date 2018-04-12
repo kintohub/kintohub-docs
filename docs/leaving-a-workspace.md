@@ -1,6 +1,5 @@
 ---
 title: Leaving a Workspace
-sidebar_label: Leaving a Workspace
 ---
 
 ## Coming soon!

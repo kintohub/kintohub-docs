@@ -1,6 +1,5 @@
 ---
 title: Tagging & deploying an application
-sidebar_label: Tagging & deploying an application
 ---
 
 When you create an application it is by default in a _draft_ state. When you make changes to an application, ie. add a new dependency or change the version of a KintoBlock within this application, you can create a new tag.

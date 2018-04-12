@@ -1,6 +1,5 @@
 ---
 title: Deleting An Application
-sidebar_label: Deleting An Application
 ---
 
 ## Coming soon!

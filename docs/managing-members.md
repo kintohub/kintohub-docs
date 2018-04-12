@@ -1,6 +1,5 @@
 ---
 title: Managing members’ roles on a project basis
-sidebar_label: Managing members’ roles on a project basis
 ---
 
 1. Open any project (a KintoBlock or an application) you want to edit

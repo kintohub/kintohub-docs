@@ -1,6 +1,5 @@
 ---
 title: Adding dependencies to an application
-sidebar_label: Adding dependencies to an application
 ---
 
 Once you've created an application, you can add additional KintoBlocks to extend its capabilities.

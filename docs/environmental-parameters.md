@@ -1,6 +1,5 @@
 ---
 title: Environmental Parameters
-sidebar_label: Environmental Parameters
 ---
 
 ## Coming soon!

@@ -1,6 +1,5 @@
 ---
 title: Connecting a GitHub organization
-sidebar_label: Connecting a GitHub organization
 ---
 
 1. Click the **Edit** icon for the workspace you want to modify

@@ -1,6 +1,5 @@
 ---
 title: Is there a usage limit during alpha testing period?
-sidebar_label: Is there a usage limit during alpha testing period?
 ---
 
 Yes, but it's quite generous so you are very unlikely to hit it.

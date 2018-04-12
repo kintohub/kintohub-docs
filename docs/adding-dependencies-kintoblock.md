@@ -1,6 +1,5 @@
 ---
 title: Adding dependencies to a KintoBlock
-sidebar_label: Adding dependencies to a KintoBlock
 ---
 
 Once you've created a KintoBlock, you can add additional KintoBlocks to extend its capabilities.

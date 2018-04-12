@@ -1,6 +1,5 @@
 ---
 title: Creating a KintoBlock
-sidebar_label: Creating a KintoBlock
 ---
 
 Creating your first KintoBlock is super easy.

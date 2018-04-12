@@ -1,6 +1,5 @@
 ---
 title: Tagging a commit
-sidebar_label: Tagging a commit
 ---
 
 You cannot add a KintoBlock to an application without having tagged the latest commit. This is a similar concept to tagging in GitHub.
