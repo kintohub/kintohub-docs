@@ -367,7 +367,8 @@ code {
 input#search_input_react {
   border-radius: 4px;
   padding: 16px 16px 16px 35px;
-  height: 40px; }
+  height: 40px;
+  box-sizing: border-box; }
 
 .navigationWrapper {
   margin-top: 10px; }
