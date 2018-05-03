@@ -2,7 +2,7 @@
 title: Getting Started
 ---
 
-## Hi there - welcome to KintoHub
+## Hi there - welcome to KintoHub!
 
 This start-to-finish guide will walk you through creating a first microservice from scratch and getting it up and running on KintoHub. It should take you about 15-30min. Have fun!
 
