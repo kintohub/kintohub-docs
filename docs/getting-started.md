@@ -2,6 +2,8 @@
 title: Getting Started
 ---
 
+## Hi there - welcome to KintoHub
+
 This start-to-finish guide will walk you through creating a first microservice from scratch and getting it up and running on KintoHub. It should take you about 15-30min. Have fun!
 
 ## Getting your code ready for KintoHub - overview
@@ -156,7 +158,7 @@ Now go to create Kintoblock page. Add a Kintoblock name _(name must be unique ac
 
 > endpoints are going to be in the following format **http://api.staging.kintohub.com/{microservicename}**
 
-> Kintoblocks can't be accessed directly, it must be through Applications, if you tried to go to `http://api.staging.kintohub.com/nodeexample/sample/hello` you will get an error.
+> Kintoblocks can't be accessed directly. To access them we will need to deploy them through Applications. Therefore, if you tried to go to `http://api.staging.kintohub.com/nodeexample/sample/hello` you will get an error.
 
 ### Tag Latest Commit
 
@@ -164,9 +166,9 @@ _For more details and screenshots about tagging latest commit read more [here](t
 
 After creating the Kintoblock, when you are in the Kintoblock manage page, navigate to the branch that you added your code to. And go to the **Commits** section.
 
-Make sure that the last commit you had is in recent commits and wait until it successfully builds. _(you have to refresh the page to get the latest build status update)_.
+Make sure that the last commit you had is in recent commits and wait until it successfully builds. _(Clicking the "Refresh Latest" button will grab an updated commit list)_.
 
-After it successfully builds click `Tag Latest Commit` this allows you to add a tag to that commit _(similar to how git works)_ so you can select that tag in a Application
+After it successfully builds click `Tag Latest Commit` this allows you to add a tag to that commit _(similar to how git works)_ so you can select that particular tag when you are building an Application (before deploying it).
 
 ## Create an Application
 
