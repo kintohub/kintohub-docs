@@ -4,10 +4,9 @@
       "getting-started",
       "docker-examples",
       "apidoc",
-      "kintoapps",
-      "workspaces",
-      "languages",
-      "release-notes"
+      "kintoblocks",
+      "token-session",
+      "repositories"
     ],
     "Dependencies": [
       "custom-params",

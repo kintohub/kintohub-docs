@@ -45,7 +45,8 @@ const siteConfig = {
   repoUrl: 'https://github.com/kintohub/kintohub-docs',
   /* On page navigation for the current documentation page */
   onPageNav: 'separate',
-  cname: 'docs.kintohub.com'
+  cname: 'docs.kintohub.com',
+  cleanUrl: true
 }
 
 module.exports = siteConfig

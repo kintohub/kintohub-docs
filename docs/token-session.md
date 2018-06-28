@@ -1,0 +1,133 @@
+---
+title: Token and Session Management
+---
+
+KintoHub provides the ability to create sessions for all apps right of the bat. We recommend all users to create a token for all users, and this will give you many features that we are going to show here
+
+## How to generate and use tokens
+
+1.  The client should call the following API (typically when the app first loads)
+
+```
+POST api.kintohub.com/auth
+BODY { "clientId":"<clientid>", "clientSecret":"<clientsecret>" }
+```
+
+2.  The client will get a token back (The client can save it as part of local storage) and should send it with all the following requests by adding it as an `Authorization` header, like:
+
+```
+Authorization: Bearer <token>
+```
+
+## Tokens as the first-class citizen
+
+We decided to make tokens a requirement when calling any microservice. To call your microservice, it needs always to be included as an `Authorization` header shown above
+
+If a token is not attached when requesting a resource, the client will get an error response
+
+### What if I want a microservice to have a public URL that doesn't require authentication
+
+We don't recommend in a typical use-case to use public URLs without authentication, but it is required in some apps to have public URLs (any webhooks as an example)
+
+The answer is yes we do support public URLs, to access the endpoint you can use the following URL:
+
+```
+public.api.kintohub.com/<microservice>
+```
+
+## Why should I use tokens
+
+One of the first problems we were trying to solve is how to make reusable microservices. When we were building KintoHub, we didn't want to make every microservice call the auth microservice to get the logged in user id and username
+
+We have approached it differently, every microservice that needs the username or user id will just state that it needs it using [apidoc](apidoc.md) syntax and KintoHub will inject the value with your request in the header
+
+### Example:
+
+I'll start first with an example to show the flow of how to save/read data from the session
+
+1.  the user has to get a token and send it as part of the authorization header like shown above
+
+2.  In the auth microservice, we are going to expose the userid and username
+
+```javascript
+/**
+ * ...
+ * @apiSuccess (Session) {String} auth-userId the logged in user id
+ * @apiSuccess (Session) {String} auth-username the logged in username
+ * ...
+ */
+server.route({
+  method: "POST",
+  path: "/login",
+  handler(request, res) {
+    // Get the user from db and make sure everything is valid
+    return res
+      .response({ message: "Logged in successfully" })
+      .header("auth-userId", 1)
+      .header("auth-username", "KintoUser")
+      .code(200);
+  }
+});
+```
+
+3.  In any microservice now we can require the userid and username after calling the `/login` above
+
+```javascript
+/**
+ * ...
+ * @apiHeader (Session) {String} [auth-userId] logged in user id
+ * @apiHeader (Session) {String} [auth-username] logged in user name
+ * ...
+ */
+server.route({
+  method: "POST",
+  path: "/articles",
+  handler(request, h) {
+    const userId = request.headers["auth-id"]; // '1'
+    const name = request.headers["auth-username"]; // 'KintoUser'
+  }
+});
+```
+
+## Write to the Session Data
+
+What is required to add a data to a session is the following
+
+1.  have proper apidoc for it
+
+```
+@apiSuccess (Session) {type} <microservice>-field description
+```
+
+> Note: to add data to a session you use `@apiSuccess (Session)` because you are sending data back
+
+> Note: the field name **must** start with the microservice name
+
+2.  In that request you should send back the fields as headers in the response
+
+```javascript
+return res
+  .response(..)
+  .header('<microservice>-field', value)
+  .code(200)
+```
+
+> Note: All the session data being send back as headers are going to be intercepted by KintoHub to update the session and the client will not receive them (above example if you debug that request you will not find `<microservice>-field` in the headers)
+
+### Read from the Session Data
+
+What is required to read from the session is the following
+
+1.  have proper apidoc for it
+
+```
+@apiHeader (Session) {type} <microservice>-field description
+```
+
+> Note: add read data from a session you use `@apiHeader (Session)` because they are going to be injected in the headers
+
+2.  In that request, you can read the data from the headers
+
+```javascript
+request.headers["<microservice>-field"];
+```

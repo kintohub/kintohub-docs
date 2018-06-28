@@ -2,12 +2,6 @@
 title: How to document your code to work with KintoHub
 ---
 
-> As of this point the following features are different
-> - Default Groups are not implemented yet. You need to specify a group for everything
-> - Group name for `apiSuccess` and `apiError` is different it must start with `Success_` or `Error_`, instead of `200` it is going to be `Success_200`
->
-> These wil be fixed in the near future and will be exactly like what is described in the doc page
-
 To document your code you need to follow the [apidoc](http://apidocjs.com/) conventions
 
 > apidoc is a way to document your api endpoints in code, that way your endpoint documentation is literally part of the code and it is going to always be up to date.
@@ -143,3 +137,20 @@ Example
 In order for the endpoint to save data in the current session
 - the session name must start with the microservice name Example: @apiSuccess (Session) {String} microservice-account-id
 - technically to return the session, you return it as a custom header with the response
+
+## Ignore directory
+
+This is a work in progress, but now if you don't want a folder to be parsed by apidoc (not going to be shown in the docs), the folder must start with:
+
+```
+_kintoignore
+```
+
+## View auto generated Documentation
+
+One of the bonuses of documenting your code, you will be able to view the endpoints and there documentation in KintoHub
+
+When you view a microservice you will find a view endpoints button
+
+This is all the apidocs parsed from the microservice's code, the more info you add to the apidocs, the better documentation you will get.
+
