@@ -35,7 +35,7 @@ However you will find a common behavior:
 
 * expose the app on port `80`
 * if the hostname is required by the framework/lib then it has to be set to `0.0.0.0`
-* we would recommend to keep the same entrypoint as the example but depending on the language you can freely modify it
+* we would recommend to keep the same `ENTRYPOINT` as the example but depending on the language you can freely modify it
 * Environment variables (ENV command) are not supported yet but is part of the backlog and will be coming soon
 
 ## C# / dotnet

@@ -4,8 +4,8 @@ title: Release Notes
 
 ## Overview
 
-This section will help us communicate on our release process and clearly state which features have been implemented in every release. Do not hesitate to contact us if you have any questions regarding release or if you want to push for a new feature (or if you find a bug but this never happends ;) )
-You can check our backlog here [GitHub backlog](https://github.com/kintohub/backlog)
+In this section you will find everything about our release process and which features have been implemented in each release. Do not hesitate to [contact us](https://www.kintohub.com/contactus/) if you have any questions regarding releases or if you want to push for a new feature (or if you find a bug but this never happens ;) )
+You can look at our backlog here [GitHub backlog](https://github.com/kintohub/backlog)
 
 
 ## 0.0.0 - First Release
