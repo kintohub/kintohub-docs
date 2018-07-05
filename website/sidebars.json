@@ -34,6 +34,15 @@
       "leaving-a-workspace",
       "deleting-a-workspace"
     ],
+    "Languages": [
+      "Csharp",
+      "golang",
+      "java",
+      "nodejs",
+      "php",
+      "python",
+      "ruby"
+    ],
     "Accounts and Billing": [
       "accounts",
       "billing"
