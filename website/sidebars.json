@@ -1,47 +1,17 @@
 {
   "docs": {
-    "Getting Started": [
+    "Docs": [
       "getting-started",
       "docker-examples",
-      "apidoc"
-    ],
-    "KintoBlocks": [
-      "what-is-a-kintoblock",
-      "creating-a-kintoblock",
-      "adding-dependencies-kintoblock",
-      "tagging-a-commit",
-      "deleting-a-kintoblock"
-    ],
-    "Applications": [
-      "what-is-an-application",
-      "creating-an-application",
-      "adding-a-dependency-application",
-      "tagging-and-deploying",
-      "talking-to-applications",
-      "deleting-an-application",
-      "viewing-endpoint-documentation",
-      "viewing-application-logs"
+      "apidoc",
+      "kintoapps",
+      "workspaces",
+      "languages",
+      "release-notes"
     ],
     "Dependencies": [
       "custom-params",
       "environmental-parameters"
-    ],
-    "Workspaces": [
-      "creating-a-workspace",
-      "connecting-a-github-organization",
-      "managing-members",
-      "revoking-access",
-      "leaving-a-workspace",
-      "deleting-a-workspace"
-    ],
-    "Languages": [
-      "Csharp",
-      "golang",
-      "java",
-      "nodejs",
-      "php",
-      "python",
-      "ruby"
     ],
     "Accounts and Billing": [
       "accounts",
