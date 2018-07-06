@@ -6,7 +6,11 @@
       "apidoc",
       "kintoblocks",
       "token-session",
-      "repositories"
+      "repositories",
+      "kintoapps",
+      "workspaces",
+      "languages",
+      "release-notes"
     ],
     "Dependencies": [
       "custom-params",
