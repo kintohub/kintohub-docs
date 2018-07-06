@@ -34,9 +34,15 @@ You can invite people by email to collaborate with you on any project you may ha
 
 ### Add members and modify permissions
 
-1. Open any project (a KintoBlock or an application) you want to edit
+1. Click the **Edit** icon for the workspace you want to modify
+![Screenshot - Edit Workspace](/docs/assets/connecting-a-github-organization-1.png)
 2. If you are an admin of a Workspace you can invite other members
+
+
+![Screenshot - Managing Members](/docs/assets/managing-members-4.png)
 3. Modify the members and their roles
+
+![Screenshot - Modifying Members](/docs/assets/managing-members-5.png)
 
 
 ### Permissions table for a workspace
@@ -56,14 +62,13 @@ You can invite people by email to collaborate with you on any project you may ha
 
 ## App and Block permissions
 
-### Permissions for App
-
 1. Open any project (a KintoBlock or an application) you want to edit
 2. If you are an admin or the owner of a private project (only some members in that workspace is an editor), you will see an **edit button**
 ![Screenshot - Project Collaborators](/docs/assets/managing-members-1-2.png)
 3. Modify the members and their roles
 ![Screenshot - Edot Collaborators](/docs/assets/managing-members-3.png)
 
+### Permissions for App
 
 | Role        |      Owner/Admin      | Editor |
 | ------------- |:-------------:| :-----:|
