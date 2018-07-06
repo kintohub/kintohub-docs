@@ -5,9 +5,9 @@ title: Workspaces
 ## Overview
 
 Workspaces are here to allow you to collaborate with people in your team.
-Completely segreggated spaces will allow you to share kintoapps, kintoblocks and manage them in the same environment.
+Completely segreggated spaces will allow you to share kintoapps, kintoblocks and manage them in the same space.
 
-You can invite people by email to collaborate with you on any project you may have in your workspace
+You can invite people (who already registered) on the platform to collaborate with you on any project you may have in your workspace
 
 ## Creating a workspace
 
@@ -85,6 +85,10 @@ You can invite people by email to collaborate with you on any project you may ha
 ## Future Features
 
 ### Coming Soon:
+
+* Email notifications 
+
+* Pending invitation, Resend invitation
 
 * Revoking Access to a Workspace
 

@@ -27,9 +27,10 @@ EXPOSE 80
 ENTRYPOINT ["npm","run","start"]
 ```
 
-However you will find a common behavior:
+You can modify the Dockerfile in any way you find more convenient to use ANY build tool you want (inside Docker) 
+however you will find a common behavior - set of rules for each language:
 
-* Some are using multi-stage build with a base image (with all the dependencies) and a lighter runtime image to run the app
+* Some are using multi-stage build with a base image (with all the dependencies) and a lighter runtime image to run the app 
 * You need to export your compiled code or source files in the folder named `app`
 * You will need to include a complementary file (depending on your language) to allow dependencies to be downloaded: like a `Gemfile` for `Ruby` or `requirements.txt` for `Python` with `pip`)
 

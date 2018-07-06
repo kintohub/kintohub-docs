@@ -4,9 +4,11 @@ title: KintoApps
 
 ## What is an application?
 
-Applications are tailored back-end features packages, ready to be consumed by your clients and whose feature can scale independently to fit your needs.
+Applications are tailored back-end features packages, ready to be consumed by your clients. 
 
-They are composed of KintoBlocks and services with unique configuration parameters, and either a client or a protocol to allow your clients to talk to the application.
+They are composed of KintoBlocks with unique configuration parameters, and either a client or a protocol to allow your clients to talk to the application. You can deploy your app in a specific environment and have several environment for one application to apply different custom configuration. 
+
+Your application is made of blocks that are deployed in a serverless way, meaning it is dynamically loaded when you are calling your endpoint. Hence, if you are not using it, you are saving resources and money !
 
 
 ## Creating an application
@@ -27,8 +29,7 @@ Once you've created an application, you can add additional KintoBlocks to extend
 1. Open the **KintoBlock** or **Application** you want to edit
 2. Under the **Dependencies** section, search for the Kintoblock you would like to add
 3. Click **Edit Dependencies** to modify their custom parameters and hardware requirements
-4. You can choose any **Tag** for each dependency
-5. You can also choose a **Branch** - the latest from the branch will be used
+4. You can choose either a **Branch** or a **Tag** for each dependency (the latest build from the branch will be used)
 ![Screenshot - Create New Application](/docs/assets/adding-dependencies-4-5.png)
 
 ## Tagging & deploying an application
@@ -63,29 +64,29 @@ After you have deployed your application, you can either talk to it in gRPC or H
 5. Authenticate to KintoHub with:
 
 ```
-POST api.prod.kintohub.com/auth
-BODY { "clientId":"adf", "secret":"adfaf" }
+POST api.kintohub.com/auth
+BODY { "clientId":"7219e244cbf34f06bb25121d738cae26", "secret":"ZUCHayuTOK7N" }
 ```
 
 You will get a response that looks like this:
 
 ```
-{ "data": { "token": "asdfajflsfjaf.asdfklafjdlkjafklfja" } }
+{ "data": { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnQtaWQiOiI3MjE5ZTI0NGNiZjM0ZjA2YmIyNTEyMWQ3MzhjYWUyNiIsInNlc3Npb24taWQiOiI5MzQ3OTFhYy1kNzllLTQ5NWQtYjVlYy01OTJlMmU4MDRjMTciLCJuYmYiOjE1MzA4NTYzNTUsImV4cCI6MTUzMjA2NTk1NSwiaWF0IjoxNTMwODU2MzU1LCJpc3MiOiJNaWRkbGV3YXJlIiwiYXVkIjoiTWlkZGxld2FyZSJ9.Cer1EyzryW5qKfqpSqs5u2t6BunoeUtjpwX_fFAzVj4" } }
 ```
 
-> Alternatively, you can authenticate with gRPC by using the proto file attached near the end of this page and connecting to grpc.prod.kintohub.com
+> Alternatively, you can authenticate with gRPC by using the proto file attached near the end of this page and connecting to grpc.kintohub.com
 
 Once authenticated, you can talk to your application (and its KintoBlock dependencies)!
 Simply make a call to:
 
 ```
-api.prod.kintohub.com/{block-name}
+api.kintohub.com/{block-name}
 ```
 
 Be sure to include in the authorization header. Example:
 
 ```
-{ "authorization":"tokenad.dfadf.afsd.afa." }
+{ "authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnQtaWQiOiI3MjE5ZTI0NGNiZjM0ZjA2YmIyNTEyMWQ3MzhjYWUyNiIsInNlc3Npb24taWQiOiI5MzQ3OTFhYy1kNzllLTQ5NWQtYjVlYy01OTJlMmU4MDRjMTciLCJuYmYiOjE1MzA4NTYzNTUsImV4cCI6MTUzMjA2NTk1NSwiaWF0IjoxNTMwODU2MzU1LCJpc3MiOiJNaWRkbGV3YXJlIiwiYXVkIjoiTWlkZGxld2FyZSJ9.Cer1EyzryW5qKfqpSqs5u2t6BunoeUtjpwX_fFAzVj4" }
 ```
 
 (Use same token from the example response in step 5.)
