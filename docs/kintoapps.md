@@ -64,7 +64,7 @@ After you have deployed your application, you can either talk to it in gRPC or H
 5. Authenticate to KintoHub with:
 
 ```
-POST api.kintohub.com/auth
+POST api.kintohub.com/authorize
 BODY { "clientId":"7219e244cbf34f06bb25121d738cae26", "secret":"ZUCHayuTOK7N" }
 ```
 
