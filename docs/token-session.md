@@ -32,8 +32,10 @@ We don't recommend in a typical use-case to use public URLs without authenticati
 The answer is yes we do support public URLs, to access the endpoint you can use the following URL:
 
 ```
-public.api.kintohub.com/<microservice>
+public.api.kintohub.com/<clientId>/<microservice>
 ```
+
+> Because there is no session, the client id for the environment is needed to talk to the api, that is why the url is slightly different
 
 ## Why should I use tokens
 
@@ -114,7 +116,7 @@ return res
 
 > Note: All the session data being send back as headers are going to be intercepted by KintoHub to update the session and the client will not receive them (above example if you debug that request you will not find `<microservice>-field` in the headers)
 
-### Read from the Session Data
+## Read from the Session Data
 
 What is required to read from the session is the following
 
@@ -131,3 +133,20 @@ What is required to read from the session is the following
 ```javascript
 request.headers["<microservice>-field"];
 ```
+
+###  Optional read Session Data
+
+If you write the following in your documentation
+```
+@apiHeader (Session) {type} <microservice>-field description
+```
+
+When a request happens and `<microservice>-field` is `null` the endpoint is not going to get called, because the session was marked as required
+
+
+If you want to read the value and check if its null yourself, you need to mark it as optional
+```
+@apiHeader (Session) [type] <microservice>-field description
+```
+
+> `{type}` is required and `[type]` is optional

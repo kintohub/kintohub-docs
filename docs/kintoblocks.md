@@ -44,5 +44,5 @@ The steps to tag a commit are:
 The main reason to tag a KintoBlock is to add it to an application, think of it as a release, so when you have your KintoBlock finished and want to update it in an application you can tag it and select the tag in the application. This is a way to control the released versions of your KintoBlock.
 
 ## Custom Parameters (Coming Soon)
-## Environmental Parameters (Coming Soon)
+## Environment Parameters (Coming Soon)
 ## Deleting a KintoBlock (coming soon)

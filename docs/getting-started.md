@@ -14,7 +14,6 @@ Getting  your app working with KintoHub is minimal. Here is a sample compatible 
 /**
  * @api {get} /hello hello world sample request
  * @apiName Sample
- * @apiSuccess {String} message the hello world message
  */
 app.get('/hello', (req, res) =>
   res.send({

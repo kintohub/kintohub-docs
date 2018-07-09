@@ -8,8 +8,8 @@ To document your code you need to follow the [apidoc](http://apidocjs.com/) conv
 
 > On top of apidoc we are introducing some pre-defined groups that we parse internally and gives us the ability parse/translate data between protocols
 
-
 The following is a sample doc for an endpoint
+
 ```
 /** ** required **
  * @api {POST} /vehicle/{type} Add a new vehicle to the logged in user's collection
@@ -28,8 +28,8 @@ The following is a sample doc for an endpoint
  */
 ```
 
-
 Each endpoint should have a documentation block that consists of these sections
+
 - Info about the endpoint (required) - `@api` and `@apiName`
 - Request info (required) - `@apiParam` and `@apiHeader`
 - Response info (optional) - `@apiSuccess` and `apiError`
@@ -42,8 +42,8 @@ the url and description for the endpoint
 
 > the only difference between our version of apidoc and the official apidoc is the url params. In our platform we expects it in the following format /{param} but apidoc expects /:param
 
-
 Example:
+
 ```
 /**
  * @api {POST} /endpoint/{id} Description for the endpoint
@@ -55,6 +55,7 @@ Example:
 Name for the endpoint, acts as an identifier
 
 Example
+
 ```
 /**
  * @apiName AddVehicle
@@ -66,6 +67,7 @@ Example
 ### apiHeader
 
 #### Groups
+
 - `Header` When the clients sends data a header with the request
 - `Session` When the endpoints wants to read data from the session (that has been exposed by another microservice). Will be inject in the request headers
 - `Config` read the config data from kintohub
@@ -73,6 +75,7 @@ Example
 **Default Group**: `Header`
 
 Example:
+
 ```
 /**
  * @apiHeader {String} authorization authorization header
@@ -82,10 +85,10 @@ Example:
  */
 ```
 
-
 ### apiParam
 
 #### Groups
+
 - `Url`: Url param - Ex: `/users/1`
 - `QueryString`: Query String Param - Ex: `/users?sort=desc`
 - `Body`: Request body field
@@ -93,6 +96,7 @@ Example:
 **Default Group**: `Body`
 
 Example:
+
 ```
 /**
  * @apiParam (Url) {String} id user id
@@ -102,24 +106,24 @@ Example:
  */
 ```
 
-
 ## Response Info
 
 What the endpoint is sending back in the body or saving in the session
 
-
 ### @apiSuccess & @apiError
 
 #### Groups
+
 - status code
 - `Session`
 
-
 ##### Default Group
+
 - `apiSuccess`: `200`
 - `apiError`: `400`
 
 Example
+
 ```
 /**
  * @apiSuccess {String} data.name name of the user
@@ -135,8 +139,18 @@ Example
 ```
 
 In order for the endpoint to save data in the current session
+
 - the session name must start with the microservice name Example: @apiSuccess (Session) {String} microservice-account-id
 - technically to return the session, you return it as a custom header with the response
+
+## `[optional]` and `{required}` fields
+
+Part of apidoc specification if you want to mark a field as required you wrap the type with `{}` and `[]` for optional
+
+```
+ @apiError [String] error.message this is an optional field
+ @apiParam {String} model.field this is a required field
+```
 
 ## Ignore directory
 
@@ -146,6 +160,13 @@ This is a work in progress, but now if you don't want a folder to be parsed by a
 _kintoignore
 ```
 
+Example project with `_kintoignore`:
+
+    .
+    ├── _kintoignore-lib # all the files under this directory are not going to be parsed
+    ├── src              # all the files here are going to be parsed
+    └── ...
+
 ## View auto generated Documentation
 
 One of the bonuses of documenting your code, you will be able to view the endpoints and there documentation in KintoHub
@@ -154,3 +175,5 @@ When you view a microservice you will find a view endpoints button
 
 This is all the apidocs parsed from the microservice's code, the more info you add to the apidocs, the better documentation you will get.
 
+
+![Screenshot - Docs - Examples](/docs/assets/docs-example.png)
