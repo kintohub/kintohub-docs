@@ -36,13 +36,12 @@ You can invite people (who already registered) on the platform to collaborate wi
 
 1. Click the **Edit** icon for the workspace you want to modify
 ![Screenshot - Edit Workspace](/docs/assets/connecting-a-github-organization-1.png)
-2. If you are an admin of a Workspace you can invite other members
+2. If you are an admin of a Workspace you can invite other members & modify their roles
 
 
 ![Screenshot - Managing Members](/docs/assets/managing-members-4.png)
-3. Modify the members and their roles
 
-![Screenshot - Modifying Members](/docs/assets/managing-members-5.png)
+
 
 
 ### Permissions table for a workspace
@@ -50,14 +49,14 @@ You can invite people (who already registered) on the platform to collaborate wi
 
 | Role        |      Admin      | Member  |
 | ------------- |:-------------:| :-----:|
-| add members      | ✓ | ✘ |
-| link github organization     | ✓ | ✘ |
-| rename workspace | ✓ | ✘ |
-| make an app/block public or private | ✓ | ✘ |
-| can edit workspace | ✓ | ✘ |
-| can see all public projects | ✓ | ✓ |
-| can edit assigned/public projects | ✓ | ✓ |
-| can see all private projects | ✓ | ✘ |
+| add members      | ✅ | ❌ |
+| link github organization     | ✅ | ❌ | 
+| rename workspace | ✅ | ❌ |
+| make an app/block public or private | ✅ | ❌ |
+| can edit workspace | ✅ | ❌ |
+| can see all public projects | ✅ | ✅ |
+| can edit assigned/public projects | ✅ | ✅ |
+| can see all private projects | ✅ | ❌ |
 
 
 ## App and Block permissions
@@ -72,15 +71,15 @@ You can invite people (who already registered) on the platform to collaborate wi
 
 | Role        |      Owner/Admin      | Editor |
 | ------------- |:-------------:| :-----:|
-| Add other collaborator      | ✓ | ✘ | 
-| Modify app     | ✓ | ✓ | 
-| Make app public or private | ✓ | ✘ |
+| Add other collaborator      | ✅ | ❌ | 
+| Modify app     | ✅ | ✅ | 
+| Make app public or private | ✅ | ❌ |
 
 ### Permissions for Block
 
 | Role        |      Owner/Admin      | Editor |
 | ------------- |:-------------:| :-----:|
-| Modify block     | ✓ | ✓ |
+| Modify block     | ✅ | ✅ |
 
 ## Future Features
 
@@ -96,4 +95,4 @@ You can invite people (who already registered) on the platform to collaborate wi
 
 * Deleting a Workspace
 
-These feature are not ready yet but you can follow these feature [here](https://github.com/kintohub/backlog/issues/13) on our [GitHub backlog](https://github.com/kintohub/backlog), where you can comment on any open issues, or add any issues you would like us to tackle
+You can check out our [GitHub backlog](https://github.com/kintohub/backlog), where you can add feature request, comment on any open issues, or add any issues you would like us to tackle
