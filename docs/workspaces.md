@@ -95,4 +95,4 @@ You can invite people (who already registered) on the platform to collaborate wi
 
 * Deleting a Workspace
 
-These feature are not ready yet but you can follow these feature [here](https://github.com/kintohub/backlog/issues/13) on our [GitHub backlog](https://github.com/kintohub/backlog), where you can comment on any open issues, or add any issues you would like us to tackle
+You can check out our [GitHub backlog](https://github.com/kintohub/backlog), where you can add feature request, comment on any open issues, or add any issues you would like us to tackle
