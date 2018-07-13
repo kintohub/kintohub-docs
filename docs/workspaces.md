@@ -49,14 +49,14 @@ You can invite people (who already registered) on the platform to collaborate wi
 
 | Role        |      Admin      | Member  |
 | ------------- |:-------------:| :-----:|
-| add members      | ✓ | ✘ |
-| link github organization     | ✓ | ✘ |
-| rename workspace | ✓ | ✘ |
-| make an app/block public or private | ✓ | ✘ |
-| can edit workspace | ✓ | ✘ |
-| can see all public projects | ✓ | ✓ |
-| can edit assigned/public projects | ✓ | ✓ |
-| can see all private projects | ✓ | ✘ |
+| add members      | ✅ | ❌ |
+| link github organization     | ✅ | ❌ | 
+| rename workspace | ✅ | ❌ |
+| make an app/block public or private | ✅ | ❌ |
+| can edit workspace | ✅ | ❌ |
+| can see all public projects | ✅ | ✅ |
+| can edit assigned/public projects | ✅ | ✅ |
+| can see all private projects | ✅ | ❌ |
 
 
 ## App and Block permissions
@@ -71,15 +71,15 @@ You can invite people (who already registered) on the platform to collaborate wi
 
 | Role        |      Owner/Admin      | Editor |
 | ------------- |:-------------:| :-----:|
-| Add other collaborator      | ✓ | ✘ | 
-| Modify app     | ✓ | ✓ | 
-| Make app public or private | ✓ | ✘ |
+| Add other collaborator      | ✅ | ❌ | 
+| Modify app     | ✅ | ✅ | 
+| Make app public or private | ✅ | ❌ |
 
 ### Permissions for Block
 
 | Role        |      Owner/Admin      | Editor |
 | ------------- |:-------------:| :-----:|
-| Modify block     | ✓ | ✓ |
+| Modify block     | ✅ | ✅ |
 
 ## Future Features
 
