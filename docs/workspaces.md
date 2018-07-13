@@ -36,13 +36,12 @@ You can invite people (who already registered) on the platform to collaborate wi
 
 1. Click the **Edit** icon for the workspace you want to modify
 ![Screenshot - Edit Workspace](/docs/assets/connecting-a-github-organization-1.png)
-2. If you are an admin of a Workspace you can invite other members
+2. If you are an admin of a Workspace you can invite other members & modify their roles
 
 
 ![Screenshot - Managing Members](/docs/assets/managing-members-4.png)
-3. Modify the members and their roles
 
-![Screenshot - Modifying Members](/docs/assets/managing-members-5.png)
+
 
 
 ### Permissions table for a workspace
