@@ -11,7 +11,7 @@ To document your code you need to follow the [apidoc](http://apidocjs.com/) conv
 The following is a sample doc for an endpoint
 
 ```
-/** ** required **
+/** **  REQUIRED API DOCS TO BE COMPATIBLE WITH KINTOHUB **
  * @api {POST} /vehicle/{type} Add a new vehicle to the logged in user's collection
  * @apiName AddVehicle
  * @apiHeader (Session) {String} auth-account-id Logged in User's Id
@@ -19,7 +19,7 @@ The following is a sample doc for an endpoint
  * @apiParam (Url) {String} type the vehicle type
  * @apiParam {String} model the vehicle model
  * @apiParam {String} name the vehicle name
- ** optional **
+ ** OPTIONAL API DOCS **
  * @apiSuccess (Session) {Object[]} vehicle-owned All the vehicles that the current user have
  * @apiSuccess {Object} data the vehicle object
  * @apiSuccess {String} data.id Unique id for the vehicle
@@ -30,9 +30,9 @@ The following is a sample doc for an endpoint
 
 Each endpoint should have a documentation block that consists of these sections
 
-- Info about the endpoint (required) - `@api` and `@apiName`
-- Request info (required) - `@apiParam` and `@apiHeader`
-- Response info (optional) - `@apiSuccess` and `apiError`
+- Info about the endpoint _(Required)_ - `@api` and `@apiName`
+- Request info _(Required for gRPC)_ - `@apiParam` and `@apiHeader`
+- Response info _(Optional)_ - `@apiSuccess` and `apiError`
 
 ## Endpoint Info
 
@@ -66,13 +66,13 @@ Example
 
 ### apiHeader
 
+**Default Group**: `Header`
+
 #### Groups
 
 - `Header` When the clients sends data a header with the request
 - `Session` When the endpoints wants to read data from the session (that has been exposed by another microservice). Will be inject in the request headers
 - `Config` read the config data from kintohub
-
-**Default Group**: `Header`
 
 Example:
 
@@ -87,22 +87,22 @@ Example:
 
 ### apiParam
 
+**Default Group**: `Body`
+
 #### Groups
 
-- `Url`: Url param - Ex: `/users/1`
+- `Url`: Url param - Ex: `/users/:id`
 - `QueryString`: Query String Param - Ex: `/users?sort=desc`
-- `Body`: Request body field
-
-**Default Group**: `Body`
+- `Body`: Request body field - Ex: `{ name: 'username' }`
 
 Example:
 
 ```
 /**
- * @apiParam (Url) {String} id user id
- * @apiParam (QueryString) {String} sort the sort order
- * @apiParam {String} name item name
- * @apiParam (Body) {String} type item type // Body group is optional, can be removed
+ * @apiParam (Url) {String} id the unique user's identifier
+ * @apiParam (QueryString) {String} sort the sort order for the result
+ * @apiParam {String} name the product's name
+ * @apiParam (Body) {String} type the product's type
  */
 ```
 
@@ -112,15 +112,15 @@ What the endpoint is sending back in the body or saving in the session
 
 ### @apiSuccess & @apiError
 
-#### Groups
-
-- status code
-- `Session`
-
 ##### Default Group
 
 - `apiSuccess`: `200`
 - `apiError`: `400`
+
+#### Groups
+
+- Status code
+- `Session`
 
 Example
 
@@ -174,6 +174,5 @@ One of the bonuses of documenting your code, you will be able to view the endpoi
 When you view a microservice you will find a view endpoints button
 
 This is all the apidocs parsed from the microservice's code, the more info you add to the apidocs, the better documentation you will get.
-
 
 ![Screenshot - Docs - Examples](/docs/assets/docs-example.png)

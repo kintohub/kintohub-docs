@@ -45,7 +45,7 @@ We have approached it differently, every microservice that needs the username or
 
 ### Example:
 
-I'll start first with an example to show the flow of how to save/read data from the session
+Let us start first with an example to show the flow of how to save/read data from the session
 
 1.  the user has to get a token and send it as part of the authorization header like shown above
 
@@ -72,13 +72,13 @@ server.route({
 });
 ```
 
-3.  In any microservice now we can require the userid and username after calling the `/login` above
+3.  In any microservice now we can require the userid and username after calling the `/login` above, and by these two lines we only will know if the user is logged in or not and his id & username
 
 ```javascript
 /**
  * ...
- * @apiHeader (Session) {String} [auth-userId] logged in user id
- * @apiHeader (Session) {String} [auth-username] logged in user name
+ * @apiHeader (Session) {String} {auth-userId} logged in user id
+ * @apiHeader (Session) {String} {auth-username} logged in user name
  * ...
  */
 server.route({

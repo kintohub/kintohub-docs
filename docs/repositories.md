@@ -39,6 +39,6 @@ You can consider Draft as the only branch where you can activiley make changes i
 
 In Application every deploy must be associated to a Tag, when the Draft changes looks good you tag and deploy a new version to an environment.
 
-The reason why every deploy has a Tag is flexability.
+The reason why every deploy has a Tag is flexibility.
 
 For example when you are working on a feature you want to tag and deploy to staging, and when everything is tested and works you wanna deploy the same tag to production
