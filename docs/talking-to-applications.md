@@ -15,8 +15,8 @@ After you have deployed your application, you can either talk to it in gRPC or H
 5. Authenticate to KintoHub with:
 
 ```
-POST api.prod.kintohub.com/auth
-BODY { "clientId":"adf", "secret":"adfaf" }
+POST api.kintohub.com/auth
+BODY { "clientId":"<clientId>", "clientSecret":"<clientSecret>" }
 ```
 
 You will get a response that looks like this:
@@ -25,19 +25,19 @@ You will get a response that looks like this:
 { "data": { "token": "asdfajflsfjaf.asdfklafjdlkjafklfja" } }
 ```
 
-> Alternatively, you can authenticate with gRPC by using the proto file attached near the end of this page and connecting to grpc.prod.kintohub.com
+> Alternatively, you can authenticate with gRPC by using the proto file attached near the end of this page and connecting to `grpc.kintohub.com`
 
 Once authenticated, you can talk to your application (and its KintoBlock dependencies)!
 Simply make a call to:
 
 ```
-api.prod.kintohub.com/{block-name}
+api.kintohub.com/{block-name}
 ```
 
 Be sure to include in the authorization header. Example:
 
 ```
-{ "authorization":"tokenad.dfadf.afsd.afa." }
+Authorization: Bearer <token>
 ```
 
 (Use same token from the example response in step 5.)

@@ -6,6 +6,21 @@ title: Getting Started
 
 This start-to-finish guide will walk you through creating a first microservice from scratch and getting it up and running on KintoHub. It should take you about 15-30min. Have fun!
 
+
+## Hello World
+
+Getting  your app working with KintoHub is minimal. Here is a sample compatible node app
+```javascript
+/**
+ * @api {get} /hello hello world sample request
+ * @apiName Sample
+ */
+app.get('/hello', (req, res) =>
+  res.send({
+    message: 'Hello World'
+  })
+)
+```
 ## Getting your code ready for KintoHub - overview
 
 Preparing your code to have it effortlessly work on KintoHub is very straightforward - here is a high-level of what it entails:
@@ -96,8 +111,8 @@ const PORT = process.env.PORT || '8000'
  * @api {get} /sample/{id} hello world sample request
  * @apiName GetSample
  * @apiParam (Url) {String} message the message to return
- * @apiSuccess (Success_200) {String} data the hello world data
- * @apiSuccess (Success_200) {String} output what the user entered in the url
+ * @apiSuccess {String} data the hello world data
+ * @apiSuccess {String} output what the user entered in the url
  */
 app.get('/sample/:message', (req, res) =>
   res.send({
@@ -156,9 +171,9 @@ Now go to create Kintoblock page. Add a Kintoblock name _(name must be unique ac
 
 > For the rest of the guide we are going to assume the name is _`nodeexample`_
 
-> endpoints are going to be in the following format **http://api.staging.kintohub.com/{microservicename}**
+> endpoints are going to be in the following format **http://api.kintohub.com/{microservicename}**
 
-> Kintoblocks can't be accessed directly. To access them we will need to deploy them through Applications. Therefore, if you tried to go to `http://api.staging.kintohub.com/nodeexample/sample/hello` you will get an error.
+> Kintoblocks can't be accessed directly. To access them we will need to deploy them through Applications. Therefore, if you tried to go to `http://api.kintohub.com/nodeexample/sample/hello` you will get an error.
 
 ### Tag Latest Commit
 
@@ -197,7 +212,7 @@ you will find `CLIENT ID` and `SECRET KEY` these are unique to each environment.
 The endpoint for authenticating the env is
 
 ```
-POST http://api.staging.kintohub.com/authorize
+POST http://api.kintohub.com/authorize
 ```
 
 > We are going to use cURL for testing the endpoints
@@ -205,7 +220,7 @@ POST http://api.staging.kintohub.com/authorize
 calling `/auth` and passing it the client and secret should return a token
 
 ```bash
-curl -H "Content-Type: application/json" -X POST -d '{"clientId":"<clientId>","clientSecret":"<clientSecret>"}'http://api.staging.kintohub.com/authorize
+curl -H "Content-Type: application/json" -X POST -d '{"clientId":"<clientId>","clientSecret":"<clientSecret>"}'http://api.kintohub.com/authorize
 ```
 
 **returns**
@@ -223,7 +238,7 @@ if we used that token and pass it as an Authorization header when we call any Ki
 Finally, the following should work
 
 ```bash
-curl -H "Authorization: Bearer <token>" http://api.staging.kintohub.com/nodeexample/sample/hello
+curl -H "Authorization: Bearer <token>" http://api.kintohub.com/nodeexample/sample/hello
 ```
 
 Should return
@@ -234,3 +249,7 @@ Should return
     "output": "hello"
 }
 ```
+
+### Related Articles
+
+* [FAQ](https://www.kintohub.com/faqs/)
