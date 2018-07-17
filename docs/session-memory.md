@@ -29,7 +29,7 @@ The above image shows how you can have two microservices work together.  One of 
 1. (Green) Call a Login Service. On the response, you will see the login block returns and sets the `userId` in memory
 2. (Orange) Call Chat Service. During the lifetime of the call, KintoHub attaches the `userId` to the call prior to it reaching the Chat Service.
 
-This allows the chat service to use contextual information. The chat servicek nows about the unique application environment id and the user id to process information and return the correct data to the client.
+This allows the chat service to use contextual information. The chat service nows about the unique application environment id and the user id to process information and return the correct data to the client.
 
 ## Pricing
 Pricing for session memory is free today, but an expensive resource.  We'll figure out a fair way to optimize the costs.
@@ -41,12 +41,11 @@ Pricing for session memory is free today, but an expensive resource.  We'll figu
 
 ## What about shared global memory?
 
-We're thinking about this and are writing a proposal on how it can be done in a similar header fashion.  Global shared memory allows an application to share information acrossm stateless service, such as information that was grabbed from a database.  Additionally, we will be introducing traditional services such as managed redis services for the advanced use cases developers require.
+We're thinking about this and are writing a proposal on how it can be done in a similar header fashion.  Global shared memory allows an application to share information across stateless service, such as information that was grabbed from a database.  Additionally, we will be introducing traditional services such as managed redis services for the advanced use cases developers require.
 
 ## What about dynamic memory?
 
 We have ideas around how to expose search requests for your memory so that key-value or dynamic "contains" searches may be performed. A proposal will be written in the near future.
 
-## How it works?
 
 
