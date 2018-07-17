@@ -32,7 +32,7 @@ The above image shows how you can have two microservices work together.  One of 
 This allows the chat service to use contextual information. The chat servicek nows about the unique application environment id and the user id to process information and return the correct data to the client.
 
 ## Pricing
-Pricing for session memory is free today, but an expensive resource.  Currently, we plan to charge based on how much data is being stored in memory, but an open discussion (todo:link) to make a mutually beneficial decision together.
+Pricing for session memory is free today, but an expensive resource.  We'll figure out a fair way to optimize the costs.
 
 ## Limitations
 
