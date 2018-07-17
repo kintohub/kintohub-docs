@@ -1,5 +1,12 @@
 {
   "docs": {
+    "Concepts": [
+	  "thinking-kinto",
+	  "calling-kintohub-apis",
+	  "session-memory",
+	  "sdk-less-framework",
+	  "instant-deployments"
+	],
     "Docs": [
       "getting-started",
       "docker-examples",
