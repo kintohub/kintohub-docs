@@ -220,7 +220,7 @@ POST http://api.kintohub.com/authorize
 calling `/auth` and passing it the client and secret should return a token
 
 ```bash
-curl -H "Content-Type: application/json" -X POST -d '{"clientId":"<clientId>","clientSecret":"<clientSecret>"}'http://api.kintohub.com/authorize
+curl -H "Content-Type: application/json" -X POST -d '{"clientId":"<clientId>","clientSecret":"<clientSecret>"}' http://api.kintohub.com/authorize
 ```
 
 **returns**
