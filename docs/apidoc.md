@@ -175,4 +175,4 @@ When you view a microservice you will find a view endpoints button
 
 This is all the apidocs parsed from the microservice's code, the more info you add to the apidocs, the better documentation you will get.
 
-![Screenshot - Docs - Examples](/docs/assets/docs-example.png)
+![Screenshot - Docs - Examples](/docs/assets/auto-doc.png)
