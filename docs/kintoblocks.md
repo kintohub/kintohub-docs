@@ -45,7 +45,13 @@ The main reason to tag a KintoBlock is to add it to an application, think of it 
 
 ## Environment Variables
 
-Environment Variables are used to add values required for your KintoBlock to work out in the world. These are often configurations like  `CLIENT_IDS` and `SECRETS` that you do not want to expose in your code. Inside your KintoBlock you acess these via `env` variables. 
+![Screenshot - Environment Variables](/docs/assets/environment-variables.png)
+
+Environment variables are used to control static information that you want to control in the application.. These are often configurations like  `PRIVATE_KEYS` that you do not want to expose in your code. They are static between multiple environments. You cannot change an environment variables between applications and their environments.
+
+In the near future configuration management will be used to configure your application as a per-environment use case.
+
+Inside your KintoBlock you can acess these via `env` variables. 
 
 In a **Node.js** KintoBlock for example these are accessed using this syntax:
 
@@ -55,7 +61,7 @@ process.env.WHATEVER_KEY_THE_DEVELOPER_USED.
 
 These are accessed during the build process so when updating them you need to add a new commit to that branch (This is due to be updated soon, but currently the only way to update **Environment Variables** is to trigger a new build with a new commit).
 
-### Using Environment Variables
+### Managing Environment Variables
 
 The section on Environment Variables lives on the **KintoBlock Edit** page, towards the end of the form. They are specific to a **branch** of a KintoBlock, so if you switch branches and want to use that particular branch in a KintoApp you will need to input the **Environment Variables** on that branch too.
 
