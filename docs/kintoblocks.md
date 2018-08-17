@@ -33,7 +33,7 @@ _That's it! You have created your first KintoBlock!_
 ### Points to remember about Creating a Website
 
 - You can use static files, with an `index.html` file for entry.
-- If you have a website that needs to be build, like a project built in NPM, you will have to add a `Dockerfile` to your repo. An example dockerfile for this can be found [here](/docs/docker-examples)
+- If you have a website that needs to be built, like a project built in NPM, you will have to add a `Dockerfile` to your repo. An example dockerfile for this can be found [here](/docs/docker-examples)
 
 ## Tagging a commit
 
