@@ -93,11 +93,42 @@ Be sure to include in the authorization header. Example:
 
 To make a call to gRPC, talk to grpc.prod.kintohub.com with your gRPC service proto file, but include in the grpc-meta-data the authorization header as well.
 
+## Viewing KintoApp Logs
+
+You can access the last 100 logs of an environment your KintoApp is deployed in, by going to *Environments* via the short cut menu on your KintoApp card, or from the KintoApp Manage page. Once there, open the edit page, and select *View Logs* on the top right hand side.
+
+The logs will give you information on the following things: 
+- Response code ie: 200, 500 etc.
+- Duration of the call
+- Which endpoint was called
+- Which KintoBlock was called
+- Which version of the KintoBlock was called
+- The time and date of the call
+
+If you wish to view more details of the call, these can be found by expanding that particular calls row in the table. Here you can view the JSON of any logs you have made. 
+
+### Required Format for Console Logs
+
+In order to view Console Logs in our system, specific syntax must be used. Every call to the block will container a header called `kinto-request-id`. This header will contain a value that needs to be sent back to us in order to associate the console log with the correct call. An example for a Node.js/express app would look like this:
+
+```
+  const requestId = req.get('kinto-request-id')
+
+  console.log(
+    JSON.stringify({
+      kinto_request_id: requestId,
+      status: 'success',
+      test: { data: "this is a test string" }
+    })
+  )
+```
+
+In this example we assign the constant `requestId` with the value from the header and include it in the log with the key `kinto_request_id`, a `status` key and the JSON for the body of your log.
+
 ## Future Features
 
 ### Coming Soon:
 
 * Deleting an application
-* Viewing Application Logs
 
 These feature are not ready yet but you can follow these feature [here](https://github.com/kintohub/backlog/issues/14) on our [GitHub backlog](https://github.com/kintohub/backlog), where you can comment on any open issues, or add any issues you would like us to tackle.
