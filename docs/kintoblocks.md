@@ -47,7 +47,7 @@ The main reason to tag a KintoBlock is to add it to an application, think of it 
 
 Environment Variables are used to add values required for your KintoBlock to work out in the world. These are often configurations like  `CLIENT_IDS` and `SECRETS` that you do not want to expose in your code. Inside your KintoBlock you acess these via `env` variables. 
 
-In a *Node.js* KintoBlock for example these are accessed using this syntax:
+In a **Node.js** KintoBlock for example these are accessed using this syntax:
 
 ```
 process.env.WHATEVER_KEY_THE_DEVELOPER_USED.
@@ -57,8 +57,8 @@ These are accessed during the build process so when updating them you need to cr
 
 ### Using Environment Variables
 
-The section on Environment Variables lives on the *KintoBlock Edit* page, towards the end of the form. They are specific to a *branch* of a KintoBlock, so if you switch branches and want to use that particular branch in a KintoApp you will need to input the *Environment Variables* on that branch too.
-
+The section on Environment Variables lives on the **KintoBlock Edit** page, towards the end of the form. They are specific to a **branch** of a KintoBlock, so if you switch branches and want to use that particular branch in a KintoApp you will need to input the **Environment Variables** on that branch too.
+*
 ### Points to remember about Environment Variables
 
 - These can only be edited by the creator of a KintoBlock.
@@ -66,17 +66,17 @@ The section on Environment Variables lives on the *KintoBlock Edit* page, toward
 
 ## Custom Parameters (Coming Soon)
 
-Custom Parameters are another way to pass information to your KintoApp. These values are editable by the end user in the case of shared KintoBlocks, and also editable at a KintoApp level for cases where multiple apps are using the same KintoBlock.
+Custom Parameters are another way to pass information to your **KintoApp**. These values are editable by the end user in the case of shared KintoBlocks, and also editable at a KintoApp level for cases where multiple apps are using the same **KintoBlock**.
 
 When creating KintoBlock you can assign default values to your Custom Parameters and these can be marked required if they are necessary for your KintoBlock to function.
 
-Header values are accessible inside your code within each call, and you specify when to use them via API doc headers, in a *Node.js* application adding the key to a call will look like this:
+Custom Parameters are accessible inside your code within each call, and you specify when to use them via API doc headers, in a **Node.js** application adding the key to a call will look like this:
 
 ```
  @apiHeader (Config) {String} githubToken 
 ```
 
-This will be injected as a header into this call, and accessible in the usual way you would access headers. In a *Node.js / Express* KintoBlock it would look like this: 
+This will be injected as a header into this call, and accessible in the usual way you would access headers. In a **Node.js / Express** KintoBlock it would look like this: 
 
 ```
   const githubToken = req.get('githubToken')
@@ -85,7 +85,7 @@ This will be injected as a header into this call, and accessible in the usual wa
 ### Points to remember about Custom Parameters 
 - Use these to set variables that the customer will need to set or change, like API keys for external APIS.
 - Set default values to guide the end user.
-- Mark important *Custom Parameters* as required so they are not accidentally left out.
+- Mark important **Custom Parameters** as required so they are not accidentally left out.
 
 
 ## Deleting a KintoBlock (coming soon)
