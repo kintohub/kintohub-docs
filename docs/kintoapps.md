@@ -95,6 +95,8 @@ To make a call to gRPC, talk to grpc.prod.kintohub.com with your gRPC service pr
 
 ## Viewing KintoApp Logs
 
+![Screenshot - Logs](/docs/assets/logs-closed.png)
+
 You can access the last 100 logs of an environment your KintoApp is deployed in, by going to *Environments* via the short cut menu on your KintoApp card, or from the KintoApp Manage page. Once there, open the edit page, and select *View Logs* on the top right hand side.
 
 The logs will give you information on the following things: 
@@ -109,7 +111,20 @@ If you wish to view more details of the call, these can be found by expanding th
 
 ### Required Format for Console Logs
 
-In order to view Console Logs in our system, specific syntax must be used. Every call to the block will contain a header called `kinto-request-id`. This header will contain a value that needs to be included in the **Console Log** in order to associate each **Console Log** with the correct call. It is important to send your information formatted in JSON, with the correct quotation marks like this : `"key": "value"`. An example for a **Node.js / Express** app would look like this:
+Console logs can help you easily debug what has occurred during the lifetime of an API call. We require a specific json format because console logs will be able to be used for alerts and analytics in the near future.
+
+
+![Screenshot - Console Logs](/docs/assets/logs-open.png)
+
+All console logs that do not follow our format will not be available for you to view. The format is as follows:
+
+```
+{ "kinto_request_id": "acd12ff21-f2f21f1wf1-2f21f1s", "customdata": "hello", "message": "world" }
+```
+
+Every incoming API call that comes to your service will have a unique `kinto-request-id`. You must log that Id into the console log as the value for "kinto_request_id". This allows us to track your specific call and perform magic!
+
+It is important that the console log contents are formatted in JSON, with the correct quotation marks like this : `"key": "value"`. An example for a **Node.js / Express** app would look like this: 
 
 ```
   const requestId = req.get('kinto-request-id')
@@ -124,6 +139,8 @@ In order to view Console Logs in our system, specific syntax must be used. Every
 ```
 
 In this example we assign the constant `requestId` with the value from the header and include it in the log with the key `kinto_request_id`, a `status` key and the JSON for the body of your log.
+
+You may use middleware to automatically do this for each call as well. We'll provide examples of this in the near future.
 
 ## Future Features
 
