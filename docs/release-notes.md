@@ -24,13 +24,13 @@ Features:
 * Auto Build & Auto-documentation
 * Leverage GitHub sync (including for tags and branches) to keep your workflow organized
 * Create workspaces and invite your friends to build the future of code together
-* Instant compatibility and translation for 7 languages (Node.js, .Net, Java, PHP, Ruby, Python, Go) and 2 protocols (HTTP, GRPC)
+* Instant compatibility and translation for 7 languages (Node.js, .Net, Java, PHP, Ruby, Python, Go) and 2 protocols (HTTP, Proof of concept GRPC)
 
 ## 0.1.0 - San Francisco Release
 
 08/06/2018
 
-We're implementing our first feedback !
+We're implementing our first feedback and we're all working out of San Francisco!
 
 What's inside this new release ?
 
@@ -40,7 +40,7 @@ Features:
 * Improvement of the tutorial
 * Improvement of the example app and blocks
 
-## 0.2.0 - Lumberjack release
+## 0.1.1 - Lumberjack Release
 
 04/07/2018
 
@@ -57,6 +57,21 @@ Features:
 * Handling Dockerfile error during the build
 * Refining of the examples blocks documentation
 
-## 0.3.0 - Coming soon
+## 0.2.0 - Got WWW? Release
+
+We've been working hard at hearing everyones feedback and getting our some of the necessities to build aweosme stuff with KintoHub.
+
+What's inside this new release ?
+
+* Adding video tutorials on the home page
+* Applications Logs per Environment!
+* Ability to search and share kintoblocks within the community!
+* Build, Deploy and Manage static websites! Introducing Website KintoBlocks.
+* Build stability and small speed improvements
+* Environment variables for your KintoBlocks and custom CI.
+* Several UI/UX Enhancements and bug fixes
+* Added feedback button! We're looking forward to hearing what you think!
+
+
 
 You can check our backlog here -> [GitHub backlog](https://github.com/kintohub/backlog)
