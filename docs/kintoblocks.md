@@ -43,6 +43,29 @@ The steps to tag a commit are:
 
 The main reason to tag a KintoBlock is to add it to an application, think of it as a release, so when you have your KintoBlock finished and want to update it in an application you can tag it and select the tag in the application. This is a way to control the released versions of your KintoBlock.
 
-## Custom Parameters (Coming Soon)
+## Custom Parameters
+
+Custom Parameters are another way to pass information to your **KintoApp**. These values are editable by the end user in the case of shared KintoBlocks, and also editable at a KintoApp level for cases where multiple apps are using the same **KintoBlock**.
+
+When creating KintoBlock you can assign default values to your Custom Parameters and these can be marked required if they are necessary for your KintoBlock to function.
+
+Custom Parameters are accessible inside your code within each call, and you specify when to use them via API doc headers, in a **Node.js** application adding the key to a call will look like this:
+
+```
+ @apiHeader (Config) {String} githubToken 
+```
+
+This will be injected as a header into this call, and accessible in the usual way you would access headers. In a **Node.js / Express** KintoBlock it would look like this: 
+
+```
+  const githubToken = req.get('githubToken')
+```
+
+### Points to remember about Custom Parameters 
+- Use these to set variables that the customer will need to set or change, like API keys for external APIS.
+- Set default values to guide the end user.
+- Mark important **Custom Parameters** as required so they are not accidentally left out.
+
+
 ## Environment Parameters (Coming Soon)
 ## Deleting a KintoBlock (coming soon)
