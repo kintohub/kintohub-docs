@@ -43,6 +43,24 @@ The steps to tag a commit are:
 
 The main reason to tag a KintoBlock is to add it to an application, think of it as a release, so when you have your KintoBlock finished and want to update it in an application you can tag it and select the tag in the application. This is a way to control the released versions of your KintoBlock.
 
+## Environment Variables
+
+Environment Variables are used to add values required for your KintoBlock to work out in the world. These are often configurations like  `CLIENT_IDS` and `SECRETS` that you do not want to expose in your code. Inside your KintoBlock you acess these via `env` variables. 
+
+In a *Node.js* KintoBlock for example these are accessed using this syntax:
+
+```
+process.env.WHATEVER_KEY_THE_DEVELOPER_USED.
+```
+
+These are accessed during the build process so when updating them you need to create a new TAG.
+
+### Using Environment Variables
+The section on Environment Variables lives on the *KintoBlock Edit* page, towards the end of the form. They are specific to a *branch* of a KintoBlock, so if you switch branches and want to use that particular branch in a KintoApp you will need to input the *Environment Variables* on that branch too.
+
+### Points to remember about Environment Variables
+- These can only be edited by the creator of a KintoBlock.
+- If you are building a block that is shared, will be included in multiple applications, and will require information from the end user, it is best to use *Custom Paramaters*.
+
 ## Custom Parameters (Coming Soon)
-## Environment Parameters (Coming Soon)
 ## Deleting a KintoBlock (coming soon)
