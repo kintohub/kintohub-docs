@@ -109,7 +109,7 @@ If you wish to view more details of the call, these can be found by expanding th
 
 ### Required Format for Console Logs
 
-In order to view Console Logs in our system, specific syntax must be used. Every call to the block will container a header called `kinto-request-id`. This header will contain a value that needs to be sent back to us in order to associate the console log with the correct call. It is important to send your information formatted in JSON, with the correct quotation marks like this : `"key"`. An example for a *Node.js / Express* app would look like this:
+In order to view Console Logs in our system, specific syntax must be used. Every call to the block will contain a header called `kinto-request-id`. This header will contain a value that needs to be included in the **Console Log** in order to associate each **Console Log** with the correct call. It is important to send your information formatted in JSON, with the correct quotation marks like this : `"key": "value"`. An example for a **Node.js / Express** app would look like this:
 
 ```
   const requestId = req.get('kinto-request-id')
@@ -118,7 +118,7 @@ In order to view Console Logs in our system, specific syntax must be used. Every
     JSON.stringify({
       kinto_request_id: requestId,
       status: 'success',
-      test: { data: "this is a test string" }
+      test: { "data" : "this is a test string" }
     })
   )
 ```
