@@ -97,8 +97,4 @@ COPY . .
 RUN npm run build
 
 RUN npm -g install serve
-
-EXPOSE 5000
-
-CMD ["serve", "-s", "build"]
 ```
