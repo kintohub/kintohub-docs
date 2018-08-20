@@ -20,6 +20,7 @@ Creating your first KintoBlock is super easy.
 ![Screenshot - Create New KintoBlock](/docs/assets/creating-a-kintoblock-1-2.png)
 
 3. Select the type of KintoBlock : We have three types of KintoBlock in the pipeline but currently you can select either **Microservice** or **Website**
+![Screenshot - Create New KintoBlock](/docs/assets/select-kintoblock-type.png)
 
 4. Enter the required information. This form will differ depending on the **type** of KintoBlock.
 
