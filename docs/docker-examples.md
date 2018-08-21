@@ -95,6 +95,4 @@ RUN npm install
 COPY . .
 
 RUN npm run build
-
-RUN npm -g install serve
 ```
