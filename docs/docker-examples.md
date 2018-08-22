@@ -80,3 +80,19 @@ ENTRYPOINT ["app"]
 ```
 
 - `ENTRYPOINT ["app"]` line can't change, meaning you have to call your service `app`
+
+## Website KintoBlock
+
+Dockerfile:
+```
+FROM node:8.4
+
+COPY package.json .
+COPY package-lock.json .
+
+RUN npm install
+
+COPY . .
+
+RUN npm run build
+```
