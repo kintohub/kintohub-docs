@@ -102,13 +102,14 @@ The section on Environment Variables lives on the **KintoBlock Edit** page, towa
 
 ## Custom Parameters
 
-Custom Parameters are used to pass information to your **KintoBlock Microservice** . These values are editable by the end user in the case of shared KintoBlocks, and also overridable per environment at a KintoApp level for cases where multiple apps are using the same **KintoBlock**. For more insight into KintoHub's structure please refer to [Thinking Kinto].(https://docs.kintohub.com/docs/thinking-kinto). In the case of shared KintoBlocks custom params, custom key/value data can be added to the headers which can give you context as to what and who is calling your block.
+Custom Parameters are used to pass information to your **KintoBlock Microservice** . These values are editable by the end user in the case of shared KintoBlocks, and also overridable per environment at a KintoApp level for cases where multiple apps are using the same **KintoBlock**. For more insight into KintoHub's structure please refer to [Thinking Kinto](https://docs.kintohub.com/docs/thinking-kinto). In the case of shared KintoBlocks custom params, custom key/value data can be added to the headers which can give you context as to what and who is calling your block.
 
 When creating KintoBlock you can assign default values to your Custom Parameters and these can be marked required if they are necessary for your KintoBlock to function, for example a Sendgrid API or Secret.
 
 Custom Parameters are accessible inside your code within each call. You must specify when to use them, and whether they are required or optional via API doc headers, in a **Node.js** application adding the header to a call will look like this, values with `[`these brackets`]` are optional:
 
 `@apiHeader (Config) {String} sendgridAPI` - A required value 
+
 `@apiHeader (Config) {String} [sendgridSecret]` - An optional value
 
 
