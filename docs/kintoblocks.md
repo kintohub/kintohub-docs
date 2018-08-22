@@ -15,14 +15,42 @@ We take off your shoulders the hassle of library configuration, deployment, and 
 Creating your first KintoBlock is super easy.
 
 1. Select **KintoBlocks** from the sidebar
+
 2. Click **Create New KintoBlock**
 ![Screenshot - Create New KintoBlock](/docs/assets/creating-a-kintoblock-1-2.png)
-3. Enter the required info
-4. Click **Create New KintoBlock**
+
+3. Select the type of KintoBlock : We have three types of KintoBlock in the pipeline but currently you can select either **Microservice** or **Website**
+![Screenshot - Create New KintoBlock](/docs/assets/select_kintoblock_type.png)
+
+4. Enter the required information. This form will differ depending on the **type** of KintoBlock.
+
+5. Click **Create New KintoBlock**
 ![Screenshot - Enter Info](/docs/assets/creating-a-kintoblock-3-4.png)
 _That's it! You have created your first KintoBlock!_
+
 6. On GitHub, go to the repository associated with this KintoBlock
 ![Screenshot - New GitHub Repo](/docs/assets/creating-a-kintoblock-5.png)
+
+### Points to remember about Creating a Website
+
+- You can use static files, with an `index.html` file for entry.
+
+- If the website needs to be built, like a project built in webpack for example, you will have to add a `Dockerfile` to your repo. This can be a custom dockerfile if you are already familiar with Docker, otherwise please refer to this dockerfile example:
+
+```
+FROM node:8.4
+
+COPY package.json .
+COPY package-lock.json .
+
+RUN npm install
+
+COPY . .
+
+RUN npm run build
+```
+
+All dockerfile examples can be found [here](/docs/docker-examples)
 
 ## Tagging a commit
 
