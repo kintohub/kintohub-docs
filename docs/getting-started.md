@@ -171,9 +171,9 @@ Now go to create Kintoblock page. Add a Kintoblock name _(name must be unique ac
 
 > For the rest of the guide we are going to assume the name is _`nodeexample`_
 
-> endpoints are going to be in the following format **http://api.kintohub.com/{microservicename}**
+> endpoints are going to be in the following format **https://api.kintohub.com/{microservicename}**
 
-> Kintoblocks can't be accessed directly. To access them we will need to deploy them through Applications. Therefore, if you tried to go to `http://api.kintohub.com/nodeexample/sample/hello` you will get an error.
+> Kintoblocks can't be accessed directly. To access them we will need to deploy them through Applications. Therefore, if you tried to go to `https://api.kintohub.com/nodeexample/sample/hello` you will get an error.
 
 ### Tag Latest Commit
 
@@ -212,7 +212,7 @@ you will find `CLIENT ID` and `SECRET KEY` these are unique to each environment.
 The endpoint for authenticating the env is
 
 ```
-POST http://api.kintohub.com/authorize
+POST https://api.kintohub.com/authorize
 ```
 
 > We are going to use cURL for testing the endpoints
@@ -220,7 +220,7 @@ POST http://api.kintohub.com/authorize
 calling `/auth` and passing it the client and secret should return a token
 
 ```bash
-curl -H "Content-Type: application/json" -X POST -d '{"clientId":"<clientId>","clientSecret":"<clientSecret>"}' http://api.kintohub.com/authorize
+curl -H "Content-Type: application/json" -X POST -d '{"clientId":"<clientId>","clientSecret":"<clientSecret>"}' https://api.kintohub.com/authorize
 ```
 
 **returns**
@@ -238,7 +238,7 @@ if we used that token and pass it as an Authorization header when we call any Ki
 Finally, the following should work
 
 ```bash
-curl -H "Authorization: Bearer <token>" http://api.kintohub.com/nodeexample/sample/hello
+curl -H "Authorization: Bearer <token>" https://api.kintohub.com/nodeexample/sample/hello
 ```
 
 Should return

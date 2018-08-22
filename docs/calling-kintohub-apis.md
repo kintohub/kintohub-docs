@@ -16,4 +16,4 @@ Authorization Tokens act as first class citizens for the entire journey of calli
 
 If you wish to call a public API without being authorized, you will lose some session feature benefits.
 
-`public.api.kintohub.com/<clientId>/<microservice>/<path>` will allow you to call a specific API within an application environment.
+`https://public.api.kintohub.com/<clientId>/<microservice>/<path>` will allow you to call a specific API within an application environment.

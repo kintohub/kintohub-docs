@@ -9,7 +9,7 @@ KintoHub provides the ability to create sessions for all apps right of the bat. 
 1.  The client should call the following API (typically when the app first loads)
 
 ```
-POST api.kintohub.com/auth
+POST https://api.kintohub.com/auth
 BODY { "clientId":"<clientid>", "clientSecret":"<clientsecret>" }
 ```
 
@@ -32,7 +32,7 @@ We don't recommend in a typical use-case to use public URLs without authenticati
 The answer is yes we do support public URLs, to access the endpoint you can use the following URL:
 
 ```
-public.api.kintohub.com/<clientId>/<microservice>
+https://public.api.kintohub.com/<clientId>/<microservice>
 ```
 
 > Because there is no session, the client id for the environment is needed to talk to the api, that is why the url is slightly different
