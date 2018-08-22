@@ -59,19 +59,18 @@ Features:
 
 ## 0.3.0 - Got WWW? Release
 
-We've been working hard at hearing everyones feedback and getting our some of the necessities to build aweosme stuff with KintoHub.
+We've been working hard at hearing everyones feedback and getting out some of the necessities to build awesome stuff with KintoHub.
 
 What's inside this new release ?
 
 * Adding video tutorials on the home page
-* Applications Logs per Environment!
-* Ability to search and share kintoblocks within the community!
+* Application Logs per Environment!
+* Ability to search and share KintoBlocks within the community!
 * Build, Deploy and Manage static websites! Introducing Website KintoBlocks.
 * Build stability and small speed improvements
 * Environment variables for your KintoBlocks and custom CI.
 * Several UI/UX Enhancements and bug fixes
 * Added feedback button! We're looking forward to hearing what you think!
-
 
 
 You can check our backlog here -> [GitHub backlog](https://github.com/kintohub/backlog)
