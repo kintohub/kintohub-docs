@@ -64,7 +64,7 @@ After you have deployed your application, you can either talk to it in gRPC or H
 5. Authenticate to KintoHub with:
 
 ```
-POST api.kintohub.com/authorize
+POST https://api.kintohub.com/authorize
 BODY { "clientId":"7219e244cbf34f06bb25121d738cae26", "secret":"ZUCHayuTOK7N" }
 ```
 
@@ -80,7 +80,7 @@ Once authenticated, you can talk to your application (and its KintoBlock depende
 Simply make a call to:
 
 ```
-api.kintohub.com/{block-name}
+https://api.kintohub.com/{block-name}
 ```
 
 Be sure to include in the authorization header. Example:
@@ -98,6 +98,5 @@ To make a call to gRPC, talk to grpc.prod.kintohub.com with your gRPC service pr
 ### Coming Soon:
 
 * Deleting an application
-* Viewing Application Logs
 
 These feature are not ready yet but you can follow these feature [here](https://github.com/kintohub/backlog/issues/14) on our [GitHub backlog](https://github.com/kintohub/backlog), where you can comment on any open issues, or add any issues you would like us to tackle.
