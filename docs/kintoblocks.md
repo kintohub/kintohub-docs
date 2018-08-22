@@ -100,7 +100,7 @@ The section on Environment Variables lives on the **KintoBlock Edit** page, towa
 - If you are building a block that is shared, will be included in multiple applications, and will require information from the end user, it is best to use *Custom Paramaters*.
 
 
-## Custom Parameters
+## Custom Parameters (Coming Soon)
 
 Custom Parameters are used to pass information to your **KintoBlock Microservice** . These values are editable by the end user in the case of shared KintoBlocks, and also overridable per environment at a KintoApp level for cases where multiple apps are using the same **KintoBlock**. For more insight into KintoHub's structure please refer to [Thinking Kinto](https://docs.kintohub.com/docs/thinking-kinto). In the case of shared KintoBlocks custom params, custom key/value data can be added to the headers which can give you context as to what and who is calling your block.
 
