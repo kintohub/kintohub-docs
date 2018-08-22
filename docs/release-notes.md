@@ -40,7 +40,7 @@ Features:
 * Improvement of the tutorial
 * Improvement of the example app and blocks
 
-## 0.1.1 - Lumberjack Release
+## 0.2.0 - Lumberjack Release
 
 04/07/2018
 
@@ -57,7 +57,7 @@ Features:
 * Handling Dockerfile error during the build
 * Refining of the examples blocks documentation
 
-## 0.2.0 - Got WWW? Release
+## 0.3.0 - Got WWW? Release
 
 We've been working hard at hearing everyones feedback and getting our some of the necessities to build aweosme stuff with KintoHub.
 
