@@ -84,7 +84,7 @@ ENTRYPOINT ["app"]
 
 Dockerfile:
 ```
-FROM node:8.4
+FROM node:8.9.4
 
 COPY package.json .
 COPY package-lock.json .
