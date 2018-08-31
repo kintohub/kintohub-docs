@@ -161,7 +161,7 @@ For our example `npm run prod` is running `PORT=80 node index.js` which satisfie
 
 ## Create a Kintoblock on KintoHub from the service we just created
 
-_For more details and screenshots about creating KintoBlocks read more [here](creating-a-kintoblock.md)_
+_For more details and screenshots about creating KintoBlocks read more [here](kintoblocks.md#creating-a-kintoblock)_
 
 By this point, you should already have a GitHub repository that is compatible with KintoHub
 
@@ -177,7 +177,7 @@ Now go to create Kintoblock page. Add a Kintoblock name _(name must be unique ac
 
 ### Tag Latest Commit
 
-_For more details and screenshots about tagging latest commit read more [here](tagging-a-commit.md)_
+_For more details and screenshots about tagging latest commit read more [here](kintoblocks.md#tagging-a-commit)_
 
 After creating the Kintoblock, when you are in the Kintoblock manage page, navigate to the branch that you added your code to. And go to the **Commits** section.
 
