@@ -148,7 +148,7 @@ In order for the endpoint to save data in the current session
 Part of apidoc specification if you want to mark a field as required you wrap the type with `{}` and `[]` for optional
 
 ```
- @apiError [String] error.message this is an optional field
+ @apiError {String} [error.message] this is an optional field
  @apiParam {String} model.field this is a required field
 ```
 
