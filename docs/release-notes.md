@@ -5,7 +5,7 @@ title: Release Notes
 ## Overview
 
 In this section you will find everything about our release process and which features have been implemented in each release. Do not hesitate to [contact us](https://www.kintohub.com/contactus/) if you have any questions regarding releases or if you want to push for a new feature (or if you find a bug but this never happens ;) )
-You can look at our backlog here [GitHub backlog](https://github.com/kintohub/backlog)
+You can look at our backlog here [GitHub backlog](https://github.com/kintohub/kintohub-docs)
 
 
 ## 0.0.0 - First Release
@@ -53,7 +53,7 @@ Features:
 * Build Logs !!!! (You can now view the logs from the CI tool to see why your build failed)
 * Minor frontend bug fixes
 * Preview of new blocks type: Microservice, Website, Task
-* Toggle for prepopulation of a new repository 
+* Toggle for prepopulation of a new repository
 * Handling Dockerfile error during the build
 * Refining of the examples blocks documentation
 
@@ -73,4 +73,4 @@ What's inside this new release ?
 * Added feedback button! We're looking forward to hearing what you think!
 
 
-You can check our backlog here -> [GitHub backlog](https://github.com/kintohub/backlog)
+You can check our backlog here -> [GitHub backlog](https://github.com/kintohub/kintohub-docs)

@@ -50,7 +50,7 @@ You can invite people (who already registered) on the platform to collaborate wi
 | Role        |      Admin      | Member  |
 | ------------- |:-------------:| :-----:|
 | add members      | ✅ | ❌ |
-| link github organization     | ✅ | ❌ | 
+| link github organization     | ✅ | ❌ |
 | rename workspace | ✅ | ❌ |
 | make an app/block public or private | ✅ | ❌ |
 | can edit workspace | ✅ | ❌ |
@@ -71,8 +71,8 @@ You can invite people (who already registered) on the platform to collaborate wi
 
 | Role        |      Owner/Admin      | Editor |
 | ------------- |:-------------:| :-----:|
-| Add other collaborator      | ✅ | ❌ | 
-| Modify app     | ✅ | ✅ | 
+| Add other collaborator      | ✅ | ❌ |
+| Modify app     | ✅ | ✅ |
 | Make app public or private | ✅ | ❌ |
 
 ### Permissions for Block
@@ -85,7 +85,7 @@ You can invite people (who already registered) on the platform to collaborate wi
 
 ### Coming Soon:
 
-* Email notifications 
+* Email notifications
 
 * Pending invitation, Resend invitation
 
@@ -95,4 +95,4 @@ You can invite people (who already registered) on the platform to collaborate wi
 
 * Deleting a Workspace
 
-You can check out our [GitHub backlog](https://github.com/kintohub/backlog), where you can add feature request, comment on any open issues, or add any issues you would like us to tackle
+You can check out our [GitHub backlog](https://github.com/kintohub/kintohub-docs), where you can add feature request, comment on any open issues, or add any issues you would like us to tackle

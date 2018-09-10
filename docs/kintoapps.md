@@ -4,9 +4,9 @@ title: KintoApps
 
 ## What is an application?
 
-Applications are tailored back-end features packages, ready to be consumed by your clients. 
+Applications are tailored back-end features packages, ready to be consumed by your clients.
 
-They are composed of KintoBlocks with unique configuration parameters, and either a client or a protocol to allow your clients to talk to the application. You can deploy your app in a specific environment and have several environment for one application to apply different custom configuration. 
+They are composed of KintoBlocks with unique configuration parameters, and either a client or a protocol to allow your clients to talk to the application. You can deploy your app in a specific environment and have several environment for one application to apply different custom configuration.
 
 Your application is made of blocks that are deployed in a serverless way, meaning it is dynamically loaded when you are calling your endpoint. Hence, if you are not using it, you are saving resources and money !
 
@@ -99,7 +99,7 @@ To make a call to gRPC, talk to grpc.prod.kintohub.com with your gRPC service pr
 
 You can access the last 100 logs of an environment your KintoApp is deployed in, by going to *Environments* via the short cut menu on your KintoApp card, or from the KintoApp Manage page. Once there, open the edit page, and select *View Logs* on the top right hand side.
 
-The logs will give you information on the following things: 
+The logs will give you information on the following things:
 - Response code ie: 200, 500 etc.
 - Duration of the call
 - Which endpoint was called
@@ -107,7 +107,7 @@ The logs will give you information on the following things:
 - Which version of the KintoBlock was called
 - The time and date of the call
 
-If you wish to view more details of the call, these can be found by expanding that particular calls row in the table. Here you can view the JSON of any logs you have made. 
+If you wish to view more details of the call, these can be found by expanding that particular calls row in the table. Here you can view the JSON of any logs you have made.
 
 ### Required Format for Console Logs
 
@@ -124,7 +124,7 @@ All console logs that do not follow our format will not be available for you to 
 
 Every incoming API call that comes to your service will have a unique `kinto-request-id`. You must log that Id into the console log as the value for "kinto_request_id". This allows us to track your specific call and perform magic!
 
-It is important that the console log contents are formatted in JSON, with the correct quotation marks like this : `"key": "value"`. An example for a **Node.js / Express** app would look like this: 
+It is important that the console log contents are formatted in JSON, with the correct quotation marks like this : `"key": "value"`. An example for a **Node.js / Express** app would look like this:
 
 ```
   const requestId = req.get('kinto-request-id')
@@ -148,4 +148,4 @@ You may use middleware to automatically do this for each call as well. We'll pro
 
 * Deleting an application
 
-These feature are not ready yet but you can follow these feature [here](https://github.com/kintohub/backlog/issues/14) on our [GitHub backlog](https://github.com/kintohub/backlog), where you can comment on any open issues, or add any issues you would like us to tackle.
+These feature are not ready yet but you can follow these feature [here](https://github.com/kintohub/kintohub-docs/issues/39) on our [GitHub backlog](https://github.com/kintohub/kintohub-docs), where you can comment on any open issues, or add any issues you would like us to tackle.

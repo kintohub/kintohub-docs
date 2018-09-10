@@ -27,17 +27,16 @@ EXPOSE 80
 ENTRYPOINT ["npm","run","start"]
 ```
 
-You can modify the Dockerfile in any way you find more convenient to use ANY build tool you want (inside Docker) 
+You can modify the Dockerfile in any way you find more convenient to use ANY build tool you want (inside Docker)
 however you will find a common behavior - set of rules for each language:
 
-* Some are using multi-stage build with a base image (with all the dependencies) and a lighter runtime image to run the app 
+* Some are using multi-stage build with a base image (with all the dependencies) and a lighter runtime image to run the app
 * You need to export your compiled code or source files in the folder named `app`
 * You will need to include a complementary file (depending on your language) to allow dependencies to be downloaded: like a `Gemfile` for `Ruby` or `requirements.txt` for `Python` with `pip`)
 
 * expose the app on port `80`
 * if the hostname is required by the framework/lib then it has to be set to `0.0.0.0`
 * we would recommend to keep the same `ENTRYPOINT` as the example but depending on the language you can freely modify it
-* Environment variables (ENV command) are not supported yet but is part of the backlog and will be coming soon
 
 ## C# / dotnet
 
@@ -125,7 +124,7 @@ ENTRYPOINT ["java", "-jar", "start-jar-with-dependencies.jar"]
 ```
 
 - We are using multi stage build to create lighter docker image
-- You can modify the Dockerfile as you wish except you have to respect to put your build results in `/app/out` 
+- You can modify the Dockerfile as you wish except you have to respect to put your build results in `/app/out`
 
 
 ## NodeJS
@@ -266,7 +265,7 @@ EXPOSE 80
 ENTRYPOINT ["bundle", "exec", "ruby", "app.rb"]
 ```
 
-- You can modify the `Dockerfile` or `ENTRYPOINT` but it has to expose your app on port 80 and use the `/app` folder  
+- You can modify the `Dockerfile` or `ENTRYPOINT` but it has to expose your app on port 80 and use the `/app` folder
 - We are using `bundler` as dependency manager hence you will need a `Gemfile` in your repository to enable external packages
 
 Example Gemfile:
