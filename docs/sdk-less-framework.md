@@ -20,9 +20,9 @@ Microservices are black boxes. All that matters is that we know what goes in and
 
 * gRPC is in Alpha
 * GraphQL is around the corner
-* Others can be suggested on our [Github Backlog](https://github.com/kintohub/backlog)
+* Others can be suggested on our [Github Backlog](https://github.com/kintohub/kintohub-docs)
 
 ### Future ways to be compatible
 
 * Swagger/OpenAPI support
-* Feel free to suggest others on our [Github Backlog](https://github.com/kintohub/backlog)
+* Feel free to suggest others on our [Github Backlog](https://github.com/kintohub/kintohub-docs)
