@@ -6,17 +6,19 @@ title: Mongo DB
 
 **Mongo DB** databases are available to add as a **KintoBlock** dependency. In order to add a database to a project, you must first enable it in your workspace.
 
-Go to **Services** via the sidebar, and select **Mongo DB**. Details of the service are available underneath.
+Go to **Services** via the sidebar, and select **Mongo DB**.
 
 ![Screenshot - Docs - Examples](/docs/assets/services_sidebar_screenshot.png)
+
+Details of the service are available underneath.
+
+![Screenshot - Docs - Examples](/docs/assets/kintoblock_services_screenshot.png)
 
 _If you select this service, you can not disable it, but this service is currently free and you will not be charged without notification._
 
 If you would like to use the service please select **Enable MongoDB**.
 
 Once you have enabled the service it is possible to add it to a **KintoBlock** by enabling the toggle on the **KintoBlock Manage Page**.
-
-![Screenshot - Docs - Examples](/docs/assets/kintoblock_services_screenshot.png)
 
 #### Enabling MongoDB in Applications
 
