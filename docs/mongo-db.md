@@ -4,7 +4,7 @@ title: Mongo DB
 
 #### Enabling MongoDB In Your Workspace
 
-**Mongo DB** databases are available to add as a kintoblock dependency. In order to add a database to a project, you must first enable it in your workspace.
+**Mongo DB** databases are available to add as a **KintoBlock** dependency. In order to add a database to a project, you must first enable it in your workspace.
 
 Go to **Services** via the sidebar, and select **Mongo DB**. Details of the service are available underneath.
 
@@ -17,6 +17,10 @@ If you would like to use the service please select **Enable MongoDB**.
 Once you have enabled the service it is possible to add it to a **KintoBlock** by enabling the toggle on the **KintoBlock Manage Page**.
 
 ![Screenshot - Docs - Examples](/docs/assets/kintoblock_services_screenshot.png)
+
+#### Enabling MongoDB in Applications
+
+You can also enable services on the **application manage page**. If a **KintoBlock** in your application requires a **MongoDB** database you must make sure it is enabled either here or via the services page.
 
 #### Referring To a Database In Your Code
 
@@ -34,4 +38,6 @@ mongodb://user:password@mongodb-svc:27017/auth-database
 
 * You have one database available per Application.
 
-* Once you have enabled a service it available for use for every account in the workspace.
+* Once you have enabled a service it is available to every account in the workspace.
+
+* Allow at least one minute between activating MongoDB and using MongoDB
