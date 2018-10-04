@@ -1,12 +1,12 @@
 {
   "docs": {
     "Concepts": [
-	  "thinking-kinto",
-	  "calling-kintohub-apis",
-	  "session-memory",
-	  "sdk-less-framework",
-	  "instant-deployments"
-	],
+      "thinking-kinto",
+      "calling-kintohub-apis",
+      "session-memory",
+      "sdk-less-framework",
+      "instant-deployments"
+    ],
     "Docs": [
       "getting-started",
       "docker-examples",
@@ -19,16 +19,8 @@
       "languages",
       "release-notes"
     ],
-    "Dependencies": [
-      "custom-params",
-      "environmental-parameters"
-    ],
-    "Accounts and Billing": [
-      "accounts",
-      "billing"
-    ],
-    "Common Questions": [
-      "answers"
-    ]
+    "Dependencies": ["custom-params", "environmental-parameters", "mongo-db"],
+    "Accounts and Billing": ["accounts", "billing"],
+    "Common Questions": ["answers"]
   }
 }
