@@ -40,4 +40,4 @@ mongodb://user:password@mongodb-svc:27017/auth-database
 
 * Once you have enabled a service it is available to every account in the workspace.
 
-* Allow at least one minute between activating MongoDB and using MongoDB
+* Allow at least one minute between activating MongoDB and using MongoDB.
