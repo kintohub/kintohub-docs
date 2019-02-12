@@ -165,7 +165,7 @@ _For more details and screenshots about creating KintoBlocks read more [here](ki
 
 By this point, you should already have a GitHub or Bitbucket repository that is compatible with KintoHub
 
-Next step is connecting your workspace to your GitHub or Bitbucket account. Go to edit workspace and click on Link GitHub or Link Bitbucket button.
+Next step is connecting your workspace to your GitHub or Bitbucket account. Go to edit workspace and click on the Link GitHub or Link Bitbucket button.
 
 Now go to create Kintoblock page. Add a Kintoblock name _(name must be unique across all accounts)_, choose an existing repository and select the repository you just created. Set protocol to `HTTP` and language to `Node.js`.
 
