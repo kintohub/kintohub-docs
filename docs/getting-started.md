@@ -25,7 +25,7 @@ app.get('/hello', (req, res) =>
 
 Preparing your code to have it effortlessly work on KintoHub is very straightforward - here is a high-level of what it entails:
 
-1. Your code must be on GitHub
+1. Your code must be on GitHub or Bitbucket
 2. Your code must have `Dockerfile`
    * the command used to run the production version must be exposed in `Dockerfile` using `EXPOSE`
 3. The service must be listening to port `80` for production
