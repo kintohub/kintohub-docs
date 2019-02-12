@@ -37,7 +37,7 @@ Once you've created an application, you can add additional KintoBlocks to extend
 
 When you create an application it is by default in a _draft_ state. When you make changes to an application, ie. add a new dependency or change the version of a KintoBlock within this application, you can create a new tag.
 
-Unlike KintoBlocks, this is unrelated to GitHub, but is a way to manage versions of your application.
+Unlike KintoBlocks, this is unrelated to GitHub or Bitbucket, but is a way to manage versions of your application.
 
 When you tag an application this is marking it as ready for deployment and the application will be deployed.
 
