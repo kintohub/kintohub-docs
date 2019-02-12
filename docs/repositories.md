@@ -4,32 +4,32 @@ title: Git Repositories
 
 ## KintoBlocks
 
-One of the main goals when we started working on creating microservices and KintoBlocks in general is to map as much as possible the dev workflow when they work on a git repository
+One of the main goals when we started working on creating microservices and KintoBlocks in general is to map as much as possible the dev workflow when they work on a GitHub or Bitbucket repository.
 
 ### Branches
 
-Branches are basically the git branches in the user's repository, whenever he creates a branch in github we will sync github and show that branch there
+Branches are basically the GitHub or Bitbucket branches in the user's repository. Whenever he creates a branch in the GitHub or Bitbucket we will sync the GitHub or Bitbucket repository and show that branch there.
 
 ### Tags
 
-Tags are very similar to how they work in git, basically after working on a feature and its ready you tag it with a version, and that KintoBlock is gonna be locked when you check that tag (can't be changed)
+Tags are very similar to how they work in GitHub or Bitbucket, basically after working on a feature and its ready you tag it with a version, and that KintoBlock is gonna be locked when you check that tag (can't be changed)
 
 ### Sample workflow:
 
-* On an existing repository add it to github
+* On an existing repository add it to GitHub/Bitbucket
 * Create a new branch `dev`
 * Create a Microservice KintoBlock and add the repository
 * Work on your feature and push the changes
 * Open the KintoBlock and check the `dev` branch, make sure the last commit that was pushed was successfully built
 * Create a tag on KintoHub
 
-> Note: we are looking on syncing tags between git and KintoHub
+> Note: we are looking on syncing tags between GitHub/Bitbucket and KintoHub.
 
 ## Applications
 
 We wanted to have the same mindset for how to deploy applications similar to the one we had for KintoBlocks
 
-The obvious difference is Applications are not linked to a git repository, an application is a collection of KintoBlocks
+The obvious difference is Applications are not linked to a GitHub or Bitbucket repository, an application is a collection of KintoBlocks
 
 ### Draft
 
