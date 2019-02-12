@@ -50,7 +50,7 @@ You can invite people (who already registered) on the platform to collaborate wi
 | Role        |      Admin      | Member  |
 | ------------- |:-------------:| :-----:|
 | add members      | ✅ | ❌ |
-| link github organization     | ✅ | ❌ |
+| link GitHub/Bitbucket organization     | ✅ | ❌ |
 | rename workspace | ✅ | ❌ |
 | make an app/block public or private | ✅ | ❌ |
 | can edit workspace | ✅ | ❌ |
