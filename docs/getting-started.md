@@ -26,10 +26,8 @@ app.get('/hello', (req, res) =>
 Preparing your code to have it effortlessly work on KintoHub is very straightforward - here is a high-level of what it entails:
 
 1. Your code must be on GitHub or Bitbucket
-2. Your code must have `Dockerfile`
-   * the command used to run the production version must be exposed in `Dockerfile` using `EXPOSE`
-3. The service must be listening to port `80` for production
-4. Your code must be documented with our version of apidoc ([detailed here](apidoc.md))
+2. The service must be listening to port `80` for production
+3. Your code must be documented with our version of apidoc ([detailed here](apidoc.md))
 
 > if you have to specify a hostname for the framework/library that you are using, please use 0.0.0.0. localhost and note that 127.0.0.1 won't work
 
@@ -123,42 +121,6 @@ app.get('/sample/:message', (req, res) =>
 
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
 ```
-
-The last step is creating a `Dockerfile` so KintoHub can understand how to compile and run your app
-
-> you don't need to use docker locally for this
-
-create `Dockerfile` with the following
-
-```dockerfile
-FROM node:8.9.4
-
-RUN mkdir -p app
-
-WORKDIR /app
-
-COPY . /app
-
-RUN npm install
-
-ENV PORT=80
-
-EXPOSE 80
-
-ENTRYPOINT ["npm","run","start"]
-```
-
-_You can find all the different `Dockerfile` samples for all languages [here](docker-examples.md)._
-
-The interesting part is the last line, you need to update the entry point depending on the project you are using
-
-the only rule that endpoint must
-
-* expose the app on port `80`
-* if the hostname is required by the framework/lib then it has to be set to `0.0.0.0`
-
-For our example `npm run prod` is running `PORT=80 node index.js` which satisfies these two requirements
-
 ## Create a Kintoblock on KintoHub from the service we just created
 
 _For more details and screenshots about creating KintoBlocks read more [here](kintoblocks.md#creating-a-kintoblock)_
