@@ -29,7 +29,7 @@ You can invite people (who already registered) on the platform to collaborate wi
 5. Click **Authorize KintoHub**
 ![Screenshot - Authorize KintoHub](/docs/assets/connecting-a-github-organization-4-5.png)
 
-> Note: We currently access your entire Github repository. We're working on limiting this access and you can always revoke our access on Github itself.
+> Note: We currently access your entire GitHub repository. We're working on limiting this access and you can always revoke our access on GitHub itself.
 
 ## Managing Workspaces
 
