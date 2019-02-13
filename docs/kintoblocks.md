@@ -31,26 +31,7 @@ _That's it! You have created your first KintoBlock!_
 6. On GitHub, go to the repository associated with this KintoBlock
 ![Screenshot - New GitHub Repo](/docs/assets/creating-a-kintoblock-5.png)
 
-### Points to remember about Creating a Website
-
-- You can use static files, with an `index.html` file for entry.
-
-- If the website needs to be built, like a project built in webpack for example, you will have to add a `Dockerfile` to your repo. This can be a custom dockerfile if you are already familiar with Docker, otherwise please refer to this dockerfile example:
-
-```
-FROM node:8.4
-
-COPY package.json .
-COPY package-lock.json .
-
-RUN npm install
-
-COPY . .
-
-RUN npm run build
-```
-
-All dockerfile examples can be found [here](/docs/docker-examples)
+> Note: While creating a website you can use static files, with an `index.html` file for entry.
 
 ## Tagging a commit
 
