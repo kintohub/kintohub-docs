@@ -27,7 +27,6 @@ Preparing your code to have it effortlessly work on KintoHub is very straightfor
 
 1. Your code must be on GitHub or Bitbucket
 2. The service must be listening to port `80` for production
-3. Your code must be documented with our version of apidoc ([detailed here](apidoc.md))
 
 > if you have to specify a hostname for the framework/library that you are using, please use 0.0.0.0. localhost and note that 127.0.0.1 won't work
 
@@ -92,35 +91,6 @@ next is modifying `package.json` and add two scripts for running the service on 
 
 the difference is `npm start` now will run the app on port `8000` but `npm run prod` will run it on port `80`
 
-### Comment your code for compatibility and autodoc
-
-_you can read more about documenting your code to work with kintohub [here](apidoc.md)._
-
-In order for your microservice to work with KintoHub and automatically generate user-friendly documentation for your endpoints, you need to comment your code in a way that follows apidoc standard.
-
-here is the updated `index.js` after documenting it
-
-```javascript
-const express = require('express')
-const app = express()
-const PORT = process.env.PORT || '8000'
-
-/**
- * @api {get} /sample/{id} hello world sample request
- * @apiName GetSample
- * @apiParam (Url) {String} message the message to return
- * @apiSuccess {String} data the hello world data
- * @apiSuccess {String} output what the user entered in the url
- */
-app.get('/sample/:message', (req, res) =>
-  res.send({
-    data: 'Hello World',
-    output: req.params.message
-  })
-)
-
-app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
-```
 ## Create a Kintoblock on KintoHub from the service we just created
 
 _For more details and screenshots about creating KintoBlocks read more [here](kintoblocks.md#creating-a-kintoblock)_
