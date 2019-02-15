@@ -28,12 +28,6 @@ The following is a sample doc for an endpoint
  */
 ```
 
-Each endpoint should have a documentation block that consists of these sections
-
-- Info about the endpoint _(Required)_ - `@api` and `@apiName`
-- Request info _(Required for gRPC)_ - `@apiParam` and `@apiHeader`
-- Response info _(Optional)_ - `@apiSuccess` and `apiError`
-
 ## Endpoint Info
 
 ### @api
