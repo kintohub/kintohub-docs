@@ -25,8 +25,10 @@ app.get('/hello', (req, res) =>
 
 Preparing your code to have it effortlessly work on KintoHub is very straightforward - here is a high-level of what it entails:
 
-1. Your code must be on GitHub or Bitbucket
-2. The service must be listening to port `80` for production
+1. Your code must be on GitHub or Bitbucket.
+2. The service must be listening to the port set in the **Advanced Options** section of KintoBlock Manage Page.
+
+> Note: By default, port is set to `80`.
 
 > if you have to specify a hostname for the framework/library that you are using, please use 0.0.0.0. localhost and note that 127.0.0.1 won't work
 
