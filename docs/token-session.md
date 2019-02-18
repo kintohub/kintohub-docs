@@ -90,19 +90,20 @@ server.route({
   }
 });
 ```
-## Kinto Session Data
 
-1.  To add a data to Kinto session have proper apidoc as below.
+## Set Session Data
+
+To use KintoHub's documentation to write session data, do the following in apidoc.
+
+1.  To add session data use `@apiSuccess (Session)` because you are sending data back.
 
 ```
 @apiSuccess (Session) {type} <microservice>-field description
 ```
 
-> Note: To add data to Kinto session you use `@apiSuccess (Session)` because you are sending data back.
-
 > Note: The field name **must** start with the microservice name.
 
-2.  In that request you should send back the fields as headers in the response.
+2.  In the above request you should send back the fields as headers in the response.
 
 ```javascript
 return res
@@ -113,21 +114,23 @@ return res
 
 > Note: All the session data being send back as headers are going to be intercepted by KintoHub to update the session and the client will not receive them (in the above example if you debug that request you will not find `<microservice>-field` in the headers)
 
-3.  To read from the session have proper apidoc as below.
+## Get Session Data 
+
+To use KintoHub's documentation to read session data, do the following in apidoc.
+
+1.  To get session data you use `@apiHeader (Session)` because they are going to be injected in the headers.
 
 ```
 @apiHeader (Session) {type} <microservice>-field description
 ```
 
-> Note: Add read data from a session you use `@apiHeader (Session)` because they are going to be injected in the headers.
-
-4.  In that request, you can read the data from the headers
+2.  In that request, you can read the data from the headers
 
 ```javascript
 request.headers["<microservice>-field"];
 ```
 
-###  Optional read for Kinto Session Data
+###  Optional read for Kinto Session
 
 If you write the following in your documentation.
 ```
