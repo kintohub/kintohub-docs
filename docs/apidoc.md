@@ -1,5 +1,5 @@
 ---
-title: How to document your code to use KintoHub's documentation UI
+title: How to use KintoHub's Documentation UI
 ---
 
 To document your code you need to follow the [apidoc](http://apidocjs.com/) conventions
