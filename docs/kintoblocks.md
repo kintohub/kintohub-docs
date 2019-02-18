@@ -72,8 +72,13 @@ These are accessed during the build process so when updating them you need to ad
 
 ### Managing Environment Variables
 
-The section on Environment Variables lives on the **KintoBlock Edit** page, towards the end of the form. They are specific to a **branch** of a KintoBlock, so if you switch branches and want to use that particular branch in a KintoApp you will need to input the **Environment Variables** on that branch too.
+The section on Environment Variables lives on the **KintoBlock Edit** page, towards the end of the form. To add an environment variable, enter a variable name and click on the add icon. They are specific to a **branch** of a KintoBlock, so if you switch branches and want to use that particular branch in a KintoApp you will need to input the **Environment Variables** on that branch too.
 
-> Note: Environment Variables can be edited only by the creator of a KintoBlock.
+It is recommended to add Environment value while a variable is created. The Environment values can be added on the **KintoBlock Edit** page or via **Configure Dependencies** button in Deployment Manage Page.
+
+### Points to remember about Environment Variables
+
+- The owner of a KintoBlock can add, edit or delete Environment variables and values.
+- Public users with access to a KintoBlock can edit the environment values via **Configure Dependencies** button in Deployment Manage page.
 
 ## Deleting a KintoBlock (coming soon)
