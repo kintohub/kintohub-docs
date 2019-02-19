@@ -91,21 +91,19 @@ server.route({
 });
 ```
 
-## Write to the Session Data
+## Set Session Data
 
-What is required to add a data to a session is the following
+To use KintoHub's documentation to write session data, do the following in apidoc.
 
-1.  have proper apidoc for it
+1.  To add session data use `@apiSuccess (Session)` because you are sending data back.
 
 ```
 @apiSuccess (Session) {type} <microservice>-field description
 ```
 
-> Note: to add data to a session you use `@apiSuccess (Session)` because you are sending data back
+> Note: The field name **must** start with the microservice name.
 
-> Note: the field name **must** start with the microservice name
-
-2.  In that request you should send back the fields as headers in the response
+2.  In the above request you should send back the fields as headers in the response.
 
 ```javascript
 return res
@@ -114,19 +112,17 @@ return res
   .code(200)
 ```
 
-> Note: All the session data being send back as headers are going to be intercepted by KintoHub to update the session and the client will not receive them (above example if you debug that request you will not find `<microservice>-field` in the headers)
+> Note: All the session data being send back as headers are going to be intercepted by KintoHub to update the session and the client will not receive them (in the above example if you debug that request you will not find `<microservice>-field` in the headers)
 
-## Read from the Session Data
+## Get Session Data 
 
-What is required to read from the session is the following
+To use KintoHub's documentation to read session data, do the following in apidoc.
 
-1.  have proper apidoc for it
+1.  To get session data you use `@apiHeader (Session)` because they are going to be injected in the headers.
 
 ```
 @apiHeader (Session) {type} <microservice>-field description
 ```
-
-> Note: add read data from a session you use `@apiHeader (Session)` because they are going to be injected in the headers
 
 2.  In that request, you can read the data from the headers
 
@@ -134,17 +130,17 @@ What is required to read from the session is the following
 request.headers["<microservice>-field"];
 ```
 
-###  Optional read Session Data
+###  Optional read for Kinto Session
 
-If you write the following in your documentation
+If you write the following in your documentation.
 ```
 @apiHeader (Session) {type} <microservice>-field description
 ```
 
-When a request happens and `<microservice>-field` is `null` the endpoint is not going to get called, because the session was marked as required
+When a request happens and `<microservice>-field` is `null` the endpoint is not going to get called, because the session was marked as required.
 
 
-If you want to read the value and check if its null yourself, you need to mark it as optional
+If you want to read the value and check if its null yourself, you need to mark it as optional.
 ```
 @apiHeader (Session) [type] <microservice>-field description
 ```

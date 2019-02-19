@@ -31,26 +31,7 @@ _That's it! You have created your first KintoBlock!_
 6. On GitHub, go to the repository associated with this KintoBlock
 ![Screenshot - New GitHub Repo](/docs/assets/creating-a-kintoblock-5.png)
 
-### Points to remember about Creating a Website
-
-- You can use static files, with an `index.html` file for entry.
-
-- If the website needs to be built, like a project built in webpack for example, you will have to add a `Dockerfile` to your repo. This can be a custom dockerfile if you are already familiar with Docker, otherwise please refer to this dockerfile example:
-
-```
-FROM node:8.4
-
-COPY package.json .
-COPY package-lock.json .
-
-RUN npm install
-
-COPY . .
-
-RUN npm run build
-```
-
-All dockerfile examples can be found [here](/docs/docker-examples)
+> Note: While creating a website you can use static files, with an `index.html` file for entry.
 
 ## Tagging a commit
 
@@ -91,38 +72,13 @@ These are accessed during the build process so when updating them you need to ad
 
 ### Managing Environment Variables
 
-The section on Environment Variables lives on the **KintoBlock Edit** page, towards the end of the form. They are specific to a **branch** of a KintoBlock, so if you switch branches and want to use that particular branch in a KintoApp you will need to input the **Environment Variables** on that branch too.
+The section on Environment Variables lives on the **KintoBlock Edit** page, towards the end of the form. To add an environment variable, enter a variable name and click on the add icon. They are specific to a **branch** of a KintoBlock, so if you switch branches and want to use that particular branch in a KintoApp you will need to input the **Environment Variables** on that branch too.
 
+It is recommended to add Environment value while a variable is created. The Environment values can be added on the **KintoBlock Edit** page or via **Configure Dependencies** button in Deployment Manage Page.
 
 ### Points to remember about Environment Variables
 
-- These can only be edited by the creator of a KintoBlock.
-- If you are building a block that is shared, will be included in multiple applications, and will require information from the end user, it is best to use *Custom Paramaters*.
-
-
-## Custom Parameters
-
-Custom Parameters are used to pass information to your **KintoBlock Microservice** . These values are editable by the end user in the case of shared KintoBlocks, and also overridable per environment at a KintoApp level for cases where multiple apps are using the same **KintoBlock**. For more insight into KintoHub's structure please refer to [Thinking Kinto](https://docs.kintohub.com/docs/thinking-kinto). In the case of shared KintoBlocks custom params, custom key/value data can be added to the headers which can give you context as to what and who is calling your block.
-
-When creating KintoBlock you can assign default values to your Custom Parameters and these can be marked required if they are necessary for your KintoBlock to function, for example a Sendgrid API or Secret.
-
-Custom Parameters are accessible inside your code within each call. You must specify when to use them, and whether they are required or optional via API doc headers, in a **Node.js** application adding the header to a call will look like this, values with `[`these brackets`]` are optional:
-
-`@apiHeader (Config) {String} sendgridAPI` - A required value 
-
-`@apiHeader (Config) {String} [sendgridSecret]` - An optional value
-
-
-
-This will be injected as a header into this call, and accessible in the usual way you would access headers. In a **Node.js / Express** KintoBlock it would look like this: 
-
-```
-  const githubToken = req.get('sendgridAPI')
-```
-
-### Points to remember about Custom Parameters 
-- Use these to set variables that the customer will need to set or change, like API keys for external APIS.
-- Set default values to guide the end user.
-- Mark important **Custom Parameters** as required so they are not accidentally left out.
+- The owner of a KintoBlock can add, edit or delete Environment variables and values.
+- Public users with access to a KintoBlock can edit the environment values via **Configure Dependencies** button in Deployment Manage page.
 
 ## Deleting a KintoBlock (coming soon)

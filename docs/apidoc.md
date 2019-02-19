@@ -1,5 +1,5 @@
 ---
-title: How to document your code to work with KintoHub
+title: How to use KintoHub's Documentation UI
 ---
 
 To document your code you need to follow the [apidoc](http://apidocjs.com/) conventions
@@ -27,12 +27,6 @@ The following is a sample doc for an endpoint
  * @apiSuccess {String} data.model vehicle model
  */
 ```
-
-Each endpoint should have a documentation block that consists of these sections
-
-- Info about the endpoint _(Required)_ - `@api` and `@apiName`
-- Request info _(Required for gRPC)_ - `@apiParam` and `@apiHeader`
-- Response info _(Optional)_ - `@apiSuccess` and `apiError`
 
 ## Endpoint Info
 
