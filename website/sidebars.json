@@ -4,22 +4,19 @@
       "thinking-kinto",
       "calling-kintohub-apis",
       "session-memory",
-      "sdk-less-framework",
-      "instant-deployments"
+      "sdk-less-framework"
     ],
     "Docs": [
       "getting-started",
-      "docker-examples",
       "apidoc",
       "kintoblocks",
       "token-session",
       "repositories",
       "kintoapps",
       "workspaces",
-      "languages",
       "release-notes"
     ],
-    "Dependencies": ["custom-params", "environmental-parameters", "mongo-db"],
+    "Dependencies": ["environmental-parameters"],
     "Accounts and Billing": ["accounts", "billing"],
     "Common Questions": ["answers"]
   }
