@@ -3,6 +3,7 @@ title: KintoBlocks
 ---
 
 
+
 ## What is a KintoBlock
 
 KintoBlocks is the new standard format for building the stack of microservices for building your business. They are self-contained, containerized, universally compatible, language agnostic, combinable and shareable bricks of back-end logic. We like to think of them as Lego bricks of an application!
@@ -16,7 +17,7 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 2. Click **Create New KintoBlock** card or the **+** icon.
 ![Screenshot - Create New KintoBlock](/docs/assets/creating-a-kintoblock-1-2.png)
 
- > Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to associate your workspace . If you have already associated your workspace, please proceed to the next step.
+> Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to           associate your workspace . If you have already associated your workspace, please proceed to the next step.
 
 3. There are two types of KintoBlocks currently supported: **Microservices** and **Website**. Choose the type of KintoBlock that meets your needs.
 
@@ -70,9 +71,11 @@ Once you have created a KintoBlock, the real-time status of your builds can be v
 
 You are all set. The KintoBlock for a website has been created successfully.
 
----
-title: Git Repository, Builds & CI
----
+
+
+## Git Repository, Builds & CI
+
+
 
 ## Tagging a Build
 
@@ -110,7 +113,7 @@ Whenever changes are committed to your repository, you can trigger a new build f
 
 A new build with last commits made in the repository will be generated. The status of the new build will be displayed in the **Recent Builds section**. If there are no new commits in the repository, a new build will not be generated.
 
- > Note: The **Automatically build new commits in this branch** option automatically enables build generation for new commits in the repository. By default, the toggle switch is set to `ON`.
+> Note: The **Automatically build new commits in this branch** option automatically enables build generation for new commits in the repository. By default, the toggle switch is set to `ON`.
 
 ## Re-generating builds via Retry
 
@@ -165,7 +168,10 @@ c. **Failure**: This status indicates that the build failed.
 Detailed logs pertaining to each status can be viewed by clicking on the status column.
 
 
+
 ## Environment Variables
+
+
 
 ## What are the Environment Variables?
 
@@ -215,7 +221,10 @@ It is possible to edit and delete an Environment variable in KintoBlock at any r
 - Public users with access to a KintoBlock can edit the environment values via **Configure Dependencies** button in Deployment Manage page.
 
 
+
 ## Manage KintoBlocks
+
+
 
 ## Editing KintoBlocks
 
@@ -270,7 +279,10 @@ To view endpoint documentation:
       b. **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are               displayed in the right pane.
 
 
+
 ## Advance Usages
+
+
 
 ## Search and find KintoBlocks
 
