@@ -14,10 +14,9 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 1. Select **KintoBlocks** from the sidebar.
 
 2. Click **Create New KintoBlock** card or the **+** icon.
-
 ![Screenshot - Create New KintoBlock](/docs/assets/creating-a-kintoblock-1-2.png)
 
-> Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to associate your workspace . If you have already associated your workspace, please proceed to the next step.
+ > Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to associate your workspace . If you have already associated your workspace, please proceed to the next step.
 
 3. There are two types of KintoBlocks currently supported: **Microservices** and **Website**. Choose the type of KintoBlock that meets your needs.
 
@@ -33,7 +32,7 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 
 3. Next, specify the details pertaining to your repo sources in the **Repository form**.
 
-> Note: You can create a **new repository** or specify an **existing repository**.
+   > Note: You can create a **new repository** or specify an **existing repository**.
 
 4. Enable the **Prepopulate repository switch** if you wish to import an example project to your repository. The example project will vary depending on the selected language.
 
@@ -111,7 +110,7 @@ Whenever changes are committed to your repository, you can trigger a new build f
 
 A new build with last commits made in the repository will be generated. The status of the new build will be displayed in the **Recent Builds section**. If there are no new commits in the repository, a new build will not be generated.
 
-> Note: The **Automatically build new commits in this branch** option automatically enables build generation for new commits in the repository. By default, the toggle switch is set to `ON`.
+ > Note: The **Automatically build new commits in this branch** option automatically enables build generation for new commits in the repository. By default, the toggle switch is set to `ON`.
 
 ## Re-generating builds via Retry
 
@@ -269,8 +268,6 @@ To view endpoint documentation:
       a. **Search Endpoints section** - The left pane contains a Search field to query and find relevant endpoint information.
        
       b. **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are               displayed in the right pane.
-
-## Deleting a KintoBlock(Coming soon)
 
 
 ## Advance Usages
