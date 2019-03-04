@@ -156,11 +156,11 @@ If the KintoBlock builds results in failure, a red banner will be displayed on t
 
 The Recent Builds section also displays the status of each build. The builds can have one of the 3 statuses mentioned below:
 
-a. **Running**: This is the initial state of a new build, while we build your KintoBlock
+   a. **Running**: This is the initial state of a new build, while we build your KintoBlock
 
-b. **Success**: This status indicates that your KintoBlock build was run successfully.
+   b. **Success**: This status indicates that your KintoBlock build was run successfully.
 
-c. **Failure**: This status indicates that the build failed. 
+   c. **Failure**: This status indicates that the build failed. 
 
 Detailed logs pertaining to each status can be viewed by clicking on the status column.
 
