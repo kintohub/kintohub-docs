@@ -156,11 +156,11 @@ If the KintoBlock builds results in failure, a red banner will be displayed on t
 
 The Recent Builds section also displays the status of each build. The builds can have one of the 3 statuses mentioned below:
 
-   a. **Running**: This is the initial state of a new build, while we build your KintoBlock
+**Running**: This is the initial state of a new build, while we build your KintoBlock
 
-   b. **Success**: This status indicates that your KintoBlock build was run successfully.
+**Success**: This status indicates that your KintoBlock build was run successfully.
 
-   c. **Failure**: This status indicates that the build failed. 
+**Failure**: This status indicates that the build failed. 
 
 Detailed logs pertaining to each status can be viewed by clicking on the status column.
 
@@ -265,9 +265,9 @@ To view endpoint documentation:
 
 3. The **Endpoints Documentation page** consists of two sections:
 
-      a. **Search Endpoints section** - The left pane contains a Search field to query and find relevant endpoint information.
+      a.  **Search Endpoints section** - The left pane contains a Search field to query and find relevant endpoint information.
        
-      b. **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are               displayed in the right pane.
+      b.  **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are               displayed in the right pane.
 
 
 ## Advanced Usages
