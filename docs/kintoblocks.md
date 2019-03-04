@@ -14,11 +14,13 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 1. Select **KintoBlocks** from the sidebar.
 
 2. Click **Create New KintoBlock** card or the **+** icon.
+
 ![Screenshot - Create New KintoBlock](/docs/assets/creating-a-kintoblock-1-2.png)
 
 > Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to associate your workspace . If you have already associated your workspace, please proceed to the next step.
 
 3. There are two types of KintoBlocks currently supported: **Microservices** and **Website**. Choose the type of KintoBlock that meets your needs.
+
 ![Screenshot - Create New KintoBlock](/docs/assets/select_kintoblock_type.png)
 
 ## Creating a Microservice KintoBlock
@@ -27,11 +29,9 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 
 2. In Basic Info form, specify details on `name`, `description`, `programming language` and `version` you would like to use.
 
-   { Add GIF video of entering name, description and selecting language & version }
+   { Add GIF video of entering name, description and selecting language, version & repository type }
 
 3. Next, specify the details pertaining to your repo sources in the **Repository form**.
-   
-   { Add image of repository type drop down }
 
 > Note: You can create a **new repository** or specify an **existing repository**.
 
@@ -71,8 +71,9 @@ Once you have created a KintoBlock, the real-time status of your builds can be v
 
 You are all set. The KintoBlock for a website has been created successfully.
 
-
-## Git Repository, Builds & CI
+---
+title: Git Repository, Builds & CI
+---
 
 ## Tagging a Build
 
@@ -157,7 +158,9 @@ If the KintoBlock builds results in failure, a red banner will be displayed on t
 The Recent Builds section also displays the status of each build. The builds can have one of the 3 statuses mentioned below:
 
 a. **Running**: This is the initial state of a new build, while we build your KintoBlock
+
 b. **Success**: This status indicates that your KintoBlock build was run successfully.
+
 c. **Failure**: This status indicates that the build failed. 
 
 Detailed logs pertaining to each status can be viewed by clicking on the status column.
