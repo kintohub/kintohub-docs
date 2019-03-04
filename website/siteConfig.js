@@ -46,6 +46,7 @@ const siteConfig = {
   /* On page navigation for the current documentation page */
   onPageNav: 'separate',
   cname: 'docs.kintohub.com',
+  docsSideNavCollapsible: true,
   cleanUrl: true
 }
 
