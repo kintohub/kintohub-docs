@@ -9,7 +9,17 @@
     "Docs": [
       "getting-started",
       "apidoc",
-      "kintoblocks",
+      {
+        "type": "subcategory",
+        "label": "kintoblocks",
+        "ids": [
+          "Introduction",
+          "Git Repository, Builds & CI",
+          "Environment Variables",
+          "Manage & Deploy",
+          "Advance Usages"
+        ]
+      }
       "token-session",
       "repositories",
       "kintoapps",
