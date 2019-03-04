@@ -16,6 +16,7 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 1. Select **KintoBlocks** from the sidebar.
 
 2. Click **Create New KintoBlock** card or the **+** icon.
+
 ![Screenshot - Create New KintoBlock](/docs/assets/creating-a-kintoblock-1-2.png)
 
 > Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to           associate your workspace . If you have already associated your workspace, please proceed to the next step.
@@ -146,8 +147,6 @@ KintoHub maintains a structured list of the events that take place during the bu
    { Add image of Open log button }
 
 When the KintoBlock build is a success, you will notice a green banner on top of the Build Logs section with the title `No error found`.
-
-   { Add a image for No error found }
 
 If the KintoBlock builds results in failure, a red banner will be displayed on top of the Build Logs section with the title `Error found`.  Log messages can be analyzed to find the root causes of failure. 
 
@@ -284,8 +283,11 @@ The **Search bar** in KintoBlocks is intuitive and easy to use. The Search yield
 The Quick Menu provides swift access to critical functions that can be performed in the KintoBlock:
 
 1. Click on the **Ellipsis icon** of any KintoBlock card in the KintoBlocks list page to access the following options:
+
    a. Edit Branch
+   
    b. View All Branches & Tags
+   
    c. View Endpoints
    
    { Add a image of KintoBlock card displaying the above mentioned options }
