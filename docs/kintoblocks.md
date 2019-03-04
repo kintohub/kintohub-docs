@@ -34,7 +34,7 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 
 3. Next, specify the details pertaining to your repo sources in the **Repository form**.
 
-   > Note: You can create a **new repository** or specify an **existing repository**.
+> Note: You can create a **new repository** or specify an **existing repository**.
 
 4. Enable the **Prepopulate repository switch** if you wish to import an example project to your repository. The example project will vary depending on the selected language.
 
