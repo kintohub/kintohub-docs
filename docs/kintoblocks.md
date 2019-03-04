@@ -30,10 +30,10 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
    { Add GIF video of entering name, description and selecting language & version }
 
 3. Next, specify the details pertaining to your repo sources in the **Repository form**.
+   
+   { Add image of repository type drop down }
 
 > Note: You can create a **new repository** or specify an **existing repository**.
-
-   { Add image of repository type drop down }
 
 4. Enable the **Prepopulate repository switch** if you wish to import an example project to your repository. The example project will vary depending on the selected language.
 
@@ -72,10 +72,7 @@ Once you have created a KintoBlock, the real-time status of your builds can be v
 You are all set. The KintoBlock for a website has been created successfully.
 
 
----
-title: Git Repository, Builds & CI
----
-
+## Git Repository, Builds & CI
 
 ## Tagging a Build
 
@@ -136,6 +133,7 @@ The build generation process will commence and the status of the build will be d
 To view a repository, open any KintoBlock and scroll down to **Builds & Repository** section. The repository name of a KintoBlock is displayed right below the Recent Builds section under the title Repository.
 
 The **Open Repo** button provides an option to quickly view the repository that is associated with your KintoBlock.
+  
    { Add image of Open Repo button }
 
 The **View example projects link** in the Repository section provides an option to quickly view an example project of the programming language you have chosen to create the KintoBlock.
@@ -165,10 +163,7 @@ c. **Failure**: This status indicates that the build failed.
 Detailed logs pertaining to each status can be viewed by clicking on the status column.
 
 
----
-title: Environment Variables
----
-
+## Environment Variables
 
 ## What are the Environment Variables?
 
@@ -218,10 +213,7 @@ It is possible to edit and delete an Environment variable in KintoBlock at any r
 - Public users with access to a KintoBlock can edit the environment values via **Configure Dependencies** button in Deployment Manage page.
 
 
----
-title: Manage KintoBlocks
----
-
+## Manage KintoBlocks
 
 ## Editing KintoBlocks
 
@@ -278,10 +270,7 @@ To view endpoint documentation:
 ## Deleting a KintoBlock(Coming soon)
 
 
----
-title: Advance Usages
----
-
+## Advance Usages
 
 ## Search and find KintoBlocks
 
