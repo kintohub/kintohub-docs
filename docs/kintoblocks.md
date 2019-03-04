@@ -271,7 +271,7 @@ To view endpoint documentation:
       b. **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are               displayed in the right pane.
 
 
-## Advance Usages
+## Advanced Usages
 
 ### Search and find KintoBlocks
 
