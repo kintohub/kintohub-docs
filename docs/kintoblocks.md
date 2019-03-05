@@ -1,18 +1,17 @@
 ---
-id: Introduction
 title: KintoBlocks
 ---
 
 
-## Introduction
+# Introduction
 
-### What is a KintoBlock
+## What is a KintoBlock
 
 KintoBlocks is the new standard format for building the stack of microservices for building your business. They are self-contained, containerized, universally compatible, language agnostic, combinable and shareable bricks of back-end logic. We like to think of them as Lego bricks of an application!
 
 KintoHub takes off your shoulders the hassle of implementing a microservice architecture reducing the cost of a substantial investment in your infrastructure. We help you achieve scalability using modular architecture by a library of configuration management.
 
-### How to create a KintoBlock
+## How to create a KintoBlock
 
 1. Select **KintoBlocks** from the sidebar.
 
@@ -26,7 +25,7 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 
 ![Screenshot - Create New KintoBlock](/docs/assets/select_kintoblock_type.png)
 
-### Creating a Microservice KintoBlock
+## Creating a Microservice KintoBlock
 
 1. If you have selected Microservices as the KintoBlock type, start-off by filling the **Basic Info form**.
 
@@ -52,7 +51,7 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 
 Once you have created a KintoBlock, the real-time status of your builds can be viewed by clicking on the **Open Log** button. It allows you to see event-based real-time updates corresponding to each build. Logs are especially useful in identifying root causes if a build failure has occurred.
   
-### Creating a Website KintoBlock
+## Creating a Website KintoBlock
 
 1. If you are creating a Website, select the corresponding option in the type of KintoBlocks.
 
@@ -75,9 +74,9 @@ Once you have created a KintoBlock, the real-time status of your builds can be v
 You are all set. The KintoBlock for a website has been created successfully.
 
 
-## Git Repository, Builds & CI
+# Git Repository, Builds & CI
 
-### Tagging a Build
+## Tagging a Build
 
 Builds are automatically generated when a KintoBlock is created. Tagging a build in a KintoBlock is a similar concept to tagging in GitHub. Once a build is tagged, the build can be referenced and deployed through a deployment. It’s important to tag stable builds that you have tested and prepared for production use!
 
@@ -99,7 +98,7 @@ To tag a commit in KintoBlock:
 
 > Note: Tagging is important when you are preparing for public releases.  If you want to update the deployment and add a KintoBlock to it, create a tag and select the tag within the deployment. This is an easy way to control the released versions of your KintoBlock.
 
-### Generating builds for new Commits
+## Generating builds for new Commits
 
 Whenever changes are committed to your repository, you can trigger a new build for your KintoBlock by following the steps mentioned below:
 
@@ -115,7 +114,7 @@ A new build with last commits made in the repository will be generated. The stat
 
 > Note: The **Automatically build new commits in this branch** option automatically enables build generation for new commits in the repository. By default, the toggle switch is set to `ON`.
 
-### Re-generating builds via Retry
+## Re-generating builds via Retry
 
 There is an option to regenerate a build from the last attempt to generated a build. Builds can be regenerated for all statuses: Success, Running and Failed.
 
@@ -131,7 +130,7 @@ To regenerate a build:
 
 The build generation process will commence and the status of the build will be displayed in the **Recent Builds** section.
 
-### View Repository
+## View Repository
 
 To view a repository, open any KintoBlock and scroll down to **Builds & Repository** section. The repository name of a KintoBlock is displayed right below the Recent Builds section under the title Repository.
 
@@ -141,7 +140,7 @@ The **Open Repo** button provides an option to quickly view the repository that 
 
 The **View example projects link** in the Repository section provides an option to quickly view an example project of the programming language you have chosen to create the KintoBlock.
 
-### View Build Logs
+## View Build Logs
 
 KintoHub maintains a structured list of the events that take place during the build generation. The entire build log can be generated in textual form by clicking on the **Open Log** button. 
 
@@ -153,7 +152,7 @@ If the KintoBlock builds results in failure, a red banner will be displayed on t
 
    { Add a image for error found }
   
-### View Build Status
+## View Build Status
 
 The Recent Builds section also displays the status of each build. The builds can have one of the 3 statuses mentioned below:
 
@@ -166,15 +165,15 @@ The Recent Builds section also displays the status of each build. The builds can
 Detailed logs pertaining to each status can be viewed by clicking on the status column.
 
 
-## Environment Variables
+# Environment Variables
 
-### What are the Environment Variables?
+## What are the Environment Variables?
 
 Environment variables are used to control static information specified in the Deployment. These are often configuration values like `Private_Keys` or `Port`. Environment variables aid in providing compatibility for Deployments to run seamlessly on multiple environments. They are specific to a **branch** of a KintoBlock, so if you switch branches and want to use that particular branch in a Deployment you will need to input the **Environment Variables** on that branch too.
 
 It is recommended to add **Environment value** while a variable is created. The Environment values can be added on the **KintoBlock manage page** or via **Configure Dependencies** button in Deployment Manage Page.
 
-### How to define Environment variables in a KintoBlock?
+## How to define Environment variables in a KintoBlock?
 
 The Environment variables can be added to a KintoBlock on the **KintoBlock Manage page** by following the steps mentioned below:
 
@@ -194,7 +193,7 @@ The Environment variables can be added to a KintoBlock on the **KintoBlock Manag
 
    { Add GIF video of enabling "This is a required value option switch" }
  
-### Manage Environment Variables
+## Manage Environment Variables
 
 It is possible to edit and delete an Environment variable in KintoBlock at any required point. The edit and delete operations are also carried out in the **KintoBlocks Manage page**:
 
@@ -210,15 +209,15 @@ It is possible to edit and delete an Environment variable in KintoBlock at any r
 
 6. Click on the **Save Changes** button to apply the changes.
 
-### Points to remember about Environment Variables
+## Points to remember about Environment Variables
 
 - The owner of a KintoBlock can add, edit or delete Environment variables and values.
 - Public users with access to a KintoBlock can edit the environment values via **Configure Dependencies** button in Deployment Manage page.
 
 
-## Manage KintoBlocks
+# Manage KintoBlocks
 
-### Editing KintoBlocks
+## Editing KintoBlocks
 
 The KintoBlock properties like `Description`, `Port`, `Build command`, `Run` and `Doc format` specified during creation can be edited and modified with new values.
 
@@ -232,11 +231,11 @@ To edit a KintoBlock follow the steps mentioned below:
 
 4. Click on the **Save Changes** button to apply changes.
 
-### Edit Branches & Tags
+## Edit Branches & Tags
 
 KintoBlock syncs with the repository and automatically updates new branches and tags added to it. There is no option within KintoBlocks to modify the branches and tags.
 
-### Add to Deployments
+## Add to Deployments
 
 KintoBlocks can be added straight away to any deployments in your workspace.
 
@@ -254,7 +253,7 @@ To add KintoBlocks to Deployments.
 
 5. Click on **Deploy** at the bottom right of the page to push the new changes to your deployments.
 
-### View Endpoints
+## View Endpoints
 
 Endpoint references pass the information needed to access a web service endpoint. This information is essential to access a service in KintoBlock. 
 
@@ -266,30 +265,30 @@ To view endpoint documentation:
 
 3. The **Endpoints Documentation page** consists of two sections:
 
-   - **Search Endpoints section** - The left pane contains a Search field to query and find relevant endpoint information.
+   a. **Search Endpoints section** - The left pane contains a Search field to query and find relevant endpoint information.
        
-   - **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are               displayed in the right pane.
+   b. **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are               displayed in the right pane.
 
 
-## Advanced Usages
+# Advanced Usages
 
-### Search and find KintoBlocks
+## Search and find KintoBlocks
 
 The **Search bar** in KintoBlocks is intuitive and easy to use. The Search yields the lists of KintoBlocks created by **workspace members** and **publicly** shared on the platform. Search is especially helpful for developers looking for reusable KintoBlocks so that they can focus only on building unique components necessary for their application.
 
    { Add GIF video of searching a "Helloworld KintoBlock" }
   
-### Quick Menu
+## Quick Menu
 
 The Quick Menu provides swift access to critical functions that can be performed in the KintoBlock:
 
 1. Click on the **Ellipsis icon** of any KintoBlock card in the KintoBlocks list page to access the following options:
 
-   - Edit Branch
+   a. Edit Branch
    
-   - View All Branches & Tags
+   b. View All Branches & Tags
    
-   - View Endpoints
+   c. View Endpoints
    
    { Add a image of KintoBlock card displaying the above mentioned options }
    
