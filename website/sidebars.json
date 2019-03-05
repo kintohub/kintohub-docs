@@ -14,10 +14,6 @@
         "label": "kintoblocks",
         "ids": [
           "Introduction",
-          "Git Repository, Builds & CI",
-          "Environment Variables",
-          "Manage & Deploy",
-          "Advanced Usages"
         ]
       },
       "token-session",
