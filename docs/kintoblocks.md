@@ -25,7 +25,7 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 
 ![Screenshot - Create New KintoBlock](/docs/assets/select_kintoblock_type.png)
 
-## Creating a Microservice KintoBlock
+### Creating a Microservice KintoBlock
 
 1. If you have selected Microservices as the KintoBlock type, start-off by filling the **Basic Info form**.
 
