@@ -9,13 +9,7 @@
     "Docs": [
       "getting-started",
       "apidoc",
-      {
-        "type": "subcategory",
-        "label": "kintoblocks",
-        "ids": [
-          "Introduction"
-        ]
-      },
+      "kintoblocks",
       "token-session",
       "repositories",
       "kintoapps",
