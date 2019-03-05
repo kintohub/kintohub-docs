@@ -1,4 +1,5 @@
 ---
+id: Introduction
 title: KintoBlocks
 ---
 
@@ -19,7 +20,7 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 
 ![Screenshot - Create New KintoBlock](/docs/assets/creating-a-kintoblock-1-2.png)
 
-> Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to           associate your workspace . If you have already associated your workspace, please proceed to the next step.
+> Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to           associate your [workspace](workspaces.md). If you have already associated your workspace, please proceed to the next step.
 
 3. There are two types of KintoBlocks currently supported: **Microservices** and **Website**. Choose the type of KintoBlock that meets your needs.
 
@@ -156,11 +157,11 @@ If the KintoBlock builds results in failure, a red banner will be displayed on t
 
 The Recent Builds section also displays the status of each build. The builds can have one of the 3 statuses mentioned below:
 
-**Running**: This is the initial state of a new build, while we build your KintoBlock
+- **Running**: This is the initial state of a new build, while we build your KintoBlock
 
-**Success**: This status indicates that your KintoBlock build was run successfully.
+- **Success**: This status indicates that your KintoBlock build was run successfully.
 
-**Failure**: This status indicates that the build failed. 
+- **Failure**: This status indicates that the build failed. 
 
 Detailed logs pertaining to each status can be viewed by clicking on the status column.
 
@@ -265,9 +266,9 @@ To view endpoint documentation:
 
 3. The **Endpoints Documentation page** consists of two sections:
 
-      a.  **Search Endpoints section** - The left pane contains a Search field to query and find relevant endpoint information.
+   - **Search Endpoints section** - The left pane contains a Search field to query and find relevant endpoint information.
        
-      b.  **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are               displayed in the right pane.
+   - **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are               displayed in the right pane.
 
 
 ## Advanced Usages
@@ -284,11 +285,11 @@ The Quick Menu provides swift access to critical functions that can be performed
 
 1. Click on the **Ellipsis icon** of any KintoBlock card in the KintoBlocks list page to access the following options:
 
-   a. Edit Branch
+   - Edit Branch
    
-   b. View All Branches & Tags
+   - View All Branches & Tags
    
-   c. View Endpoints
+   - View Endpoints
    
    { Add a image of KintoBlock card displaying the above mentioned options }
    
