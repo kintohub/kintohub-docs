@@ -19,16 +19,16 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 
 ![Screenshot - Create New KintoBlock](/docs/assets/creating-a-kintoblock-1-2.png)
 
-> Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to           associate your [workspace](workspaces.md). If you have already associated your workspace, please proceed to the next step.
+> Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to associate your [workspace](workspaces.md). If you have already associated your workspace, please proceed to the next step.
 
 3. There are two types of KintoBlocks currently supported: **Microservices** and **Website**. Choose the type of KintoBlock that meets your needs.
 
-- **Microservice** - Create a feature or functionality that runs your business.
-- **Website** - Create a static, dynamic or server-side rendered website.
-- **Custom Services** - coming soon
-- **Tasks** - coming Soon
-- **Functions** - coming soon
-- **Cloud Service** - coming soon
+   - **Microservice** - Create a feature or functionality that runs your business.
+   - **Website** - Create a static, dynamic or server-side rendered website.
+   - **Custom Services** - coming soon
+   - **Tasks** - coming soon
+   - **Functions** - coming soon
+   - **Cloud Service** - coming soon
 
 ![Screenshot - Create New KintoBlock](/docs/assets/select_kintoblock_type.png)
 
@@ -38,7 +38,7 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 
 2. In Basic Info form, specify details on `name`, `description`, `programming language` and `version` you would like to use.
 
-   { TODO : Add GIF video of entering name, description and selecting language, version & repository type }
+   {TODO: Raven Add GIF video of entering a name, description and selecting language, version & repository type }
 
 3. Next, specify the details pertaining to your repo sources in the **Repository form**.
 
@@ -46,21 +46,19 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 
 4. Enable the **Prepopulate repository switch** if you wish to import an example project to your repository. The example project will vary depending on the selected language.
 
-   { TODO : Add GIF video enabling pre-pop switch }
+   {TODO: Raven Add GIF video enabling pre-pop switch }
 
 5. Select your git repo service. **GitHub** and **Bitbucket** services are currently supported by KintoBlocks.
 
-6. The other properties of KintoBlock like `Protocol`, `Port`, `Build command`, `Run command` and `DOC format` are auto-filled based on the language chosen for your KintoBlock. 
+6. The other properties `Protocol`, `Port`, `Build command`, `Run command` and `DOC format` are auto-filled based on the chosen language. These values are editable and can be changed if required.
 
-> Note: API doc is created for a KintoBlock, when **ApiDoc** option is selected in the `DOC format` dropdown field and is not created, when option **None** is selected. The KintoBlock build will tend to fail, if ApiDoc is not enabled.
+> Note: API documentation for a KintoBlock is created when the **ApiDoc** option is selected in the **DOC format** dropdown. In case, documentation is not required, select the option **None** in the same dropdown. It is important to note that the build can fail if ApiDoc is not enabled.
 
-**Build command** are used to build a latest version of your application and **Run command** are used to run the application locally.For an example in a NodeJs project, the Build command is `npm install` which installs latest changes in your project and Run command is `npm run prod` which starts a production environment of your application.
-
-   { TODO : Add image of Advanced options form for NodeJs project}
+   {TODO: Raven Add image of Advanced options form for NodeJs project}
 
 7. Click on the **Create New KintoBlock** button to successfully create your KintoBlock for microservices.
 
-Once you have created a KintoBlock, the real-time status of your builds can be viewed by expanding the build row. The **Open Log** button in the build row allows you to see event-based real-time updates corresponding to each build. Logs are especially useful in identifying root causes if a build failure has occurred.
+When the KintoBlock is created, the real-time status of the builds can be viewed by expanding the build row. The **Open Log** button in the build row displays the events corresponding to each build. Logs are especially useful in identifying root causes when a build failure occurs.
   
 ### Creating a Website KintoBlock
 
@@ -70,17 +68,17 @@ Once you have created a KintoBlock, the real-time status of your builds can be v
 
 3. Select the **website type** in the drop-down. Right now, we only support **Dynamic Web Applications**. The support for static websites will be coming up soon!
 
-   { TODO : Add image of website type dropdown }
+   {TODO: Raven Add image of website type dropdown }
 
 4. Proceed to the **Advanced Options** form to specify  `Port`, `Build command` and `Run command` details.
 
-> Note: For example a Dynamic Web Application project, the Build command is `npm install` which installs latest changes in your project and Run command is `npm start` which starts the environment of your application.
+> Note: For example, a Dynamic Web Application project, the Build command is `npm install` which installs latest changes in your project and Run command is `npm start` which starts the environment of your application.
 
-   { TODO : Add image of Advanced options form }
+   {TODO: Raven Add image of Advanced options form }
 
 5. The final step requires you to provide the repo source details in the **Repository form**. The repository can either be an existing source or a newly created one.
 
-6. In the Repository form, make sure to specify the version control repo service used by your Organization. KintoBlocks supports GitHub and Bitbucket services.
+6. In the Repository form, make sure to specify the git repository service used by your Organization. KintoBlocks supports GitHub and Bitbucket services.
 
 7. Click on the **Create New KintoBlock** button. 
 
@@ -89,7 +87,7 @@ You are all set. The KintoBlock for a website has been created successfully.
 
 ## Git Repository, Builds & CI
 
-### Generating builds for new Commits
+### Manually trigger builds for new Commits
 
 Whenever changes are committed to your repository, you can trigger a new build for your KintoBlock by following the steps mentioned below:
 
@@ -99,7 +97,7 @@ Whenever changes are committed to your repository, you can trigger a new build f
 
 3. Click on **Check for New Commits** button.
 
-   { TODO : Add GIF video of clicking on Check for New Commits button and new build generated }
+   {TODO: Raven Add GIF video of clicking on Check for New Commits button and new build generated }
 
 A new build with last commits made in the repository will be generated. The status of the new build will be displayed in the **Recent Builds section**. If there are no new commits in the repository, a new build will not be generated.
 
@@ -117,7 +115,7 @@ To regenerate a build:
 
 3. Click on the **Retry** button displayed in the build status table.
 
-   { TODO : Add a GIF video for clicking on Retry button and new build generated }
+   {TODO: Raven Add a GIF video for clicking on Retry button and new build generated }
 
 The build generation process will commence and the status of the build will be displayed in the **Recent Builds** section.
 
@@ -127,7 +125,7 @@ To view a repository, open any KintoBlock and scroll down to **Builds & Reposito
 
 The **Open Repo** button provides an option to quickly view the repository that is associated with your KintoBlock.
   
-   { TODO : Add image of Open Repo button }
+   {TODO: Raven Add image of Open Repo button }
 
 The **View example projects link** in the Repository section provides an option to quickly view an example project of the programming language you have chosen to create the KintoBlock.
 
@@ -135,13 +133,13 @@ The **View example projects link** in the Repository section provides an option 
 
 KintoHub maintains a structured list of the events that take place during the build generation. The entire build log can be generated in textual form by clicking on the **Open Log** button. 
 
-   { TODO : Add image of Open log button }
+   {TODO: Raven Add image of Open log button }
 
 When the KintoBlock build is a success, you will notice a green banner on top of the Build Logs section with the title `No error found`.
 
 If the KintoBlock builds results in failure, a red banner will be displayed on top of the Build Logs section with the title `Error found`.  Log messages can be analyzed to find the root causes of failure. 
 
-   { TODO : Add a image for error found }
+   {TODO: Raven Add an image for error found }
   
 ### View Build Status
 
@@ -167,11 +165,11 @@ To tag a commit in KintoBlock:
 
 3. In **Builds & Repository section**, click on the **Tag Build** button for the commit that you would like to tag.
 
-   { TODO : Add image of Tag build button in Builds & Repository section }
+   {TODO: Raven Add image of Tag build button in Builds & Repository section }
 
 4. Now specify the build number. We use the form  `MAJOR.MINOR.REVISION` for build numbers.
 
-   { TODO : Add GIF video of entering tag number }
+   {TODO: Raven Add GIF video of entering tag number }
 
 5. Enter the release notes in the Notes section and then click on the **Tag Build**.
 
@@ -196,7 +194,7 @@ The Environment variables can be added to a KintoBlock on the **KintoBlock Manag
 
 3. Scroll down to the **Environment Variable** section at the bottom of the form.
 
-   { TODO : Add image of environment variable section }
+   { TODO : Raven Add image of environment variable section }
 
 4. Add the **Variable name** and set the default value. Users can override the default value before they deploy.
 
@@ -204,7 +202,7 @@ The Environment variables can be added to a KintoBlock on the **KintoBlock Manag
 
 6. By default, each variable added will be regarded as an optional variable. If you would like to mandate the use of any specific variable, enable the **This is a required value option**.
 
-   { TODO : Add GIF video of enabling "This is a required value option switch" }
+   {TODO: Raven Add GIF video of enabling "This is a required value option switch" }
  
 ### Manage Environment Variables
 
@@ -240,9 +238,13 @@ To edit a KintoBlock follow the steps mentioned below:
 
 2. Click on the **pencil icon** displayed beside the title to modify the Description of the KintoBlock.
 
-3. Under the **Builds & Repository** we have the **Advanced Options section**, expand the section and specify updated values in the `Port`, `Build command`, `Run`, and `Doc` fields.
+3. Scroll down to **Builds & Repository** section.
 
-4. Click on the **Save Changes** button to apply changes.
+4. Expand **Advanced Options** to view the `Port`, `Build command`, `Run`, and `Doc` fields
+
+5. Specify new values wherever necessary.
+
+6. Click on the **Save Changes** button to apply changes.
 
 ### Edit Branches & Tags
 
@@ -262,7 +264,7 @@ To add KintoBlocks to Deployments.
 
 4. Once the environment is selected, the **Deployment Manage page** is displayed and the KintoBlock is added to the deployment.
 
-   { TODO : Add GIF video of clicking Add to Deployments button and KintoBlock gets added to deployment }
+   {TODO: Raven Add GIF video of clicking Add to Deployments button and KintoBlock gets added to deployment }
 
 5. Click on **Deploy** at the bottom right of the page to push the new changes to your deployments.
 
@@ -280,7 +282,7 @@ To view endpoint documentation:
 
    a. **Search Endpoints section** - The left pane contains a Search field to query and find relevant endpoint information.
        
-   b. **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are               displayed in the right pane.
+   b. **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are displayed in the right pane.
 
 
 ## Advanced Usages
@@ -289,7 +291,7 @@ To view endpoint documentation:
 
 The **Search bar** in KintoBlocks is intuitive and easy to use. The Search yields the lists of KintoBlocks created by **workspace members** and **publicly** shared on the platform. Search is especially helpful for developers looking for reusable KintoBlocks so that they can focus only on building unique components necessary for their application.
 
-   { TODO : Add GIF video of searching a "Helloworld KintoBlock" }
+   {TODO: Raven Add GIF video of searching a "HelloWorld KintoBlock" }
   
 ### Quick Menu
 
@@ -303,11 +305,12 @@ The Quick Menu provides swift access to critical functions that can be performed
    
    c. View Endpoints
    
-   { TODO : Add a image of KintoBlock card displaying the above mentioned options }
+   {TODO: Raven Add an image of KintoBlock card displaying the above-mentioned options }
    
 2. On selecting the **Edit Branch option**, the user is redirected to the **KintoBlock Manage page**.
 
 3. Click on the **View All Branches & Tags option** to open a drop-down displaying all the branches and tags of the KintoBlock.
 
 4. The **View Endpoints option** will redirect the user Endpoint documentation page of the KintoBlock.
+
 
