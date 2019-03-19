@@ -34,11 +34,11 @@ To add KintoBlocks to Deployments.
 
 1. Open the KintoBlock.
 
-2. Click on **Add To Deployments** button displayed on the bottom right of the **KintoBlock Manage page**.
+2. Click on **Add To Deployments** button displayed on the bottom right of the **KintoBlock Manage** page.
 
 3. In the pop-up dialog displaying the deployments in the workspace, select the environment.
 
-4. Once the environment is selected, the **Deployment Manage page** is displayed and the KintoBlock is added to the deployment.
+4. Once the environment is selected, the **Deployment Manage** page is displayed and the KintoBlock is added to the deployment.
 
    { TODO: Raven Add GIF video of clicking Add to Deployments button and KintoBlock gets added to deployment }
 
@@ -53,9 +53,9 @@ To view endpoint documentation:
 
 1. Open any KintoBlock.
 
-2. Click the **View Endpoints** button on top right of the **KintoBlock Manage page**.
+2. Click the **View Endpoints** button on top right of the **KintoBlock Manage** page.
 
-3. The **Endpoints Documentation page** consists of two sections:
+3. The **Endpoints Documentation** page consists of two sections:
 
    a. **Search Endpoints section** - The left pane contains a Search field to query and find relevant endpoint information.
        
