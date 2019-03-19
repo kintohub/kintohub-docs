@@ -19,7 +19,7 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 
 > Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to associate your [workspace](workspaces.md). If you have already associated your workspace, please proceed to the next step.
 
-3. There are two types of KintoBlocks currently supported now: **Microservices** and **Website**. Choose the type of
+3. There are two types of KintoBlocks supported now: **Microservices** and **Website**. Choose the type of
 KintoBlock that meets your needs.
 
    - **Microservice** - Create a feature or functionality that runs your business.
