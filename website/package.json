@@ -13,7 +13,7 @@
     "watch-css": "npm run build-css && node-sass-chokidar style/ -o static/css/ --watch --recursive"
   },
   "devDependencies": {
-    "docusaurus": "^1.3.0",
+    "docusaurus": "^1.7.2",
     "node-sass-chokidar": "^1.2.2",
     "nodemon": "^1.17.2",
     "npm-run-all": "^4.1.2"
