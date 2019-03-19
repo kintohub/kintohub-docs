@@ -2,9 +2,9 @@
 title: Git Repository, Builds & CI
 ---
 
-## Continous Integration and Deployment
+## Continuous Integration and Deployment
 
-When changes are committed into the repository branch, a new build for KintoBlock can be triggered by using the **Check for New Commits** button in the **KintoBlock Manage Page**. Under **Recent Builds** user can view the recent commits made in the repository branch. The **Latest Build** section will be updated automatically with the last successful build.
+When changes are committed into the repository branch, a new build for KintoBlock can be triggered by using the **Check for New Commits** button in the **KintoBlock Manage** page. Under **Recent Builds** user can view the recent commits made in the repository branch. The **Latest Build** section will be updated automatically with the last successful build.
 
 The **Automatically build new commits in this branch** option automatically enables build generation for new commits in the repository. By default, the toggle switch is set to `ON`.
 
