@@ -6,10 +6,16 @@
       "session-memory",
       "sdk-less-framework"
     ],
+    "KintoBlocks": [
+      "introduction",
+      "kintoblock-builds",
+      "environment",
+      "manage-blocks",
+      "advanced-usages"
+    ],
     "Docs": [
       "getting-started",
       "apidoc",
-      "kintoblocks",
       "token-session",
       "repositories",
       "kintoapps",
