@@ -23,7 +23,7 @@ The Quick Menu provides swift access to critical functions that can be performed
    
    { TODO: Raven Add an image of KintoBlock card displaying the above-mentioned options }
    
-2. On selecting the **Edit Branch option**, the user is redirected to the **KintoBlock Manage page**.
+2. On selecting the **Edit Branch option**, the user is redirected to the **KintoBlock Manage** page.
 
 3. Click on the **View All Branches & Tags option** to open a drop-down displaying all the branches and tags of the KintoBlock.
 
