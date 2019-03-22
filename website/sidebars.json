@@ -9,6 +9,7 @@
     "KintoBlocks": [
       "introduction",
       "kintoblock-builds",
+      "builds-and-run-cmds",
       "environment",
       "manage-blocks",
       "advanced-usages"
