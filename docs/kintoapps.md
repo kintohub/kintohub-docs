@@ -87,15 +87,15 @@ Simply make a call to:
 https://api.kintohub.com/{block-name}
 ```
 
-Be sure to include in the authorization header. Example:
+Be sure to include in the Kinto-Authorization header. Example:
 
 ```
-{ "authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnQtaWQiOiI3MjE5ZTI0NGNiZjM0ZjA2YmIyNTEyMWQ3MzhjYWUyNiIsInNlc3Npb24taWQiOiI5MzQ3OTFhYy1kNzllLTQ5NWQtYjVlYy01OTJlMmU4MDRjMTciLCJuYmYiOjE1MzA4NTYzNTUsImV4cCI6MTUzMjA2NTk1NSwiaWF0IjoxNTMwODU2MzU1LCJpc3MiOiJNaWRkbGV3YXJlIiwiYXVkIjoiTWlkZGxld2FyZSJ9.Cer1EyzryW5qKfqpSqs5u2t6BunoeUtjpwX_fFAzVj4" }
+{ "Kinto-Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnQtaWQiOiI3MjE5ZTI0NGNiZjM0ZjA2YmIyNTEyMWQ3MzhjYWUyNiIsInNlc3Npb24taWQiOiI5MzQ3OTFhYy1kNzllLTQ5NWQtYjVlYy01OTJlMmU4MDRjMTciLCJuYmYiOjE1MzA4NTYzNTUsImV4cCI6MTUzMjA2NTk1NSwiaWF0IjoxNTMwODU2MzU1LCJpc3MiOiJNaWRkbGV3YXJlIiwiYXVkIjoiTWlkZGxld2FyZSJ9.Cer1EyzryW5qKfqpSqs5u2t6BunoeUtjpwX_fFAzVj4" }
 ```
 
 (Use same token from the example response in step 5.)
 
-To make a call to gRPC, talk to grpc.prod.kintohub.com with your gRPC service proto file, but include in the grpc-meta-data the authorization header as well.
+To make a call to gRPC, talk to grpc.prod.kintohub.com with your gRPC service proto file, but include in the grpc-meta-data the Kinto-Authorization header as well.
 
 ## Viewing Deployment Logs
 
