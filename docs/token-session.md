@@ -16,12 +16,12 @@ BODY { "clientId":"<clientid>", "clientSecret":"<clientsecret>" }
 2.  The client will get a token back (The client can save it as part of local storage) and should send it with all the following requests by adding it as an `Authorization` header, like:
 
 ```
-Authorization: Bearer <token>
+Kinto-Authorization: Bearer <token>
 ```
 
 ## Tokens as the first-class citizen
 
-We decided to make tokens a requirement when calling any microservice. To call your microservice, it needs always to be included as an `Authorization` header shown above
+We decided to make tokens a requirement when calling any microservice. To call your microservice, it needs always to be included as a `Kinto-Authorization` header shown above
 
 If a token is not attached when requesting a resource, the client will get an error response
 
