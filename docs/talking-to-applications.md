@@ -37,7 +37,7 @@ api.kintohub.com/{block-name}
 Be sure to include in the authorization header. Example:
 
 ```
-Authorization: Bearer <token>
+Kinto-Authorization: Bearer <token>
 ```
 
 (Use same token from the example response in step 5.)
