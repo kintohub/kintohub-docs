@@ -13,7 +13,7 @@ POST https://api.kintohub.com/auth
 BODY { "clientId":"<clientid>", "clientSecret":"<clientsecret>" }
 ```
 
-2.  The client will get a token back (The client can save it as part of local storage) and should send it with all the following requests by adding it as an `Authorization` header, like:
+2.  The client will get a token back (The client can save it as part of local storage) and should send it with all the following requests by adding it as an `Kinto-Authorization` header, like:
 
 ```
 Kinto-Authorization: Bearer <token>
@@ -47,7 +47,7 @@ We have approached it differently, every microservice that needs the username or
 
 Let us start first with an example to show the flow of how to save/read data from the session
 
-1.  the user has to get a token and send it as part of the authorization header like shown above
+1.  the user has to get a token and send it as part of the Kinto-Authorization header like shown above
 
 2.  In the auth microservice, we are going to expose the userid and username
 
