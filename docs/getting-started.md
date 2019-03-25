@@ -167,7 +167,7 @@ curl -H "Content-Type: application/json" -X POST -d '{"clientId":"<clientId>","c
 }
 ```
 
-if we used that token and pass it as an Authorization header when we call any Kintoblock inside that Application it should work _(need to add 'Bearer' before the actual token)_
+if we used that token and pass it as a Kinto-Authorization header when we call any Kintoblock inside that Application it should work _(need to add 'Bearer' before the actual token)_
 
 Finally, the following should work
 
