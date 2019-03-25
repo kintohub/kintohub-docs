@@ -172,7 +172,7 @@ if we used that token and pass it as an Authorization header when we call any Ki
 Finally, the following should work
 
 ```bash
-curl -H "Authorization: Bearer <token>" https://api.kintohub.com/nodeexample/sample/hello
+curl -H "Kinto-Authorization: Bearer <token>" https://api.kintohub.com/nodeexample/sample/hello
 ```
 
 Should return
