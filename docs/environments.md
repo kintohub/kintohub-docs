@@ -30,7 +30,7 @@ Each environment is displayed as an individual card in the sidebar of the **Depl
 - **API access**
 
 
-## How to Deploy an Environment
+## Deploy KintoBlocks into an Environment
 
 An environment needs to be deployed in the following conditions:
 
