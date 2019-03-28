@@ -48,7 +48,7 @@ To deploy an environment, follow the steps mentioned below:
 
 3. Select the KintoBlock from the search dropdown.
 
-4. Click on the **X** icon displayed beside a KintoBlock to remove it.
+4. Click on the **X** icon displayed at the top right of the KintoBlock to remove it.
 
 5. Click on the **Deploy** button to deploy the environment.
 
