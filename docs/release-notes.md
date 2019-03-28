@@ -4,11 +4,11 @@ title: Release Notes
 
 ## Alpha-0.1.0
 
-*Accounts & Admin*
+**Accounts & Admin**
 
 * No Changes
 
-Deployments
+**Deployments**
 
 * Dedicated “copy” button displayed below the title of deployment for “ClientID” and “Secret Key”.
 * Dedicated “copy” button displayed under the “API Access section”  for “ClientID” and “Secret Key”.
@@ -21,17 +21,18 @@ Deployments
 * Configure KintoBlocks - “Reset to default values” button. 
 * “Delete Deployment” option in card drop down. Clicking on it gives a pop up to enter the text “deleted” with two buttons “Do nothing” and “Delete Deployment”.
 
-*KintoBlocks*
+**KintoBlocks**
 
 * By default "None" option is selected in "Doc Format" field during creation of KintoBlock. User can enable ApiDoc for KintoBlock by selecting "ApiDoc" option in "Doc Format" field.
 
-*Workspaces*
+**Workspaces**
 
 * No new changes
 
-*Infrastructure*
+**Infrastructure**
 
 * General improved security update
 
-*BUGS*
+**BUGS**
+
 * Fix Token Refresh / Login Issue
