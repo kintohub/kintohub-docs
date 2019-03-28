@@ -19,15 +19,13 @@ The Environment variables can be added to a KintoBlock on the **KintoBlock Manag
 
 3. Scroll down to the **Environment Variable** section at the bottom of the form.
 
-   { TODO : Raven Add image of environment variable section }
+    ![Screenshot](/docs/assets/env-vars-kb.png)
 
 4. Add the **Variable name** and set the default value. Users can override the default value before they deploy.
 
 5. Click on the **+** button.
 
 6. By default, each variable added will be regarded as an optional variable. If you would like to mandate the use of any specific variable, enable the **This is a required value option**.
-
-   { TODO: Raven Add GIF video of enabling "This is a required value option switch" }
  
 
 ## Manage Environment Variables
