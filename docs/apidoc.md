@@ -15,7 +15,7 @@ The following is a sample doc for an endpoint
  * @api {POST} /vehicle/{type} Add a new vehicle to the logged in user's collection
  * @apiName AddVehicle
  * @apiHeader (Session) {String} auth-account-id Logged in User's Id
- * @apiHeader {String} authorization Logged in User's Id
+ * @apiHeader {String} kinto-authorization Logged in User's Id
  * @apiParam (Url) {String} type the vehicle type
  * @apiParam {String} model the vehicle model
  * @apiParam {String} name the vehicle name
@@ -72,7 +72,7 @@ Example:
 
 ```
 /**
- * @apiHeader {String} authorization authorization header
+ * @apiHeader {String} authorization kinto-authorization header
  * @apiHeader (Header) {String} content-type request's content type // Header group is optional, can be removed
  * @apiHeader (Session) {String} auth-account-id Logged in User's Id added by the session and injected when you add this line
  * @apiHeader (Config) {String} githubToken this is being added in kintohub and injected when you add this line

@@ -6,13 +6,27 @@
       "session-memory",
       "sdk-less-framework"
     ],
+    "KintoBlocks": [
+      "introduction",
+      "kintoblock-builds",
+      "builds-and-run-cmds",
+      "environment-variables",
+      "manage-blocks",
+      "advanced-usages"
+    ],
+    "Deployments": [
+      "deployments-introduction",
+      "manage-deployments",
+      "environments",
+      "manage-environments",
+      "deployment-status-history",
+      "accesing-endpoints"
+    ],
     "Docs": [
       "getting-started",
       "apidoc",
-      "kintoblocks",
       "token-session",
       "repositories",
-      "kintoapps",
       "workspaces",
       "release-notes"
     ],

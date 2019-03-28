@@ -34,15 +34,15 @@ Simply make a call to:
 api.kintohub.com/{block-name}
 ```
 
-Be sure to include in the authorization header. Example:
+Be sure to include in the Kinto-Authorization header. Example:
 
 ```
-Authorization: Bearer <token>
+Kinto-Authorization: Bearer <token>
 ```
 
 (Use same token from the example response in step 5.)
 
-To make a call to gRPC, talk to grpc.prod.kintohub.com with your gRPC service proto file, but include in the grpc-meta-data the authorization header as well.
+To make a call to gRPC, talk to grpc.prod.kintohub.com with your gRPC service proto file, but include in the grpc-meta-data the Kinto-Authorization header as well.
 
 ### Related Articles
 

@@ -6,11 +6,11 @@ Authenticating to KintoHub is the first step to gaining access to KintoHub API e
 
 Every KintoApp has an Environment with a specific `clientId` and `clientSecret`.  Utilize these credentials, you can create a unique client session `token` to a specific versionized environment. This token has information that allows KintoHub to know which KintoBlocks you are interested in speaking to.
 
-## Authorization tokens in practice
+## Kinto-Authorization tokens in practice
 
 ![Screenshot - Authorize to kintohub](/docs/assets/kintohub-api-authorization-flow.png)
 
-Authorization Tokens act as first class citizens for the entire journey of calling KintoBlocks.  We utilize this token to do many things such as shared memory and dependency management.
+Kinto-Authorization Tokens act as first class citizens for the entire journey of calling KintoBlocks.  We utilize this token to do many things such as shared memory and dependency management.
 
 ## Public APIs
 
