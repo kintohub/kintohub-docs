@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-## What is a KintoBlock 
+## What is a KintoBlock?
 
 KintoBlocks is the new standard format for building the stack of microservices for building your business. They are self-contained, containerized, universally compatible, language agnostic, combinable and shareable bricks of back-end logic. We like to think of them as Lego bricks of an application!
 
@@ -15,21 +15,21 @@ KintoHub takes off your shoulders the hassle of implementing a microservice arch
 
 2. Click **Create New KintoBlock** card or the **+** icon.
 
-![Screenshot - Create New KintoBlock](/docs/assets/creating-a-kintoblock-1-2.png)
+   ![Screenshot](/docs/assets/kb-create-options.png)
 
-> Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to associate your [workspace](workspaces.md). If you have already associated your workspace, please proceed to the next step.
+   > Note: At this point, if you have not linked your workspace to your **Github** or **Bitbucket** account, you will be asked to associate your [workspace](workspaces.md). If you have already associated your workspace, please proceed to the next step.
 
 3. There are two types of KintoBlocks supported now: **Microservices** and **Website**. Choose the type of
 KintoBlock that meets your needs.
 
    - **Microservice** - Create a feature or functionality that runs your business.
    - **Website** - Create a static, dynamic or server-side rendered website.
-   - **Custom Services** - coming soon
+   - **Custom Services** - Create and host any service on KintoHub.
    - **Tasks** - coming soon
    - **Functions** - coming soon
    - **Cloud Service** - coming soon
 
-![Screenshot - Create New KintoBlock](/docs/assets/select_kintoblock_type.png)
+   ![Screenshot](/docs/assets/select-kb-flavour.png)
 
 
 ## Creating a Microservice KintoBlock
@@ -38,27 +38,25 @@ KintoBlock that meets your needs.
 
 2. In Basic Info form, specify details on `name`, `description`, `programming language` and `version` you would like to use.
 
-   { TODO: Raven Add GIF video of entering a name, description and selecting language, version & repository type }
+   ![Screenshot](/docs/assets/kb-basic-info.png)
 
 3. Next, specify the details pertaining to your repo sources in the **Repository form**.
 
-> Note: You can create a **new repository** or specify an **existing repository**.
+   > Note: You can create a **new repository** or specify an **existing repository**.
 
 4. Enable the **Prepopulate repository switch** if you wish to import an example project to your repository. The example project will vary depending on the selected language.
-
-   { TODO: Raven Add GIF video enabling pre-pop switch }
 
 5. Select your git repo service. **GitHub** and **Bitbucket** services are currently supported by KintoBlocks.
 
 6. The other properties `Protocol`, `Port`, `Build command`, `Run command` and `DOC format` are auto-filled based on the chosen language. These values are editable and can be changed if required.
 
-   { TODO: Raven Add image of Advanced options form for NodeJs project }
+   ![Screenshot](/docs/assets/advanced-options.png)
 
->API documentation for a KintoBlock is created when the **ApiDoc** option is selected in the **DOC format** dropdown. In case, documentation is not required, select the option **None** in the same dropdown. It is important to note that the build can fail if ApiDoc is not enabled.
+   > API documentation for a KintoBlock is created when the **ApiDoc** option is selected in the **DOC format** dropdown. In case, documentation is not required, select the option **None** in the same dropdown. It is important to note that the build can fail if ApiDoc is not enabled.
    
 7. Click on the **Create New KintoBlock** button to successfully create your KintoBlock for microservices.
 
-> Note: When the KintoBlock is created, the real-time status of the builds can be viewed by expanding the build row. The **Open Log** button in the build row displays the events corresponding to each build. Logs are especially useful in identifying root causes when a build failure occurs.
+   > Note: When the KintoBlock is created, the real-time status of the builds can be viewed by expanding the build row. The **Open Log** button in the build row displays the events corresponding to each build. Logs are especially useful in identifying root causes when a build failure occurs.
 
 
 ## Creating a Website KintoBlock
@@ -69,11 +67,9 @@ KintoBlock that meets your needs.
 
 3. Select the **website type** in the drop-down. Right now, we only support **Dynamic Web Applications**. The support for static websites will be coming up soon!
 
-   { TODO: Raven Add image of website type dropdown }
+   ![Screenshot](/docs/assets/website-dropdown.png)
 
 4. Proceed to the **Advanced Options** form to specify  `Port`, `Build command` and `Run command` details.
-
-   { TODO: Raven Add image of Advanced options form }
 
 5. The final step requires you to provide the repo source details in the **Repository form**. The repository can either be an existing source or a newly created one.
 
@@ -82,4 +78,3 @@ KintoBlock that meets your needs.
 7. Click on the **Create New KintoBlock** button. 
 
 You are all set. The KintoBlock for a website has been created successfully.
-
