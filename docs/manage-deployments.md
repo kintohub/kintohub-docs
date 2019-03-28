@@ -28,7 +28,7 @@ To delete a KintoBlocks, navigate to the KintoBlock section.
     { TODO: Raven Add GIF video of deleting a KB by clicking on X icon }   
 
 
-## Configure Dependencies
+## Configure KintoBlocks
 
 KintoBlocks consists of **environment variables** which are used to set the configuration. Environment variable values can be edited and updated whenever it is required.
 
@@ -36,7 +36,7 @@ To configure the dependencies, follow the steps mentioned below:
 
 1. Open a **Deployment**.
 
-2. Under KintoBlocks section, click on **Configure Dependencies** button.
+2. Under KintoBlocks section, click on **Configure KintoBlocks** button.
 
 3. The list of KintoBlocks in the environment will be displayed on the left pane of the **Edit Dependencies** page.
 
