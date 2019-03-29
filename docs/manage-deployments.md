@@ -16,16 +16,14 @@ To add or remove KintoBlocks, follow the steps mentioned below:
 
 4. Select it from the dropdown to add them to deployments.
 
-    { TODO: Raven Add GIF video of selecting KB }
-
 
 To delete a KintoBlocks, navigate to the KintoBlock section.
 
-1. Click on the **X** icon displayed beside a KintoBlock to remove it.
+1. Click on the **X** icon displayed at the top right of the KintoBlock to remove it.
 
 2. Click on the **Deploy** button to apply the new changes to the deployments.
 
-    { TODO: Raven Add GIF video of deleting a KB by clicking on X icon }   
+   ![Screenshot](/docs/assets/delete-kb-deployments.png)
 
 
 ## Configure KintoBlocks
@@ -48,7 +46,25 @@ To configure the dependencies, follow the steps mentioned below:
 
 7. Click on the **Save Changes** button to apply the changes.
 
-> Note: Only **environment variable values** can be edited in Edit Dependencies page.
+   ![Screenshot](/docs/assets/edit-dependencies-page.png)
+
+    > Note: Only **environment variable values** can be edited in Edit Dependencies page.
 
 
-## Deleting Deployments(Coming Soon)
+## Deployment Deletion
+
+To delete a Deployment, follow the steps mentioned below:
+
+1. Click on **Deployments** displayed on left navigation bar.
+
+2. You will be navigated **Deployments List** page.
+
+3. Click on the **Ellipsis icon** of any Deployment.
+
+4. Click on **Delete Deployment** option.
+
+5. Enter **DELETE** in the confirm field to confirm your decision.
+
+6. Click on **Delete Deployment** button.
+
+    ![Screenshot](/docs/assets/delete-deployments.png)
