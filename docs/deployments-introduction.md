@@ -16,7 +16,11 @@ Your Deployment is made of blocks that are deployed in a serverless way, meaning
 
 2. Click **Create New Deployment** card or the **+** icon.
 
+   ![Screenshot](/docs/assets/deployment_create_options.png)
+
 3. In the **Basic Info** form, specify details on `name`, `description`, and `environment` name.
+
+   ![Screenshot](/docs/assets/basic-info-deployments.png)
 
 4. By default, the environment is named as **default**. Make sure to overwrite it and specify your own name for easier identification.
 
@@ -24,14 +28,15 @@ Your Deployment is made of blocks that are deployed in a serverless way, meaning
 
 6. Select the KintoBlock displayed in the search dropdown to add them to your deployment. Both **private** and **public** KintoBlocks can be added.
 
+   ![Screenshot](/docs/assets/deployments-kintoblocks-section.png)
+
 7. Once KintoBlock is added, a specific `Branch` or a `Tag` of the Kintoblock can be selected.
 
-   { TODO: Raven Add GIF video of switching branch/tag switcher }
+   ![Screenshot](/docs/assets/deployments-branch-tag-switcher.png)
 
 8. Click on **Create New Deployment** button on the bottom right of the page to create the Deployment.
 
->Note: When the **Automatically deploy when new KintoBlock commits are available** option is set to `ON`, new commits in the KintoBlock
-are automatically deployed. By default, the toggle switch is set to `OFF`.
+   >Note: When the **Automatically deploy when new KintoBlock commits are available** option is set to `ON`, new commits in the KintoBlock are automatically deployed. By default, the toggle switch is set to `OFF`.
 
 
 ## Edit Deployment
@@ -44,7 +49,7 @@ To edit a deployment, follow the steps mentioned below:
 
 2. Click on the **Edit icon** displayed beside the deployment title to modify the Name, Description, and Environment name of the deployment.
 
-   { TODO: Raven Add GIF video of clicking on edit icon and edit basic info pop up displaying }
+   ![Screenshot](/docs/assets/edit-icon-deployments.png)
 
 3. Click on the **Save Changes** button to apply the changes.
 
@@ -59,4 +64,6 @@ The Deployment card gives a quick overview of the deployment. It displays the fo
 
 - The Dependencies dropdown displays the full list of KintoBlocks in the deployment.
 
-> Note: When a KintoBlock in the Dependencies dropdown is selected, you will be redirected to the **KintoBlock Manage page**.
+   ![Screenshot](/docs/assets/deployments-card-options.png)
+
+    > Note: When a KintoBlock in the Dependencies dropdown is selected, you will be redirected to the **KintoBlock Manage page**.
