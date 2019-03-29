@@ -16,7 +16,7 @@ The Status & History section provides real-time updates of the deployment proces
 
 - Most recent status of the deployment.
 
-    { TODO: Raven Add screenshot of Status and History section with data }
+   ![Screenshot](/docs/assets/deployments-status-history.png)
 
 There are four types of statuses displayed for environments:
 
@@ -51,4 +51,6 @@ To view the logs, follow the steps mentioned below:
 
 7. There is also an option to filter the logs using the filter field.
 
->Note: Enable the **Keep Console Pinned to the Bottom** toggle. This will cause the recent logs to appear on the bottom of the screen at all times. Hence, the user need not scroll the logs from time to time to get a preview of the most recent activity.
+   ![Screenshot](/docs/assets/env-logs.png)
+
+    >Note: Enable the **Keep Console Pinned to the Bottom** toggle. This will cause the recent logs to appear on the bottom of the screen at all times. Hence, the user need not scroll the logs from time to time to get a preview of the most recent activity.
