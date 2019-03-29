@@ -15,7 +15,7 @@ To promote an environment, follow the steps mentioned below:
 
 4. Click on the Deploy button displayed in Promote pop-up.
 
-{ TODO: Raven Add Gif video of promoting the Dev environment to the Staging }
+    ![Screenshot](/docs/assets/promote-env.png)
 
 The environment gets deployed with the latest KintoBlocks available in the parent environment.
 
@@ -32,6 +32,8 @@ To rollback a deployment, follow the steps mentioned below:
 
 3. Click on the **Rollback** button displayed for an existing deployment made.
 
+   ![Screenshot](/docs/assets/roll-back-env.png)
+
 Now, the deployment will automatically rollback to the previous version.
 
 
@@ -47,4 +49,27 @@ To shut down an environment, follow the steps mentioned below:
 
 3. Click on **Shut Down Anyway** button displayed in the shut down pop up.
 
+    ![Screenshot](/docs/assets/shutdown-deployment.png)
+
 The environment shut down progress will get displayed in the Status & History section.
+
+
+## Environment Deletion
+
+To delete an environment, follow the steps mentioned below:
+
+1. Open a **Deployment**.
+
+2. Select the environment from sidebar displayed in the **Deployment Manage** page.
+
+3. Click on the **Delete Environment** link dispalyed on the environment card and move on to **Permanent Deletion** section.
+
+4. Click on **Delete Environment** button.
+
+5. Enter **DELETE** in the confirm field.
+
+6. Click on **Delete Environment** button.
+
+    ![Screenshot](/docs/assets/delete-environment.png)
+
+    > Note: Environment will get deleted permanently. So any active deployments in this environment will be shutdown.
