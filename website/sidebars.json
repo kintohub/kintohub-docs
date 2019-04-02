@@ -7,7 +7,7 @@
       "sdk-less-framework"
     ],
     "KintoBlocks": [
-      "introduction",
+      "kintoblock-introduction",
       "kintoblock-builds",
       "builds-and-run-cmds",
       "environment-variables",
