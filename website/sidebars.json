@@ -6,6 +6,12 @@
       "session-memory",
       "sdk-less-framework"
     ],
+    "Workspaces": [
+      "workspace-intro",
+      "link-repo-resources",
+      "manage-workspace",
+      "sharing-workspaces"
+    ],
     "KintoBlocks": [
       "kintoblock-introduction",
       "kintoblock-builds",
@@ -27,7 +33,6 @@
       "apidoc",
       "token-session",
       "repositories",
-      "workspaces",
       "release-notes"
     ],
     "Dependencies": ["environmental-parameters"],
