@@ -36,9 +36,9 @@ KintoBlock that meets your needs.
 
 1. If you have selected Microservices as the KintoBlock type, start-off by filling the **Basic Info form**.
 
-2. In Basic Info form, specify details on `name`, `description`, `programming language` and `version` you would like to use.
+2. In Basic Info form, specify details on `KintoBlock name`, `display name` , `description`, `programming language` and `version` you would like to use.
 
-   ![Screenshot](/docs/assets/kb-basic-info.png)
+   ![Screenshot](/docs/assets/kb-basic-info-section.png)
 
 3. Next, specify the details pertaining to your repo sources in the **Repository form**.
 
@@ -63,11 +63,13 @@ KintoBlock that meets your needs.
 
 1. If you are creating a Website, select the corresponding option in the type of KintoBlocks.
 
-2. Fill in the `name` and `description` in the **Basic Info form**.
+2. Fill in the `KintoBlock name`, `display name` and `description` in the **Basic Info form**.
+
+   ![Screenshot](/docs/assets/kb-website-basic-info.png)
 
 3. Select the **website type** in the drop-down. Right now, we only support **Dynamic Web Applications**. The support for static websites will be coming up soon!
 
-   ![Screenshot](/docs/assets/website-dropdown.png)
+   ![Screenshot](/docs/assets/website-options.png)
 
 4. Proceed to the **Advanced Options** form to specify  `Port`, `Build command` and `Run command` details.
 
@@ -82,11 +84,13 @@ KintoBlock that meets your needs.
 
 1. If you are creating a Custom Service, select the corresponding option in the type of KintoBlocks.
 
-2. Fill in the `name` and `description` in the **Basic Info form**.
+2. Fill in the `KintoBlock name`, `display name` and `description` in the **Basic Info form**.
+
+   ![Screenshot](/docs/assets/kb-custom-service-basic-info.png)
 
 3. Select the **Helm** option in the **Service Project Format** drop-down. 
 
-   ![Screenshot](/docs/assets/custom-service-block.png)
+   ![Screenshot](/docs/assets/kb-custom-service-options.png)
 
    >Note: Right now, we only support **Helm**. The support for **Docker File** and **Docker Hub**  will be coming up soon!
 
@@ -131,7 +135,7 @@ To learn more about Helm Chart [click here.](https://helm.sh/docs/)
 
 We follow the standard of helm charts which is used to setup log and be compatible with KintoHub. See the following Service and Deployment definition with the highlighted requirements to be compatible with KintoHub.
 
-`Deployment.yaml`
+`Deployments.yaml`
 
 ```
 metadata:
