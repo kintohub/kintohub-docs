@@ -20,15 +20,13 @@ To get the token, follow the below steps mentioned:
 
 6. Once a token is obtained, the next step is to access the API endpoint of deployment.
 
-{ TODO: Raven Add screenshot Copy button for getting Authentication token }
+    ![Screenshot](/docs/assets/auth-token.png)
 
 To access API, follow the steps mentioned below:
 
 1. Click on the **Copy** button displayed for **Access Your API** section.
 
 2. Paste and run the curl command in the terminal to access API endpoint.
-
-{ TODO: Raven Add screenshot Copy button for Access Your API section. }
 
 For e.g.: If its a GET API call,
 

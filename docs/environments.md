@@ -12,8 +12,8 @@ To create an Environment, follow the steps mentioned below:
 
 2. Click on the **+** icon displayed in the **Add New Environment** card.
 
-    { TODO: Raven Add screenshot environment add card with + icon }
-
+    ![Screenshot](/docs/assets/add-new-env.png)
+    
 3. Enter your `Environment` name.
 
 4. Click on **Add New Environment** button to create an environment.
@@ -28,6 +28,8 @@ Each environment is displayed as an individual card in the sidebar of the **Depl
 - **KintoBlocks**
 
 - **API access**
+
+- **Delete Environment**
 
 
 ## Deploy KintoBlocks into an Environment

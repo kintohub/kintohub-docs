@@ -6,7 +6,7 @@ title: Advanced Usages
 
 The **Search bar** in KintoBlocks is intuitive and easy to use. The Search yields the lists of KintoBlocks created by **workspace members** and **publicly** shared on the platform. Search is especially helpful for developers looking for reusable KintoBlocks so that they can focus only on building unique components necessary for their application.
 
-   { TODO: Raven Add GIF video of searching a "HelloWorld KintoBlock" }
+   ![Screenshot](/docs/assets/searck-kb.png)
   
 
 ## Quick Menu
@@ -21,7 +21,7 @@ The Quick Menu provides swift access to critical functions that can be performed
    
    c. View Endpoints
    
-   { TODO: Raven Add an image of KintoBlock card displaying the above-mentioned options }
+![Screenshot](/docs/assets/kb-ellipsis-icon.png)
    
 2. On selecting the **Edit Branch option**, the user is redirected to the **KintoBlock Manage** page.
 

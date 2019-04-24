@@ -40,7 +40,7 @@ To add KintoBlocks to Deployments.
 
 4. Once the environment is selected, the **Deployment Manage** page is displayed and the KintoBlock is added to the deployment.
 
-   { TODO: Raven Add GIF video of clicking Add to Deployments button and KintoBlock gets added to deployment }
+    ![Screenshot](/docs/assets/kb-add-deployments.png)
 
 5. Click on **Deploy** at the bottom right of the page to push the new changes to your deployments.
 
