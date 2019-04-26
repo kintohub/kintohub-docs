@@ -2,7 +2,44 @@
 title: Release Notes
 ---
 
+## Alpha-0.2.0
+April 2019
+
+**Accounts & Admin**
+
+* No Changes
+
+**API Gateway & Service Access**
+
+* Kintohub auth now uses Kinto-Authorization instead of Authorization header.
+
+**Deployments**
+
+* No Changes
+
+**KintoBlocks**
+
+* **New Feature** Copy and paste environment variables (todo-doc link)
+* Refresh Lastest Commits is now Rebuild Latest Commit, always building new feature.
+
+**Workspaces**
+
+* No new changes
+
+**Infrastructure**
+
+* Minor improvements on build workflows
+* Request / API Refactor and Support
+
+
+**BUGS**
+
+* Fix issue where services sometimes showed shutdown when they were not.
+* Fix issue where you can't switch between deployments, random page crash
+
+
 ## Alpha-0.1.0
+March 2019
 
 **Accounts & Admin**
 
