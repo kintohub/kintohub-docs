@@ -2,6 +2,47 @@
 title: Git Repository, Builds & CI
 ---
 
+## Branches & Tags
+
+KintoBlock is always in sync with your GitHub and Bitbucket repositories. If a user wants to add a branch to their repository, it can be directly added in KintoBlock. New branches can also be created in KintoBlock. At present, there is no option within KintoBlocks to modify the branches and tags.
+
+To create a new branch follow the steps mentioned below:
+
+1. Open a **KintoBlock**.
+
+2. Navigate to the sidebar in **KintoBlock Manage** page.
+
+3. Switch to **Branch** tab and enter the `branch name` in the **Search Bar**.
+
+4. Click on the **Enter** button to create a branch.
+
+>Note: The branches created via KintoHub will get updated in their corresponding GitHub or Bitbucket repository.
+
+   ![Screenshot](/docs/assets/Branches_Sidebar.png)
+
+To add a new branch to KintoBlock follow the steps mentioned below:
+
+1. Open a **KintoBlock**.
+
+2. Navigate to the sidebar in **KintoBlock Manage** page.
+
+3. Switch to **Branch** tab and click on the **+** icon displayed beside **Search Bar**.
+
+4. Select the required branch from the dropdown to add them to KintoBlocks.
+
+Newly added or created branch in KintoBlock will be displayed as an individual card container in the sidebar of **KintoBlock Manage** page. Each card displays the following details of the branch:
+
+- **Builds & Repository**
+
+- **Helm Chart Values**
+
+- **Environment Variables**
+
+- **Deletion**
+
+![Screenshot](/docs/assets/branches_card.png)
+
+
 ## Continuous Integration and Deployment
 
 When changes are committed into the repository branch, a new build for KintoBlock can be triggered by using the **Build Latest Commit** button in the **KintoBlock Manage** page. Under **Recent Builds** user can view the recent commits made in the repository branch. The **Latest Build** section will be updated automatically with the last successful build.

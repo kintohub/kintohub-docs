@@ -21,11 +21,6 @@ To edit a KintoBlock follow the steps mentioned below:
 6. Click on the **Save Changes** button to apply changes.
 
 
-## Edit Branches & Tags
-
-KintoBlock syncs with the repository and automatically updates new branches and tags added to it. There is no option within KintoBlocks to modify the branches and tags.
-
-
 ## Add to Deployments
 
 KintoBlocks can be added straight away to any deployments in your workspace.

@@ -34,9 +34,6 @@
       "token-session",
       "repositories",
       "release-notes"
-    ],
-    "Dependencies": ["environmental-parameters"],
-    "Accounts and Billing": ["accounts", "billing"],
-    "Common Questions": ["answers"]
+    ]
   }
 }
