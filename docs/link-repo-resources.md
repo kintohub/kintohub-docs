@@ -62,3 +62,5 @@ To link a GitHub organization, follow the steps mentioned below:
 5. Click on the **Grant** button displayed for the concerned organization.
 
 As soon as the **Grant** button is clicked, the user will be able to link the organization with the Workspaces.
+
+>Note: Before linking the Workspace with GitHub ensure that access is granted to the necessary organizations. Once a Workspace is linked it cannot be unlinked from GitHub and therefore any modification to linked organizations will not be possible.
