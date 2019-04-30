@@ -41,9 +41,11 @@ To link Bitbucket, follow the steps mentioned below:
 
 ## Linking to GitHub organizations
 
-GitHub organizations are shared accounts where groups of users can collaborate across many projects at once. GitHub organizations can be linked with Workspaces. If the GitHub account linked with Workspaces have multiple organizations, it is essential to grant access for each organization.
+GitHub organizations are shared accounts where groups of users can collaborate across many projects at once. GitHub organizations can be linked with Workspaces in KintoHub.
 
-To link a GitHub organization, follow the steps mentioned below:
+>Note: By default, **KintoHub** has permissions to access all organizations of the GitHub user. If the user has multiple organizations, and if KintoHub needs to access only specific organizations, be sure to grant permissions accordingly in GitHub.
+
+To grant access to a GitHub organization, follow the steps mentioned below:
 
 1. Navigate to your **GitHub** personal account settings.
 
@@ -61,6 +63,6 @@ To link a GitHub organization, follow the steps mentioned below:
 
 5. Click on the **Grant** button displayed for the concerned organization.
 
-As soon as the **Grant** button is clicked, the user will be able to link the organization with the Workspaces.
+As soon as the **Grant** button is clicked, the user will be able to link the organizations with the Workspace.
 
->Note: Before linking the Workspace with GitHub ensure that access is granted to the necessary organizations. Once a Workspace is linked it cannot be unlinked from GitHub and therefore any modification to linked organizations will not be possible.
+After establishing a link between GitHub and Workspace, if a new organization is added to the GitHub account, the newly added item may not appear in the organization list in Workspace. In such an event, contact KintoHub Support via [Slack](https://kintohub.slack.com/) and after confirmation from Support follow the steps mentioned above to gain access to all currently available organizations in GitHub account.
