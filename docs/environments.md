@@ -16,6 +16,8 @@ To create an Environment, follow the steps mentioned below:
     
 3. Enter your `Environment` name.
 
+    ![Screenshot](/docs/assets/env-add-popup.png)
+
 4. Click on **Add New Environment** button to create an environment.
 
 
@@ -54,8 +56,35 @@ To deploy an environment, follow the steps mentioned below:
 
 5. Click on the **Deploy** button to deploy the environment.
 
-An environment can be redeployed even when there are no changes made to it. To redeploy an environment, follow the steps mentioned below:
+
+## Metrics
+
+The statistics related to your environments can be viewed via **Deployments Manage** page. These metrics are helpful to diagnose the performance of an environment.
+
+To view metrics for an environment, follow the steps mentioned below:
 
 1. Open a **Deployment**.
 
-2. Click on the **Deploy** button.
+2. Click on the **Metrics** button displayed on the top right of the **Deployment Manage** page.
+
+    ![Screenshot](/docs/assets/metrics-btn.png)
+
+3. Enter the `Username` and `Password` of your KintoHub account in **Grafana** Login page.
+
+    ![Screenshot](/docs/assets/grafana_login.png)
+
+After successful login, you will be able to view the metrics of an environment. The metrics provide real-time updates for an environment and displays the following details:
+
+- CPU usage.
+
+- Memory Usage.
+
+- Average Recieve Bytes.
+
+- Average Transmit Bytes.
+
+- Uptime.
+
+- Number of Instances
+
+![Screenshot](/docs/assets/grafana-metrics.png)
