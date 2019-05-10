@@ -59,7 +59,7 @@ To deploy an environment, follow the steps mentioned below:
 
 ## Metrics
 
-We have integrated Grafana metrics with your environment.The dashboard view of the metrics helps you to filter the statistics based on your workspace or environment.
+We have integrated Grafana metrics with your environment. The dashboard view of the metrics helps you to filter the statistics based on your workspace or environment.
 
 These metrics are helpful to perform health checks on the environment and to troubleshoot issues.
 
