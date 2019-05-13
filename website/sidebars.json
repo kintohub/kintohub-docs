@@ -24,6 +24,7 @@
       "deployments-introduction",
       "manage-deployments",
       "environments",
+      "view-logs",
       "manage-environments",
       "deployment-status-history",
       "accesing-endpoints"

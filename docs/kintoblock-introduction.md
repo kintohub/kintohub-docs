@@ -67,7 +67,7 @@ KintoBlock that meets your needs.
 
    ![Screenshot](/docs/assets/kb-website-basic-info.png)
 
-3. Select the **website type** in the drop-down. Right now, we only support **Dynamic Web Applications**. The support for static websites will be coming up soon!
+3. Select the **website type** in the drop-down. We support both **Static Website** and **Dynamic Web Applications**. 
 
    ![Screenshot](/docs/assets/website-options.png)
 
