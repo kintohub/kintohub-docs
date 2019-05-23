@@ -2,6 +2,24 @@
 title: Release Notes
 ---
 ## Alpha-0.3.0
+May 2019
+
+**Accounts & Admin**
+
+* No Changes
+
+**Deployments**
+* Ability to set helm arguments within the KintoBlock Configuration Page.
+
+**KintoBlocks**
+
+* :fire: :fire: **New Feature** Github Apps! You can now specify only one or many repositories in KintoHub to have access using Github's new GithubApps Authentication. **You will need to relink your account to github in your workspace settings once you login!**
+
+**Websites**
+* Static Websites are now available.
+
+**Custom Services**
+* Helm arguments are officially implemented.
 
 ## Alpha-0.2.0
 April 2019
@@ -20,7 +38,7 @@ April 2019
 
 **KintoBlocks**
 
-* **New Feature** Copy and paste environment variables (todo-doc link)
+* **New Feature** Copy and paste environment variables
 * Refresh Lastest Commits is now Rebuild Latest Commit, always building new feature.
 
 **Workspaces**
