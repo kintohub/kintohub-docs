@@ -13,7 +13,7 @@ May 2019
 
 **KintoBlocks**
 
-* :fire: :fire: **New Feature** Github Apps! You can now specify only one or many repositories in KintoHub to have access using Github's new GithubApps Authentication. **You will need to relink your account to github in your workspace settings once you login!**
+* **New Feature** Github Apps! You can now specify only one or many repositories in KintoHub to have access using Github's new GithubApps Authentication. **You will need to relink your account to github in your workspace settings once you login!**
 
 **Websites**
 * Static Websites are now available.
