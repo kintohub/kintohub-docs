@@ -4,60 +4,157 @@
     "next": "Next",
     "previous": "Previous",
     "tagline": "Microservices made simple",
-    "accesing-endpoints": "Accessing API Endpoints",
-    "accounts": "Accounts",
-    "adding-a-dependency-application": "Adding dependencies to an application",
-    "advanced-usages": "Advanced Usages",
-    "answers": "Answers",
-    "apidoc": "How to use KintoHub's Documentation UI",
-    "billing": "Billing",
-    "builds-and-run-cmds": "Build & Run Commands",
-    "calling-kintohub-apis": "Calling KintoHub Apis",
-    "connecting-a-github-organization": "Connecting a GitHub organization",
-    "creating-an-application": "Creating an application",
-    "deleting-a-kintoblock": "Deleting A KintoBlock",
-    "deleting-an-application": "Deleting An Application",
-    "deployment-status-history": "Deployment Status",
-    "deployments-introduction": "Introduction",
-    "environment-variables": "Environment Variables",
-    "environmental-parameters": "Environmental Parameters",
-    "environments": "Environment",
-    "feedback": "How do I provide feedback?",
-    "getting-started": "Getting Started",
-    "kintoapps": "Deployments",
-    "kintoblock-builds": "Git Repository, Builds & CI",
-    "kintoblock-introduction": "Introduction",
-    "kintoblocks": "KintoBlocks",
-    "link-repo-resources": "Link to Repository Resources",
-    "manage-blocks": "Manage KintoBlocks",
-    "manage-deployments": "Manage Deployments",
-    "manage-environments": "Manage Environments",
-    "manage-workspace": "Managing Workspaces",
-    "managing-members": "Managing members’ roles on a project basis",
-    "product-roadmap": "What's on the product roadmap?",
-    "release-notes": "Release Notes",
-    "repositories": "Git Repositories",
-    "sdk-less-framework": "SDK-Less Framework",
-    "serverless": "serverless",
-    "session-memory": "Session Memory",
-    "sharing-workspaces": "Sharing Workspaces",
-    "tagging-and-deploying": "Tagging & deploying an application",
-    "talking-to-applications": "Talking to an application",
-    "thinking-kinto": "Thinking Kinto",
-    "token-session": "Token and Session Management",
-    "usage-limit": "Is there a usage limit during alpha testing period?",
-    "use-during-alpha": "Is KintoHub free to use during alpha testing period?",
-    "what-is-an-application": "What is an application?",
-    "workspace-intro": "Introduction",
-    "workspaces": "Workspaces",
-    "Concepts": "Concepts",
-    "Workspaces": "Workspaces",
-    "KintoBlocks": "KintoBlocks",
-    "Deployments": "Deployments",
-    "Docs": "Docs",
-    "Dependencies": "Dependencies",
-    "Accounts and Billing": "Accounts and Billing",
-    "Common Questions": "Common Questions"
+    "docs": {
+      "accesing-endpoints": {
+        "title": "Accessing API Endpoints"
+      },
+      "accounts": {
+        "title": "Accounts"
+      },
+      "adding-a-dependency-application": {
+        "title": "Adding dependencies to an application"
+      },
+      "advanced-usages": {
+        "title": "Advanced Usages"
+      },
+      "answers": {
+        "title": "Answers"
+      },
+      "apidoc": {
+        "title": "How to use KintoHub's Documentation UI"
+      },
+      "billing": {
+        "title": "Billing"
+      },
+      "builds-and-run-cmds": {
+        "title": "Build & Run Commands"
+      },
+      "calling-kintohub-apis": {
+        "title": "Calling KintoHub Apis"
+      },
+      "connecting-a-github-organization": {
+        "title": "Connecting a GitHub organization"
+      },
+      "creating-an-application": {
+        "title": "Creating an application"
+      },
+      "deleting-a-kintoblock": {
+        "title": "Deleting A KintoBlock"
+      },
+      "deleting-an-application": {
+        "title": "Deleting An Application"
+      },
+      "deployment-status-history": {
+        "title": "Deployment Status"
+      },
+      "deployments-introduction": {
+        "title": "Introduction"
+      },
+      "environment-variables": {
+        "title": "Environment Variables"
+      },
+      "environmental-parameters": {
+        "title": "Environmental Parameters"
+      },
+      "environments": {
+        "title": "Environment"
+      },
+      "feedback": {
+        "title": "How do I provide feedback?"
+      },
+      "getting-started": {
+        "title": "Getting Started"
+      },
+      "kintoapps": {
+        "title": "Deployments"
+      },
+      "kintoblock-builds": {
+        "title": "Git Repository, Builds & CI"
+      },
+      "kintoblock-introduction": {
+        "title": "Introduction"
+      },
+      "kintoblocks": {
+        "title": "KintoBlocks"
+      },
+      "link-repo-resources": {
+        "title": "Link to Repository Resources"
+      },
+      "manage-blocks": {
+        "title": "Manage KintoBlocks"
+      },
+      "manage-deployments": {
+        "title": "Manage Deployments"
+      },
+      "manage-environments": {
+        "title": "Manage Environments"
+      },
+      "manage-workspace": {
+        "title": "Managing Workspaces"
+      },
+      "managing-members": {
+        "title": "Managing members’ roles on a project basis"
+      },
+      "product-roadmap": {
+        "title": "What's on the product roadmap?"
+      },
+      "release-notes": {
+        "title": "Release Notes"
+      },
+      "repositories": {
+        "title": "Git Repositories"
+      },
+      "sdk-less-framework": {
+        "title": "SDK-Less Framework"
+      },
+      "serverless": {
+        "title": "serverless"
+      },
+      "session-memory": {
+        "title": "Session Memory"
+      },
+      "sharing-workspaces": {
+        "title": "Sharing Workspaces"
+      },
+      "tagging-and-deploying": {
+        "title": "Tagging & deploying an application"
+      },
+      "talking-to-applications": {
+        "title": "Talking to an application"
+      },
+      "thinking-kinto": {
+        "title": "Thinking Kinto"
+      },
+      "token-session": {
+        "title": "Token and Session Management"
+      },
+      "usage-limit": {
+        "title": "Is there a usage limit during alpha testing period?"
+      },
+      "use-during-alpha": {
+        "title": "Is KintoHub free to use during alpha testing period?"
+      },
+      "view-logs": {
+        "title": "View Logs"
+      },
+      "what-is-an-application": {
+        "title": "What is an application?"
+      },
+      "workspace-intro": {
+        "title": "Introduction"
+      },
+      "workspaces": {
+        "title": "Workspaces"
+      }
+    },
+    "links": {},
+    "categories": {
+      "Concepts": "Concepts",
+      "Workspaces": "Workspaces",
+      "KintoBlocks": "KintoBlocks",
+      "Deployments": "Deployments",
+      "Docs": "Docs"
+    }
   },
   "pages-strings": {
     "Help Translate|recruit community translators for your project": "Help Translate",
