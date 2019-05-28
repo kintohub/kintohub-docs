@@ -1,7 +1,6 @@
 ---
-title: View Logs
+title: Logs
 ---
-
 
 The log files maintain a record of errors, informational events, and warnings that have occurred during the deployment process. Log files maintain track for each individual KintoBlock that is part of a deployment. 
 
@@ -9,9 +8,9 @@ To view the logs, follow the steps mentioned below:
 
 1. Open a **Deployment**.
 
-2. Click on **Expand Deployment History** displayed in the **Status & History** section.
+2. Click on the **Logs** button displayed on top right of the **Deployment Manage** page.
 
-3. Click on **View Logs** button displayed for a deployment made.
+   ![Screenshot](/docs/assets/Logs_btn_on_top.png)
 
 4. Get redirected to the **Logs** page to view the logs.
 
