@@ -20,6 +20,8 @@ The Quick Menu provides swift access to critical functions that can be performed
    b. View All Branches & Tags
    
    c. View Endpoints
+
+   d. Delete KintoBlock
    
 ![Screenshot](/docs/assets/kb-ellipsis-icon.png)
    
@@ -28,3 +30,5 @@ The Quick Menu provides swift access to critical functions that can be performed
 3. Click on the **View All Branches & Tags option** to open a drop-down displaying all the branches and tags of the KintoBlock.
 
 4. The **View Endpoints option** will redirect the user Endpoint documentation page of the KintoBlock.
+
+5. **Delete KintoBlock** provides you an option to delete the KintoBlock.
