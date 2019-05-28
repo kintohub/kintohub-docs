@@ -17,14 +17,16 @@
       "kintoblock-builds",
       "builds-and-run-cmds",
       "environment-variables",
+      "helm-arguments",
       "manage-blocks",
-      "advanced-usages"
+      "advanced-usages",
+      "sdsdsd"
     ],
     "Deployments": [
       "deployments-introduction",
       "manage-deployments",
       "environments",
-      "view-logs",
+      "deployment-logs",
       "manage-environments",
       "deployment-status-history",
       "accesing-endpoints"
