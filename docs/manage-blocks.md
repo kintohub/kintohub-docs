@@ -4,7 +4,7 @@ title: Manage KintoBlocks
 
 ## Editing KintoBlocks
 
-The KintoBlock properties like `Description`, `Port`, `Build command`, `Run` and `Doc format` specified during creation can be edited and modified with new values.
+The KintoBlock properties like `Description`, `Port`, `Build command`, `Run` and `Doc format` specified during the creation can be edited and modified with new values.
 
 To edit a KintoBlock follow the steps mentioned below:
 
@@ -48,10 +48,33 @@ To view endpoint documentation:
 
 1. Open any KintoBlock.
 
-2. Click the **View Endpoints** button on top right of the **KintoBlock Manage** page.
+2. Click the **View Endpoints** button on the top right of the **KintoBlock Manage** page.
 
 3. The **Endpoints Documentation** page consists of two sections:
 
    a. **Search Endpoints section** - The left pane contains a Search field to query and find relevant endpoint information.
        
    b. **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are displayed in the right pane.
+
+
+## Delete KintoBlock
+
+To delete a KintoBlock, follow the steps mentioned below:
+
+1. Click on **KintoBlocks** displayed on the left navigation bar.
+
+2. You will be redirected to **KintoBlocks List** page.
+
+3. Click on the **Ellipsis icon** of KintoBlock you wish to delete.
+
+4. Click on **Delete KintoBlock** option.
+
+    ![Screenshot](/docs/assets/Delete_KB.png)
+
+5. Type **DELETE** in the displayed field.
+
+6. Click on the **Delete KintoBlock** button to confirm your decision.
+
+Before deleting a KintoBlock, ensure that the KintoBlock is not currently deployed in any of the **Deployments**.
+
+>Note: **Public** KintoBlocks will not be available for deletion.
