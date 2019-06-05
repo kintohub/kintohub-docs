@@ -17,7 +17,7 @@ June 2019
 
 * Reduced the space between logs
 * Date is now included within the time for each log.
-* Added instance ID & Instance ID Filter/
+* Added instance ID & Instance ID Filter.
 * Moved the dropdown for blocks within the url. 
 * Search filters with \n will include the next line automatically.
 
@@ -26,7 +26,6 @@ June 2019
 * **New Feature** Ability to make your kintoblock public to the world.
 * **New Feature** Finally able to delete your kintoblock! 
 * **New Feature** Basic auth has been added for website kintoblocks. 
-* Build directory has been added for websites kintoblocks as well.
 
 **Squashed Bugs**
 * Delete environment will properly call shutdown block.
