@@ -9,7 +9,7 @@ Promoting an environment is an easy way of pushing the features of one environme
 To promote an environment, follow the steps mentioned below:
 1. Open a **Deployment**.
 
-2. Move on to the sidebar in the **Deployment Mange** page.
+2. Move on to the sidebar in the **Deployment Manage** page.
 
 3. Click on the **Promote** button displayed for an environment. 
 
@@ -45,7 +45,7 @@ To shut down an environment, follow the steps mentioned below:
 
 1. Open a **Deployment**.
 
-2. Click on the **Shut Down** button displayed on top right of the page.
+2. Click on the **Shut Down** button displayed on the top right of the page.
 
 3. Click on **Shut Down Anyway** button displayed in the shut down pop up.
 
@@ -62,7 +62,7 @@ To delete an environment, follow the steps mentioned below:
 
 2. Select the environment from sidebar displayed in the **Deployment Manage** page.
 
-3. Click on the **Delete Environment** link dispalyed on the environment card and move on to **Permanent Deletion** section.
+3. Click on the **Delete Environment** link displayed on the environment card and move on to **Permanent Deletion** section.
 
 4. Click on **Delete Environment** button.
 
@@ -72,4 +72,44 @@ To delete an environment, follow the steps mentioned below:
 
     ![Screenshot](/docs/assets/delete-environment.png)
 
-    > Note: Environment will get deleted permanently. So any active deployments in this environment will be shutdown.
+    > Note: Environment will get deleted permanently. So any active deployments in this environment will be shut down.
+
+
+## Basic Auth for Websites
+
+**Websites** launched in KintoHub can protected from unknown intrusion by employing **Basic Auth**. This can be applied to both **Static** and **Dynamic** websites.
+
+To enable password protection for a website, follow the steps mentioned below:
+
+1. Open a **Website Deployment**.
+
+2. Make sure the Deployment is deployed successfully.
+
+3. Scroll down to the **KintoBlocks** section.
+
+4. Click on the **Configure KintoBlocks** button.
+
+5. Enable the toggle displayed for **Password Protected**.
+
+6. Enter the `Username` and `Password`.
+
+    ![Screenshot](/docs/assets/pwd_for_websites.png)
+
+7. Click on the **Save Changes** button.
+
+>Note: Make sure to redeploy the **Website Deployment** to apply the changes made. 
+
+To launch a Website Deployment, follow the steps mentioned below:
+
+1. Open the **Website Deployment** for which you have set the **Basic Auth** credentials.
+
+2. Scroll down to **KintoBlocks** section displayed at the bottom of the **Deployment Manage** page.
+
+3. Click on **Open** button displayed for the **Website KintoBlock**.
+
+    ![Screenshot](/docs/assets/website_open_btn.png)
+
+4. Enter the `Username` and `Password` to access the website.
+
+    ![Screenshot](/docs/assets/website_basic_auth.png)
+
