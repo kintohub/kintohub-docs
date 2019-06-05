@@ -1,6 +1,39 @@
 ---
 title: Release Notes
 ---
+
+## Alpha-0.4.0
+June 2019
+
+**Accounts & Admin**
+
+* No Changes
+
+**Deployments**
+
+* Removed per deployment logs. 
+
+**Logs**
+
+* Reduced the space between logs
+* Date is now included within the time for each log.
+* Added instance ID & Instance ID Filter.
+* Moved the dropdown for blocks within the url. 
+* Search filters with \n will include the next line automatically.
+
+**Kintoblocks**
+   
+* **New Feature** Ability to make your kintoblock public to the world.
+* **New Feature** Finally able to delete your kintoblock! 
+* **New Feature** Basic auth has been added for website kintoblocks. 
+
+**Squashed Bugs**
+* Delete environment will properly call shutdown block.
+* "Reset to default values" button will now properly appear for custom service kintoblocks.
+* Workspace name will no longer be duplicated if you ever shared a workspace with the same name.
+* Public & Webhook url has been fixed within deployment manage.
+* No longer able to reset your password multiple times using one link. 
+
 ## Alpha-0.3.0
 May 2019
 
@@ -17,6 +50,7 @@ May 2019
 
 **Websites**
 * Static Websites are now available.
+* Website kintoblocks now have a unique Hash within each url.
 
 **Custom Services**
 * Helm arguments are officially implemented.
