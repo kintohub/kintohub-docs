@@ -44,6 +44,9 @@
       "deleting-an-application": {
         "title": "Deleting An Application"
       },
+      "deployment-logs": {
+        "title": "Logs"
+      },
       "deployment-status-history": {
         "title": "Deployment Status"
       },
@@ -64,6 +67,9 @@
       },
       "getting-started": {
         "title": "Getting Started"
+      },
+      "helm-arguments": {
+        "title": "Helm Arguments"
       },
       "kintoapps": {
         "title": "Deployments"
@@ -133,9 +139,6 @@
       },
       "use-during-alpha": {
         "title": "Is KintoHub free to use during alpha testing period?"
-      },
-      "view-logs": {
-        "title": "View Logs"
       },
       "what-is-an-application": {
         "title": "What is an application?"

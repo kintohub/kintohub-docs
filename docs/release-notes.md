@@ -19,7 +19,6 @@ June 2019
 * Date is now included within the time for each log.
 * Added instance ID & Instance ID Filter.
 * Moved the dropdown for blocks within the url. 
-* Search filters with \n will include the next line automatically.
 
 **Kintoblocks**
    
