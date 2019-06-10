@@ -13,9 +13,9 @@ To promote an environment, follow the steps mentioned below:
 
 3. Click on the **Promote** button displayed for an environment. 
 
-4. Click on the Deploy button displayed in Promote pop-up.
-
     ![Screenshot](/docs/assets/promote-env.png)
+
+4. Click on the **Deploy** button displayed in Promote pop-up.
 
 The environment gets deployed with the latest KintoBlocks available in the parent environment.
 
@@ -112,4 +112,3 @@ To launch a Website Deployment, follow the steps mentioned below:
 4. Enter the `Username` and `Password` to access the website.
 
     ![Screenshot](/docs/assets/website_basic_auth.png)
-
