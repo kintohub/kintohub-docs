@@ -184,6 +184,4 @@ Should return
 }
 ```
 
-### Related Articles
 
-* [FAQ](https://www.kintohub.com/faqs/)
