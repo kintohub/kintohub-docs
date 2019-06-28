@@ -19,7 +19,7 @@ To add or remove KintoBlocks, follow the steps mentioned below:
 
 To delete a KintoBlocks, navigate to the KintoBlock section.
 
-1. Click on the **X** icon displayed at the top right of the KintoBlock to remove it.
+1. Click on the **X** icon displayed at the top left of the KintoBlock to remove it.
 
 2. Click on the **Deploy** button to apply the new changes to the deployments.
 
