@@ -5,11 +5,20 @@ title: Release Notes
 ## Alpha-0.5.0
 July 2019
 
-**Website**
+This release was mainly focused on squashing tons of bugs that have been bothering us and our users. 
 
-* New website has launched!! Looking better than ever.
+
+* New website has launched! Looking better than ever. 
 
 **Accounts & Admin**
+
+* No Changes
+
+**Kintoblocks**
+
+* No Changes
+
+**Logs**
 
 * No Changes
 
@@ -17,7 +26,7 @@ July 2019
 * Removed the extra kintoblocks list from the bottom of the manage page. Making it overall a lot less cluttered.
 * Moved the endpoints feature into the original kintoblock list.
  
-**Bugs**
+**Bug Fixes**
  
 * Logs will now properly display for static website.
 * If you have an existing repository with more webhooks, new branches will update correctly within the sidebar.
