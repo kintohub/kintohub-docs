@@ -2,6 +2,47 @@
 title: Release Notes
 ---
 
+## Alpha-0.5.0
+July 2019
+
+This release was mainly focused on squashing tons of bugs that have been bothering us and our users. 
+
+
+* New website has launched! Looking better than ever. 
+
+**Accounts & Admin**
+
+* No Changes
+
+**Kintoblocks**
+
+* No Changes
+
+**Logs**
+
+* No Changes
+
+**Deployments**
+* Removed the extra kintoblocks list from the bottom of the manage page. Making it overall a lot less cluttered.
+* Moved the endpoints feature into the original kintoblock list.
+ 
+**Bug Fixes**
+ 
+* Logs will now properly display for static website.
+* If you have an existing repository with more webhooks, new branches will update correctly within the sidebar.
+* Using bitbucket repo, dynamic website will properly deploy now.
+* Should now be able to redeploy a failed deployment properly.
+* Deployments will no longer fail after shut down.
+* Search should properly work within kintodocs again 🙂
+* Text has been changed to be correct if docs for a build is not found.
+* Properly be able to delete a kintoblock when it's deactivated in a shutdown deplyoment.
+* Removed the issue of not being able to create a static website with bitbucket as a new repo.
+* "Inappropriate validation error" Will no longer appear if you try to deploy a new kintoblock within a post shutdown environment.
+* Should now properly be able to promote one environment to another.
+* Upon redeploying a failed block it will no longer redeploy all blocks just the failed one. 
+* Deployments should properly display success state for all  kintoblocks if it's true now.
+* If a deployment is made by removing an existing kb & adding a new one. It will display it as such in the status and history section.
+ 
 ## Alpha-0.4.0
 June 2019
 
