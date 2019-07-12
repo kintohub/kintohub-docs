@@ -12,6 +12,8 @@ To edit a KintoBlock follow the steps mentioned below:
 
 2. Click on the **pencil icon** displayed beside the title to modify the Description and Display Name of the KintoBlock.
 
+    ![Screenshot](/docs/assets/display-name.png)
+
 3. Scroll down to **Builds & Repository** section.
 
 4. Expand **Advanced Options** to view the `Port`, `Build command`, `Run`, and `Doc` fields
