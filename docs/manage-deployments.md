@@ -23,7 +23,7 @@ To delete a KintoBlocks, navigate to the KintoBlock section.
 
 2. Click on the **Deploy** button to apply the new changes to the deployments.
 
-   ![Screenshot](/docs/assets/delete-kb-deployments.png)
+   ![Screenshot](/docs/assets/delete-kb-deployments-new.png)
 
 
 ## Configure KintoBlocks
