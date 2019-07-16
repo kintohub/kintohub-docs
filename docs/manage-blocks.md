@@ -4,13 +4,15 @@ title: Manage KintoBlocks
 
 ## Editing KintoBlocks
 
-The KintoBlock properties like `Description`, `Port`, `Build command`, `Run` and `Doc format` specified during the creation can be edited and modified with new values.
+The KintoBlock properties like `Description`, `Display Name`, `Port`, `Build command`, `Run` and `Doc format` specified during the creation can be edited and modified with new values.
 
 To edit a KintoBlock follow the steps mentioned below:
 
 1. Open a KintoBlock.
 
-2. Click on the **pencil icon** displayed beside the title to modify the Description of the KintoBlock.
+2. Click on the **pencil icon** displayed beside the title to modify the Description and Display Name of the KintoBlock.
+
+    ![Screenshot](/docs/assets/display-name.png)
 
 3. Scroll down to **Builds & Repository** section.
 
