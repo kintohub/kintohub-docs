@@ -24,6 +24,22 @@ To delete a KintoBlocks, navigate to the KintoBlock section.
 2. Click on the **Deploy** button to apply the new changes to the deployments.
 
    ![Screenshot](/docs/assets/delete-kb-deployments.png)
+   
+## Automatically deploy when new KintoBlock commits are available
+
+**Auto Deployment** toggle is used to automatically deploy and test light changes made in your successive builds of a KintoBlock version without going through the hassle of manual deployment for each.
+
+To enable Automatically deploy when new KintoBlock commits are available , follow the steps mentioned below:
+
+1. Open an existing Deployment.
+
+2. Scroll down to the KintoBlocks section.
+
+3. Now enable Auto Deployment toggle.
+
+4. Currently, to save the changes made, we need to rebuild and deploy the KintoBlock or edit environment variables.
+
+   ![Screenshot](/docs/assets/Auto-Deployment.png)
 
 ## High Availability
 
