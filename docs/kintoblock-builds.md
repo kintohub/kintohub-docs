@@ -47,8 +47,25 @@ Newly added or created branch in KintoBlock will be displayed as an individual c
 
 When changes are committed into the repository branch, a new build for KintoBlock can be triggered by using the **Build Latest Commit** button in the **KintoBlock Manage** page. Under **Recent Builds** user can view the recent commits made in the repository branch. The **Latest Build** section will be updated automatically with the last successful build.
 
-The **Automatically build new commits in this branch** option automatically enables build generation for new commits in the repository. By default, the toggle switch is set to `ON`.
+The **Automatically build new commits in this branch** option automatically enables build generation for new commits in the repository. By default, the toggle switch is set to `OFF`.
 
+## Automatically build new commits in this branch
+
+`Auto Build` toggle helps you to Automatically build your KintoBlock when there is a commit made in GitHub.
+
+ To enable Automatically build new commits in this branch, follow the steps mentioned below:
+ 
+1. Create a new KintoBlock.
+
+2. Scroll down to the Advanced Option in Build & Repository.
+
+3. Enable Auto Build toggle
+
+4. Save the changes made.
+
+5. Now whenever you commit any changes to your repository, then your KintoBlock will be built automatically.
+
+   ![Screenshot](/docs/assets/Auto-Build.png)
 
 ## Manually trigger builds for new Commits
 
