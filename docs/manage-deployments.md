@@ -27,9 +27,9 @@ To delete a KintoBlocks, navigate to the KintoBlock section.
    
 ## Automatically deploy when new KintoBlock commits are available
 
-**Auto Deployment** toggle is used to automatically deploy and test light changes made in your successive builds of a KintoBlock version without going through the hassle of manual deployment for each.
+**Auto Deployment** toggle is used to automatically deploy and test light changes made in your successive builds of a KintoBlock version, without going through the hassle of manual deployment for each.
 
-To enable Automatically deploy when new KintoBlock commits are available , follow the steps mentioned below:
+To enable `Auto Deployment`, follow the steps mentioned below:
 
 1. Open an existing Deployment.
 
