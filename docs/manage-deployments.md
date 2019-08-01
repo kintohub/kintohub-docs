@@ -39,7 +39,7 @@ To enable **Auto Deployment**, follow the steps mentioned below:
 
 4. Currently, to save the changes made, we need to rebuild and deploy the KintoBlock or edit environment variables.
 
-   ![Screenshot](/docs/assets/Auto-Deployment.png)
+   ![AutoDeployment](/docs/assets/Auto-Deployment.png)
 
 ## High Availability
 
