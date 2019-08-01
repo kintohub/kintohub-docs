@@ -51,7 +51,7 @@ The **Automatically build new commits in this branch** option automatically enab
 
 ## Automatically build new commits in this branch
 
-**Auto Build** toggle helps you to Automatically build your KintoBlock when there is a commit made in GitHub.
+**Auto Build** toggle helps you to Automatically build your KintoBlock when there is a commit made in your Repository.
 
  To enable `Auto Build`, follow the steps mentioned below:
  
