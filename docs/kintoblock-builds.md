@@ -65,7 +65,7 @@ The **Automatically build new commits in this branch** option automatically enab
 
 Now whenever you commit any changes to your repository, then your KintoBlock will be built automatically.
 
-   ![Screenshot](/docs/assets/Auto-Build.png)
+   ![AutoBuild](/docs/assets/Auto-Build.png)
 
 ## Manually trigger builds for new Commits
 
