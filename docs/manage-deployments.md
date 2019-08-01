@@ -29,7 +29,7 @@ To delete a KintoBlocks, navigate to the KintoBlock section.
 
 **Auto Deployment** toggle is used to automatically deploy and test light changes made in your successive builds of a KintoBlock version, without going through the hassle of manual deployment for each.
 
-To enable `Auto Deployment`, follow the steps mentioned below:
+To enable **Auto Deployment**, follow the steps mentioned below:
 
 1. Open an existing Deployment.
 
