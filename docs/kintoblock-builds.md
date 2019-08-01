@@ -49,7 +49,7 @@ When changes are committed into the repository branch, a new build for KintoBloc
 
 The **Automatically build new commits in this branch** option automatically enables build generation for new commits in the repository. By default, the toggle switch is set to `OFF`.
 
-## Automatically build new commits in this branch
+## Automatically Build New Commits
 
 **Auto Build** toggle helps you to Automatically build your KintoBlock when there is a commit made in your Repository.
 
