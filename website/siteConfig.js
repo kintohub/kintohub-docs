@@ -47,7 +47,8 @@ const siteConfig = {
   onPageNav: 'separate',
   cname: 'docs.kintohub.com',
   docsSideNavCollapsible: true,
-  cleanUrl: true
+  cleanUrl: true,
+  usePrism: ['ini']
 }
 
 module.exports = siteConfig

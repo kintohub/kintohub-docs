@@ -37,6 +37,9 @@
       "token-session",
       "repositories",
       "release-notes"
+    ],
+    "Examples": [
+      "examples/todo-list/tutorial"
     ]
   }
 }

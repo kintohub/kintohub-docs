@@ -62,6 +62,10 @@
       "environments": {
         "title": "Environment"
       },
+      "examples/todo-list/tutorial": {
+        "title": "Todo List example app",
+        "sidebar_label": "Todo List App"
+      },
       "feedback": {
         "title": "How do I provide feedback?"
       },
@@ -156,7 +160,8 @@
       "Workspaces": "Workspaces",
       "KintoBlocks": "KintoBlocks",
       "Deployments": "Deployments",
-      "Docs": "Docs"
+      "Docs": "Docs",
+      "Examples": "Examples"
     }
   },
   "pages-strings": {
