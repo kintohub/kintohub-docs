@@ -349,7 +349,7 @@ Simply scroll to the _Todo List SPA_ KintoBlock, and
 
 When you enter, modify, delete or complete Todos in the web app UI, it will send API calls to the backend API, and those actions are persisted in the MongoDB database.
 
-_Well done,_ and congrats on completing this tutorual! 🎉
+_Well done,_ and congrats on completing this tutorial! 🎉
 
 > If you had any issues during this tutorial, *__we're here to help!__*  
 Reach out to us on [Slack](https://join.slack.com/t/kintohub/shared_invite/enQtMzIxNDU2OTE4NTYyLWJmNWM1ZTQ3YTFlMzJkYWUzMWE2ZTlmZjk3ZGQ1NWFlMDRkYzhhODNmNDZlMDZmNjhlMzBhNWRiYWIxMTVjMmU), [Twitter](https://twitter.com/kintohub), or [send us an email](https://www.kintohub.com/contact-us).
