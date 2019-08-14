@@ -1,45 +1,84 @@
 {
   "docs": {
-    "Concepts": [
-      "thinking-kinto",
-      "calling-kintohub-apis",
-      "session-memory",
-      "sdk-less-framework"
-    ],
-    "Workspaces": [
-      "workspace-intro",
-      "link-repo-resources",
-      "manage-workspace",
-      "sharing-workspaces"
+    "Introduction": [
+      "introduction/getting-started",
+      "introduction/kintohub-workflow",
+      {
+        "type": "subcategory",
+        "label": "Deploy your first app",
+        "ids": [
+          "introduction/deploy-your-first/nodejs-app",
+          "introduction/deploy-your-first/python-app",
+          "introduction/deploy-your-first/java-app",
+          "introduction/deploy-your-first/dotnet-app",
+          "introduction/deploy-your-first/php-app",
+          "introduction/deploy-your-first/ruby-app",
+          "introduction/deploy-your-first/go-app",
+          "introduction/deploy-your-first/elixir-app"
+        ]
+      }
     ],
     "KintoBlocks": [
-      "kintoblock-introduction",
-      "kintoblock-builds",
-      "builds-and-run-cmds",
-      "environment-variables",
-      "helm-arguments",
-      "manage-blocks",
-      "advanced-usages",
-      "sdsdsd"
+      "kintoblocks/introduction",
+      "kintoblocks/websites",
+      "kintoblocks/microservices",
+      "kintoblocks/custom-services"
     ],
     "Deployments": [
-      "deployments-introduction",
-      "manage-deployments",
-      "environments",
-      "deployment-logs",
-      "manage-environments",
-      "deployment-status-history",
-      "accesing-endpoints"
+      "deployments/introduction",
+      "deployments/configure-kintoblocks",
+      "deployments/environments",
+      "deployments/promoting",
+      "deployments/rollbacks",
+      "deployments/shut-down"
     ],
-    "Docs": [
-      "getting-started",
-      "apidoc",
-      "token-session",
-      "repositories",
-      "release-notes"
+    "Features": [
+      {
+        "type": "subcategory",
+        "label": "Building",
+        "ids": [
+          "features/building/pulling-source-code",
+          "features/building/git-repositories",
+          "features/building/manage-blocks",
+          "features/building/continuous-integration",
+          "features/building/api-docs"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Deploying",
+        "ids": [
+          "features/deploying/manage-deployments",
+          "features/deploying/manage-environments",
+          "features/deploying/environment-vairables",
+          "features/deploying/logs"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Operating",
+        "ids": [
+          "features/operating/token-session",
+          "features/operating/accessing-endpoints",
+          "features/operating/session-memory"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Workspaces & Teams",
+        "ids": [
+          "features/workspaces-and-teams/workspace-intro",
+          "features/workspaces-and-teams/manage-workspace",
+          "features/workspaces-and-teams/sharing-workspaces"
+        ]
+      }
     ],
-    "Examples": [
+    "Examples & Guides": [
       "examples/todo-list/tutorial"
+    ],
+    "Notes & Experiments": [
+      "release-notes",
+      "experimental/dockerfiles"
     ]
   }
 }

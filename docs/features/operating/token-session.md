@@ -1,5 +1,5 @@
 ---
-title: Token and Session Management
+title: API Tokens and Sessions
 ---
 
 KintoHub provides the ability to create sessions for all apps right of the bat. We recommend all users to create a token for all users, and this will give you many features that we are going to show here

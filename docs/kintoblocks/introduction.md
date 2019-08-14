@@ -1,5 +1,6 @@
 ---
-title: Introduction
+title: Introduction to KintoBlocks
+sidebar_label: Introduction
 ---
 
 ## What is a KintoBlock?

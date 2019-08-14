@@ -1,5 +1,5 @@
 ---
-title: Environment
+title: Environments
 ---
 
 ## How to create an Environment

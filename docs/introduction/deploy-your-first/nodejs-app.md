@@ -1,5 +1,6 @@
 ---
-title: Getting Started
+title: Deploy your first Node.js app
+sidebar_label: Node.js
 ---
 
 ## Hi there - welcome to KintoHub!

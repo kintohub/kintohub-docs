@@ -27,9 +27,11 @@ $tablet-card-2: 314px;
 
 
 $kinto-black:       rgba(0,0,0,1);
+$kinto-night:       rgba(17,17,17,1);
+$kinto-dark:        rgba(57,57,57,1);
 $kinto-white:       rgba(255,255,255,1);
 
-$kinto-turquoise:       rgba(0,188,152,1);
+$kinto-turquoise:   rgba(0,188,152,1);
 $kinto-green:       rgba(25,191,123,1);
 $kinto-lime:        rgba(122,203,83,1);
 $kinto-blue:        rgba(30,196,233,1);
@@ -108,9 +110,11 @@ $input: $kinto-tinted-grayscale-4;
 $input-focus: $kinto-blue-muted;
 $input-error: $kinto-coral-light;
 
-$text-link: $kinto-blue-dark;
-$text-link-focus: $kinto-blue;
+$text-link: $kinto-purple;
+$text-link-focus: $kinto-purple-light;
 $text-link-clicked: $kinto-tinted-grayscale-7;
+$text-highlight: $kinto-night;
+$text-emphasize: $kinto-dark;
 
 $ui-button-primary-regular-top: rgba(86,223,255,1);
 $ui-button-primary-regular-bottom: rgba(74,217,255,1);

@@ -2,7 +2,7 @@ const GITHUB_URL = `https://github.com/kintohub/kintohub-docs`
 
 const siteConfig = {
   title: 'KintoHub Docs',
-  tagline: 'Microservices made simple',
+  tagline: 'Build cloud native apps in seconds',
   url: 'https://kintohub.com' /* your website url */,
   baseUrl: '/' /* base url for your project */,
   projectName: 'KintoHub Docs',
