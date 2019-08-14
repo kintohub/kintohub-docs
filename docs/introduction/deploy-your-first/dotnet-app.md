@@ -1,6 +1,6 @@
 ---
-title: Deploy your first .NET/C# app
-sidebar_label: .NET/C#
+title: Deploy your first .NET app
+sidebar_label: .NET
 ---
 
 TODO

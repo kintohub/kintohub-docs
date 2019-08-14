@@ -181,3 +181,9 @@ input#search_input_react {
 .mainContainer .wrapper a:hover, .mainContainer .wrapper a:focus, .inner .projectIntro a:hover, .inner .projectIntro a:focus {
   text-decoration: none;
 }
+
+.float-left-padding {
+  float: left;
+  padding-right: 1em;
+  padding-top: 1em;
+}
