@@ -61,8 +61,7 @@
         "label": "Operating",
         "ids": [
           "features/operating/token-session",
-          "features/operating/accessing-endpoints",
-          "features/operating/session-memory"
+          "features/operating/accessing-endpoints"
         ]
       },
       {
@@ -80,7 +79,8 @@
     ],
     "Notes & Experiments": [
       "release-notes",
-      "experimental/dockerfiles"
+      "experimental/dockerfiles",
+      "experimental/session-memory"
     ]
   }
 }

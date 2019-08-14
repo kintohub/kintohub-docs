@@ -110,7 +110,11 @@
         "sidebar_label": "Todo List App"
       },
       "experimental/dockerfiles": {
-        "title": "Dockerfile support"
+        "title": "(Experimental) Dockerfile support",
+        "sidebar_label": "Dockerfile support"
+      },
+      "experimental/session-memory": {
+        "title": "Session Memory"
       },
       "features/building/api-docs": {
         "title": "API Docs"
@@ -147,9 +151,6 @@
       },
       "features/operating/accessing-endpoints": {
         "title": "Accessing API Endpoints"
-      },
-      "features/operating/session-memory": {
-        "title": "Session Memory"
       },
       "features/operating/token-session": {
         "title": "API Tokens and Sessions"
