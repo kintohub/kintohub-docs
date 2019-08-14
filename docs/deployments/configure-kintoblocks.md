@@ -2,4 +2,4 @@
 title: Configure KintoBlocks
 ---
 
-## Configure
+TODO

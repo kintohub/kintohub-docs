@@ -127,8 +127,14 @@
       "features/building/pulling-source-code": {
         "title": "Pulling Source Code"
       },
+      "features/deploying/continuous-delivery": {
+        "title": "Continuous Delivery"
+      },
       "features/deploying/environment-variables": {
         "title": "Environment Variables"
+      },
+      "features/deploying/high-availability": {
+        "title": "High Availability"
       },
       "features/deploying/logs": {
         "title": "Logs"
@@ -158,8 +164,8 @@
         "title": "Introduction"
       },
       "introduction/deploy-your-first/dotnet-app": {
-        "title": "Deploy your first .NET/C# app",
-        "sidebar_label": ".NET/C#"
+        "title": "Deploy your first .NET app",
+        "sidebar_label": ".NET"
       },
       "introduction/deploy-your-first/elixir-app": {
         "title": "Deploy your first Elixir app",

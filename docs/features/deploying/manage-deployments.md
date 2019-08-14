@@ -25,39 +25,6 @@ To delete a KintoBlocks, navigate to the KintoBlock section.
 
    ![Screenshot](/docs/assets/delete-kb-deployments.png)
    
-## Automatically Deploy your Apps
-
-**Auto Deployment** toggle is used to automatically deploy and test light changes made in your successive builds of a KintoBlock version, without going through the hassle of manual deployment for each.
-
-To enable **Auto Deployment**, follow the steps mentioned below:
-
-1. Open an existing Deployment.
-
-2. Scroll down to the KintoBlocks section.
-
-3. Now enable Auto Deployment toggle.
-
-4. Currently, to save the changes made, we need to rebuild and deploy the KintoBlock or edit environment variables.
-
-   ![AutoDeployment](/docs/assets/Auto-Deployment.png)
-
-## High Availability
-
-This toggle gives the ability to enable high availability on a service. When `High Availability` toggle is turned on, your instances will spread across multiple servers and availability zones, thus helping you with better performance and reliable service.
-
-This toggle can be easily configured and can be configured per environment. You may want to have high availability disabled for test environments, but staging and production may want this to be enabled.
-
-To enable High Availability, follow the steps mentioned below:
-1. Open an existing or new **Deployment**.
-
-2. Scroll down to the **KintoBlocks** section.
-
-3. Now enable **High Availability** toggle.
-
-4. Currently, to save the changes made, we need to either re-build the blocks or make changes to the environment variables.
-
-   ![Screenshot](/docs/assets/High-Availability.png)
-
 ## Configure KintoBlocks
 
 KintoBlocks consists of **environment variables** which are used to set the configuration. Environment variable values can be edited and updated whenever it is required.
