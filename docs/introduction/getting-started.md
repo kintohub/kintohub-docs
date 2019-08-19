@@ -187,6 +187,15 @@ Elixir</span>](introduction/deploy-your-first/elixir-app.md)
 
 ## The KintoHub Workflow
 
-This quick overview of the entire workflow helps you understand how KintoHub works.
+KintoHub makes it easy to deploy cloud-native applications by __simplifying the workflow from source to production__. It is a quick 4-step process:
 
-Code, Build, Deploy and Operate
+1. __Build your source code__ into [_KintoBlocks_](kintoblocks/introduction.md), to give them cloud-native powers.
+2. __Bundle KintoBlocks__ into a [_Deployment_](deployments/introduction.md), to prepare a release.
+3. Hit a single __Deploy__ button to push your code to the cloud.
+4. Your app is immediately __ready to access__ and you can call its APIs.
+
+![The KintoHub workflow; build KintoBlocks, add to Deployments, deploy and call APIs](assets/introduction/getting-started/kintohub-workflow.svg)
+
+<!--
+TODO: Animated GIF of workflow. / Video?
+-->
