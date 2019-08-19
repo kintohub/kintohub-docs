@@ -110,8 +110,7 @@
         "sidebar_label": "Todo List App"
       },
       "experimental/dockerfiles": {
-        "title": "(Experimental) Dockerfile support",
-        "sidebar_label": "Dockerfile support"
+        "title": "Dockerfile support"
       },
       "experimental/session-memory": {
         "title": "Session Memory"
