@@ -77,7 +77,6 @@ h6, .h6 {
 
 a {
   font-family: $base-font;
-  font-weight: bold;
   font-size: 16px;
   color: $text-link;
   letter-spacing: 0;
@@ -88,6 +87,12 @@ a {
   }
   code {
     font-weight: normal;
+  }
+  strong, em {
+    color: $text-link;
+    &:hover{
+      color: $text-link-focus;
+    }
   }
 }
 
@@ -113,9 +118,6 @@ strong {
 em {
   color: $kinto-dark;
   padding-right: .15em;
-  a & {
-    color: $kinto-purple;
-  }
 }
 
 .center {

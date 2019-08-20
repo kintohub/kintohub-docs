@@ -117,7 +117,6 @@ h6, .h6 {
 
 a {
   font-family: "Nunito", sans-serif;
-  font-weight: bold;
   font-size: 16px;
   color: #7a68e8;
   letter-spacing: 0;
@@ -127,6 +126,10 @@ a {
     text-decoration: none; }
   a code {
     font-weight: normal; }
+  a strong, a em {
+    color: #7a68e8; }
+    a strong:hover, a em:hover {
+      color: #a295ee; }
 
 .fonts .section {
   width: 50%;
@@ -146,8 +149,6 @@ strong {
 em {
   color: #393939;
   padding-right: .15em; }
-  a em {
-    color: #7a68e8; }
 
 .center {
   text-align: center; }
