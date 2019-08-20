@@ -52,16 +52,16 @@
           "features/deploying/manage-environments",
           "features/deploying/environment-vairables",
           "features/deploying/continuous-delivery",
-          "features/deploying/high-availability",
-          "features/deploying/logs"
+          "features/deploying/high-availability"
         ]
       },
       {
         "type": "subcategory",
         "label": "Operating",
         "ids": [
+          "features/operating/accessing-endpoints",
           "features/operating/token-session",
-          "features/operating/accessing-endpoints"
+          "features/deploying/logs"
         ]
       },
       {
