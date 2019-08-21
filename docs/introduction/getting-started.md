@@ -11,7 +11,7 @@ Explore all features on the [KintoHub website](https://www.kintohub.com).
 
 ## Deploy your first app
 
-To __quickly see KintoHub in action__, try out a deployment in your favorite language of choice:
+To _quickly see KintoHub in action_, try out a deployment in your favorite language of choice:
 
 <!-- Icons from: https://konpa.github.io/devicon/ -->
 
@@ -187,10 +187,10 @@ Elixir</span>](introduction/deploy-your-first/elixir-app.md)
 
 ## The KintoHub Workflow
 
-KintoHub makes it easy to deploy cloud-native applications by __simplifying the workflow from source to production__. It is a quick 4-step process:
+KintoHub makes it easy to deploy cloud-native applications by _simplifying the workflow from source to production_. It's a quick 4-step process:
 
-1. __Build your source code__ into [_KintoBlocks_](kintoblocks/introduction.md), to give them cloud-native powers.
-2. __Bundle KintoBlocks__ into a [_Deployment_](deployments/introduction.md), to prepare a release.
+1. __Build your source code__ into [KintoBlocks](kintoblocks/introduction.md), to give them cloud-native powers.
+2. __Combine KintoBlocks__ into a [Deployment](deployments/introduction.md), to prepare a release.
 3. Hit a single __Deploy__ button to push your code to the cloud.
 4. Your app is immediately __ready to access__ and you can call its APIs.
 
