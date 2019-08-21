@@ -166,6 +166,9 @@
       "features/workspaces-and-teams/workspace-intro": {
         "title": "Introduction"
       },
+      "introduction/_wip_why-kintohub-workflow": {
+        "title": "introduction/_wip_why-kintohub-workflow"
+      },
       "introduction/deploy-your-first/dotnet-app": {
         "title": "Deploy your first .NET app",
         "sidebar_label": ".NET"
