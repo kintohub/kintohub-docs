@@ -96,6 +96,9 @@
         "title": "Introduction to Deployments",
         "sidebar_label": "Introduction"
       },
+      "deployments/metrics": {
+        "title": "Metrics"
+      },
       "deployments/promoting": {
         "title": "Promoting"
       },
@@ -139,9 +142,6 @@
       "features/deploying/high-availability": {
         "title": "High Availability"
       },
-      "features/deploying/logs": {
-        "title": "Logs"
-      },
       "features/deploying/manage-deployments": {
         "title": "Manage Deployments"
       },
@@ -150,6 +150,9 @@
       },
       "features/operating/accessing-endpoints": {
         "title": "Accessing API Endpoints"
+      },
+      "features/operating/logs": {
+        "title": "Logs"
       },
       "features/operating/token-session": {
         "title": "API Tokens and Sessions"

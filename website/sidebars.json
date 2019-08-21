@@ -30,7 +30,8 @@
       "deployments/environments",
       "deployments/promoting",
       "deployments/rollbacks",
-      "deployments/shut-down"
+      "deployments/shut-down",
+      "deployments/metrics"
     ],
     "Features": [
       {
@@ -50,7 +51,7 @@
         "ids": [
           "features/deploying/manage-deployments",
           "features/deploying/manage-environments",
-          "features/deploying/environment-vairables",
+          "features/deploying/environment-variables",
           "features/deploying/continuous-delivery",
           "features/deploying/high-availability"
         ]
@@ -61,7 +62,7 @@
         "ids": [
           "features/operating/accessing-endpoints",
           "features/operating/token-session",
-          "features/deploying/logs"
+          "features/operating/logs"
         ]
       },
       {
