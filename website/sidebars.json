@@ -39,7 +39,7 @@
         "label": "Building",
         "ids": [
           "features/building/pulling-source-code",
-          "features/building/git-repositories",
+          "features/building/branches-and-tags",
           "features/building/manage-blocks",
           "features/building/continuous-integration",
           "features/building/api-docs"

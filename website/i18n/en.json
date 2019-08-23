@@ -121,11 +121,11 @@
       "features/building/api-docs": {
         "title": "API Docs"
       },
+      "features/building/branches-and-tags": {
+        "title": "Branches & Tags"
+      },
       "features/building/continuous-integration": {
         "title": "Continuous Integration"
-      },
-      "features/building/git-repositories": {
-        "title": "Git Repositories"
       },
       "features/building/manage-blocks": {
         "title": "Manage KintoBlocks"

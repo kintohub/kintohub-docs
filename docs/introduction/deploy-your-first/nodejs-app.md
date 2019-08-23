@@ -19,7 +19,7 @@ KintoHub works by [pulling your source code](features/building/pulling-source-co
  - Enter a __Repository name__ of your choosing (e.g. `node-app`), and optionally set the repo to private.
  - Finally, press the __Create repository from template__ button.
 
-## Let's explore the code
+### Let's explore the code
 
 Like a typical Node.js v8 app, the repo has a `package.json` file, with the following scripts:
 
@@ -61,9 +61,9 @@ app.listen(PORT, () => console.log(`App listening on port ${PORT}!`))
 
 Notice that the app will start on port 8000 by default. The `prod` script overrides this to port 80 with the `PORT` environment variable.
 
-The API accepts a path template of `/hello/:name` (e.g. `/hello/World`), and the value of the `:name` parameter is printed in the `message` property of the JSON response. Documentation has been defined in [apiDoc format](features/building/api-docs.md).
+The API accepts a path template of `/hello/:name` (e.g. `/hello/World`), and the value of the `:name` parameter is printed in the `message` property of the JSON response. Documentation for the API endpoint has been defined in [apiDoc format](features/building/api-docs.md).
 
-## Running the app on your local machine
+### Running the app on your local machine
 
  - Clone the repository to your machine, and open a terminal at the directory.
  - Run `npm install`.
@@ -96,7 +96,9 @@ To keep this example simple, we will deploy it as a website only. Of course in t
  - In the sidebar, select __KintoBlocks__.
  - Press __Create New KintoBlock__.
 
-This prompts you with the below dialog to link to a Git repository source.
+### Connect your GitHub account
+
+You'll get prompted with the below dialog to link to a Git repository source.
 
  - Press the __Link__ button of the __GitHub__ option.
 
@@ -109,17 +111,21 @@ You'll be redirected to the GitHub website, where you have to __grant permission
    - only to the one you created in the beginning of this quick-start.
  - Press __Save__ on the GitHub website to be redirected back to KintoHub.
 
-This will bring you back to the dialog, and you should see that GitHub is now connected successfully.
+### Select a KintoBlock flavor
 
- - Press __I'm Done__ to proceed to the *__Create New KintoBlock__* page.
+The *__Link Repo Sources__* dialog will reappear, and you should see that GitHub is now connected successfully.
 
-You'll get the option to choose what type of KintoBlock you would like to create.
+ - Press __I'm Done__ to proceed.
+
+Next, you'll see the *__Create New KintoBlock__* page where you get the option to choose what type of KintoBlock to create.
 
  - Select the __Website__ KintoBlock flavor.
 
 ![3 KintoBlock options: Microservice, Website, or Custom Service](assets/introduction/deploy-your-first/select-kintoblock.png)
 
-This is where we get to configure the KintoBlock.
+### Configure the KintoBlock
+
+The new KintoBlock page is where we define and configure the KintoBlock. This page looks different depending on the selected flavor.
 
 First, refer to the *__Repository__* section, where __Repository Source__ is already `GitHub` and __Repository Type__ is `Existing Repositories`.
 
@@ -133,9 +139,9 @@ Next, we're going to configure how the Website KintoBlock should _build and run 
 
 Refer to the *__Basic Info__* section, and:
 
- - Enter a __KintoBlock Name__, e.g. `myapp`.
+ - Enter a __KintoBlock Name__, e.g. `nodeapp`.
    > _Note:_ The KintoBlock name must be _lower-case_, and _only include alphanumerical characters or hyphens_. The reason for that is that _the name is used as an identifier_ and may appear in the service logs, URLs and other places where it needs to be uniform.
- - Enter a __Display Name__, e.g. `My App`.
+ - Enter a __Display Name__, e.g. `Node App`.
  - Add a __Description__, e.g. `My first Node.js app on KintoHub!`.
  - For the __Website Type__ select `Dynamic Web App`.
 
@@ -149,7 +155,9 @@ Selecting _Dynamic Web App_ caused an extra *__Advanced Options__* section to ap
 
 Now that everything is configured, we are ready to proceed:
 
- - Press the __Create New KintoBlock__ button in the bottom-right corner.
+ - Press the __Create New KintoBlock__ button in the bottom right corner.
+
+### Build the source code
 
 We now see that the KintoBlock has been created, and that _No build was built successfully yet._ Let's change that:
 
@@ -157,7 +165,7 @@ We now see that the KintoBlock has been created, and that _No build was built su
 
 ![KintoBlock page with the message that: No build was built successfully yet](assets/introduction/deploy-your-first/nodejs-app/no-builds-yet.png)
 
-Triggers KintoHub to _pull the source code from GitHub_ and _build a cloud-native package_ out of it.
+This triggers KintoHub to pull the source code from GitHub and build a cloud-native package out of it.
 
 We can see the build in progress:
 
@@ -167,121 +175,84 @@ And get the green light when it completes successfully:
 
 ![The build was successful as marked in green](assets/introduction/deploy-your-first/nodejs-app/built-successfully.png)
 
+Well done! Your KintoBlock is now created and built.
+
+In a typical application you're likely to create multiple KintoBlocks, with each having their own characteristics. For this quick-start, we'll keep it simple and proceed with the deployment.
+
 ## Ready to deploy
 
-TODO
+Now that you have a KintoBlock and it has been built, the KintoBlock is ready to be deployed to the cloud.
 
-&nbsp;  
+From the KintoBlock page, in the bottom right corner:
 
----
+ - Press __Add to Deployment__, this will pop up a dialog.
 
-&nbsp;  
+> _Tip:_ If you have existing deployments, this dialog allows you to select one of its existing environments.
 
----
+Because we do not have any deployments yet:
 
-&nbsp;  
+ - Press the __New Deployment__ button.
+ - Enter in the _Enter deployment name_ field a new deployment name. (e.g. `myapp`)
+ - Press the __Create__ button.
 
----
+![Add to Deployment dialog](assets/introduction/deploy-your-first/nodejs-app/add-to-deployment.png)
 
-&nbsp;  
+### Create new deployment
 
----
+The *__Create New Deployment__* page, has already been filled out with some of the information you've provided:
 
-&nbsp;  
+ - The __Deployment Name__ has been set.
+ - A `default` __Environment Name__ has been preset, and can be adjusted if necessary.
 
----
+Scroll down to the *__KintoBlocks__* section, where you can see that your _Node App_ KintoBlock has already been added. It has been preset to use the build from the `master` branch. It is also possible to [select other branches and tags](features/building/branches-and-tags.md).
 
+![The Node App KintoBlock listed in the deployment page](assets/introduction/deploy-your-first/nodejs-app/deployment-node-app.png)
 
+If you have more KintoBlocks that should be part of this deployment, then you can add those with the _Add KintoBlocks..._ drop-down menu.
 
-## Create a Kintoblock on KintoHub from the service we just created
+For this quick-start however, we are going to deploy only this single KintoBlock.
 
-_For more details and screenshots about creating KintoBlocks read more [here](kintoblocks.md#creating-a-kintoblock)_
+ - Press __Create New Deployment__ to start the deployment.
 
-By this point, you should already have a GitHub or Bitbucket repository that is compatible with KintoHub
+## Deployment progress
 
-Next step is connecting your workspace to your GitHub or Bitbucket account. Go to edit workspace and click on the Link GitHub or Link Bitbucket button.
+The first deployment is as simple as waiting for the process to complete.
 
-Now go to create Kintoblock page. Add a Kintoblock name _(name must be unique across all accounts)_, choose an existing repository and select the repository you just created. Set protocol to `HTTP` and language to `Node.js`.
+You can see that the deployment is running:
 
-> For the rest of the guide we are going to assume the name is _`nodeexample`_
+![Deployment running](assets/introduction/deploy-your-first/nodejs-app/deployment-running.png)
 
-> endpoints are going to be in the following format **https://api.kintohub.com/{microservicename}**
+And when it is completed:
 
-> Kintoblocks can't be accessed directly. To access them we will need to deploy them through Applications. Therefore, if you tried to go to `https://api.kintohub.com/nodeexample/sample/hello` you will get an error.
+![Deployment deployed](assets/introduction/deploy-your-first/nodejs-app/deployment-deployed.png)
 
-### Tag Latest Commit
+During the deployment KintoHub will push your KintoBlock to a cloud server and setup routing for inbound traffic.
 
-_For more details and screenshots about tagging latest commit read more [here](kintoblocks.md#tagging-a-commit)_
+### Accessing the Node.js app
 
-After creating the Kintoblock, when you are in the Kintoblock manage page, navigate to the branch that you added your code to. And go to the **Commits** section.
+To access the deployed Node.js sever, scroll down to the *__KintoBlocks__* section, and:
 
-Make sure that the last commit you had is in recent commits and wait until it successfully builds. _(Clicking the "Refresh Latest" button will grab an updated commit list)_.
+ - Press the __Open__ button on the Website KintoBlock.
 
-After it successfully builds click `Tag Latest Commit` this allows you to add a tag to that commit _(similar to how git works)_ so you can select that particular tag when you are building an Application (before deploying it).
-
-## Create an Application
-
-_For more details and screenshots about creating an Application read more [here](creating-an-application.md)_
-
-We need to finally create a Application that includes `nodeexample`
-
-> Applications can't live by themselves you must add kintoblocks for them to work
-
-Go to create Application page. Add a name and description. in the dependencies section search and select `nodeexample`. update the selector on the right to be the latest tag we just created.
-
-Click `Save Changes`
-
-### Tag and Deploy
-
-_For more details and screenshots about tagging and deploying Applications read more [here](tagging-and-deploying.md)_
-
-after hitting `Save Changes` it should change to `Tag and Deploy`. tagging and deploying will bring our app online, let's click it and select the default `master` environment and add a version for the app _(Application version is not related to kintoblock version)_. After clicking Create now we have a live version that we can access
-
-## Accessing the endpoints
-
-All endpoints are private by default. After deploying to the `master` environment go to the edit page to that environment.
-
-you will find `CLIENT ID` and `SECRET KEY` these are unique to each environment. you will need to auth first with them and get a token, that token will allow you to call the microservices inside that app
-
-The endpoint for authenticating the env is
-
-```
-POST https://api.kintohub.com/authorize
+This will open a new tab in your browser pointing to the URL of the website that was deployed, for example:
+```plaintext
+https://myapp-default-myapp-35uekidash.web.kintohub.com
 ```
 
-> We are going to use cURL for testing the endpoints
+Because our Node.js server only listens to a specific path pattern, you'll see `Cannot GET /` as a result.
 
-calling `/auth` and passing it the client and secret should return a token
+However, if you suffix the URL with for instance `/hello/World`, you will see:
 
-```bash
-curl -H "Content-Type: application/json" -X POST -d '{"clientId":"<clientId>","clientSecret":"<clientSecret>"}' https://api.kintohub.com/authorize
+```.json
+{"message":"Hello World"}
 ```
 
-**returns**
+## Next steps
 
-```
-{
-    "data": {
-        "token": "<token>"
-    }
-}
-```
+Great job on completing this quick-start!
 
-if we used that token and pass it as a Kinto-Authorization header when we call any Kintoblock inside that Application it should work _(need to add 'Bearer' before the actual token)_
+What to read next:
 
-Finally, the following should work
-
-```bash
-curl -H "Kinto-Authorization: Bearer <token>" https://api.kintohub.com/nodeexample/sample/hello
-```
-
-Should return
-
-```
-{
-    "data": "Hello World",
-    "output": "hello"
-}
-```
-
-
+ - Explore all [KintoBlock flavors](kintoblocks/introduction.md) that are available.
+ - Read about [advanced Deployment concepts](deployments/introduction.md).
+ - Try the [Todo List example app tutorial](examples/todo-list/tutorial.md) showcasing multiple KintoBlocks working together.
