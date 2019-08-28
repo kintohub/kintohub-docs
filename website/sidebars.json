@@ -75,7 +75,12 @@
         ]
       }
     ],
-    "Examples & Guides": [
+    "Plans & Billing": [
+      "plans-and-billing/plans",
+      "plans-and-billing/upgrading",
+      "plans-and-billing/billing"
+    ],
+    "Tutorials": [
       "examples/todo-list/tutorial"
     ],
     "Notes & Experiments": [

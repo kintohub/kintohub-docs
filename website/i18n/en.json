@@ -230,6 +230,18 @@
         "title": "Website KintoBlock",
         "sidebar_label": "Websites"
       },
+      "plans-and-billing/billing": {
+        "title": "Billing for KintoHub plans",
+        "sidebar_label": "Billing"
+      },
+      "plans-and-billing/plans": {
+        "title": "KintoHub plans",
+        "sidebar_label": "Plans"
+      },
+      "plans-and-billing/upgrading": {
+        "title": "Upgrading your Plan",
+        "sidebar_label": "Upgrading"
+      },
       "release-notes": {
         "title": "Release Notes"
       }
@@ -240,7 +252,8 @@
       "KintoBlocks": "KintoBlocks",
       "Deployments": "Deployments",
       "Features": "Features",
-      "Examples & Guides": "Examples & Guides",
+      "Plans & Billing": "Plans & Billing",
+      "Tutorials": "Tutorials",
       "Notes & Experiments": "Notes & Experiments"
     }
   },
