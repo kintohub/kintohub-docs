@@ -3,7 +3,7 @@ title: KintoHub plans
 sidebar_label: Plans
 ---
 
-> For a listing of all features and a side-by-side comparison, please refer to the [Pricing](https://www.kintohub.com) page on the KintoHub website.
+> The [Pricing](https://www.kintohub.com) page on the KintoHub website lists a side-by-side comparison and all differences between the Free, Pro and Enterprise plans.
 
 ## Pricing simplified
 
@@ -75,4 +75,4 @@ Your DevOps team has full SSH/Kubernetes access, and has the ability to customiz
 
 We also offer enterprise-grade security and you will have access to additional support options and a 99.9% uptime SLA.
 
-For this plan we will tailor to your needs and suggest you [request a demo]() or [contact sales]() to discuss further.
+For this plan we will tailor to your needs and suggest you [request a demo or contact sales](https://www.kintohub.com/contact-us/) to discuss further.
