@@ -169,44 +169,44 @@
       "introduction/_wip_why-kintohub-workflow": {
         "title": "introduction/_wip_why-kintohub-workflow"
       },
-      "introduction/deploy-your-first/dotnet-app": {
-        "title": "Deploy your first .NET app",
-        "sidebar_label": ".NET"
-      },
-      "introduction/deploy-your-first/elixir-app": {
-        "title": "Deploy your first Elixir app",
-        "sidebar_label": "Elixir"
-      },
-      "introduction/deploy-your-first/go-app": {
-        "title": "Deploy your first Go app",
-        "sidebar_label": "Go"
-      },
-      "introduction/deploy-your-first/java-app": {
-        "title": "Deploy your first Java app",
-        "sidebar_label": "Java"
-      },
-      "introduction/deploy-your-first/nodejs-app": {
-        "title": "Deploy your first Node.js app",
-        "sidebar_label": "Node.js"
-      },
-      "introduction/deploy-your-first/php-app": {
-        "title": "Deploy your first PHP app",
-        "sidebar_label": "PHP"
-      },
-      "introduction/deploy-your-first/python-app": {
-        "title": "Deploy your first Python app",
-        "sidebar_label": "Python"
-      },
-      "introduction/deploy-your-first/ruby-app": {
-        "title": "Deploy your first Ruby app",
-        "sidebar_label": "Ruby"
-      },
       "introduction/getting-started": {
         "title": "Getting Started with KintoHub",
         "sidebar_label": "Getting Started"
       },
       "introduction/kintohub-workflow": {
         "title": "The KintoHub Workflow"
+      },
+      "introduction/try-deploying/dotnet-app": {
+        "title": "Deploy your first .NET app",
+        "sidebar_label": ".NET"
+      },
+      "introduction/try-deploying/elixir-app": {
+        "title": "Deploy your first Elixir app",
+        "sidebar_label": "Elixir"
+      },
+      "introduction/try-deploying/go-app": {
+        "title": "Deploy your first Go app",
+        "sidebar_label": "Go"
+      },
+      "introduction/try-deploying/java-app": {
+        "title": "Deploy your first Java app",
+        "sidebar_label": "Java"
+      },
+      "introduction/try-deploying/nodejs-app": {
+        "title": "Deploy your first Node.js app",
+        "sidebar_label": "Node.js"
+      },
+      "introduction/try-deploying/php-app": {
+        "title": "Deploy your first PHP app",
+        "sidebar_label": "PHP"
+      },
+      "introduction/try-deploying/python-app": {
+        "title": "Deploy your first Python app",
+        "sidebar_label": "Python"
+      },
+      "introduction/try-deploying/ruby-app": {
+        "title": "Deploy your first Ruby app",
+        "sidebar_label": "Ruby"
       },
       "kintoblocks/custom-services": {
         "title": "Custom Service KintoBlock",

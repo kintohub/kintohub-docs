@@ -5,16 +5,16 @@
       "introduction/kintohub-workflow",
       {
         "type": "subcategory",
-        "label": "Deploy your first app",
+        "label": "Try an example app",
         "ids": [
-          "introduction/deploy-your-first/nodejs-app",
-          "introduction/deploy-your-first/python-app",
-          "introduction/deploy-your-first/java-app",
-          "introduction/deploy-your-first/dotnet-app",
-          "introduction/deploy-your-first/php-app",
-          "introduction/deploy-your-first/ruby-app",
-          "introduction/deploy-your-first/go-app",
-          "introduction/deploy-your-first/elixir-app"
+          "introduction/try-deploying/nodejs-app",
+          "introduction/try-deploying/python-app",
+          "introduction/try-deploying/java-app",
+          "introduction/try-deploying/dotnet-app",
+          "introduction/try-deploying/php-app",
+          "introduction/try-deploying/ruby-app",
+          "introduction/try-deploying/go-app",
+          "introduction/try-deploying/elixir-app"
         ]
       }
     ],
