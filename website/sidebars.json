@@ -26,7 +26,6 @@
     ],
     "Deployments": [
       "deployments/introduction",
-      "deployments/configure-kintoblocks",
       "deployments/environments",
       "deployments/promoting",
       "deployments/rollbacks",
@@ -41,7 +40,6 @@
           "features/building/pulling-source-code",
           "features/building/branches-and-tags",
           "features/building/manage-blocks",
-          "features/building/continuous-integration",
           "features/building/api-docs"
         ]
       },
@@ -51,9 +49,7 @@
         "ids": [
           "features/deploying/manage-deployments",
           "features/deploying/manage-environments",
-          "features/deploying/environment-variables",
-          "features/deploying/continuous-delivery",
-          "features/deploying/high-availability"
+          "features/deploying/environment-variables"
         ]
       },
       {
@@ -85,7 +81,6 @@
     ],
     "Notes & Experiments": [
       "release-notes",
-      "experimental/dockerfiles",
       "experimental/session-memory"
     ]
   }
