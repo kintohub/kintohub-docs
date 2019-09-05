@@ -2,6 +2,11 @@
 title: Session Memory
 ---
 
+> _Experimental feature:_  
+> Let us know what you like or dislike about this new functionality, so that we can ship it as a standard feature; [we appreciate all feedback!](https://www.kintohub.com/contact-us)
+>
+> Kindly note that the feature may be incomplete, works unexpectedly, may lack UI, and could be removed in future.
+
 Session Memory is a advanced form of shared memory which traditionally runs on Redis and MemcacheD type of workloads.  Sessions and shared memory are important use cases that a majority of applications require.
 
 ## Use Case

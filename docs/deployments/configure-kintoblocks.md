@@ -1,0 +1,5 @@
+---
+title: Configure KintoBlocks
+---
+
+TODO

@@ -77,7 +77,6 @@ h6, .h6 {
 
 a {
   font-family: $base-font;
-  font-weight: bold;
   font-size: 16px;
   color: $text-link;
   letter-spacing: 0;
@@ -85,6 +84,15 @@ a {
   &:hover{
     color: $text-link-focus;
     text-decoration: none;
+  }
+  code {
+    font-weight: normal;
+  }
+  strong, em {
+    color: $text-link;
+    &:hover{
+      color: $text-link-focus;
+    }
   }
 }
 
@@ -98,8 +106,18 @@ a {
 .bold {
   font-weight: 700;
 }
+strong {
+  color: $text-highlight;
+  em, em & {
+    color: $text-emphasize;
+  }
+}
 .semi-bold {
   font-weight: 600;
+}
+em {
+  color: $kinto-dark;
+  padding-right: .15em;
 }
 
 .center {

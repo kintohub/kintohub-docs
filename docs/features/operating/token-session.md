@@ -1,5 +1,5 @@
 ---
-title: Token and Session Management
+title: API Tokens and Sessions
 ---
 
 KintoHub provides the ability to create sessions for all apps right of the bat. We recommend all users to create a token for all users, and this will give you many features that we are going to show here
@@ -41,7 +41,7 @@ https://public.api.kintohub.com/<clientId>/<microservice>
 
 One of the first problems we were trying to solve is how to make reusable microservices. When we were building KintoHub, we didn't want to make every microservice call the auth microservice to get the logged in user id and username
 
-We have approached it differently, every microservice that needs the username or user id will just state that it needs it using [apidoc](apidoc.md) syntax and KintoHub will inject the value with your request in the header
+We have approached it differently, every microservice that needs the username or user id will just state that it needs it using [apidoc](features/building/api-docs.md) syntax and KintoHub will inject the value with your request in the header
 
 ### Example:
 

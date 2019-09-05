@@ -28,22 +28,44 @@
   text-transform: inherit;
 }
 
-nav.toc .toggleNav ul li a{
-  font-weight: normal;
-  font-size: 16px;
-  color: $kinto-grayscale-7;
-  letter-spacing: 0;
-  line-height: 24px;
-  margin-bottom: 0;
-  &:hover {
-    color: rgba($kinto-grayscale-7, 0.4);
-  }
-  &.navItemActive {
+.toc .toggleNav {
+  ul li a {
+    font-weight: normal;
     font-size: 16px;
-    color: $kinto-blue;
+    color: $kinto-purple;
     letter-spacing: 0;
     line-height: 24px;
+    margin-bottom: 0;
+    &:hover {
+      color: $kinto-purple-light;
+    }
+    &.navItemActive {
+      font-size: 16px;
+      color: $kinto-blue;
+      letter-spacing: 0;
+      line-height: 24px;
+      a {
+        color: $kinto-purple;
+      }
+    }
   }
+  li.navListItem.navListItemActive {
+    background-color: rgba(122, 104, 232, .1);
+    display: inline-block;
+    margin-left: -.5em;
+    padding: 0 .5em;
+    border-radius: 5px;
+    a {
+      color: $kinto-purple;
+    }
+  }
+  .navGroup .navGroupSubcategoryTitle {
+    font-size: 16px;
+  }
+}
+
+.toc-headings a:hover {
+  color: $kinto-purple;
 }
 
 .navWrapper {
@@ -54,20 +76,22 @@ nav.toc .toggleNav ul li a{
   margin-top: 0;
 }
 
-nav.toc .toggleNav .navGroup.navGroupActive {
-  background-color: $kinto-white;
-  h3 {
-    font-size: 20px;
-    color: $kinto-grayscale-8;
-    letter-spacing: 0;
-    line-height: 24px;
-    background-color: $kinto-white;
-  }
-}
-
 nav.toc .toggleNav .navGroup {
   margin: 0;
   padding-bottom: 24px;
+  &.subNavGroup {
+    padding-bottom: 0;
+  }
+  &.navGroupActive {
+    background-color: $kinto-white;
+    h3 {
+      font-size: 20px;
+      color: $kinto-grayscale-8;
+      letter-spacing: 0;
+      line-height: 24px;
+      background-color: $kinto-white;
+    }
+  }
 }
 
 .toc-headings {
@@ -81,8 +105,8 @@ blockquote {
   border-left: none;
   box-shadow: inset 4px 0 0 0 #FFDB18;
   border-radius: 4px;
-  padding-left: 30px;
-  ul li {
+  padding-left: 2em;
+  ul li, ol li {
     font-size: 16px;
     color: #556F7D;
     letter-spacing: 0;
@@ -90,14 +114,11 @@ blockquote {
   }
 }
 
-ul li {
- font-size: 16px;
- color: #556F7D;
- letter-spacing: 0;
- line-height: 24px;
- a {
-   font-weight: normal;
- }
+ul li, ol li {
+  font-size: 16px;
+  color: #556F7D;
+  letter-spacing: 0;
+  line-height: 24px;
 }
 
 .doc.separateOnPageNav.sideNavVisible .navPusher .mainContainer {
@@ -110,8 +131,8 @@ pre code, pre code.hljs {
   box-shadow: inset 4px 0 0 0 #A2B0BD;
   border-radius: 4px;
   border: none;
-  padding: 0.5em 0.5em 0.5em 30px;
-  font-size: 16px;
+  padding: 0.5em 0.5em 0.5em 2em;
+  font-size: 85%;
   color: #556F7D;
   letter-spacing: 0;
   line-height: 24px;
@@ -122,6 +143,11 @@ code {
   padding-left: 5px;
   padding-right: 5px;
   box-shadow: none;
+  font-size: 85%; // Percentage, so that headings scale.
+
+  &[class*='language-'], pre[class*='language-'] {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  }
 }
 
 .fixedHeaderContainer {
@@ -154,4 +180,10 @@ input#search_input_react {
 // overriding the standard underline
 .mainContainer .wrapper a:hover, .mainContainer .wrapper a:focus, .inner .projectIntro a:hover, .inner .projectIntro a:focus {
   text-decoration: none;
+}
+
+.float-left-padding {
+  float: left;
+  padding-right: 1em;
+  padding-top: 1em;
 }

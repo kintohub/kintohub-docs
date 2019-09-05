@@ -117,14 +117,19 @@ h6, .h6 {
 
 a {
   font-family: "Nunito", sans-serif;
-  font-weight: bold;
   font-size: 16px;
-  color: #1488a2;
+  color: #7a68e8;
   letter-spacing: 0;
   line-height: 24px; }
   a:hover {
-    color: #1ec4e9;
+    color: #a295ee;
     text-decoration: none; }
+  a code {
+    font-weight: normal; }
+  a strong, a em {
+    color: #7a68e8; }
+    a strong:hover, a em:hover {
+      color: #a295ee; }
 
 .fonts .section {
   width: 50%;
@@ -133,8 +138,17 @@ a {
 .bold {
   font-weight: 700; }
 
+strong {
+  color: #111111; }
+  strong em, em strong {
+    color: #393939; }
+
 .semi-bold {
   font-weight: 600; }
+
+em {
+  color: #393939;
+  padding-right: .15em; }
 
 .center {
   text-align: center; }
@@ -200,7 +214,7 @@ footer {
         color: #98b4cd;
         font-weight: bold; }
         footer .unstyled-list .list-item a:hover {
-          color: #1ec4e9; }
+          color: #a295ee; }
       @media (min-width: 768px) and (max-width: 1023px) {
         footer .unstyled-list .list-item {
           display: inline-block;
@@ -281,20 +295,37 @@ footer {
   line-height: 24px;
   text-transform: inherit; }
 
-nav.toc .toggleNav ul li a {
+.toc .toggleNav ul li a {
   font-weight: normal;
   font-size: 16px;
-  color: #556f7d;
+  color: #7a68e8;
   letter-spacing: 0;
   line-height: 24px;
   margin-bottom: 0; }
-  nav.toc .toggleNav ul li a:hover {
-    color: rgba(85, 111, 125, 0.4); }
-  nav.toc .toggleNav ul li a.navItemActive {
+  .toc .toggleNav ul li a:hover {
+    color: #a295ee; }
+  .toc .toggleNav ul li a.navItemActive {
     font-size: 16px;
     color: #1ec4e9;
     letter-spacing: 0;
     line-height: 24px; }
+    .toc .toggleNav ul li a.navItemActive a {
+      color: #7a68e8; }
+
+.toc .toggleNav li.navListItem.navListItemActive {
+  background-color: rgba(122, 104, 232, 0.1);
+  display: inline-block;
+  margin-left: -.5em;
+  padding: 0 .5em;
+  border-radius: 5px; }
+  .toc .toggleNav li.navListItem.navListItemActive a {
+    color: #7a68e8; }
+
+.toc .toggleNav .navGroup .navGroupSubcategoryTitle {
+  font-size: 16px; }
+
+.toc-headings a:hover {
+  color: #7a68e8; }
 
 .navWrapper {
   margin-top: 40px; }
@@ -302,18 +333,19 @@ nav.toc .toggleNav ul li a {
 .edit-page-link.button {
   margin-top: 0; }
 
-nav.toc .toggleNav .navGroup.navGroupActive {
-  background-color: white; }
-  nav.toc .toggleNav .navGroup.navGroupActive h3 {
-    font-size: 20px;
-    color: #38535e;
-    letter-spacing: 0;
-    line-height: 24px;
-    background-color: white; }
-
 nav.toc .toggleNav .navGroup {
   margin: 0;
   padding-bottom: 24px; }
+  nav.toc .toggleNav .navGroup.subNavGroup {
+    padding-bottom: 0; }
+  nav.toc .toggleNav .navGroup.navGroupActive {
+    background-color: white; }
+    nav.toc .toggleNav .navGroup.navGroupActive h3 {
+      font-size: 20px;
+      color: #38535e;
+      letter-spacing: 0;
+      line-height: 24px;
+      background-color: white; }
 
 .toc-headings li ul li a {
   font-weight: normal; }
@@ -323,20 +355,18 @@ blockquote {
   border-left: none;
   box-shadow: inset 4px 0 0 0 #FFDB18;
   border-radius: 4px;
-  padding-left: 30px; }
-  blockquote ul li {
+  padding-left: 2em; }
+  blockquote ul li, blockquote ol li {
     font-size: 16px;
     color: #556F7D;
     letter-spacing: 0;
     line-height: 24px; }
 
-ul li {
+ul li, ol li {
   font-size: 16px;
   color: #556F7D;
   letter-spacing: 0;
   line-height: 24px; }
-  ul li a {
-    font-weight: normal; }
 
 .doc.separateOnPageNav.sideNavVisible .navPusher .mainContainer {
   padding-left: 100px;
@@ -347,8 +377,8 @@ pre code, pre code.hljs {
   box-shadow: inset 4px 0 0 0 #A2B0BD;
   border-radius: 4px;
   border: none;
-  padding: 0.5em 0.5em 0.5em 30px;
-  font-size: 16px;
+  padding: 0.5em 0.5em 0.5em 2em;
+  font-size: 85%;
   color: #556F7D;
   letter-spacing: 0;
   line-height: 24px; }
@@ -357,7 +387,10 @@ code {
   background-color: rgba(30, 196, 233, 0.2);
   padding-left: 5px;
   padding-right: 5px;
-  box-shadow: none; }
+  box-shadow: none;
+  font-size: 85%; }
+  code[class*='language-'], code pre[class*='language-'] {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
 
 .fixedHeaderContainer {
   height: 80px; }
@@ -381,3 +414,8 @@ input#search_input_react {
 
 .mainContainer .wrapper a:hover, .mainContainer .wrapper a:focus, .inner .projectIntro a:hover, .inner .projectIntro a:focus {
   text-decoration: none; }
+
+.float-left-padding {
+  float: left;
+  padding-right: 1em;
+  padding-top: 1em; }

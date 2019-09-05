@@ -3,165 +3,258 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "Microservices made simple",
+    "tagline": "Build cloud native apps in seconds",
     "docs": {
-      "accesing-endpoints": {
-        "title": "Accessing API Endpoints"
-      },
-      "accounts": {
+      "_legacy/accounts": {
         "title": "Accounts"
       },
-      "adding-a-dependency-application": {
+      "_legacy/adding-a-dependency-application": {
         "title": "Adding dependencies to an application"
       },
-      "advanced-usages": {
+      "_legacy/advanced-usages": {
         "title": "Advanced Usages"
       },
-      "answers": {
+      "_legacy/answers": {
         "title": "Answers"
       },
-      "apidoc": {
-        "title": "How to use KintoHub's Documentation UI"
-      },
-      "billing": {
+      "_legacy/billing": {
         "title": "Billing"
       },
-      "builds-and-run-cmds": {
+      "_legacy/builds-and-run-cmds": {
         "title": "Build & Run Commands"
       },
-      "calling-kintohub-apis": {
+      "_legacy/calling-kintohub-apis": {
         "title": "Calling KintoHub Apis"
       },
-      "connecting-a-github-organization": {
+      "_legacy/connecting-a-github-organization": {
         "title": "Connecting a GitHub organization"
       },
-      "creating-an-application": {
+      "_legacy/creating-an-application": {
         "title": "Creating an application"
       },
-      "deleting-a-kintoblock": {
+      "_legacy/deleting-a-kintoblock": {
         "title": "Deleting A KintoBlock"
       },
-      "deleting-an-application": {
+      "_legacy/deleting-an-application": {
         "title": "Deleting An Application"
       },
-      "deployment-logs": {
-        "title": "Logs"
-      },
-      "deployment-status-history": {
+      "_legacy/deployment-status-history": {
         "title": "Deployment Status"
       },
-      "deployments-introduction": {
-        "title": "Introduction"
-      },
-      "environment-variables": {
-        "title": "Environment Variables"
-      },
-      "environmental-parameters": {
+      "_legacy/environmental-parameters": {
         "title": "Environmental Parameters"
       },
-      "environments": {
-        "title": "Environment"
+      "_legacy/feedback": {
+        "title": "How do I provide feedback?"
+      },
+      "_legacy/kintoapps": {
+        "title": "Deployments"
+      },
+      "_legacy/kintoblock-builds": {
+        "title": "Git Repository, Builds & CI"
+      },
+      "_legacy/managing-members": {
+        "title": "Managing members’ roles on a project basis"
+      },
+      "_legacy/product-roadmap": {
+        "title": "What's on the product roadmap?"
+      },
+      "_legacy/sdk-less-framework": {
+        "title": "SDK-Less Framework"
+      },
+      "_legacy/serverless": {
+        "title": "_legacy/serverless"
+      },
+      "_legacy/tagging-and-deploying": {
+        "title": "Tagging & deploying an application"
+      },
+      "_legacy/talking-to-applications": {
+        "title": "Talking to an application"
+      },
+      "_legacy/thinking-kinto": {
+        "title": "Thinking Kinto"
+      },
+      "_legacy/usage-limit": {
+        "title": "Is there a usage limit during alpha testing period?"
+      },
+      "_legacy/use-during-alpha": {
+        "title": "Is KintoHub free to use during alpha testing period?"
+      },
+      "_legacy/what-is-an-application": {
+        "title": "What is an application?"
+      },
+      "_legacy/workspaces": {
+        "title": "Workspaces"
+      },
+      "deployments/configure-kintoblocks": {
+        "title": "Configure KintoBlocks"
+      },
+      "deployments/environments": {
+        "title": "Environments"
+      },
+      "deployments/introduction": {
+        "title": "Introduction to Deployments",
+        "sidebar_label": "Introduction"
+      },
+      "deployments/metrics": {
+        "title": "Metrics"
+      },
+      "deployments/promoting": {
+        "title": "Promoting"
+      },
+      "deployments/rollbacks": {
+        "title": "Rollbacks"
+      },
+      "deployments/shut-down": {
+        "title": "Shut Down"
       },
       "examples/todo-list/tutorial": {
         "title": "Todo List example app",
         "sidebar_label": "Todo List App"
       },
-      "feedback": {
-        "title": "How do I provide feedback?"
+      "experimental/dockerfiles": {
+        "title": "Dockerfile support"
       },
-      "getting-started": {
-        "title": "Getting Started"
+      "experimental/session-memory": {
+        "title": "Session Memory"
       },
-      "helm-arguments": {
-        "title": "Helm Arguments"
+      "features/building/api-docs": {
+        "title": "API Docs"
       },
-      "kintoapps": {
-        "title": "Deployments"
+      "features/building/branches-and-tags": {
+        "title": "Branches & Tags"
       },
-      "kintoblock-builds": {
-        "title": "Git Repository, Builds & CI"
+      "features/building/continuous-integration": {
+        "title": "Continuous Integration"
       },
-      "kintoblock-introduction": {
-        "title": "Introduction"
-      },
-      "kintoblocks": {
-        "title": "KintoBlocks"
-      },
-      "link-repo-resources": {
-        "title": "Link to Repository Resources"
-      },
-      "manage-blocks": {
+      "features/building/manage-blocks": {
         "title": "Manage KintoBlocks"
       },
-      "manage-deployments": {
+      "features/building/pulling-source-code": {
+        "title": "Pulling Source Code"
+      },
+      "features/deploying/continuous-delivery": {
+        "title": "Continuous Delivery"
+      },
+      "features/deploying/environment-variables": {
+        "title": "Environment Variables"
+      },
+      "features/deploying/high-availability": {
+        "title": "High Availability"
+      },
+      "features/deploying/manage-deployments": {
         "title": "Manage Deployments"
       },
-      "manage-environments": {
+      "features/deploying/manage-environments": {
         "title": "Manage Environments"
       },
-      "manage-workspace": {
+      "features/operating/accessing-endpoints": {
+        "title": "Accessing API Endpoints"
+      },
+      "features/operating/logs": {
+        "title": "Logs"
+      },
+      "features/operating/token-session": {
+        "title": "API Tokens and Sessions"
+      },
+      "features/workspaces-and-teams/manage-workspace": {
         "title": "Managing Workspaces"
       },
-      "managing-members": {
-        "title": "Managing members’ roles on a project basis"
+      "features/workspaces-and-teams/sharing-workspaces": {
+        "title": "Sharing Workspaces"
       },
-      "product-roadmap": {
-        "title": "What's on the product roadmap?"
+      "features/workspaces-and-teams/workspace-intro": {
+        "title": "Introduction"
+      },
+      "introduction/_wip_why-kintohub-workflow": {
+        "title": "introduction/_wip_why-kintohub-workflow"
+      },
+      "introduction/getting-started": {
+        "title": "Getting Started with KintoHub",
+        "sidebar_label": "Getting Started"
+      },
+      "introduction/kintohub-workflow": {
+        "title": "The KintoHub Workflow"
+      },
+      "introduction/try-deploying/dotnet-app": {
+        "title": "Deploy your first .NET app",
+        "sidebar_label": ".NET"
+      },
+      "introduction/try-deploying/elixir-app": {
+        "title": "Deploy your first Elixir app",
+        "sidebar_label": "Elixir"
+      },
+      "introduction/try-deploying/go-app": {
+        "title": "Deploy your first Go app",
+        "sidebar_label": "Go"
+      },
+      "introduction/try-deploying/java-app": {
+        "title": "Deploy your first Java app",
+        "sidebar_label": "Java"
+      },
+      "introduction/try-deploying/nodejs-app": {
+        "title": "Deploy your first Node.js app",
+        "sidebar_label": "Node.js"
+      },
+      "introduction/try-deploying/php-app": {
+        "title": "Deploy your first PHP app",
+        "sidebar_label": "PHP"
+      },
+      "introduction/try-deploying/python-app": {
+        "title": "Deploy your first Python app",
+        "sidebar_label": "Python"
+      },
+      "introduction/try-deploying/ruby-app": {
+        "title": "Deploy your first Ruby app",
+        "sidebar_label": "Ruby"
+      },
+      "kintoblocks/custom-services": {
+        "title": "Custom Service KintoBlock",
+        "sidebar_label": "Custom Services"
+      },
+      "kintoblocks/helm-arguments": {
+        "title": "Helm Arguments"
+      },
+      "kintoblocks/introduction": {
+        "title": "Introducing KintoBlocks",
+        "sidebar_label": "Introduction"
+      },
+      "kintoblocks/introduction2": {
+        "title": "KintoBlocks"
+      },
+      "kintoblocks/microservices": {
+        "title": "Microservice KintoBlock",
+        "sidebar_label": "Microservices"
+      },
+      "kintoblocks/websites": {
+        "title": "Website KintoBlock",
+        "sidebar_label": "Websites"
+      },
+      "plans-and-billing/billing": {
+        "title": "Billing for KintoHub plans",
+        "sidebar_label": "Billing"
+      },
+      "plans-and-billing/plans": {
+        "title": "KintoHub plans",
+        "sidebar_label": "Plans"
+      },
+      "plans-and-billing/upgrading": {
+        "title": "Upgrading your plan",
+        "sidebar_label": "Upgrading"
       },
       "release-notes": {
         "title": "Release Notes"
-      },
-      "repositories": {
-        "title": "Git Repositories"
-      },
-      "sdk-less-framework": {
-        "title": "SDK-Less Framework"
-      },
-      "serverless": {
-        "title": "serverless"
-      },
-      "session-memory": {
-        "title": "Session Memory"
-      },
-      "sharing-workspaces": {
-        "title": "Sharing Workspaces"
-      },
-      "tagging-and-deploying": {
-        "title": "Tagging & deploying an application"
-      },
-      "talking-to-applications": {
-        "title": "Talking to an application"
-      },
-      "thinking-kinto": {
-        "title": "Thinking Kinto"
-      },
-      "token-session": {
-        "title": "Token and Session Management"
-      },
-      "usage-limit": {
-        "title": "Is there a usage limit during alpha testing period?"
-      },
-      "use-during-alpha": {
-        "title": "Is KintoHub free to use during alpha testing period?"
-      },
-      "what-is-an-application": {
-        "title": "What is an application?"
-      },
-      "workspace-intro": {
-        "title": "Introduction"
-      },
-      "workspaces": {
-        "title": "Workspaces"
       }
     },
     "links": {},
     "categories": {
-      "Concepts": "Concepts",
-      "Workspaces": "Workspaces",
+      "Introduction": "Introduction",
       "KintoBlocks": "KintoBlocks",
       "Deployments": "Deployments",
-      "Docs": "Docs",
-      "Examples": "Examples"
+      "Features": "Features",
+      "Plans & Billing": "Plans & Billing",
+      "Tutorials": "Tutorials",
+      "Notes & Experiments": "Notes & Experiments"
     }
   },
   "pages-strings": {

@@ -1,5 +1,5 @@
 ---
-title: Link to Repository Resources
+title: Pulling Source Code
 ---
 
 Popular version control repository resources are **GitHub** and **Bitbucket**. KintoHub provides an option to link both repository resources with the workspaces.

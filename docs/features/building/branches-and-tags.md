@@ -1,5 +1,5 @@
 ---
-title: Git Repositories
+title: Branches & Tags
 ---
 
 ## KintoBlocks

@@ -1,5 +1,6 @@
 ---
-title: Introduction
+title: Introduction to Deployments
+sidebar_label: Introduction
 ---
 
 ## What is a Deployment?

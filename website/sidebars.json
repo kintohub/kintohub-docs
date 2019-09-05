@@ -1,45 +1,87 @@
 {
   "docs": {
-    "Concepts": [
-      "thinking-kinto",
-      "calling-kintohub-apis",
-      "session-memory",
-      "sdk-less-framework"
-    ],
-    "Workspaces": [
-      "workspace-intro",
-      "link-repo-resources",
-      "manage-workspace",
-      "sharing-workspaces"
+    "Introduction": [
+      "introduction/getting-started",
+      "introduction/kintohub-workflow",
+      {
+        "type": "subcategory",
+        "label": "Try an example app",
+        "ids": [
+          "introduction/try-deploying/nodejs-app",
+          "introduction/try-deploying/python-app",
+          "introduction/try-deploying/java-app",
+          "introduction/try-deploying/dotnet-app",
+          "introduction/try-deploying/php-app",
+          "introduction/try-deploying/ruby-app",
+          "introduction/try-deploying/go-app",
+          "introduction/try-deploying/elixir-app"
+        ]
+      }
     ],
     "KintoBlocks": [
-      "kintoblock-introduction",
-      "kintoblock-builds",
-      "builds-and-run-cmds",
-      "environment-variables",
-      "helm-arguments",
-      "manage-blocks",
-      "advanced-usages",
-      "sdsdsd"
+      "kintoblocks/introduction",
+      "kintoblocks/websites",
+      "kintoblocks/microservices",
+      "kintoblocks/custom-services"
     ],
     "Deployments": [
-      "deployments-introduction",
-      "manage-deployments",
-      "environments",
-      "deployment-logs",
-      "manage-environments",
-      "deployment-status-history",
-      "accesing-endpoints"
+      "deployments/introduction",
+      "deployments/environments",
+      "deployments/promoting",
+      "deployments/rollbacks",
+      "deployments/shut-down",
+      "deployments/metrics"
     ],
-    "Docs": [
-      "getting-started",
-      "apidoc",
-      "token-session",
-      "repositories",
-      "release-notes"
+    "Features": [
+      {
+        "type": "subcategory",
+        "label": "Building",
+        "ids": [
+          "features/building/pulling-source-code",
+          "features/building/branches-and-tags",
+          "features/building/manage-blocks",
+          "features/building/api-docs"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Deploying",
+        "ids": [
+          "features/deploying/manage-deployments",
+          "features/deploying/manage-environments",
+          "features/deploying/environment-variables"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Operating",
+        "ids": [
+          "features/operating/accessing-endpoints",
+          "features/operating/token-session",
+          "features/operating/logs"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Workspaces & Teams",
+        "ids": [
+          "features/workspaces-and-teams/workspace-intro",
+          "features/workspaces-and-teams/manage-workspace",
+          "features/workspaces-and-teams/sharing-workspaces"
+        ]
+      }
     ],
-    "Examples": [
+    "Plans & Billing": [
+      "plans-and-billing/plans",
+      "plans-and-billing/upgrading",
+      "plans-and-billing/billing"
+    ],
+    "Tutorials": [
       "examples/todo-list/tutorial"
+    ],
+    "Notes & Experiments": [
+      "release-notes",
+      "experimental/session-memory"
     ]
   }
 }
