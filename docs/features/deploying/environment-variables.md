@@ -4,9 +4,9 @@ title: Environment Variables
 
 ## What are the Environment Variables?
 
-Environment variables are used to control static information specified in the Deployment. These are often configuration values like `Private_Keys` or `Port`. Environment variables aid in providing compatibility for Deployments to run seamlessly on multiple environments. They are specific to a **branch** of a KintoBlock, so if you switch branches and want to use that particular branch in a Deployment you will need to input the **Environment Variables** on that branch too.
+Environment variables are used to control static information specified in the Project. These are often configuration values like `Private_Keys` or `Port`. Environment variables aid in providing compatibility for Projects to run seamlessly on multiple environments. They are specific to a **branch** of a KintoBlock, so if you switch branches and want to use that particular branch in a Project you will need to input the **Environment Variables** on that branch too.
 
-It is recommended to add **Environment value** while a variable is created. The Environment values can be added on the **KintoBlock manage** page or via **Configure Dependencies** button in Deployment Manage Page.
+It is recommended to add **Environment value** while a variable is created. The Environment values can be added on the **KintoBlock manage** page or via **Configure Dependencies** button in Project Manage Page.
 
 
 ## How to define Environment variables in a KintoBlock?
@@ -47,4 +47,4 @@ It is possible to edit and delete an Environment variable in KintoBlock at any r
 ### Points to remember about Environment Variables
 
 - The owner of a KintoBlock can add, edit or delete Environment variables and values.
-- Public users with access to a KintoBlock can edit the environment values via **Configure Dependencies** button in Deployment Manage page.
+- Public users with access to a KintoBlock can edit the environment values via **Configure Dependencies** button in Project Manage page.
