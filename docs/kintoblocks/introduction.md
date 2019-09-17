@@ -45,13 +45,13 @@ Read more about [Custom Service KintoBlocks](custom-services.md).
 
 ### Tasks
 
-Tasks allow you to __run serverless activities, functions and scripts__. These could be triggered as needed, or before and/or after a deployment. For example, integration tests, sending a notification or updating a database record.
+Tasks allow you to __run serverless activities, functions and scripts__. These could be triggered as needed, or before and/or after a project. For example, integration tests, sending a notification or updating a database record.
 
 _Coming soon:_ we are currently working on this new KintoBlock flavor.
 
 ### Cloud Services
 
-With cloud services you can __provision new or add existing services from public cloud providers__ like Amazon AWS, Microsoft Azure and Google Cloud to your deployments.
+With cloud services you can __provision new or add existing services from public cloud providers__ like Amazon AWS, Microsoft Azure and Google Cloud to your projects.
 
 _Coming soon:_ we are currently working on this new KintoBlock flavor.
 
