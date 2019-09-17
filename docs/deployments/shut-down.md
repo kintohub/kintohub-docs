@@ -8,7 +8,7 @@ If an environment is no longer in use, it can be shut down. Environments that ar
 
 To shut down an environment, follow the steps mentioned below:
 
-1. Open a **Deployment**.
+1. Open a **Project**.
 
 2. Click on the **Shut Down** button displayed on the top right of the page.
 
