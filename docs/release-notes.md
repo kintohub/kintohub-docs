@@ -2,6 +2,39 @@
 title: Release Notes
 ---
 
+## Beta-0.1.0
+September 2019
+
+**IT'S LIVE!**
+
+* Beta is here! With loads of improvements making KintoHub faster than it's ever been.
+
+**Accounts & Admin**
+
+* Pro tier is now available to upgrade towards. Get more storage and serverless memory along with plenty of other benefits. Check it out here: https://www.kintohub.com/pricing/
+
+**Kintoblocks**
+
+* No Changes
+
+**Logs**
+
+* No Changes
+
+**Websites**
+
+* Upon deployment SSL will be done automatically from now on.
+
+**Deployments**
+
+* New confirmation was added. Showing exactly what changes you're about to deploy before finalizing it.
+* Dependency settings will no longer take you to a new page. Now it will be in a popup on the side.
+* Able to configure how much memory a block uses.
+
+**General Changes**
+
+* A huge refactor was done. We rebuilt a lot of the core services and have vastly increased the speed of KintoHub. Making your deployments faster than ever.
+
 ## Alpha-0.5.0
 July 2019
 
