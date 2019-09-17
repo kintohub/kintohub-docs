@@ -7,7 +7,7 @@ sidebar_label: Custom Services
 
 1. If you are creating a Custom Service, select the corresponding option in the type of KintoBlocks.
 
-2. Fill in the `KintoBlock name`, `display name` and `description` in the **Basic Info form**.
+2. Fill in the `KintoBlock name`, `Internal name` and `description` in the **Basic Info form**.
 
    ![Screenshot](/docs/assets/kb-custom-service-basic-info.png)
 
