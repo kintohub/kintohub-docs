@@ -10,9 +10,9 @@ These metrics are helpful to perform health checks on the environment and to tro
 
 To view metrics for an environment, follow the steps mentioned below:
 
-1. Open a **Deployment**.
+1. Open a **Project**.
 
-2. Click on the **Metrics** button displayed on the top right of the **Deployment Manage** page.
+2. Click on the **Metrics** button displayed on the top right of the **Project Manage** page.
 
     ![Screenshot](/docs/assets/metrics-btn.png)
 
