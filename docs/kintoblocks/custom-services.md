@@ -56,9 +56,9 @@ To learn more about Helm Chart [click here.](https://helm.sh/docs/)
 
 ### Required Helm Chart Variables
 
-We follow the standard of helm charts which is used to setup log and be compatible with KintoHub. See the following Service and Deployment definition with the highlighted requirements to be compatible with KintoHub.
+We follow the standard of helm charts which is used to setup log and be compatible with KintoHub. See the following Service and Project definition with the highlighted requirements to be compatible with KintoHub.
 
-`Deployments.yaml`
+`Projects.yaml`
 
 ```
 metadata:
