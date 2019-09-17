@@ -28,7 +28,7 @@ To see your plan and how much you are consuming, select __Manage Workspace__ in 
 
 ![KintoHub dashboard with the Manage Workspace menu selected](/docs/assets/plans-and-billing/manage-workspace.png)
 
-The *__Total Usage__* section shows your _Memory Usage_ and reflects the current consumption and remaining amount of memory. When all memory has been consumed, or the remaining amount is less than the memory needed for a new KintoBlock or new environment, then you may experience that deployments fail.
+The *__Total Usage__* section shows your _Memory Usage_ and reflects the current consumption and remaining amount of memory. When all memory has been consumed, or the remaining amount is less than the memory needed for a new KintoBlock or new environment, then you may experience that projects fail.
 
 ### Upgrade
 
