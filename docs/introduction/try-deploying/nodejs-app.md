@@ -102,7 +102,7 @@ You'll get prompted with the below dialog to link to a Git repository source.
 
  - Press the __Link__ button of the __GitHub__ option.
 
-![Link Repo Source dialog, with GitHub, Bitbucket and GitLab options](assets/introduction/try-deploying/link-repo-sources.png)
+![Link Repo Source dialog, with GitHub, Bitbucket and GitLab options](/docs/assets/introduction/try-deploying/link-repo-sources.png)
 
 You'll be redirected to the GitHub website, where you have to __grant permissions for the KintoHub App to access your repositories__.
 
@@ -121,7 +121,7 @@ Next, you'll see the *__Create New KintoBlock__* page where you get the option t
 
  - Select the __Website__ KintoBlock flavor.
 
-![3 KintoBlock options: Microservice, Website, or Custom Service](assets/introduction/try-deploying/select-kintoblock.png)
+![3 KintoBlock options: Microservice, Website, or Custom Service](/docs/assets/introduction/try-deploying/select-kintoblock.png)
 
 ### Configure the KintoBlock
 
@@ -133,7 +133,7 @@ First, refer to the *__Repository__* section, where __Repository Source__ is alr
  - __Select the repository__ from the list that appears.
    > _Tip:_ Other repositories with similar names may show up in the list, if you have opted to grant access to all repositories in your GitHub account. If that is undesirable, you can always [restrict access to only specific repositories](https://help.github.com/en/articles/reviewing-your-organizations-installed-integrations) under your GitHub account from the GitHub website.
 
-![Screen shot of the Repository section](assets/introduction/try-deploying/nodejs-app/repository-section.png)
+![Screen shot of the Repository section](/docs/assets/introduction/try-deploying/nodejs-app/repository-section.png)
 
 Next, we're going to configure how the Website KintoBlock should _build and run the Node.js app_.
 
@@ -151,7 +151,7 @@ Selecting _Dynamic Web App_ caused an extra *__Advanced Options__* section to ap
  - Keep the __Build Command__ set as `npm install`, so that all required dependencies get installed.
  - Update the __Run__ field to `npm run prod`, since we want to use the script that sets the port to 80.
 
-![Screen shot of the Basic Info section](assets/introduction/try-deploying/nodejs-app/basic-info-section.png)
+![Screen shot of the Basic Info section](/docs/assets/introduction/try-deploying/nodejs-app/basic-info-section.png)
 
 Now that everything is configured, we are ready to proceed:
 
@@ -163,17 +163,17 @@ We now see that the KintoBlock has been created, and that _No build was built su
 
  - Press __Build Latest Commit__, to trigger a new build.
 
-![KintoBlock page with the message that: No build was built successfully yet](assets/introduction/try-deploying/nodejs-app/no-builds-yet.png)
+![KintoBlock page with the message that: No build was built successfully yet](/docs/assets/introduction/try-deploying/nodejs-app/no-builds-yet.png)
 
 This triggers KintoHub to pull the source code from GitHub and build a cloud-native package out of it.
 
 We can see the build in progress:
 
-![Progress indication that the build is in progress](assets/introduction/try-deploying/nodejs-app/building.png)
+![Progress indication that the build is in progress](/docs/assets/introduction/try-deploying/nodejs-app/building.png)
 
 And get the green light when it completes successfully:
 
-![The build was successful as marked in green](assets/introduction/try-deploying/nodejs-app/built-successfully.png)
+![The build was successful as marked in green](/docs/assets/introduction/try-deploying/nodejs-app/built-successfully.png)
 
 Well done! Your KintoBlock is now created and built.
 
@@ -195,7 +195,7 @@ Because we do not have any projects yet:
  - Enter in the _Enter project name_ field a new project name. (e.g. `myapp`)
  - Press the __Create__ button.
 
-![Add to Project dialog](assets/introduction/try-deploying/nodejs-app/add-to-deployment.png)
+![Add to Project dialog](/docs/assets/introduction/try-deploying/nodejs-app/add-to-deployment.png)
 
 ### Create new project
 
@@ -206,7 +206,7 @@ The *__Create New Project__* page, has already been filled out with some of the 
 
 Scroll down to the *__KintoBlocks__* section, where you can see that your _Node App_ KintoBlock has already been added. It has been preset to use the build from the `master` branch. It is also possible to [select other branches and tags](features/building/branches-and-tags.md).
 
-![The Node App KintoBlock listed in the project page](assets/introduction/try-deploying/nodejs-app/deployment-node-app.png)
+![The Node App KintoBlock listed in the project page](/docs/assets/introduction/try-deploying/nodejs-app/deployment-node-app.png)
 
 If you have more KintoBlocks that should be part of this project, then you can add those with the _Add KintoBlocks..._ drop-down menu.
 
@@ -220,11 +220,11 @@ The first project is as simple as waiting for the process to complete.
 
 You can see that the project is running:
 
-![Project running](assets/introduction/try-deploying/nodejs-app/deployment-running.png)
+![Project running](/docs/assets/introduction/try-deploying/nodejs-app/deployment-running.png)
 
 And when it is completed:
 
-![Project deployed](assets/introduction/try-deploying/nodejs-app/deployment-deployed.png)
+![Project deployed](/docs/assets/introduction/try-deploying/nodejs-app/deployment-deployed.png)
 
 During the project KintoHub will push your KintoBlock to a cloud server and setup routing for inbound traffic.
 
