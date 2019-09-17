@@ -7,7 +7,7 @@ sidebar_label: Websites
 
 1. If you are creating a Website, select the corresponding option in the type of KintoBlocks.
 
-2. Fill in the `KintoBlock name`, `display name` and `description` in the **Basic Info form**.
+2. Fill in the `KintoBlock name`, `Internal name` and `description` in the **Basic Info form**.
 
    ![Screenshot](/docs/assets/kb-website-basic-info.png)
 
