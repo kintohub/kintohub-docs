@@ -26,7 +26,7 @@ After successful login, you will be able to view the metrics of an environment. 
 
 - Memory Usage.
 
-- Average Recieve Bytes.
+- Average Receive Bytes.
 
 - Average Transmit Bytes.
 
