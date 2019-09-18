@@ -42,7 +42,7 @@ Your Project is made of blocks that are deployed in a serverless way, meaning it
 
 ## Edit Project
 
-The Project properties like `Name`, `Description`, and `Environment` name specified during creation can be edited and updated with new values. 
+The Project properties like `Name`, `Description`, and `Environment Name` specified during creation can be edited and updated with new values. 
 
 To edit a project, follow the steps mentioned below:
 
