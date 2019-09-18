@@ -17,11 +17,11 @@ Your Project is made of blocks that are deployed in a serverless way, meaning it
 
 2. Click **Create New Project** card or the **+** icon.
 
-   ![Screenshot](/docs/assets/deployment_create_options.png)
+   ![Screenshot](/docs/assets/project_create_options.png)
 
 3. In the **Basic Info** form, specify details on `name`, `description`, and `environment` name.
 
-   ![Screenshot](/docs/assets/basic-info-deployments.png)
+   ![Screenshot](/docs/assets/basic-info-project.png)
 
 4. By default, the environment is named as **default**. Make sure to overwrite it and specify your own name for easier identification.
 
@@ -29,11 +29,11 @@ Your Project is made of blocks that are deployed in a serverless way, meaning it
 
 6. Select the KintoBlock displayed in the search dropdown to add them to your project. Both **private** and **public** KintoBlocks can be added.
 
-   ![Screenshot](/docs/assets/deployments-kintoblocks-section.png)
+   ![Screenshot](/docs/assets/project-kintoblocks-section.png)
 
 7. Once KintoBlock is added, a specific `Branch` or a `Tag` of the Kintoblock can be selected.
 
-   ![Screenshot](/docs/assets/deployments-branch-tag-switcher.png)
+   ![Screenshot](/docs/assets/project-branch-tag-switcher.png)
 
 8. Click on **Create New Project** button on the bottom right of the page to create the Project.
 
@@ -50,7 +50,7 @@ To edit a project, follow the steps mentioned below:
 
 2. Click on the **Edit icon** displayed beside the project title to modify the Name, Description, and Environment name of the project.
 
-   ![Screenshot](/docs/assets/edit-icon-deployments.png)
+   ![Screenshot](/docs/assets/edit-icon-project.png)
 
 3. Click on the **Save Changes** button to apply the changes.
 
@@ -65,6 +65,6 @@ The Project card gives a quick overview of the project. It displays the followin
 
 - The Dependencies dropdown displays the full list of KintoBlocks in the project.
 
-   ![Screenshot](/docs/assets/deployments-card-options.png)
+   ![Screenshot](/docs/assets/project-card-options.png)
 
     > Note: When a KintoBlock in the Dependencies dropdown is selected, you will be redirected to the **KintoBlock Manage page**.
