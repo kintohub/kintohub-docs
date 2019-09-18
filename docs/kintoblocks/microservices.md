@@ -7,7 +7,7 @@ sidebar_label: Microservices
 
 1. If you have selected Microservices as the KintoBlock type, start-off by filling the **Basic Info form**.
 
-2. In Basic Info form, specify details on `KintoBlock name`, `Internal name` , `description`, `programming language` and `version` you would like to use.
+2. In Basic Info form, specify details on `KintoBlock name`, `Internal name` , `Description`, `Programming Language` and `Version` you would like to use.
 
    ![Screenshot](/docs/assets/kb-basic-info-section.png)
 
