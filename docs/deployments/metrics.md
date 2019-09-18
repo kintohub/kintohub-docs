@@ -16,7 +16,7 @@ To view metrics for an environment, follow the steps mentioned below:
 
     ![Screenshot](/docs/assets/metrics-btn.png)
 
-3. Enter the `Username` and `Password` of your KintoHub account in **Grafana** Login page.
+3. Enter the `Username` and `Password` of your KintoHub account in **Grafana Login** page.
 
     ![Screenshot](/docs/assets/grafana_login.png)
 
