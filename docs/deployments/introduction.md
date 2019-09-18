@@ -61,8 +61,6 @@ The Project card gives a quick overview of the project. It displays the followin
 
 - KintoBlocks of the project in a stacked view.
 
-- The first two deployed environments of the project and their latest versions.
-
 - The Dependencies dropdown displays the full list of KintoBlocks in the project.
 
    ![Screenshot](/docs/assets/project-card-options.png)
