@@ -20,7 +20,7 @@ To view metrics for an environment, follow the steps mentioned below:
 
     ![Screenshot](/docs/assets/grafana_login.png)
 
-After successful login, you will be able to view the metrics of an environment. The metrics provide real-time updates for an environment and displays the following details:
+After successful login, you will be able to view the metrics of an environment. The metrics provide real-time updates of an environment and displays the following details:
 
 - CPU usage.
 
