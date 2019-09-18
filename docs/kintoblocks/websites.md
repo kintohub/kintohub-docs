@@ -11,7 +11,7 @@ sidebar_label: Websites
 
    ![Screenshot](/docs/assets/kb-website-basic-info.png)
 
-3. Select the **website type** in the drop-down. We support both **Static Website** and **Dynamic Web Applications**. 
+3. Select the **Website Type** in the drop-down. We support both **Static Website** and **Dynamic Web Applications**. 
 
    ![Screenshot](/docs/assets/website-options.png)
 
