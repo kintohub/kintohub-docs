@@ -14,7 +14,7 @@ To create an Environment, follow the steps mentioned below:
 
     ![Screenshot](/docs/assets/add-new-env.png)
     
-3. Enter your `Environment` name.
+3. Enter the name of your `Environment`.
 
     ![Screenshot](/docs/assets/env-add-popup.png)
 
