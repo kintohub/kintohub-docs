@@ -43,7 +43,7 @@ To enable password protection for a website, follow the steps mentioned below:
 
     ![Screenshot](/docs/assets/pwd_for_websites.png)
 
-7. Click on the **Save Changes** button.
+7. Click on the **Done Configuring** button.
 
 >Note: Make sure to redeploy the **Website Project** to apply the changes made. 
 
