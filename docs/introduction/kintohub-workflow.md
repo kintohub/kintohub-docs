@@ -10,7 +10,7 @@ KintoHub makes it easy to deploy cloud-native applications by _simplifying the w
 
 Your source code is what brings your applications to life. By empowering you to focus on your code, we believe you can innovate faster and build more amazing applications.
 
-[KintoBlocks](kintoblocks/introduction.md) help by wrapping _extra logic and infrastructure plumbing_ around your source code to make the project process easier. However, you don't need to adopt any framework, you can just _use your current code as-is_.
+[KintoBlocks](kintoblocks/introduction.md) help by wrapping _extra logic and infrastructure plumbing_ around your source code to make the project creation process easier. However, you don't need to adopt any framework, you can just _use your current code as-is_.
 
  - [Website](kintoblocks/websites.md) KintoBlocks provide a __web endpoint__ (HTTP/HTTPS) by default.
  - [Microservice](kintoblocks/microservices.md) KintoBlocks are __lightweight apps and services__ supporting your backend. They can communicate amongst each other via the _internal network_. Many programming languages and frameworks are supported.
