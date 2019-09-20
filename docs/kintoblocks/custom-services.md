@@ -7,7 +7,7 @@ sidebar_label: Custom Services
 
 1. If you are creating a Custom Service, select the corresponding option in the type of KintoBlocks.
 
-2. Fill in the `KintoBlock name`, `display name` and `description` in the **Basic Info form**.
+2. Fill in the `KintoBlock name`, `Internal name` and `Description` in the **Basic Info form**.
 
    ![Screenshot](/docs/assets/kb-custom-service-basic-info.png)
 
@@ -56,9 +56,9 @@ To learn more about Helm Chart [click here.](https://helm.sh/docs/)
 
 ### Required Helm Chart Variables
 
-We follow the standard of helm charts which is used to setup log and be compatible with KintoHub. See the following Service and Deployment definition with the highlighted requirements to be compatible with KintoHub.
+We follow the standard of helm charts which is used to setup log and be compatible with KintoHub. See the following Service and Project definition with the highlighted requirements to be compatible with KintoHub.
 
-`Deployments.yaml`
+`Projects.yaml`
 
 ```
 metadata:

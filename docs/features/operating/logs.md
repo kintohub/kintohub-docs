@@ -2,13 +2,13 @@
 title: Logs
 ---
 
-The log files maintain a record of errors, informational events, and warnings that have occurred during the deployment process. Log files maintain track for each individual KintoBlock that is part of a deployment. 
+The log files maintain a record of errors, informational events, and warnings that have occurred during the project process. Log files maintain track for each individual KintoBlock that is part of a project. 
 
 To view the logs, follow the steps mentioned below:
 
-1. Open a **Deployment**.
+1. Open a **Project**.
 
-2. Click on the **Logs** button displayed on top right of the **Deployment Manage** page.
+2. Click on the **Logs** button displayed on top right of the **Project Manage** page.
 
    ![Screenshot](/docs/assets/Logs_btn_on_top.png)
 

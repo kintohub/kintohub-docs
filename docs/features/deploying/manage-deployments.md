@@ -1,27 +1,27 @@
 ---
-title: Manage Deployments
+title: Manage Projects
 ---
 
 ## Add or Remove KintoBlocks
 
-A Deployment can consist of one or more KintoBlocks. The KintoBlocks can be added or removed from deployment as and when the features are augmented. 
+A Project can consist of one or more KintoBlocks. The KintoBlocks can be added or removed from project as and when the features are augmented. 
 
 To add or remove KintoBlocks, follow the steps mentioned below:
 
-1. Open a **Deployment**.
+1. Open a **Project**.
 
 2. Under **KintoBlocks** section, click on the **+** icon displayed in the **KintoBlocks search bar**.
 
 3. Search for the required KintoBlocks.
 
-4. Select it from the dropdown to add them to deployments.
+4. Select it from the dropdown to add them to projects.
 
 
 To delete a KintoBlocks, navigate to the KintoBlock section.
 
 1. Click on the **X** icon displayed at the top left of the KintoBlock to remove it.
 
-2. Click on the **Deploy** button to apply the new changes to the deployments.
+2. Click on the **Deploy** button to apply the new changes to the projects.
 
    ![Screenshot](/docs/assets/delete-kb-deployments.png)
    
@@ -31,7 +31,7 @@ KintoBlocks consists of **environment variables** which are used to set the conf
 
 To configure the dependencies, follow the steps mentioned below:
 
-1. Open a **Deployment**.
+1. Open a **Project**.
 
 2. Under KintoBlocks section, click on **Configure KintoBlocks** button.
 
@@ -50,20 +50,20 @@ To configure the dependencies, follow the steps mentioned below:
     > Note: Only **environment variable values** can be edited in Edit Dependencies page.
 
 
-## Deployment Deletion
+## Project Deletion
 
-To delete a Deployment, follow the steps mentioned below:
+To delete a Project, follow the steps mentioned below:
 
-1. Click on **Deployments** displayed on left navigation bar.
+1. Click on **Projects** displayed on left navigation bar.
 
-2. You will be navigated **Deployments List** page.
+2. You will be navigated **Projects List** page.
 
-3. Click on the **Ellipsis icon** of any Deployment.
+3. Click on the **Ellipsis icon** of any Project.
 
-4. Click on **Delete Deployment** option.
+4. Click on **Delete Project** option.
 
 5. Enter **DELETE** in the confirm field to confirm your decision.
 
-6. Click on **Delete Deployment** button.
+6. Click on **Delete Project** button.
 
     ![Screenshot](/docs/assets/delete-deployments.png)

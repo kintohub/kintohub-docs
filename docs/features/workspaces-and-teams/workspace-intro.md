@@ -4,7 +4,7 @@ title: Introduction
 
 ## What is a Workspace?
 
-Workspaces are here to allow you to collaborate with people in your team. Completely segregated spaces will allow you to share Deployments, KintoBlocks and manage them in the same space.
+Workspaces are here to allow you to collaborate with people in your team. Completely segregated spaces will allow you to share Projects, KintoBlocks and manage them in the same space.
 
 You can invite people to collaborate with you on any project you may have in your workspace.
 
