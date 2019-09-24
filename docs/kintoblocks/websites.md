@@ -27,7 +27,7 @@ sidebar_label: Websites
 
 The KintoBlock properties like `KintoBlock Name`, `Language`, `Version`, `Description`, `Environment Variables` and `Hardware Configuration` specified during the creation can be modified with new values.
 
->Note: **Environment Variables** is not specified during the creation of KintoBlock.
+>Note: **Environment Variables** are not specified during the creation of KintoBlock.
 
 To edit a **Static Website** KintoBlock when `Build Required` toggle is `On` follow the steps mentioned below:
 
