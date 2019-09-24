@@ -77,6 +77,8 @@ To edit Hardware Configuration for website, follow the steps mentioned below:
 
 4. Click on the **Save Changes** button.
 
+To know more about [Environment Variables](/docs/features/deploying/environment-variables.md)
+
 ## Basic Auth for Websites
 
 **Websites** launched in KintoHub can protected from unknown intrusion by employing **Basic Auth**. This can be applied to both **Static** and **Dynamic** websites.
