@@ -35,9 +35,9 @@ To edit a **Static Website** KintoBlock when `Build Required` toggle is `On` fol
 
       ![Settings Button](/docs/assets/kintoblock-settings.png)
 
-2. Click on Settings card displayed in side bar to modify the information.
+2. Click on **Settings** button displayed in side bar to modify the information.
 
-3. Edit Basic Info of KintoBlock like `KintoBlock Name`, `Language`, `Version`, and `Description`.
+3. Edit Basic Info of the KintoBlock like `KintoBlock Name`, `Language`, `Version`, and `Description`.
 
       ![Editing Information of KintoBlock](/docs/assets/kintoblock-basic-info.png)
 
@@ -47,21 +47,21 @@ To edit a **Static Website** KintoBlock when `Build Required` toggle is `Off` fo
 
 1. Open a Static Website KintoBlock.
 
-2. Click on Settings card displayed in side bar to modify the information.
+2. Click on **Settings** button displayed in side bar to modify the information.
 
-3. Edit Basic Info of KintoBlock like `KintoBlock Name` and `Description`.
+3. Edit Basic Info of the KintoBlock like `KintoBlock Name` and `Description`.
 
    ![Editing Information of KintoBlock](/docs/assets/kintoblock-edit-info.png)
    
-4.Click on the **Save Changes** button.
+4. Click on the **Save Changes** button.
 
-To edit a **Dynamic Website** KintoBlock when `Build Required` toggle is `On` follow the steps mentioned below:
+To edit a **Dynamic Website** KintoBlock, follow the steps mentioned below:
 
 1. Open a Dynamic Website KintoBlock.
 
-2. Click on Settings card displayed in side bar to modify the information.
+2. Click on **Settings** button displayed in side bar to modify the information.
 
-3. Edit Basic Info of KintoBlock like `KintoBlock Name`, `Language`, `Version`, and `Description`.
+3. Edit Basic Info of the KintoBlock like `KintoBlock Name`, `Language`, `Version`, and `Description`.
 
 4. Click on the **Save Changes** button.
 
@@ -69,7 +69,7 @@ To edit Hardware Configuration for website, follow the steps mentioned below:
 
 1. Open a Website KintoBlock.
 
-2. Click on Settings card displayed in side bar to modify the Hardware Configuration.
+2. Click on **Settings** button displayed in side bar to modify the Hardware Configuration.
 
 3. Edit the default memory limit.
 
@@ -81,7 +81,7 @@ To know more about [Environment Variables](/docs/features/deploying/environment-
 
 ## Basic Auth for Websites
 
-**Websites** launched in KintoHub can protected from unknown intrusion by employing **Basic Auth**. This can be applied to both **Static** and **Dynamic** websites.
+**Websites** launched in KintoHub can be protected from unknown intrusion by employing **Basic Auth**. This can be applied to both **Static** and **Dynamic** websites.
 
 To enable password protection for a website, follow the steps mentioned below:
 
