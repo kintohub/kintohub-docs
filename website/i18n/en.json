@@ -93,7 +93,7 @@
         "title": "Environments"
       },
       "deployments/introduction": {
-        "title": "Introduction to Deployments",
+        "title": "Introduction to Projects",
         "sidebar_label": "Introduction"
       },
       "deployments/metrics": {
@@ -107,6 +107,9 @@
       },
       "deployments/shut-down": {
         "title": "Shut Down"
+      },
+      "examples/static-website/tutorial": {
+        "title": "Static Websites"
       },
       "examples/todo-list/tutorial": {
         "title": "Todo List example app",
@@ -143,7 +146,7 @@
         "title": "High Availability"
       },
       "features/deploying/manage-deployments": {
-        "title": "Manage Deployments"
+        "title": "Manage Projects"
       },
       "features/deploying/manage-environments": {
         "title": "Manage Environments"
