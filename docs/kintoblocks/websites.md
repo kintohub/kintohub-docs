@@ -35,7 +35,7 @@ To edit a **Static Website** KintoBlock when `Build Required` toggle is `On` fol
 
       ![Settings Button](/docs/assets/kintoblock-settings.png)
 
-2. Click on **Settings** button displayed in side bar to modify the information.
+2. Click on **Settings** button displayed in sidebar to modify the information.
 
 3. Edit Basic Info of the KintoBlock like `KintoBlock Name`, `Language`, `Version`, and `Description`.
 
@@ -47,7 +47,7 @@ To edit a **Static Website** KintoBlock when `Build Required` toggle is `Off` fo
 
 1. Open a Static Website KintoBlock.
 
-2. Click on **Settings** button displayed in side bar to modify the information.
+2. Click on **Settings** button displayed in the sidebar to modify the information.
 
 3. Edit Basic Info of the KintoBlock like `KintoBlock Name` and `Description`.
 
@@ -59,17 +59,17 @@ To edit a **Dynamic Website** KintoBlock, follow the steps mentioned below:
 
 1. Open a Dynamic Website KintoBlock.
 
-2. Click on **Settings** button displayed in side bar to modify the information.
+2. Click on **Settings** button displayed in the sidebar to modify the information.
 
 3. Edit Basic Info of the KintoBlock like `KintoBlock Name`, `Language`, `Version`, and `Description`.
 
 4. Click on the **Save Changes** button.
 
-To edit Hardware Configuration for website, follow the steps mentioned below:
+To edit hardware configuration for website, follow the steps mentioned below:
 
 1. Open a Website KintoBlock.
 
-2. Click on **Settings** button displayed in side bar to modify the Hardware Configuration.
+2. Click on **Settings** button displayed in the sidebar to modify the Hardware Configuration.
 
 3. Edit the default memory limit.
 
@@ -77,7 +77,7 @@ To edit Hardware Configuration for website, follow the steps mentioned below:
 
 4. Click on the **Save Changes** button.
 
-To know more about [Environment Variables](/docs/features/deploying/environment-variables.md)
+[Click Here](/docs/features/deploying/environment-variables.md) to Know more about **Environemnt Variables**.
 
 ## Basic Auth for Websites
 
@@ -105,11 +105,11 @@ To enable password protection for a website, follow the steps mentioned below:
 
 To launch a Website Project, follow the steps mentioned below:
 
-1. Open the **Website Project** for which you have set the **Basic Auth** credentials.
+1. Open the **Website Project** for where the **Basic Auth** credentials are defined.
 
 2. Scroll down to **KintoBlocks** section displayed at the bottom of the **Project Manage** page.
 
-3. Click on **Open** button displayed for the **Website KintoBlock**.
+3. Click on the **Open** button corresponding to the **Website KintoBlock**.
 
     ![Screenshot](/docs/assets/website_open_btn.png)
 
