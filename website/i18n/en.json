@@ -93,7 +93,7 @@
         "title": "Environments"
       },
       "deployments/introduction": {
-        "title": "Introduction to Deployments",
+        "title": "Introduction to Projects",
         "sidebar_label": "Introduction"
       },
       "deployments/metrics": {
@@ -143,7 +143,7 @@
         "title": "High Availability"
       },
       "features/deploying/manage-deployments": {
-        "title": "Manage Deployments"
+        "title": "Manage Projects"
       },
       "features/deploying/manage-environments": {
         "title": "Manage Environments"
