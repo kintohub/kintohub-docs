@@ -6,16 +6,19 @@
 - `npm install`
 - `npm start`
 
-
-To enable searching you have to set the following env variables:
+To enable searching you have to set the following env variables at `web/.env` file
 
 ```bash
-# first specify the algolia key to run
-export ALGOLIA_API_KEY=
-export ALGOLIA_INDEX=
-```
+cd website
 
-You need to either set it globally or temporary modify `npm start` to be like `ALOGLIA_INDEX=value npm start`
+# copy from the sample file
+cp .env-sample .env
+
+
+# update the content inside .env file
+ALGOLIA_INDEX=
+ALGOLIA_API_KEY=
+```
 
 Once everything is done you should build and publish to github pages
 
@@ -26,3 +29,11 @@ npm run build
 # Publish to github pages
 npm run publish-gh-pages
 ```
+
+## Algolia Docsearch
+
+If the document has a main update (e.g. major path restructure),
+we may need to update the algolia config on github.
+After finish updating the config, make a PR and merge to algolia's repo.
+These configs are publicly avaliable
+[https://github.com/kintohub/docsearch-configs](https://github.com/kintohub/docsearch-configs)
