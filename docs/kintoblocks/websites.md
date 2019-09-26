@@ -77,7 +77,7 @@ To edit hardware configuration for website, follow the steps mentioned below:
 
 4. Click on the **Save Changes** button.
 
-[Click Here](/docs/features/deploying/environment-variables.md) to Know more about **Environemnt Variables**.
+[Click Here](/docs/features/deploying/environment-variables.md) to Know more about **Environment Variables**.
 
 ## Basic Auth for Websites
 
