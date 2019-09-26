@@ -86,28 +86,6 @@
       "_legacy/workspaces": {
         "title": "Workspaces"
       },
-      "deployments/configure-kintoblocks": {
-        "title": "Configure KintoBlocks"
-      },
-      "deployments/environments": {
-        "title": "Environments"
-      },
-      "deployments/introduction": {
-        "title": "Introduction to Deployments",
-        "sidebar_label": "Introduction"
-      },
-      "deployments/metrics": {
-        "title": "Metrics"
-      },
-      "deployments/promoting": {
-        "title": "Promoting"
-      },
-      "deployments/rollbacks": {
-        "title": "Rollbacks"
-      },
-      "deployments/shut-down": {
-        "title": "Shut Down"
-      },
       "examples/todo-list/tutorial": {
         "title": "Todo List example app",
         "sidebar_label": "Todo List App"
@@ -142,11 +120,11 @@
       "features/deploying/high-availability": {
         "title": "High Availability"
       },
-      "features/deploying/manage-deployments": {
-        "title": "Manage Deployments"
-      },
       "features/deploying/manage-environments": {
         "title": "Manage Environments"
+      },
+      "features/deploying/manage-projects": {
+        "title": "Manage Projects"
       },
       "features/operating/accessing-endpoints": {
         "title": "Accessing API Endpoints"
@@ -242,6 +220,28 @@
         "title": "Upgrading your plan",
         "sidebar_label": "Upgrading"
       },
+      "projects/configure-kintoblocks": {
+        "title": "Configure KintoBlocks"
+      },
+      "projects/environments": {
+        "title": "Environments"
+      },
+      "projects/introduction": {
+        "title": "Introduction to Projects",
+        "sidebar_label": "Introduction"
+      },
+      "projects/metrics": {
+        "title": "Metrics"
+      },
+      "projects/promoting": {
+        "title": "Promoting"
+      },
+      "projects/rollbacks": {
+        "title": "Rollbacks"
+      },
+      "projects/shut-down": {
+        "title": "Shut Down"
+      },
       "release-notes": {
         "title": "Release Notes"
       }
@@ -250,7 +250,7 @@
     "categories": {
       "Introduction": "Introduction",
       "KintoBlocks": "KintoBlocks",
-      "Deployments": "Deployments",
+      "Projects": "Projects",
       "Features": "Features",
       "Plans & Billing": "Plans & Billing",
       "Tutorials": "Tutorials",
