@@ -23,7 +23,7 @@ To edit a workspace, follow the steps mentioned below:
 
 Users added to a workspace for collaborating with the projects are called as **Members**.
 
-Members can create KintoBlocks and Deployments in the shared workspace. They also have permissions to view or edit projects of other members. Their access roles can be limited or controlled.
+Members can create KintoBlocks and Projects in the shared workspace. They also have permissions to view or edit projects of other members. Their access roles can be limited or controlled.
 
 **Admins** have all the permissions that the Owner(creator) of the workspace has. The important role of an Admin is in linking workspace to repository resources, removing a member from the workspace and inviting new members to the workspace.
 

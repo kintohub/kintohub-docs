@@ -97,22 +97,22 @@ Wait for the build to complete, the result should look like this:
 
 ![A chain of build steps with a success indicator.](assets/examples/todo-list/kintoblock-helm-chart-built.png)
 
-### Add to Deployment
+### Add to Project
 
 Now the MongoDB KintoBlock has been built successfully, it can be deployed.
 
- - Press the __Add to Deployment__ button, and
- - in the popup window press __New Deployment__.
- - Enter a __deployment name__ (e.g. `todolist`. _Note:_ lower-case), and
+ - Press the __Add to Project__ button, and
+ - in the popup window press __New Project__.
+ - Enter a __project name__ (e.g. `todolist`. _Note:_ lower-case), and
  - press __Create__.
 
-Notice that in the *__Create New Deployment__* page the KintoBlock has already been added to the deployment. Also, by default it selects the most recent build from the `master` branch.
+Notice that in the *__Create New Project__* page the KintoBlock has already been added to the project. Also, by default it selects the most recent build from the `master` branch.
 
-- Press __Create New Deployment__ to start the deployment.
+- Press __Create New Project__ to start the project.
 
-You'll be navigated to the *__Deployment__* page and can see the progress of the deployment. Once complete, it should look like this:
+You'll be navigated to the *__Project__* page and can see the progress of the project. Once complete, it should look like this:
 
-![Status and History section showing a 100% Complete deployment.](assets/examples/todo-list/deployment-successful.png)
+![Status and History section showing a 100% Complete project.](assets/examples/todo-list/deployment-successful.png)
 
 ## Setup the Backend API
 
@@ -208,24 +208,24 @@ During the build it will generate the API documentation (ApiDoc); it is shown as
 
 ![Build output with 4 steps: Git Init, Generate Doc, Building, and Success](assets/examples/todo-list/kintoblock-api-built.png)
 
-Now the build is ready, the Todo List API KintoBlock can be added to our existing deployment:
- - press the __Add to Deployment__ button,
+Now the build is ready, the Todo List API KintoBlock can be added to our existing project:
+ - press the __Add to Project__ button,
  - select under _todolist_ the _default_ environment.
 
-You will be redirected to the __Deployment__ page, where the _Todo List API_ KintoBlock has been added to the list of KintoBlocks.
+You will be redirected to the __Project__ page, where the _Todo List API_ KintoBlock has been added to the list of KintoBlocks.
 
 ![Listing of MongoDB and Todo List API KintoBlocks](assets/examples/todo-list/deployment-mongodb-and-api-kintoblocks.png)
 
 Proceed to deploy the added KintoBlock by
  - pressing the __Deploy__ button.
 
-When you press __Expand Deployment History__ you can see the new deployment in progress:
+When you press __Expand Project History__ you can see the new project in progress:
 
-![Deployment #2 in progress](assets/examples/todo-list/deployment-2-in-progress.png)
+![Project #2 in progress](assets/examples/todo-list/deployment-2-in-progress.png)
 
-And when the deployment completes, all deployment steps are listed out:
+And when the project completes, all project steps are listed out:
 
-![Deployment #2 complete, with succesful Deployment, Route and Results steps](assets/examples/todo-list/deployment-2-complete.png)
+![Project #2 complete, with succesful Project, Route and Results steps](assets/examples/todo-list/deployment-2-complete.png)
 
 Since the API has been documented with ApiDoc, its generated documentation can be viewed when you
  - press __View Endpoints__ on the _Todo List API_ KintoBlock.
@@ -240,7 +240,7 @@ To expose the _Todo List API_ KintoBlock to the internet:
  - use the __gear icon__ on the _Todo List API_ KintoBlock to open the settings page.
  - Toggle __Is this API open to internet__ to `on`, and
  - __Save Changes__.
- - Use the __todolist__ link in the top navigation bar to return to the deployment.
+ - Use the __todolist__ link in the top navigation bar to return to the project.
 
 ![Todo List API KintoBlock with a gear icon in the bottom right corner](assets/examples/todo-list/deployment-todo-list-api-kintoblock.png)
 
@@ -250,13 +250,13 @@ To expose the _Todo List API_ KintoBlock to the internet:
 
 Now the _Todo List API_ microservice KintoBlock has been exposed to the internet, let's see how to call to it from the web.
 
-Scroll down on the _todolist_ *__Deployments__* page to the *__API Access__* section.
+Scroll down on the _todolist_ *__Projects__* page to the *__API Access__* section.
 
 - Select the __Public & Webhook Access__ tab.
 
 An example URL is shown that leverages the KintoHub public API gateway to call the manually exposed KintoBlock.
 
-> _Notice:_ The path in the URL starts with your specific _Client ID_. The Client ID is unique per _Environment_ in every _Deployment_. The path is then followed by the name of the KintoBlock.
+> _Notice:_ The path in the URL starts with your specific _Client ID_. The Client ID is unique per _Environment_ in every _Project_. The path is then followed by the name of the KintoBlock.
 
 In this tutorial, the _Todo List API_ KintoBlock was named `todolist-api`.
 
@@ -325,20 +325,20 @@ Scroll up to the *__Builds & Repository__* section,
  - press __Build Latest Commit__, and
  - wait for the build to complete.
 
-Now the build is ready, the Todo List API KintoBlock can be added to our existing deployment:
- - press the __Add to Deployment__ button,
+Now the build is ready, the Todo List API KintoBlock can be added to our existing project:
+ - press the __Add to Project__ button,
  - select under _todolist_ the _default_ environment.
 
-You will be redirected to the __Deployment__ page, where the _Todo List SPA_ KintoBlock has been added to the list of KintoBlocks.
+You will be redirected to the __Project__ page, where the _Todo List SPA_ KintoBlock has been added to the list of KintoBlocks.
 
 ![Listing of MongoDB, Todo List API, and Todo List SPA KintoBlocks](assets/examples/todo-list/deployment-all-kintoblocks.png)
 
 Proceed to deploy the added KintoBlock by
  - pressing the __Deploy__ button.
 
-When the deployment completes, all deployment steps are listed out, including the external routing setup steps:
+When the project completes, all project steps are listed out, including the external routing setup steps:
 
-![Deployment #3 complete, with succesful Deployment, External Routing, Route, Undeploy and Results steps](assets/examples/todo-list/deployment-3-complete.png)
+![Project #3 complete, with succesful Project, External Routing, Route, Undeploy and Results steps](assets/examples/todo-list/deployment-3-complete.png)
 
 ## Visit the Todo List app
 

@@ -47,7 +47,7 @@ A base amount of 512MB serverless memory and 1GB storage is included with the pl
 
 You can collaborate with up to 3 people on your projects.
 
-You will have access to most features, so you can explore how KintoHub simplifies your development workflow and verify that your applications can be built and deployed. Multiple environments, promoting deployments from environment to environment 
+You will have access to most features, so you can explore how KintoHub simplifies your development workflow and verify that your applications can be built and deployed. Multiple environments, promoting projects from environment to environment 
 
 The only significant missing feature is Custom Services with Helm charts. However, for those services it makes more sense to have more memory, thus you could consider [upgrading](upgrading.md) to the Pro plan.
 
@@ -59,7 +59,7 @@ A base amount of 2GB serverless memory and 10GB storage is included with the pla
 
 If you need more capacity, you can easily add on more memory and storage in 1GB increments.
 
-The Pro plan supports advanced deployment scenarios, including Always On Deployments and Multi-Zone High Availability. We are working on Multi-Region, Canary, Blue/Green, Shadow and Multi-Cloud Deployments.
+The Pro plan supports advanced project scenarios, including Always On Projects and Multi-Zone High Availability. We are working on Multi-Region, Canary, Blue/Green, Shadow and Multi-Cloud Projects.
 
 With [Custom Services and Helm charts](kintoblocks/custom-services.md) you can easily deploy services like replicated databases, caches and queues. (e.g. MongoDB, PostgreSQL, Redis and RabbitMQ)
 

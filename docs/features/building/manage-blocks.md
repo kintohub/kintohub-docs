@@ -23,23 +23,23 @@ To edit a KintoBlock follow the steps mentioned below:
 6. Click on the **Save Changes** button to apply changes.
 
 
-## Add to Deployments
+## Add to Projects
 
-KintoBlocks can be added straight away to any deployments in your workspace.
+KintoBlocks can be added straight away to any projects in your workspace.
 
-To add KintoBlocks to Deployments.
+To add KintoBlocks to Projects.
 
 1. Open the KintoBlock.
 
-2. Click on **Add To Deployments** button displayed on the bottom right of the **KintoBlock Manage** page.
+2. Click on **Add To Projects** button displayed on the bottom right of the **KintoBlock Manage** page.
 
-3. In the pop-up dialog displaying the deployments in the workspace, select the environment.
+3. In the pop-up dialog displaying the projects in the workspace, select the environment.
 
-4. Once the environment is selected, the **Deployment Manage** page is displayed and the KintoBlock is added to the deployment.
+4. Once the environment is selected, the **Project Manage** page is displayed and the KintoBlock is added to the project.
 
     ![Screenshot](/docs/assets/kb-add-deployments.png)
 
-5. Click on **Deploy** at the bottom right of the page to push the new changes to your deployments.
+5. Click on **Deploy** at the bottom right of the page to push the new changes to your projects.
 
 
 ## View Endpoints
@@ -77,6 +77,6 @@ To delete a KintoBlock, follow the steps mentioned below:
 
 6. Click on the **Delete KintoBlock** button to confirm your decision.
 
-Before deleting a KintoBlock, ensure that the KintoBlock is not currently deployed in any of the **Deployments**.
+Before deleting a KintoBlock, ensure that the KintoBlock is not currently deployed in any of the **Projects**.
 
 >Note: **Public** KintoBlocks will not be available for deletion.

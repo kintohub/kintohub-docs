@@ -24,13 +24,13 @@
       "kintoblocks/microservices",
       "kintoblocks/custom-services"
     ],
-    "Deployments": [
-      "deployments/introduction",
-      "deployments/environments",
-      "deployments/promoting",
-      "deployments/rollbacks",
-      "deployments/shut-down",
-      "deployments/metrics"
+    "Projects": [
+      "projects/introduction",
+      "projects/environments",
+      "projects/promoting",
+      "projects/rollbacks",
+      "projects/shut-down",
+      "projects/metrics"
     ],
     "Features": [
       {
@@ -47,7 +47,7 @@
         "type": "subcategory",
         "label": "Deploying",
         "ids": [
-          "features/deploying/manage-deployments",
+          "features/deploying/manage-projects",
           "features/deploying/manage-environments",
           "features/deploying/environment-variables"
         ]
@@ -77,7 +77,8 @@
       "plans-and-billing/billing"
     ],
     "Tutorials": [
-      "examples/todo-list/tutorial"
+      "examples/todo-list/tutorial",
+      "examples/hasura/tutorial"
     ],
     "Notes & Experiments": [
       "release-notes",

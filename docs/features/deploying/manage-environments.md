@@ -6,9 +6,9 @@ title: Manage Environments
 
 To delete an environment, follow the steps mentioned below:
 
-1. Open a **Deployment**.
+1. Open a **Project**.
 
-2. Select the environment from sidebar displayed in the **Deployment Manage** page.
+2. Select the environment from sidebar displayed in the **Project Manage** page.
 
 3. Click on the **Delete Environment** link displayed on the environment card and move on to **Permanent Deletion** section.
 
@@ -20,4 +20,4 @@ To delete an environment, follow the steps mentioned below:
 
     ![Screenshot](/docs/assets/delete-environment.png)
 
-    > Note: Environment will get deleted permanently. So any active deployments in this environment will be shut down.
+    > Note: Environment will get deleted permanently. So any active projects in this environment will be shut down.
