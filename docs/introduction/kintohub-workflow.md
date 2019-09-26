@@ -27,7 +27,7 @@ Then let KintoHub _compile and build_ the source code into cloud-native packages
 
 Applications tend to be composed of multiple parts or tiers. For example, frontend and backend components, or a Web, API and Database tier.
 
-This is similar to how _KintoBlocks can be combined into a [Project](deployments/introduction.md)_. Mix and match KintoBlocks into a Project, and within that environment those KintoBlocks can communicate amongst each other.
+This is similar to how _KintoBlocks can be combined into a [Project](projects/introduction.md)_. Mix and match KintoBlocks into a Project, and within that environment those KintoBlocks can communicate amongst each other.
 
 Each KintoBlock can be configured with its own specific [environment variables](features/deploying/environment-variables.md). Think of passwords, connection strings, API URLs and other typical configuration settings you don't want to hard-code.
 
@@ -39,7 +39,7 @@ Each KintoBlock can be configured with its own specific [environment variables](
 
 We have intentionally kept it easy to deploy your applications. Once you've _composed and configured_ a project, simply press the __Deploy__ button to _push everything to the cloud_. We will hook up virtual machines, API endpoints, security constraints, logging, monitoring, etcetera for you.
 
-It's equally easy to spin up [multiple environments](deployments/environments.md) (e.i. DEV, TEST & PROD) in your projects. Just provide a name for a new environment, and press the [__Promote__ button](deployments/promoting.md) to clone an existing environment into another one. Of course you can [customize the configurations of KintoBlocks per environment](deployments/configure-kintoblocks.md).
+It's equally easy to spin up [multiple environments](projects/environments.md) (e.i. DEV, TEST & PROD) in your projects. Just provide a name for a new environment, and press the [__Promote__ button](projects/promoting.md) to clone an existing environment into another one. Of course you can [customize the configurations of KintoBlocks per environment](projects/configure-kintoblocks.md).
 
 <div style="clear: both"></div>
 
@@ -50,4 +50,4 @@ Once your application is deployed, you can access its endpoints immediately.
  - [Websites](kintoblocks/websites.md) are automatically exposed to the internet via HTTP and HTTPS, and support Websockets.
  - [Microservices](kintoblocks/microservices.md) can optionally be accessed through the [API Gateway](features/operating/accessing-endpoints.md) by first authenticating with the KintoHub API. It is also possible to access microservices without authentication if you have enabled the public API support.
 
-To see what is happening in your application, refer to the application [Logs](features/operating/logs.md) and [Metrics](deployments/metrics.md) that have been automatically configured.
+To see what is happening in your application, refer to the application [Logs](features/operating/logs.md) and [Metrics](projects/metrics.md) that have been automatically configured.
