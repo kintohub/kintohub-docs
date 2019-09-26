@@ -108,6 +108,10 @@
       "deployments/shut-down": {
         "title": "Shut Down"
       },
+      "examples/hasura/tutorial": {
+        "title": "Multi-environment Hasura",
+        "sidebar_label": "Multi-env Hasura"
+      },
       "examples/todo-list/tutorial": {
         "title": "Todo List example app",
         "sidebar_label": "Todo List App"
