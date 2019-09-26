@@ -197,9 +197,9 @@ KintoHub makes it easy to deploy cloud-native applications by _simplifying the w
 ![The KintoHub workflow; build KintoBlocks, add to Projects, deploy and call APIs](assets/introduction/getting-started/kintohub-workflow.svg)
 
 The KintoHub workflow in action:
-	
+
 <video autoplay loop muted width="100%">
-    <source src="/docs/assets/introduction/getting-started/workflow-intro.mp4"
+    <source src="/docs/assets/introduction/workflow-intro.mp4"
             type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
