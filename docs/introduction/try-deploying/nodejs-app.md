@@ -150,8 +150,8 @@ Selecting _Dynamic Web App_ caused an extra *__Advanced Options__* section to ap
  - Leave the __Port__ field set to `80`, since that matches our production-ready configuration.
  - Keep the __Build Command__ set as `npm install`, so that all required dependencies get installed.
  - Update the __Run__ field to `npm run prod`, since we want to use the script that sets the port to 80.
- - Select the __Language__ to `Node.js`.
- - Select the __Version__ to `11.7.0`.
+ - Set `Node.js` as the __Language__.
+ - Select the appropriate __Version__, For e.g. `11.7.0`.
 
 ![Screen shot of the Basic Info section](/docs/assets/introduction/try-deploying/nodejs-app/basic-info-section.png)
 
