@@ -24,9 +24,10 @@ jobs:
       deploy:
         provider: pages
         skip-cleanup: true
+        keep_history: true
         fqdn: docs.kintohub.com
         github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
         target_branch: gh-pages
-        local-dir: web/build # the local dir is relative to root and ignoring the one set with before_install
+        local-dir: website/build/kintohub-docs # the local dir is relative to root and ignoring the one set with before_install
         on:
           branch: master
