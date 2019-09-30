@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Deploy your first Node.js app · KintoHub Docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="This quick-start tutorial shows how to deploy a [Node.js](https://nodejs.org) app written in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) with KintoHub."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Deploy your first Node.js app · KintoHub Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.kintohub.com/"/><meta property="og:description" content="This quick-start tutorial shows how to deploy a [Node.js](https://nodejs.org) app written in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) with KintoHub."/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/prism.css"/><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/kintohub-title-text.svg" alt="KintoHub Docs"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Try an example app</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Introduction<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/introduction/getting-started">Getting Started</a></li><li class="navListItem"><a class="navItem" href="/docs/introduction/kintohub-workflow">The KintoHub Workflow</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Try an example app</h4><ul><li class="navListItem navListItemActive"><a class="navItem" href="/docs/introduction/try-deploying/nodejs-app">Node.js</a></li><li class="navListItem"><a class="navItem" href="/docs/introduction/try-deploying/python-app">Python</a></li><li class="navListItem"><a class="navItem" href="/docs/introduction/try-deploying/java-app">Java</a></li><li class="navListItem"><a class="navItem" href="/docs/introduction/try-deploying/dotnet-app">.NET</a></li><li class="navListItem"><a class="navItem" href="/docs/introduction/try-deploying/php-app">PHP</a></li><li class="navListItem"><a class="navItem" href="/docs/introduction/try-deploying/ruby-app">Ruby</a></li><li class="navListItem"><a class="navItem" href="/docs/introduction/try-deploying/go-app">Go</a></li><li class="navListItem"><a class="navItem" href="/docs/introduction/try-deploying/elixir-app">Elixir</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">KintoBlocks<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/kintoblocks/introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/docs/kintoblocks/websites">Websites</a></li><li class="navListItem"><a class="navItem" href="/docs/kintoblocks/microservices">Microservices</a></li><li class="navListItem"><a class="navItem" href="/docs/kintoblocks/custom-services">Custom Services</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Projects<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/projects/introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/docs/projects/environments">Environments</a></li><li class="navListItem"><a class="navItem" href="/docs/projects/promoting">Promoting</a></li><li class="navListItem"><a class="navItem" href="/docs/projects/rollbacks">Rollbacks</a></li><li class="navListItem"><a class="navItem" href="/docs/projects/shut-down">Shut Down</a></li><li class="navListItem"><a class="navItem" href="/docs/projects/metrics">Metrics</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Features<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Building</h4><ul><li class="navListItem"><a class="navItem" href="/docs/features/building/pulling-source-code">Pulling Source Code</a></li><li class="navListItem"><a class="navItem" href="/docs/features/building/branches-and-tags">Branches &amp; Tags</a></li><li class="navListItem"><a class="navItem" href="/docs/features/building/manage-blocks">Manage KintoBlocks</a></li><li class="navListItem"><a class="navItem" href="/docs/features/building/api-docs">API Docs</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Deploying</h4><ul><li class="navListItem"><a class="navItem" href="/docs/features/deploying/manage-projects">Manage Projects</a></li><li class="navListItem"><a class="navItem" href="/docs/features/deploying/manage-environments">Manage Environments</a></li><li class="navListItem"><a class="navItem" href="/docs/features/deploying/environment-variables">Environment Variables</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Operating</h4><ul><li class="navListItem"><a class="navItem" href="/docs/features/operating/accessing-endpoints">Accessing API Endpoints</a></li><li class="navListItem"><a class="navItem" href="/docs/features/operating/token-session">API Tokens and Sessions</a></li><li class="navListItem"><a class="navItem" href="/docs/features/operating/logs">Logs</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Workspaces &amp; Teams</h4><ul><li class="navListItem"><a class="navItem" href="/docs/features/workspaces-and-teams/workspace-intro">Introduction</a></li><li class="navListItem"><a class="navItem" href="/docs/features/workspaces-and-teams/manage-workspace">Managing Workspaces</a></li><li class="navListItem"><a class="navItem" href="/docs/features/workspaces-and-teams/sharing-workspaces">Sharing Workspaces</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Plans &amp; Billing<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/plans-and-billing/plans">Plans</a></li><li class="navListItem"><a class="navItem" href="/docs/plans-and-billing/upgrading">Upgrading</a></li><li class="navListItem"><a class="navItem" href="/docs/plans-and-billing/billing">Billing</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Tutorials<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/examples/todo-list/tutorial">Todo List App</a></li><li class="navListItem"><a class="navItem" href="/docs/examples/hasura/tutorial">Multi-env Hasura</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Notes &amp; Experiments<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/release-notes">Release Notes</a></li><li class="navListItem"><a class="navItem" href="/docs/experimental/session-memory">Session Memory</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/kintohub/kintohub-docs/edit/master/docs/introduction/try-deploying/nodejs-app.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Deploy your first Node.js app</h1></header><article><div><span><p>This quick-start tutorial shows how to deploy a <a href="https://nodejs.org">Node.js</a> app written in <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a> with KintoHub.</p>
+<p>It should take you less than 15 minutes, have fun!</p>
+<h2><a class="anchor" aria-hidden="true" id="example-code-on-github"></a><a href="#example-code-on-github" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example code on GitHub</h2>
+<blockquote>
+<p>This example uses code published on GitHub. If you don't have a GitHub account yet, please <a href="https://github.com/join">create a free GitHub account</a> before proceeding.</p>
+</blockquote>
+<p>KintoHub works by <a href="/docs/features/building/pulling-source-code">pulling your source code</a> (GitHub, Bitbucket, GitLab, etc.) and building it into a <a href="/docs/kintoblocks/introduction">KintoBlock</a>.</p>
+<ul>
+<li>Navigate to <a href="https://github.com/kintohub/node-examples">https://github.com/kintohub/node-examples</a>.</li>
+<li>Log in with your account, if you haven't done so yet.</li>
+<li>Press the <strong>Use this template</strong> button. (only visible whilst logged in)</li>
+<li>Enter a <strong>Repository name</strong> of your choosing (e.g. <code>node-app</code>), and optionally set the repo to private.</li>
+<li>Finally, press the <strong>Create repository from template</strong> button.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="lets-explore-the-code"></a><a href="#lets-explore-the-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Let's explore the code</h3>
+<p>Like a typical Node.js v8 app, the repo has a <code>package.json</code> file, with the following scripts:</p>
+<pre><code class="hljs css language-.json">  <span class="hljs-string">"scripts"</span>: {
+    <span class="hljs-string">"start"</span>: <span class="hljs-string">"node index.js"</span>,
+    <span class="hljs-string">"prod"</span>: <span class="hljs-string">"PORT=80 node index.js"</span>
+  },
+</code></pre>
+<p>The app code lives in the <code>index.js</code> file, and we have two ways to start the app:</p>
+<ul>
+<li><code>npm start</code> for development mode, and</li>
+<li><code>npm run prod</code> to use the production-ready script that sets a <code>PORT</code> environment variable to port 80.</li>
+</ul>
+<p> <br>
+The <code>index.js</code> file defines a very basic <a href="https://expressjs.com">Express</a> based API:</p>
+<pre><code class="hljs css language-.js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>)
+<span class="hljs-keyword">const</span> app = express()
+<span class="hljs-keyword">const</span> PORT = process.env.PORT || <span class="hljs-string">'8000'</span>
+
+<span class="hljs-comment">/**
+ * @api {get} /hello/{name} Prints "Hello {name}"
+ * @apiName HelloWorld
+ * @apiParam (Url) {String} name the name to print
+ * @apiSuccess (200) {String} message the hello {name} message
+ */</span>
+app.get(<span class="hljs-string">'/hello/:name'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Log request: '</span>, req.params.name)
+  <span class="hljs-keyword">return</span> res.send({
+    message: <span class="hljs-string">`Hello <span class="hljs-subst">${req.params.name}</span>`</span>
+  })
+})
+
+app.listen(PORT, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`App listening on port <span class="hljs-subst">${PORT}</span>!`</span>))
+</code></pre>
+<p>Notice that the app will start on port 8000 by default. The <code>prod</code> script overrides this to port 80 with the <code>PORT</code> environment variable.</p>
+<p>The API accepts a path template of <code>/hello/:name</code> (e.g. <code>/hello/World</code>), and the value of the <code>:name</code> parameter is printed in the <code>message</code> property of the JSON response. Documentation for the API endpoint has been defined in <a href="/docs/features/building/api-docs">apiDoc format</a>.</p>
+<h3><a class="anchor" aria-hidden="true" id="running-the-app-on-your-local-machine"></a><a href="#running-the-app-on-your-local-machine" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Running the app on your local machine</h3>
+<ul>
+<li>Clone the repository to your machine, and open a terminal at the directory.</li>
+<li>Run <code>npm install</code>.</li>
+<li>Run <code>npm start</code>:
+<pre><code class="hljs css language-sh">&gt; node-example@0.1.0 start /Users/kinto/repos/node-app
+&gt; node index.js
+
+App listening on port 8000!
+</code></pre></li>
+<li>Call the API with <code>curl localhost:8000/hello/World</code>:
+<pre><code class="hljs css language-.json">{<span class="hljs-attr">"message"</span>:<span class="hljs-string">"Hello World"</span>}
+</code></pre></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="selecting-a-suitable-kintoblock-for-your-app"></a><a href="#selecting-a-suitable-kintoblock-for-your-app" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Selecting a suitable KintoBlock for your app</h2>
+<p>What makes KintoBlocks easy to use, is that <em>you don't need to adopt any framework or additional code</em>, in order to package your app for the cloud. <a href="/docs/kintoblocks/introduction">KintoBlocks</a> provide extra infrastructure plumbing to make your code cloud-ready.</p>
+<p>For instance, the <a href="/docs/kintoblocks/websites">Website KintoBlock</a> is perfectly suitable for hosting your code on the internet, since it provides a <em>HTTP &amp; HTTPS endpoint</em> that forwards all requests to your Node.js server. The only thing we need to do, is to configure the KintoBlock based on the behavior we already know.</p>
+<p>To keep this example simple, we will deploy it as a website only. Of course in typical applications and more complex situations you may have many more KintoBlocks. For example, this Node.js server could also run as a <a href="/docs/kintoblocks/microservices">Microservice</a> instead. Then its API would be accessible from the internal network only, and other services can call it. For a more complex example like that, refer to the <a href="/docs/examples/todo-list/tutorial">Todo List App tutorial</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="creating-the-kintoblock-on-kintohub"></a><a href="#creating-the-kintoblock-on-kintohub" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creating the KintoBlock on KintoHub</h2>
+<blockquote>
+<p>If you don't have a KintoHub account yet, <a href="https://app.kintohub.com/sign-up">sign up for free</a> to proceed.</p>
+</blockquote>
+<ul>
+<li>Navigate to <a href="https://app.kintohub.com">https://app.kintohub.com</a>.</li>
+<li>If it is the first time, you can <strong>Skip Tutorial</strong>.</li>
+<li>In the sidebar, select <strong>KintoBlocks</strong>.</li>
+<li>Press <strong>Create New KintoBlock</strong>.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="connect-your-github-account"></a><a href="#connect-your-github-account" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Connect your GitHub account</h3>
+<p>You'll get prompted with the below dialog to link to a Git repository source.</p>
+<ul>
+<li>Press the <strong>Link</strong> button of the <strong>GitHub</strong> option.</li>
+</ul>
+<p><img src="/docs/assets/introduction/try-deploying/link-repo-sources.png" alt="Link Repo Source dialog, with GitHub, Bitbucket and GitLab options"></p>
+<p>You'll be redirected to the GitHub website, where you have to <strong>grant permissions for the KintoHub App to access your repositories</strong>.</p>
+<ul>
+<li>Follow the prompts and <strong>give access</strong> to:
+<ul>
+<li>either all repositories, or</li>
+<li>only to the one you created in the beginning of this quick-start.</li>
+</ul></li>
+<li>Press <strong>Save</strong> on the GitHub website to be redirected back to KintoHub.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="select-a-kintoblock-flavor"></a><a href="#select-a-kintoblock-flavor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Select a KintoBlock flavor</h3>
+<p>The <em><strong>Link Repo Sources</strong></em> dialog will reappear, and you should see that GitHub is now connected successfully.</p>
+<ul>
+<li>Press <strong>I'm Done</strong> to proceed.</li>
+</ul>
+<p>Next, you'll see the <em><strong>Create New KintoBlock</strong></em> page where you get the option to choose what type of KintoBlock to create.</p>
+<ul>
+<li>Select the <strong>Website</strong> KintoBlock flavor.</li>
+</ul>
+<p><img src="/docs/assets/introduction/try-deploying/select-kintoblock.png" alt="3 KintoBlock options: Microservice, Website, or Custom Service"></p>
+<h3><a class="anchor" aria-hidden="true" id="configure-the-kintoblock"></a><a href="#configure-the-kintoblock" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure the KintoBlock</h3>
+<p>The new KintoBlock page is where we define and configure the KintoBlock. This page looks different depending on the selected flavor.</p>
+<p>First, refer to the <em><strong>Repository</strong></em> section, where <strong>Repository Source</strong> is already <code>GitHub</code> and <strong>Repository Type</strong> is <code>Existing Repositories</code>.</p>
+<ul>
+<li>Type in the <strong>Repository</strong> field the name you used previously. (e.g. <code>node-app</code>)</li>
+<li><strong>Select the repository</strong> from the list that appears.
+<blockquote>
+<p><em>Tip:</em> Other repositories with similar names may show up in the list, if you have opted to grant access to all repositories in your GitHub account. If that is undesirable, you can always <a href="https://help.github.com/en/articles/reviewing-your-organizations-installed-integrations">restrict access to only specific repositories</a> under your GitHub account from the GitHub website.</p>
+</blockquote></li>
+</ul>
+<p><img src="/docs/assets/introduction/try-deploying/nodejs-app/repository-section.png" alt="Screen shot of the Repository section"></p>
+<p>Next, we're going to configure how the Website KintoBlock should <em>build and run the Node.js app</em>.</p>
+<p>Refer to the <em><strong>Basic Info</strong></em> section, and:</p>
+<ul>
+<li>Enter a <strong>KintoBlock Name</strong>, e.g. <code>nodeapp</code>.
+<blockquote>
+<p><em>Note:</em> The KintoBlock name must be <em>lower-case</em>, and <em>only include alphanumerical characters or hyphens</em>. The reason for that is that <em>the name is used as an identifier</em> and may appear in the service logs, URLs and other places where it needs to be uniform.</p>
+</blockquote></li>
+<li>Enter a <strong>Display Name</strong>, e.g. <code>Node App</code>.</li>
+<li>Add a <strong>Description</strong>, e.g. <code>My first Node.js app on KintoHub!</code>.</li>
+<li>For the <strong>Website Type</strong> select <code>Dynamic Web App</code>.</li>
+</ul>
+<p>Selecting <em>Dynamic Web App</em> caused an extra <em><strong>Advanced Options</strong></em> section to appear.</p>
+<ul>
+<li>Leave the <strong>Port</strong> field set to <code>80</code>, since that matches our production-ready configuration.</li>
+<li>Keep the <strong>Build Command</strong> set as <code>npm install</code>, so that all required dependencies get installed.</li>
+<li>Update the <strong>Run</strong> field to <code>npm run prod</code>, since we want to use the script that sets the port to 80.</li>
+</ul>
+<p><img src="/docs/assets/introduction/try-deploying/nodejs-app/basic-info-section.png" alt="Screen shot of the Basic Info section"></p>
+<p>Now that everything is configured, we are ready to proceed:</p>
+<ul>
+<li>Press the <strong>Create New KintoBlock</strong> button in the bottom right corner.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="build-the-source-code"></a><a href="#build-the-source-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Build the source code</h3>
+<p>We now see that the KintoBlock has been created, and that <em>No build was built successfully yet.</em> Let's change that:</p>
+<ul>
+<li>Press <strong>Build Latest Commit</strong>, to trigger a new build.</li>
+</ul>
+<p><img src="/docs/assets/introduction/try-deploying/nodejs-app/no-builds-yet.png" alt="KintoBlock page with the message that: No build was built successfully yet"></p>
+<p>This triggers KintoHub to pull the source code from GitHub and build a cloud-native package out of it.</p>
+<p>We can see the build in progress:</p>
+<p><img src="/docs/assets/introduction/try-deploying/nodejs-app/building.png" alt="Progress indication that the build is in progress"></p>
+<p>And get the green light when it completes successfully:</p>
+<p><img src="/docs/assets/introduction/try-deploying/nodejs-app/built-successfully.png" alt="The build was successful as marked in green"></p>
+<p>Well done! Your KintoBlock is now created and built.</p>
+<p>In a typical application you're likely to create multiple KintoBlocks, with each having their own characteristics. For this quick-start, we'll keep it simple and proceed with the project.</p>
+<h2><a class="anchor" aria-hidden="true" id="ready-to-deploy"></a><a href="#ready-to-deploy" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ready to deploy</h2>
+<p>Now that you have a KintoBlock and it has been built, the KintoBlock is ready to be deployed to the cloud.</p>
+<p>From the KintoBlock page, in the bottom right corner:</p>
+<ul>
+<li>Press <strong>Add to Project</strong>, this will pop up a dialog.</li>
+</ul>
+<blockquote>
+<p><em>Tip:</em> If you have existing projects, this dialog allows you to select one of its existing environments.</p>
+</blockquote>
+<p>Because we do not have any projects yet:</p>
+<ul>
+<li>Press the <strong>New Project</strong> button.</li>
+<li>Enter in the <em>Enter project name</em> field a new project name. (e.g. <code>myapp</code>)</li>
+<li>Press the <strong>Create</strong> button.</li>
+</ul>
+<p><img src="/docs/assets/introduction/try-deploying/nodejs-app/add-to-deployment.png" alt="Add to Project dialog"></p>
+<h3><a class="anchor" aria-hidden="true" id="create-new-project"></a><a href="#create-new-project" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create new project</h3>
+<p>The <em><strong>Create New Project</strong></em> page, has already been filled out with some of the information you've provided:</p>
+<ul>
+<li>The <strong>Project Name</strong> has been set.</li>
+<li>A <code>default</code> <strong>Environment Name</strong> has been preset, and can be adjusted if necessary.</li>
+</ul>
+<p>Scroll down to the <em><strong>KintoBlocks</strong></em> section, where you can see that your <em>Node App</em> KintoBlock has already been added. It has been preset to use the build from the <code>master</code> branch. It is also possible to <a href="/docs/features/building/branches-and-tags">select other branches and tags</a>.</p>
+<p><img src="/docs/assets/introduction/try-deploying/nodejs-app/deployment-node-app.png" alt="The Node App KintoBlock listed in the project page"></p>
+<p>If you have more KintoBlocks that should be part of this project, then you can add those with the <em>Add KintoBlocks...</em> drop-down menu.</p>
+<p>For this quick-start however, we are going to deploy only this single KintoBlock.</p>
+<ul>
+<li>Press <strong>Create New Project</strong> to start the project.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="project-progress"></a><a href="#project-progress" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Project progress</h2>
+<p>The first project is as simple as waiting for the process to complete.</p>
+<p>You can see that the project is running:</p>
+<p><img src="/docs/assets/introduction/try-deploying/nodejs-app/deployment-running.png" alt="Project running"></p>
+<p>And when it is completed:</p>
+<p><img src="/docs/assets/introduction/try-deploying/nodejs-app/deployment-deployed.png" alt="Project deployed"></p>
+<p>During the project KintoHub will push your KintoBlock to a cloud server and setup routing for inbound traffic.</p>
+<h3><a class="anchor" aria-hidden="true" id="accessing-the-nodejs-app"></a><a href="#accessing-the-nodejs-app" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Accessing the Node.js app</h3>
+<p>To access the deployed Node.js sever, scroll down to the <em><strong>KintoBlocks</strong></em> section, and:</p>
+<ul>
+<li>Press the <strong>Open</strong> button on the Website KintoBlock.</li>
+</ul>
+<p>This will open a new tab in your browser pointing to the URL of the website that was deployed, for example:</p>
+<pre><code class="hljs css language-plaintext">https://myapp-default-myapp-35uekidash.web.kintohub.com
+</code></pre>
+<p>Because our Node.js server only listens to a specific path pattern, you'll see <code>Cannot GET /</code> as a result.</p>
+<p>However, if you suffix the URL with for instance <code>/hello/World</code>, you will see:</p>
+<pre><code class="hljs css language-.json">{<span class="hljs-attr">"message"</span>:<span class="hljs-string">"Hello World"</span>}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="next-steps"></a><a href="#next-steps" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Next steps</h2>
+<p>Great job on completing this quick-start!</p>
+<p>What to read next:</p>
+<ul>
+<li>Explore all <a href="/docs/kintoblocks/introduction">KintoBlock flavors</a> that are available.</li>
+<li>Read about <a href="deployments/introduction.md">advanced Project concepts</a>.</li>
+<li>Try the <a href="/docs/examples/todo-list/tutorial">Todo List example app tutorial</a> showcasing multiple KintoBlocks working together.</li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/introduction/kintohub-workflow"><span class="arrow-prev">← </span><span class="function-name-prevnext">The KintoHub Workflow</span></a><a class="docs-next button" href="/docs/introduction/try-deploying/python-app"><span>Python</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#example-code-on-github">Example code on GitHub</a><ul class="toc-headings"><li><a href="#lets-explore-the-code">Let's explore the code</a></li><li><a href="#running-the-app-on-your-local-machine">Running the app on your local machine</a></li></ul></li><li><a href="#selecting-a-suitable-kintoblock-for-your-app">Selecting a suitable KintoBlock for your app</a></li><li><a href="#creating-the-kintoblock-on-kintohub">Creating the KintoBlock on KintoHub</a><ul class="toc-headings"><li><a href="#connect-your-github-account">Connect your GitHub account</a></li><li><a href="#select-a-kintoblock-flavor">Select a KintoBlock flavor</a></li><li><a href="#configure-the-kintoblock">Configure the KintoBlock</a></li><li><a href="#build-the-source-code">Build the source code</a></li></ul></li><li><a href="#ready-to-deploy">Ready to deploy</a><ul class="toc-headings"><li><a href="#create-new-project">Create new project</a></li></ul></li><li><a href="#project-progress">Project progress</a><ul class="toc-headings"><li><a href="#accessing-the-nodejs-app">Accessing the Node.js app</a></li></ul></li><li><a href="#next-steps">Next steps</a></li></ul></nav></div><div class="footer-background"><div class="line"></div><div class="footerWrapper wrapper"><footer><div class="content"><div class="footer"><div class="left"><ul class="unstyled-list"></ul><h6 class="byline">Copyright © 2019 KintoHub. All rights reserved</h6></div><div class="right"><ul class="social-icons unstyled-list"><li class="social-icon"><a href="https://twitter.com/kintohub" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-twitter.svg" alt=""/></a></li><li class="social-icon"><a href="https://github.com/kintohub" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-github.svg" alt=""/></a></li><li class="social-icon"><a href="https://www.linkedin.com/company/13376177/" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-linkedin.svg" alt=""/></a></li></ul><a href="/"><div class="footer-logo"><img src="/img/logo-grey-single-color.svg" alt=""/></div></a></div></div></div></footer></div></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '92a5a28a80be03d1f473c1b4a6af6b33',
+                indexName: 'kintohub',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>

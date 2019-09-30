@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Git Repository, Builds &amp; CI · KintoHub Docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Branches &amp; Tags"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Git Repository, Builds &amp; CI · KintoHub Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.kintohub.com/"/><meta property="og:description" content="## Branches &amp; Tags"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/prism.css"/><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/kintohub-title-text.svg" alt="KintoHub Docs"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/kintohub/kintohub-docs/edit/master/docs/_legacy/kintoblock-builds.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Git Repository, Builds &amp; CI</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="branches-tags"></a><a href="#branches-tags" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Branches &amp; Tags</h2>
+<p>KintoBlock is always in sync with your GitHub and Bitbucket repositories. If a user wants to add a branch to their repository, it can be directly added in KintoBlock. New branches can also be created in KintoBlock. At present, there is no option within KintoBlocks to modify the branches and tags.</p>
+<p>To create a new branch follow the steps mentioned below:</p>
+<ol>
+<li><p>Open a <strong>KintoBlock</strong>.</p></li>
+<li><p>Navigate to the sidebar in <strong>KintoBlock Manage</strong> page.</p></li>
+<li><p>Switch to <strong>Branch</strong> tab and enter the <code>branch name</code> in the <strong>Search Bar</strong>.</p></li>
+<li><p>Click on the <strong>Enter</strong> button to create a branch.</p></li>
+</ol>
+<blockquote>
+<p>Note: The branches created via KintoHub will get updated in their corresponding GitHub or Bitbucket repository.</p>
+</blockquote>
+<p><img src="/docs/assets/Branches_Sidebar.png" alt="Screenshot"></p>
+<p>To add a new branch to KintoBlock follow the steps mentioned below:</p>
+<ol>
+<li><p>Open a <strong>KintoBlock</strong>.</p></li>
+<li><p>Navigate to the sidebar in <strong>KintoBlock Manage</strong> page.</p></li>
+<li><p>Switch to <strong>Branch</strong> tab and click on the <strong>+</strong> icon displayed beside <strong>Search Bar</strong>.</p></li>
+<li><p>Select the required branch from the dropdown to add them to KintoBlocks.</p></li>
+</ol>
+<p>Newly added or created branch in KintoBlock will be displayed as an individual card container in the sidebar of <strong>KintoBlock Manage</strong> page. Each card displays the following details of the branch:</p>
+<ul>
+<li><p><strong>Builds &amp; Repository</strong></p></li>
+<li><p><strong>Helm Chart Values</strong></p></li>
+<li><p><strong>Environment Variables</strong></p></li>
+<li><p><strong>Deletion</strong></p></li>
+</ul>
+<p><img src="/docs/assets/branches_card.png" alt="Screenshot"></p>
+<h2><a class="anchor" aria-hidden="true" id="continuous-integration-and-deployment"></a><a href="#continuous-integration-and-deployment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Continuous Integration and Deployment</h2>
+<p>When changes are committed into the repository branch, a new build for KintoBlock can be triggered by using the <strong>Build Latest Commit</strong> button in the <strong>KintoBlock Manage</strong> page. Under <strong>Recent Builds</strong> user can view the recent commits made in the repository branch. The <strong>Latest Build</strong> section will be updated automatically with the last successful build.</p>
+<p>The <strong>Automatically build new commits in this branch</strong> option automatically enables build generation for new commits in the repository. By default, the toggle switch is set to <code>OFF</code>.</p>
+<h2><a class="anchor" aria-hidden="true" id="automatically-build-new-commits"></a><a href="#automatically-build-new-commits" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Automatically Build New Commits</h2>
+<p><strong>Auto Build</strong> toggle helps you to Automatically build your KintoBlock when there is a commit made in your Repository.</p>
+<p>To enable <strong>Auto Build</strong>, follow the steps mentioned below:</p>
+<ol>
+<li><p>Create a new KintoBlock.</p></li>
+<li><p>Scroll down to the Advanced Option in Build &amp; Repository.</p></li>
+<li><p>Enable Auto Build toggle</p></li>
+<li><p>Save the changes made.</p></li>
+</ol>
+<p>Now whenever you commit any changes to your repository, then your KintoBlock will be built automatically.</p>
+<p><img src="/docs/assets/Auto-Build.png" alt="AutoBuild"></p>
+<h2><a class="anchor" aria-hidden="true" id="manually-trigger-builds-for-new-commits"></a><a href="#manually-trigger-builds-for-new-commits" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Manually trigger builds for new Commits</h2>
+<p>To trigger a new build follow the steps mentioned below:</p>
+<ol>
+<li><p>Open the KintoBlock.</p></li>
+<li><p>Select the branch of KintoBlock consisting of the latest code.</p></li>
+<li><p>Click on <strong>Build Latest Commit</strong> button.</p>
+<p><img src="/docs/assets/build_latest_commit.png" alt="Screenshot"></p></li>
+</ol>
+<p>A new build with last commits made in the repository will be generated. The status of the new build will be displayed in the <strong>Recent Builds section</strong>. If there are no new commits in the repository, a new build will not be generated.</p>
+<h2><a class="anchor" aria-hidden="true" id="re-generating-builds-via-retry"></a><a href="#re-generating-builds-via-retry" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Re-generating builds via Retry</h2>
+<p>There is an option to regenerate a build from the last attempt to generated a build. Builds can be regenerated for all statuses: Success, Running and Failed.</p>
+<p>To regenerate a build:</p>
+<ol>
+<li><p>Open the KintoBlock build that resulted in failure.</p></li>
+<li><p>Select the appropriate branch of the KintoBlock.</p></li>
+<li><p>Click on the <strong>Retry</strong> button displayed in the build status table.</p>
+<p><img src="/docs/assets/kb-retry.png" alt="Screenshot"></p></li>
+</ol>
+<p>The build generation process will commence and the status of the build will be displayed in the <strong>Recent Builds</strong> section.</p>
+<h2><a class="anchor" aria-hidden="true" id="view-repository"></a><a href="#view-repository" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View Repository</h2>
+<p>To view a repository, open any KintoBlock and scroll down to <strong>Builds &amp; Repository</strong> section. The repository name of a KintoBlock is displayed right below the Recent Builds section under the title Repository.</p>
+<p>The <strong>Open Repo</strong> button provides an option to quickly view the repository that is associated with your KintoBlock.</p>
+<p><img src="/docs/assets/kb-open-repo-btn.png" alt="Screenshot"></p>
+<p>The <strong>View example projects link</strong> in the Repository section provides an option to quickly view an example project of the programming language you have chosen to create the KintoBlock.</p>
+<h2><a class="anchor" aria-hidden="true" id="view-build-logs"></a><a href="#view-build-logs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View Build Logs</h2>
+<p>KintoHub maintains a structured list of the events that take place during the build generation. The entire build log can be generated in textual form by clicking on the <strong>Open Log</strong> button.</p>
+<p><img src="/docs/assets/open_log.png" alt="Screenshot"></p>
+<p>When the KintoBlock build is a success, you will notice a green banner on top of the Build Logs section with the title <code>No error found</code>.</p>
+<p>If the KintoBlock builds results in failure, a red banner will be displayed on top of the Build Logs section with the title <code>Error found</code>.  Log messages can be analyzed to find the root causes of failure.</p>
+<p><img src="/docs/assets/build_error.png" alt="Screenshot"></p>
+<h2><a class="anchor" aria-hidden="true" id="view-build-status"></a><a href="#view-build-status" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View Build Status</h2>
+<p>The Recent Builds section also displays the status of each build. The builds can have one of the 3 statuses mentioned below:</p>
+<ul>
+<li><p><strong>Running</strong>: This is the initial state of a new build, while we build your KintoBlock</p></li>
+<li><p><strong>Success</strong>: This status indicates that your KintoBlock build was run successfully.</p></li>
+<li><p><strong>Failed</strong>: This status indicates that the build failed.</p></li>
+</ul>
+<p>Detailed logs pertaining to each status can be viewed by clicking on the status column.</p>
+<h2><a class="anchor" aria-hidden="true" id="tagging-a-build"></a><a href="#tagging-a-build" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tagging a Build</h2>
+<p>Builds are automatically generated when a KintoBlock is created. Tagging a build in a KintoBlock is a similar concept to tagging in GitHub. Once a build is tagged, the build can be referenced and deployed through a deployment. It’s important to tag stable builds that you have tested and prepared for production use!</p>
+<p>To tag a commit in KintoBlock:</p>
+<ol>
+<li><p>Open the KintoBlock you wish to tag.</p></li>
+<li><p>Select the branch in your repository, where you have the final version of your KintoBlock that is ready to go!!</p></li>
+<li><p>In <strong>Builds &amp; Repository section</strong>, click on the <strong>Tag Build</strong> button for the commit that you would like to tag.</p>
+<p><img src="/docs/assets/kb-tag-btn.png" alt="Screenshot"></p></li>
+<li><p>Now specify the build number. We use the form  <code>MAJOR.MINOR.REVISION</code> for build numbers.</p></li>
+<li><p>Enter the release notes in the Notes section and then click on the <strong>Tag Build</strong>.</p>
+<p><img src="/docs/assets/tab-this-build.png" alt="Screenshot"></p>
+<blockquote>
+<p>Note: Tagging is important when you are preparing for public releases. If you want to update the deployment and add a KintoBlock to it, create a tag and select the tag within the deployment. This is an easy way to control the released versions of your KintoBlock.</p>
+</blockquote></li>
+</ol>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#branches-tags">Branches &amp; Tags</a></li><li><a href="#continuous-integration-and-deployment">Continuous Integration and Deployment</a></li><li><a href="#automatically-build-new-commits">Automatically Build New Commits</a></li><li><a href="#manually-trigger-builds-for-new-commits">Manually trigger builds for new Commits</a></li><li><a href="#re-generating-builds-via-retry">Re-generating builds via Retry</a></li><li><a href="#view-repository">View Repository</a></li><li><a href="#view-build-logs">View Build Logs</a></li><li><a href="#view-build-status">View Build Status</a></li><li><a href="#tagging-a-build">Tagging a Build</a></li></ul></nav></div><div class="footer-background"><div class="line"></div><div class="footerWrapper wrapper"><footer><div class="content"><div class="footer"><div class="left"><ul class="unstyled-list"></ul><h6 class="byline">Copyright © 2019 KintoHub. All rights reserved</h6></div><div class="right"><ul class="social-icons unstyled-list"><li class="social-icon"><a href="https://twitter.com/kintohub" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-twitter.svg" alt=""/></a></li><li class="social-icon"><a href="https://github.com/kintohub" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-github.svg" alt=""/></a></li><li class="social-icon"><a href="https://www.linkedin.com/company/13376177/" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-linkedin.svg" alt=""/></a></li></ul><a href="/"><div class="footer-logo"><img src="/img/logo-grey-single-color.svg" alt=""/></div></a></div></div></div></footer></div></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '92a5a28a80be03d1f473c1b4a6af6b33',
+                indexName: 'kintohub',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Deployments · KintoHub Docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## NOTE!"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Deployments · KintoHub Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.kintohub.com/"/><meta property="og:description" content="## NOTE!"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/prism.css"/><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/kintohub-title-text.svg" alt="KintoHub Docs"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/kintohub/kintohub-docs/edit/master/docs/_legacy/kintoapps.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Deployments</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="note"></a><a href="#note" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NOTE!</h2>
+<p>Deployments use to be called KintoApps. Please know that the screenshots are outdated and will be updated soon!</p>
+<h2><a class="anchor" aria-hidden="true" id="what-is-a-deployment"></a><a href="#what-is-a-deployment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is a deployment?</h2>
+<p>Deployments are tailored back-end features packages, ready to be consumed by your clients.</p>
+<p>They are composed of KintoBlocks with unique configuration parameters, and either a client or a protocol to allow your clients to talk to the deployment. You can deploy your app in a specific environment and have several environment for one deployment to apply different custom configuration.</p>
+<p>Your deployment is made of blocks that are deployed in a serverless way, meaning it is dynamically loaded when you are calling your endpoint. Hence, if you are not using it, you are saving resources and money !</p>
+<h2><a class="anchor" aria-hidden="true" id="creating-a-deployment"></a><a href="#creating-a-deployment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creating a deployment</h2>
+<p>Creating your first deployments is super easy.</p>
+<ol>
+<li>Select <strong>Deployment</strong> from the sidebar</li>
+<li>Click <strong>Create New Deployment</strong>
+<img src="/docs/assets/creating-an-application-1-2.png" alt="Screenshot - Create New Application"></li>
+<li>Enter the required info</li>
+<li>Click <strong>Create New Deployment</strong>
+<img src="/docs/assets/creating-an-application-3-4.png" alt="Screenshot - Enter Info">
+<em>That's it! You have created your first application!</em></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="adding-kintoblocks-to-a-deployment"></a><a href="#adding-kintoblocks-to-a-deployment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding kintoblocks to a deployment</h2>
+<p>Once you've created an deployment, you can add additional KintoBlocks to extend its capabilities.</p>
+<ol>
+<li>Open the <strong>KintoBlock</strong> or <strong>Deployment</strong> you want to edit</li>
+<li>Under the <strong>KintoBlocks</strong> section, search for the Kintoblock you would like to add</li>
+<li>Click <strong>Edit KintoBlocks</strong> to modify their environment variables and hardware requirements</li>
+<li>You can choose either a <strong>Branch</strong> or a <strong>Tag</strong> for each dependency (the latest build from the branch will be used)
+<img src="/docs/assets/adding-dependencies-4-5.png" alt="Screenshot - Create New Application"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="tagging-deploying-an-application"></a><a href="#tagging-deploying-an-application" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tagging &amp; deploying an application</h2>
+<p>When you create a deployment it is by default in a <em>draft</em> state. When you make changes to a deployment, ie. add a new dependency or change the version of a KintoBlock within this deployment, you can create a new tag.</p>
+<p>Unlike KintoBlocks, this is unrelated to GitHub or Bitbucket, but is a way to manage versions of your deployment.</p>
+<p>When you tag a deployment this is marking it as ready for deployment and the deployment will be deployed.</p>
+<p>This is useful if, for example, you add a dependency and everything breaks, you quickly can deploy a previous version of your deployment to revert your changes.</p>
+<ol>
+<li>Open the <strong>Deployment</strong> you want to tag and deploy</li>
+<li>Click <strong>Tag &amp; Deploy</strong>
+<img src="/docs/assets/tagging-and-deploying-1-2.png" alt="Screenshot - Tag and Deploy"></li>
+<li>Choose the environment, enter a desired tag number and notes, then click Tag &amp; Deploy
+<img src="/docs/assets/tagging-and-deploying-3.png" alt="Screenshot - Enter Info"></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="talking-to-an-deployment"></a><a href="#talking-to-an-deployment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Talking to an Deployment</h2>
+<p>After you have deployed your deployment, you can either talk to it in gRPC or HTTP.
+(gRPC to HTTP is work in progress and will be added in upcoming updates)</p>
+<ol>
+<li>Go to <strong>Deployments</strong>, click the menu icon</li>
+<li>Select <strong>View Environments</strong>
+<img src="/docs/assets/talking-to-applications-1-2.png" alt="Screenshot - View Environment"></li>
+<li>Click Edit on the environment you wish to talk to
+<img src="/docs/assets/talking-to-applications-3.png" alt="Screenshot - Edit Environment"></li>
+<li>Here you can get the <strong>client ID</strong> and <strong>secret key</strong>
+<img src="/docs/assets/talking-to-applications-4.png" alt="Screenshot - Client ID and Secret Key"></li>
+<li>Authenticate to KintoHub with:</li>
+</ol>
+<pre><code class="hljs">POST https:<span class="hljs-comment">//api.kintohub.com/authorize</span>
+<span class="hljs-class">BODY </span>{ <span class="hljs-string">"clientId"</span>:<span class="hljs-string">"7219e244cbf34f06bb25121d738cae26"</span>, <span class="hljs-string">"secret"</span>:<span class="hljs-string">"ZUCHayuTOK7N"</span> }
+</code></pre>
+<p>You will get a response that looks like this:</p>
+<pre><code class="hljs">{ <span class="hljs-attr">"data"</span>: { <span class="hljs-attr">"token"</span>: <span class="hljs-string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnQtaWQiOiI3MjE5ZTI0NGNiZjM0ZjA2YmIyNTEyMWQ3MzhjYWUyNiIsInNlc3Npb24taWQiOiI5MzQ3OTFhYy1kNzllLTQ5NWQtYjVlYy01OTJlMmU4MDRjMTciLCJuYmYiOjE1MzA4NTYzNTUsImV4cCI6MTUzMjA2NTk1NSwiaWF0IjoxNTMwODU2MzU1LCJpc3MiOiJNaWRkbGV3YXJlIiwiYXVkIjoiTWlkZGxld2FyZSJ9.Cer1EyzryW5qKfqpSqs5u2t6BunoeUtjpwX_fFAzVj4"</span> } }
+</code></pre>
+<blockquote>
+<p>Alternatively, you can authenticate with gRPC by using the proto file attached near the end of this page and connecting to grpc.kintohub.com</p>
+</blockquote>
+<p>Once authenticated, you can talk to your deployment (and its KintoBlock dependencies)!
+Simply make a call to:</p>
+<pre><code class="hljs"><span class="hljs-symbol">https:</span><span class="hljs-comment">//api.kintohub.com/{block-name}</span>
+</code></pre>
+<p>Be sure to include in the Kinto-Authorization header. Example:</p>
+<pre><code class="hljs">{ <span class="hljs-attr">"Kinto-Authorization"</span>:<span class="hljs-string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnQtaWQiOiI3MjE5ZTI0NGNiZjM0ZjA2YmIyNTEyMWQ3MzhjYWUyNiIsInNlc3Npb24taWQiOiI5MzQ3OTFhYy1kNzllLTQ5NWQtYjVlYy01OTJlMmU4MDRjMTciLCJuYmYiOjE1MzA4NTYzNTUsImV4cCI6MTUzMjA2NTk1NSwiaWF0IjoxNTMwODU2MzU1LCJpc3MiOiJNaWRkbGV3YXJlIiwiYXVkIjoiTWlkZGxld2FyZSJ9.Cer1EyzryW5qKfqpSqs5u2t6BunoeUtjpwX_fFAzVj4"</span> }
+</code></pre>
+<p>(Use same token from the example response in step 5.)</p>
+<p>To make a call to gRPC, talk to grpc.prod.kintohub.com with your gRPC service proto file, but include in the grpc-meta-data the Kinto-Authorization header as well.</p>
+<h2><a class="anchor" aria-hidden="true" id="viewing-deployment-logs"></a><a href="#viewing-deployment-logs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Viewing Deployment Logs</h2>
+<p><img src="/docs/assets/logs-closed.png" alt="Screenshot - Logs"></p>
+<p>You can access the last 100 logs of an environment your deployment is deployed in, by going to <em>Environments</em> via the short cut menu on your deployment card, or from the Deployment Manage page. Once there, open the edit page, and select <em>View Logs</em> on the top right hand side.</p>
+<p>The logs will give you information on the following things:</p>
+<ul>
+<li>Response code ie: 200, 500 etc.</li>
+<li>Duration of the call</li>
+<li>Which endpoint was called</li>
+<li>Which KintoBlock was called</li>
+<li>Which version of the KintoBlock was called</li>
+<li>The time and date of the call</li>
+</ul>
+<p>If you wish to view more details of the call, these can be found by expanding that particular calls row in the table. Here you can view the JSON of any logs you have made.</p>
+<h3><a class="anchor" aria-hidden="true" id="required-format-for-console-logs"></a><a href="#required-format-for-console-logs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Required Format for Console Logs</h3>
+<p>Console logs can help you easily debug what has occurred during the lifetime of an API call. We require a specific json format because console logs will be able to be used for alerts and analytics in the near future.</p>
+<p><img src="/docs/assets/logs-open.png" alt="Screenshot - Console Logs"></p>
+<p>All console logs that do not follow our format will not be available for you to view. The format is as follows:</p>
+<pre><code class="hljs">{ <span class="hljs-attr">"kinto_request_id"</span>: <span class="hljs-string">"acd12ff21-f2f21f1wf1-2f21f1s"</span>, <span class="hljs-attr">"customdata"</span>: <span class="hljs-string">"hello"</span>, <span class="hljs-attr">"message"</span>: <span class="hljs-string">"world"</span> }
+</code></pre>
+<p>Every incoming API call that comes to your service will have a unique <code>kinto-request-id</code>. You must log that Id into the console log as the value for &quot;kinto_request_id&quot;. This allows us to track your specific call and perform magic!</p>
+<p>It is important that the console log contents are formatted in JSON, with the correct quotation marks like this : <code>&quot;key&quot;: &quot;value&quot;</code>. An example for a <strong>Node.js / Express</strong> app would look like this:</p>
+<pre><code class="hljs">  const requestId = req.<span class="hljs-built_in">get</span>(<span class="hljs-string">'kinto-request-id'</span>)
+
+  console.<span class="hljs-built_in">log</span>(
+    JSON.stringify({
+      kinto_request_id: requestId,
+      statu<span class="hljs-variable">s:</span> <span class="hljs-string">'success'</span>,
+      tes<span class="hljs-variable">t:</span> { <span class="hljs-string">"data"</span> : <span class="hljs-string">"this is a test string"</span> }
+    })
+  )
+</code></pre>
+<p>In this example we assign the constant <code>requestId</code> with the value from the header and include it in the log with the key <code>kinto_request_id</code>, a <code>status</code> key and the JSON for the body of your log.</p>
+<p>You may use middleware to automatically do this for each call as well. We'll provide examples of this in the near future.</p>
+<h2><a class="anchor" aria-hidden="true" id="future-features"></a><a href="#future-features" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Future Features</h2>
+<h3><a class="anchor" aria-hidden="true" id="coming-soon"></a><a href="#coming-soon" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Coming Soon:</h3>
+<ul>
+<li>Deleting an deployment</li>
+</ul>
+<p>These feature are not ready yet but you can follow these feature <a href="https://github.com/kintohub/kintohub-docs/issues/39">here</a> on our <a href="https://github.com/kintohub/kintohub-docs">GitHub backlog</a>, where you can comment on any open issues, or add any issues you would like us to tackle.</p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#note">NOTE!</a></li><li><a href="#what-is-a-deployment">What is a deployment?</a></li><li><a href="#creating-a-deployment">Creating a deployment</a></li><li><a href="#adding-kintoblocks-to-a-deployment">Adding kintoblocks to a deployment</a></li><li><a href="#tagging-deploying-an-application">Tagging &amp; deploying an application</a></li><li><a href="#talking-to-an-deployment">Talking to an Deployment</a></li><li><a href="#viewing-deployment-logs">Viewing Deployment Logs</a><ul class="toc-headings"><li><a href="#required-format-for-console-logs">Required Format for Console Logs</a></li></ul></li><li><a href="#future-features">Future Features</a><ul class="toc-headings"><li><a href="#coming-soon">Coming Soon:</a></li></ul></li></ul></nav></div><div class="footer-background"><div class="line"></div><div class="footerWrapper wrapper"><footer><div class="content"><div class="footer"><div class="left"><ul class="unstyled-list"></ul><h6 class="byline">Copyright © 2019 KintoHub. All rights reserved</h6></div><div class="right"><ul class="social-icons unstyled-list"><li class="social-icon"><a href="https://twitter.com/kintohub" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-twitter.svg" alt=""/></a></li><li class="social-icon"><a href="https://github.com/kintohub" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-github.svg" alt=""/></a></li><li class="social-icon"><a href="https://www.linkedin.com/company/13376177/" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-linkedin.svg" alt=""/></a></li></ul><a href="/"><div class="footer-logo"><img src="/img/logo-grey-single-color.svg" alt=""/></div></a></div></div></div></footer></div></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '92a5a28a80be03d1f473c1b4a6af6b33',
+                indexName: 'kintohub',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>
