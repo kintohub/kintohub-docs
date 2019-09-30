@@ -6,9 +6,9 @@ stages:
   # Build the docker image only on master branch
   - name: deploy
 
-# branches:
-#   only:
-#   - master
+branches:
+  only:
+  - master
 
 cache: npm
 
@@ -28,5 +28,5 @@ jobs:
         github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
         target_branch: gh-pages
         local-dir: web/build # the local dir is relative to root and ignoring the one set with before_install
-        # on:
-        #   branch: master
+        on:
+          branch: master
