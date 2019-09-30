@@ -13,7 +13,7 @@ stages:
 cache: npm
 
 before_install:
-  - cd web
+  - cd website
 
 jobs:
   include:
