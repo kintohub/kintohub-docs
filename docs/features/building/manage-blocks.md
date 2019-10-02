@@ -4,24 +4,93 @@ title: Manage KintoBlocks
 
 ## Editing KintoBlocks
 
-The KintoBlock properties like `Description`, `Display Name`, `Port`, `Build command`, `Run` and `Doc format` specified during the creation can be edited and modified with new values.
+The KintoBlock properties like `KintoBlock Name`, `Language`, `Version`, `Description`, `Environment Variables` and `Hardware Configuration` specified during the creation can be edited and modified with new values.
 
-To edit a KintoBlock follow the steps mentioned below:
+>Note: **Environment Variables** are not specified during the creation of KintoBlock.
+
+To edit a **Static Website** KintoBlock when `Build Required` toggle is `On` follow the steps mentioned below:
+
+1. Open a Static Website KintoBlock.
+
+      ![Settings Button](/docs/assets/kintoblock-settings.png)
+
+2. Click on **Settings** button displayed in sidebar to modify the information.
+
+3. Edit Basic Info of the KintoBlock like `KintoBlock Name`, `Language`, `Version`, and `Description`.
+
+      ![Editing Information of KintoBlock](/docs/assets/kintoblock-basic-info.png)
+
+4. Click on the **Save Changes** button.
+
+To edit a **Static Website** KintoBlock when `Build Required` toggle is `Off` follow the steps mentioned below:
+
+1. Open a Static Website KintoBlock.
+
+2. Click on **Settings** button displayed in the sidebar to modify the information.
+
+3. Edit Basic Info of the KintoBlock like `KintoBlock Name` and `Description`.
+
+   ![Editing Information of KintoBlock](/docs/assets/kintoblock-edit-info.png)
+   
+4. Click on the **Save Changes** button.
+
+To edit a **Dynamic Website** KintoBlock, follow the steps mentioned below:
+
+1. Open a Dynamic Website KintoBlock.
+
+2. Click on **Settings** button displayed in the sidebar to modify the information.
+
+3. Edit Basic Info of the KintoBlock like `KintoBlock Name`, `Language`, `Version`, and `Description`.
+
+4. Click on the **Save Changes** button.
+
+To edit hardware configuration for website, follow the steps mentioned below:
+
+1. Open a Website KintoBlock.
+
+2. Click on **Settings** button displayed in the sidebar to modify the Hardware Configuration.
+
+3. Edit the default memory limit.
+
+      ![Hardware Configuration](/docs/assets/kb-hardware-configuration.png)
+
+4. Click on the **Save Changes** button.
+
+[Click Here](/docs/features/deploying/environment-variables) to Know more about **Environment Variables**.
+
+>Note: Above mentioned steps can be followed for **Microservice** and **Custom Service** for editing the properties like `KintoBlock Name`, `Language`, `Version`, `Description`, `Environment Variables` and `Hardware Configuration`.
+
+## Advanced Options for KintoBlock
+
+Advanced Options is used modify the KintoBlock with properties like `Protocol`, `Port`, `Build command`, `Start command` and `Doc` format are auto-filled based on the chosen language. These values are editable and can be changed if required.
+
+>Note: For **Microservice KintoBlock** properties like `Protocol`, `Port`, `Build command`, `Start command` and `Doc` are availabe. 
+
+To edit Advanced Option, follow the steps mentioned below:
 
 1. Open a KintoBlock.
 
-2. Click on the **pencil icon** displayed beside the title to modify the Description and Display Name of the KintoBlock.
+2. Scroll down to **Builds & Repository** section.
 
-    ![Screenshot](/docs/assets/display-name.png)
+3. Expand **Advanced Options** to view the `Protocol`, `Port`, `Build command`, `Start command`, and `Doc` fields.
 
-3. Scroll down to **Builds & Repository** section.
-
-4. Expand **Advanced Options** to view the `Port`, `Build command`, `Run`, and `Doc` fields
+    ![Advanced Options](/docs/assets/kintoBlock-advanced-option.png)
 
 5. Specify new values wherever necessary.
 
 6. Click on the **Save Changes** button to apply changes.
 
+7. For **Dynamic Website**, properties like `Port`, `Build command`, `Start command` are available.
+   
+    ![Advanced Option for Dynamic Website](/docs/assets/advance-option-dynamic-website.png)
+
+8. For **Static Website**, properties like `Build command` and `Build folder` are available.
+    
+    ![Advanced Option for Static Website](/docs/assets/advanced-option-static-website.png)
+
+9. For **Custom Service**, properties like `Helm chart source folder` is available.
+    
+    ![Advanced Option for Static Website](/docs/assets/advanced-option-custom-service.png)
 
 ## Add to Projects
 

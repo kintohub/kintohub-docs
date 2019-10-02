@@ -256,5 +256,5 @@ Great job on completing this quick-start!
 What to read next:
 
  - Explore all [KintoBlock flavors](kintoblocks/introduction.md) that are available.
- - Read about [advanced Project concepts](deployments/introduction.md).
+ - Read about [advanced Project concepts](projects/introduction.md).
  - Try the [Todo List example app tutorial](examples/todo-list/tutorial.md) showcasing multiple KintoBlocks working together.

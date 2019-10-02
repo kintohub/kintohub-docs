@@ -40,7 +40,9 @@
           "features/building/pulling-source-code",
           "features/building/branches-and-tags",
           "features/building/manage-blocks",
-          "features/building/api-docs"
+          "features/building/api-docs",
+          "features/building/build-arguments",
+          "features/building/helm-arguments"
         ]
       },
       {
