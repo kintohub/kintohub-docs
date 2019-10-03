@@ -4,8 +4,8 @@
     "start": "npm-run-all -p watch-css dev:watch",
     "dev:watch": "nodemon --exec npm run dev",
     "dev": "docusaurus-start",
-    "build": "npm run build-css && docusaurus-build",
-    "publish-gh-pages": "docusaurus-publish",
+    "build": "export $(cat .env | xargs) && npm run build-css && docusaurus-build",
+    "publish-gh-pages": "export $(cat .env | xargs) && docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version",
@@ -22,5 +22,6 @@
     "ignore": [
       "i18n/*"
     ]
-  }
+  },
+  "dependencies": {}
 }

@@ -86,30 +86,9 @@
       "_legacy/workspaces": {
         "title": "Workspaces"
       },
-      "deployments/configure-kintoblocks": {
-        "title": "Configure KintoBlocks"
-      },
-      "deployments/environments": {
-        "title": "Environments"
-      },
-      "deployments/introduction": {
-        "title": "Introduction to Projects",
-        "sidebar_label": "Introduction"
-      },
-      "deployments/metrics": {
-        "title": "Metrics"
-      },
-      "deployments/promoting": {
-        "title": "Promoting"
-      },
-      "deployments/rollbacks": {
-        "title": "Rollbacks"
-      },
-      "deployments/shut-down": {
-        "title": "Shut Down"
-      },
-      "examples/static-website/tutorial": {
-        "title": "Static Websites"
+      "examples/hasura/tutorial": {
+        "title": "Multi-environment Hasura",
+        "sidebar_label": "Multi-env Hasura"
       },
       "examples/todo-list/tutorial": {
         "title": "Todo List example app",
@@ -127,8 +106,14 @@
       "features/building/branches-and-tags": {
         "title": "Branches & Tags"
       },
+      "features/building/build-arguments": {
+        "title": "Build Arguments"
+      },
       "features/building/continuous-integration": {
         "title": "Continuous Integration"
+      },
+      "features/building/helm-arguments": {
+        "title": "Helm Arguments"
       },
       "features/building/manage-blocks": {
         "title": "Manage KintoBlocks"
@@ -145,11 +130,11 @@
       "features/deploying/high-availability": {
         "title": "High Availability"
       },
-      "features/deploying/manage-deployments": {
-        "title": "Manage Projects"
-      },
       "features/deploying/manage-environments": {
         "title": "Manage Environments"
+      },
+      "features/deploying/manage-projects": {
+        "title": "Manage Projects"
       },
       "features/operating/accessing-endpoints": {
         "title": "Accessing API Endpoints"
@@ -215,9 +200,6 @@
         "title": "Custom Service KintoBlock",
         "sidebar_label": "Custom Services"
       },
-      "kintoblocks/helm-arguments": {
-        "title": "Helm Arguments"
-      },
       "kintoblocks/introduction": {
         "title": "Introducing KintoBlocks",
         "sidebar_label": "Introduction"
@@ -245,6 +227,31 @@
         "title": "Upgrading your plan",
         "sidebar_label": "Upgrading"
       },
+      "projects/configure-kintoblocks": {
+        "title": "Configure KintoBlocks"
+      },
+      "projects/environments": {
+        "title": "Environments"
+      },
+      "projects/introduction": {
+        "title": "Introduction to Projects",
+        "sidebar_label": "Introduction"
+      },
+      "projects/metrics": {
+        "title": "Metrics"
+      },
+      "projects/promoting": {
+        "title": "Promoting"
+      },
+      "projects/rollbacks": {
+        "title": "Rollbacks"
+      },
+      "projects/shut-down": {
+        "title": "Shut Down"
+      },
+      "examples/static-website/tutorial": {
+        "title": "Static Websites"
+      },
       "release-notes": {
         "title": "Release Notes"
       }
@@ -253,7 +260,7 @@
     "categories": {
       "Introduction": "Introduction",
       "KintoBlocks": "KintoBlocks",
-      "Deployments": "Deployments",
+      "Projects": "Projects",
       "Features": "Features",
       "Plans & Billing": "Plans & Billing",
       "Tutorials": "Tutorials",
