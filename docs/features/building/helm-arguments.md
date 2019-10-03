@@ -4,9 +4,9 @@ title: Helm Arguments
 
 ## What are Helm Arguments?
 
-**Helm Arguments** are used to reconfigure the default configurations in **Helm Charts**. They are similar to environment variables. Each **branch** of a Custom Service KintoBlock will have their own Helm Arguments. It is also posisble to add multiple Helm Arguments to a Custom Service KintoBlock.
+**Helm Arguments** are used to reconfigure the default configurations in **Helm Charts**. They will be used during the deployment. All the **branches** of a Custom Service KintoBlock will have a common Helm Arguments. It is also possible to add multiple Helm Arguments to a Custom Service KintoBlock.
 
-The Helm Arguments value can be added on the **KintoBlock Manage** page or via **Configure Dependencies** button in Deployment Manage Page. It is recommended to assign a `Value` for each Helm Argument that is added to the Custom Service KintoBlock. 
+The Helm Arguments value can be added on the **KintoBlock Manage** page or via **Configure Dependencies** button in Deployment Manage Page. It is not recommended to assign a `Value` for each Helm Argument that is added to the Custom Service KintoBlock, If any changes are required in the helm chart then we can assign a `Value` or else we can leave it empty.
 
 
 ## How to define Helm Arguments in a Custom Service KintoBlock?
@@ -15,7 +15,7 @@ The Helm Arguments can be added to a Custom Service KintoBlock via the **KintoBl
 
 1. Open a **Custom Service** KintoBlock.
 
-2. Select the required branch in your KintoBlock.
+2. Click on Settings button displayed in sidebar to modify the Helm Arguments.
 
 3. Scroll down to the **Helm Arguments** section at the bottom of the form.
 
@@ -36,7 +36,7 @@ It is possible to edit and delete a Helm Argument in Custom Service KintoBlock a
 
 1. Open a **Custom Service** KintoBlock.
 
-2. Select the required branch in your KintoBlock.
+2. Click on Settings button displayed in sidebar to modify the Helm Arguments.
 
 3. Scroll down to the **Helm Arguments** section at the bottom of the form.
 
