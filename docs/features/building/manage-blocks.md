@@ -62,9 +62,9 @@ To edit hardware configuration for website, follow the steps mentioned below:
 
 ## Advanced Options for KintoBlock
 
-Advanced Options is used modify the KintoBlock with properties like `Protocol`, `Port`, `Build command`, `Start command` and `Doc` format are auto-filled based on the chosen language. These values are editable and can be changed if required.
+Advanced Options is used to modify the KintoBlock with properties like `Protocol`, `Port`, `Build command` and `Start command` format are auto-filled based on the chosen language. These values are editable and can be changed if required.
 
->Note: For **Microservice KintoBlock** properties like `Protocol`, `Port`, `Build command`, `Start command` and `Doc` are availabe. 
+>Note: For **Microservice KintoBlock** properties like `Protocol`, `Port`, `Build command` and `Start command` are availabe. 
 
 To edit Advanced Option, follow the steps mentioned below:
 
