@@ -72,7 +72,7 @@ To edit Advanced Option, follow the steps mentioned below:
 
 2. Scroll down to **Builds & Repository** section.
 
-3. Expand **Advanced Options** to view the `Protocol`, `Port`, `Build command`, `Start command`, and `Doc` fields.
+3. Expand **Advanced Options** to view the `Protocol`, `Port`, `Build command` and `Start command` fields.
 
     ![Advanced Options](/docs/assets/kintoBlock-advanced-option.png)
 
