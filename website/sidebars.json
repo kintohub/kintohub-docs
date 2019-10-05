@@ -78,6 +78,7 @@
     ],
     "Tutorials": [
       "examples/todo-list/tutorial",
+      "examples/static-website/tutorial",
       "examples/hasura/tutorial"
     ],
     "Notes & Experiments": [
