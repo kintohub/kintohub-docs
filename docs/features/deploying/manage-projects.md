@@ -25,6 +25,42 @@ To delete a KintoBlocks, navigate to the KintoBlock section.
 
    ![Screenshot](/docs/assets/delete-kb-deployments.png)
    
+## Deploy Project
+
+To publish the changes made to the KintoBlock, the user should run the deploy process. During deployment, the user can compare versions and view recent changes that occurred in the KintoBlock of the project.
+
+The Compare Version screen displays the following types of changes that occurred in the KintoBlock:
+
+1. Newly added KintoBlocks of the project.
+   
+   ![Newly added KintoBlocks](/docs/assets/add-kintoblock.png)
+  
+2. Changes or modifications made in KintoBlocks. For e.g. `Environment Variables` or `Port number` changes.
+   
+   ![Modify KintoBlock](/docs/assets/modify-kintoblock.png)
+   
+3. KintoBlocks deleted from the Project.
+   
+   ![Delete KintoBlock](/docs/assets/delete-kintoblock.png)
+   
+4. Configuration changes in KintoBlock. For e.g. `Security` or `Hardware Configuration` changes.
+   
+   ![Configuration of KintoBlock](/docs/assets/configuration-kintoblock.png)
+   
+To view the changes related to the KintoBlock before deployment, follow the steps mentioned below:
+
+1. Open a **Project**.
+
+2. Add a KintoBlock in the Dependencies section.
+
+3. Click on **Deploy** button.
+
+   ![Click on Deploy button](/docs/assets/deploy-button.png)
+ 
+4. Now you will be able to notice that the changes made in **Compare Versions** screen.
+
+5. Click on the **Confirm Project** button.
+   
 ## Configure KintoBlocks
 
 KintoBlocks consists of **environment variables** which are used to set the configuration. Environment variable values can be edited and updated whenever it is required.
