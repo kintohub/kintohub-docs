@@ -90,6 +90,9 @@
         "title": "Multi-environment Hasura",
         "sidebar_label": "Multi-env Hasura"
       },
+      "examples/static-website/tutorial": {
+        "title": "Static Websites"
+      },
       "examples/todo-list/tutorial": {
         "title": "Todo List example app",
         "sidebar_label": "Todo List App"
@@ -200,6 +203,9 @@
         "title": "Custom Service KintoBlock",
         "sidebar_label": "Custom Services"
       },
+      "kintoblocks/helm-arguments": {
+        "title": "Helm Arguments"
+      },
       "kintoblocks/introduction": {
         "title": "Introducing KintoBlocks",
         "sidebar_label": "Introduction"
@@ -248,9 +254,6 @@
       },
       "projects/shut-down": {
         "title": "Shut Down"
-      },
-      "examples/static-website/tutorial": {
-        "title": "Static Websites"
       },
       "release-notes": {
         "title": "Release Notes"
