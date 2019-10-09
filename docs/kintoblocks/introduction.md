@@ -63,7 +63,7 @@ The [KintoHub workflow](introduction/kintohub-workflow.md) makes it easy to depl
 
 Every KintoBlock flavor has specific configuration options that you set when you create the KintoBlock. This could be build/run commands, ports, template files, etc.
 
-Once the KintoBlock is created, you can [configure default environment variables](deployments/configure-kintoblocks.md), and override those when deployed to a specific [environment](deployments/environments.md).
+Once the KintoBlock is created, you can [configure default environment variables](projects/configure-kintoblocks.md), and override those when deployed to a specific [environment](projects/environments.md).
 
 ### Internal network
 

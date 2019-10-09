@@ -53,13 +53,13 @@ To set an API endpoint as public, follow the steps mentioned below:
 
 4. Click on the **Configure KintoBlocks** button.
 
-5. Enable the toggle displayed for **Is this API open to internet**.
+5. Enable the toggle displayed for **Public API & Webhook Access**.
 
     ![Screenshot](/docs/assets/Public_API.png)
 
 6. Click on the **Save Changes** button.
 
-    >Note: After enabling the toggle for **Is this API open to internet** please make sure to redeploy the Project for applying the changes made.
+    >Note: After enabling the toggle for **Public API & Webhook Access** please make sure to redeploy the Project for applying the changes made.
 
 To perform a public API call, follow the steps mentioned below:
 
