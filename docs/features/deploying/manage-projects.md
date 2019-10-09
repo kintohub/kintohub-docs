@@ -57,7 +57,7 @@ To view the changes related to the KintoBlock before deployment, follow the step
 
    ![Click on Deploy button](/docs/assets/deploy-button.png)
  
-4. Now you will be able to notice that the changes made in **Compare Versions** screen.
+4. Now you will be able to notice the changes made in **Compare Versions** screen.
 
 5. Click on the **Confirm Project** button.
    
