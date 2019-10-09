@@ -1,6 +1,62 @@
 ---
 title: Release Notes
 ---
+## Beta-0.2.0
+October 2019
+
+The team has been hard at work implementing a bunch of much needed improvements & bringing back features to the platform.
+
+Also we now have a discord. Come and join us: https://discord.gg/QMEUqa2
+
+**Accounts & admin**
+
+* No Changes
+
+**Kintoblocks**
+
+* Kintoblock deletion has been reintegrated into beta.
+* The ability to tag builds has been reintegrated.
+* The description for Kintoblocks are now optional.
+* Inputting information into the display name will autofill the internal name - Try it out!
+* High Availability is integrated for website kintoblock.
+* Rollback is available again.
+* First 10 repositories will be displayed now.
+
+**Logs**
+
+* No Changes
+
+**Projects**
+
+* Project Deletion has been reintegrated into beta.
+
+**General Updates**
+
+* Our discord has been added on the top bar and around the website. Stop by if you have any questions, or just want to say hello.
+* Choose your kintoblock page has been changed.
+* Dashboard button has been removed.
+* Deployments has been renamed to Projects
+* "Hello World" example kintoblock has been renamed to "Microservice Example"
+
+**Bug Fixes** 
+
+* Build command will properly update when language and version is changed.
+* Creating a KB should no longer give a 500 response.
+* When a block fails logs should properly display any errors.
+* Previous kintoblocks can now be undeployed.
+* Can now update the build folder for static website.
+* Projects will no longer fail when no subfolder is specified.
+* Logs now won't have a delay and don't require multiple refreshes.
+* Dependencies will no longer be visible after shutting down a project.
+* KintoBlock create tutorial steps has been fixed.
+* Deployment page will load properly on start of tutorial.
+* KintoBlock deletion will now only work if only the block name is entered.
+* Builds won't get stuck in a running state anymore.
+* Documentation links have been fixed and will direct to proper pages.
+* Builds will no longer fail with static websites.
+* Changing permission in workspaces has been fixed.
+* Solved the loading spinner not displaying upon creation of blocks & Projects.
+* Logging in with valid credentials in uppercase should no longer be an issue.
 
 ## Beta-0.1.0
 September 2019
@@ -25,7 +81,7 @@ September 2019
 
 * Upon deployment SSL will be done automatically from now on.
 
-**Deployments**
+**Projects**
 
 * New confirmation was added. Showing exactly what changes you're about to deploy before finalizing it.
 * Dependency settings will no longer take you to a new page. Now it will be in a popup on the side.
@@ -55,7 +111,7 @@ This release was mainly focused on squashing tons of bugs that have been botheri
 
 * No Changes
 
-**Deployments**
+**Projects**
 * Removed the extra kintoblocks list from the bottom of the manage page. Making it overall a lot less cluttered.
 * Moved the endpoints feature into the original kintoblock list.
  

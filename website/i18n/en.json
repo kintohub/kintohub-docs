@@ -86,6 +86,10 @@
       "_legacy/workspaces": {
         "title": "Workspaces"
       },
+      "examples/hasura/tutorial": {
+        "title": "Multi-environment Hasura",
+        "sidebar_label": "Multi-env Hasura"
+      },
       "examples/todo-list/tutorial": {
         "title": "Todo List example app",
         "sidebar_label": "Todo List App"
