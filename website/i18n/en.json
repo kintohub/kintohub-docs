@@ -90,6 +90,9 @@
         "title": "Multi-environment Hasura",
         "sidebar_label": "Multi-env Hasura"
       },
+      "examples/static-website/tutorial": {
+        "title": "Static Websites"
+      },
       "examples/todo-list/tutorial": {
         "title": "Todo List example app",
         "sidebar_label": "Todo List App"
@@ -106,8 +109,14 @@
       "features/building/branches-and-tags": {
         "title": "Branches & Tags"
       },
+      "features/building/build-arguments": {
+        "title": "Build Arguments"
+      },
       "features/building/continuous-integration": {
         "title": "Continuous Integration"
+      },
+      "features/building/helm-arguments": {
+        "title": "Helm Arguments"
       },
       "features/building/manage-blocks": {
         "title": "Manage KintoBlocks"
