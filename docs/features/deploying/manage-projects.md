@@ -63,43 +63,35 @@ To view the changes related to the KintoBlock before deployment, follow the step
    
 ## Configure KintoBlocks
 
-KintoBlocks consists of **environment variables** which are used to set the configuration. Environment variable values can be edited and updated whenever it is required.
+The Configuration pop-up screen consists of `Public API & Webhook Access`, `Highly Available`, `Environment Variables`, `Hardware Configuration` and `Security` fields that can be populated to customize the created KintoBlock. These values can be edited as and when it is required.
 
 To configure the dependencies, follow the steps mentioned below:
 
 1. Open a **Project**.
 
-2. Under KintoBlocks section, click on **Configure KintoBlocks** button.
+2. Under the KintoBlock section, click on **Configure KintoBlock** corresponding to the KintoBlock that needs to be modified.
 
-3. The list of KintoBlocks in the environment will be displayed on the left pane of the **Edit Dependencies** page.
+   ![Configure KintoBlock](/docs/assets/configure-kintoblock.png)
 
-4. **Environment variables** of the KintoBlocks are displayed on the right pane of the page.
+3. Enter a new value or modify existing values as necessary in **Configure KintoBlock** pop-up screen.
 
-5. Select the KintoBlock for which environment variable value needs to be updated.
+4. Click on **Done Configuring** button to apply the changes.
 
-6. Enter the new value for the environment variable.
-
-7. Click on the **Save Changes** button to apply the changes.
-
-   ![Screenshot](/docs/assets/edit-dependencies-page.png)
-
-    > Note: Only **environment variable values** can be edited in Edit Dependencies page.
+   ![Done Configuring](/docs/assets/done-configuring.png)
 
 
 ## Project Deletion
 
 To delete a Project, follow the steps mentioned below:
 
-1. Click on **Projects** displayed on left navigation bar.
+1. Click on **Project** displayed in the left navigation bar.
 
-2. You will be navigated **Projects List** page.
+2. Once the **Project List** page is displayed, click on the **Ellipsis icon** of any Project.
 
-3. Click on the **Ellipsis icon** of any Project.
+3. Click on the **Delete Project** option.
 
-4. Click on **Delete Project** option.
+4. Enter **Project name** in the confirmation field to warrant your decision.
 
-5. Enter **DELETE** in the confirm field to confirm your decision.
+5. Click on the **Delete Project** button.
 
-6. Click on **Delete Project** button.
-
-    ![Screenshot](/docs/assets/delete-deployments.png)
+    ![Delete Project](/docs/assets/delete-projects.png)
