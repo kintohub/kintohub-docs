@@ -39,4 +39,4 @@ To assign a role for user follow the steps mentioned below:
 
    ![Screenshot](/docs/assets/member-role.png)
 
-    >Note: The users added to a workspace can be assigned roles as Admin or Member. Once a user is set as **Admin**, the role cannot be reversed.
+    >Note: The users added to a workspace can be assigned roles as Admin or Member. Once a user is set as **Admin**, the role can be reversed.
