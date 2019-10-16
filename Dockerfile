@@ -5,7 +5,7 @@ COPY ./website /app
 COPY ./docs /docs
 
 RUN npm install
-RUN npm rebuild node-sass
+RUN npm run build
 
 ENTRYPOINT ["npm", "start"]
 
