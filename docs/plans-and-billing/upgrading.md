@@ -51,4 +51,4 @@ Once the payment is processed, you will immediately see the upgraded plan.
 
 ![Pro plan showing customizations](/docs/assets/plans-and-billing/upgraded-plan.png)
 
-The Pro plan comes with an increased base amount of 2048MB memory, and allows you to set a _Budget Setting_ for scaling when you have extra memory and storage needs. Refer to the [Billing](billing.md) documentation for more guidance.
+The Pro plan comes with an increased base amount of 2048 MB memory, and allows you to set a _Budget Setting_ for scaling when you have extra memory and storage needs. Refer to the [Billing](billing.md) documentation for more guidance.
