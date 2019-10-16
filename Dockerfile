@@ -1,4 +1,4 @@
-FROM node:8.11.4-alpine as BUILD
+FROM node:8.11.4 as BUILD
 
 WORKDIR /app
 COPY ./website /app
@@ -7,7 +7,7 @@ COPY ./docs /docs
 RUN npm install
 RUN npm rebuild node-sass
 
-FROM node:8.11.4-alpine
+FROM node:8.11.4
 
 WORKDIR /app
 
