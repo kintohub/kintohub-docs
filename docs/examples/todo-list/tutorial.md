@@ -61,7 +61,7 @@ Finally,
 
 ### Configure the KintoBlock
 
-Scroll down to the *__Helm Arguments__* section. Here we can fill out key-value pairs to set variables in the template of the Helm chart.
+Click on the __Settings__ button and scroll down to the *__Helm Arguments__* section. Here we can fill out key-value pairs to set variables in the template of the Helm chart.
 
 According to the [documentation of the Helm chart](https://github.com/helm/charts/tree/master/stable/mongodb-replicaset), it is possible to state the size of the storage volume for the data, and and other options. By default it asks for a 8 GB storage volume. For our small example app, we can make do with a much smaller volume, thus it can be set to 1 GB instead.
 
@@ -160,7 +160,7 @@ Now all is ready,
 
 When the backend service starts, it expects to connect to a MongoDB database. This is done with a connection string, which needs to be set as an environment variable, so that the service can load it during startup.
 
-Scroll down to the *__Environment Variables__* section, and set the following variable:
+Click on the __Settings__ button and scroll down to the *__Environment Variables__* section, and set the following variable:
 
  - enter __Variable__ `MONGODB_CONNECTION_STRING` with __Value__ `mongodb://cs-mongodb-mongodb-replicaset-0.cs-mongodb-mongodb-replicaset,cs-mongodb-mongodb-replicaset-1.cs-mongodb-mongodb-replicaset,cs-mongodb-mongodb-replicaset-2.cs-mongodb-mongodb-replicaset/todolist?replicaSet=rs0`, and
  - then press the __plus (+)__ button to confirm the pair.
@@ -237,10 +237,11 @@ Since the API has been documented with ApiDoc, its generated documentation can b
 Because the frontend will need to call this backend API, it needs to be exposed to the internet. By default all microservices KintoBlocks are only accessible over the private network.
 
 To expose the _Todo List API_ KintoBlock to the internet:
- - use the __gear icon__ on the _Todo List API_ KintoBlock to open the settings page.
- - Toggle __Is this API open to internet__ to `on`, and
- - __Save Changes__.
- - Use the __todolist__ link in the top navigation bar to return to the project.
+ - Use the __gear icon__ on the _Todo List API_ KintoBlock to open the settings popup.
+ - Toggle __Public API & Webhook Access__ to `On`, and
+ - Click on __Done Configuring__ button to apply the changes.
+ - Settings popup will close.
+ - Click on __Deploy__ button to see the changes.
 
 ![Todo List API KintoBlock with a gear icon in the bottom right corner](/docs/assets/examples/todo-list/deployment-todo-list-api-kintoblock.png)
 
@@ -309,7 +310,7 @@ Now all is ready,
 
 When the frontend web app is being built, it expects a URL to the backend API set in the `REACT_APP_API_BASE_URL` environment variable, since the URL is baked into the static website.
 
-Scroll down to the *__Environment Variables__* section, and
+Click on the __Settings__ button and scroll down to the *__Environment Variables__* section, and
 
  - enter __Variable__ `REACT_APP_API_BASE_URL` with as __Value__ the public URL of the __Todo List API__ KintoBlock as noted in a previous step. (e.g. `https://public.api.kintohub.com/61772163d72143719aebacaa4bb29985/todolist-api`), and
  - then press the __plus (+)__ button to confirm the pair.
