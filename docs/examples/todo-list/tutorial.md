@@ -239,7 +239,7 @@ Because the frontend will need to call this backend API, it needs to be exposed 
 To expose the _Todo List API_ KintoBlock to the internet:
  - Use the __gear icon__ on the _Todo List API_ KintoBlock to open the settings popup.
  - Toggle __Public API & Webhook Access__ to `On`, and
- - Click on __Done Configuring__ button to apply the changes.
+ - Click on the __Done Configuring__ button to apply the changes.
  - Settings popup will close.
  - Click on __Deploy__ button to see the changes.
 
