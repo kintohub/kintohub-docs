@@ -3,7 +3,7 @@ title: Todo List example app
 sidebar_label: Todo List App
 ---
 
-![Todo List app with input box](assets/examples/todo-list/todos.png)
+![Todo List app with input box](/docs/assets/examples/todo-list/todos.png)
 
 ## Quick-start tutorial
 
@@ -41,7 +41,7 @@ On KintoHub:
  - select __Create New KintoBlock__, and
  - then select the __Custom Service__ flavor.
 
-![3 choices of KintoBlocks: Microservice, Website, or Custom Service](assets/examples/todo-list/kintoblock-select-flavor.png)
+![3 choices of KintoBlocks: Microservice, Website, or Custom Service](/docs/assets/examples/todo-list/kintoblock-select-flavor.png)
 
 For your new KintoBlock, fill out:
  - a __KintoBlock name__ (e.g. `mongodb`),
@@ -61,7 +61,7 @@ Finally,
 
 ### Configure the KintoBlock
 
-Scroll down to the *__Helm Arguments__* section. Here we can fill out key-value pairs to set variables in the template of the Helm chart.
+Click on the __Settings__ button and scroll down to the *__Helm Arguments__* section. Here we can fill out key-value pairs to set variables in the template of the Helm chart.
 
 According to the [documentation of the Helm chart](https://github.com/helm/charts/tree/master/stable/mongodb-replicaset), it is possible to state the size of the storage volume for the data, and and other options. By default it asks for a 8 GB storage volume. For our small example app, we can make do with a much smaller volume, thus it can be set to 1 GB instead.
 
@@ -91,11 +91,11 @@ Now that the arguments are configured, we can build the KintoBlock with these ar
 Scroll up to the *__Builds & Repository__* section and
  - press __Build Latest Commit__.
 
-![Build Latest Commit button in the Builds & Repository section, with no builds completed yet](assets/examples/todo-list/kintoblock-no-builds.png)
+![Build Latest Commit button in the Builds & Repository section, with no builds completed yet](/docs/assets/examples/todo-list/kintoblock-no-builds.png)
 
 Wait for the build to complete, the result should look like this:
 
-![A chain of build steps with a success indicator.](assets/examples/todo-list/kintoblock-helm-chart-built.png)
+![A chain of build steps with a success indicator.](/docs/assets/examples/todo-list/kintoblock-helm-chart-built.png)
 
 ### Add to Project
 
@@ -112,7 +112,7 @@ Notice that in the *__Create New Project__* page the KintoBlock has already been
 
 You'll be navigated to the *__Project__* page and can see the progress of the project. Once complete, it should look like this:
 
-![Status and History section showing a 100% Complete project.](assets/examples/todo-list/deployment-successful.png)
+![Status and History section showing a 100% Complete project.](/docs/assets/examples/todo-list/deployment-successful.png)
 
 ## Setup the Backend API
 
@@ -160,7 +160,7 @@ Now all is ready,
 
 When the backend service starts, it expects to connect to a MongoDB database. This is done with a connection string, which needs to be set as an environment variable, so that the service can load it during startup.
 
-Scroll down to the *__Environment Variables__* section, and set the following variable:
+Click on the __Settings__ button and scroll down to the *__Environment Variables__* section, and set the following variable:
 
  - enter __Variable__ `MONGODB_CONNECTION_STRING` with __Value__ `mongodb://cs-mongodb-mongodb-replicaset-0.cs-mongodb-mongodb-replicaset,cs-mongodb-mongodb-replicaset-1.cs-mongodb-mongodb-replicaset,cs-mongodb-mongodb-replicaset-2.cs-mongodb-mongodb-replicaset/todolist?replicaSet=rs0`, and
  - then press the __plus (+)__ button to confirm the pair.
@@ -191,7 +191,7 @@ Scroll down to the *__Environment Variables__* section, and set the following va
 
 After filling in the environment variables, it should look like this:
 
-![Environment Variables section with the Variable and Value fields set](assets/examples/todo-list/kintoblock-api-env-vars.png)
+![Environment Variables section with the Variable and Value fields set](/docs/assets/examples/todo-list/kintoblock-api-env-vars.png)
 
 Finally,
  - press the __Save Changes__ button to store the environment variables.
@@ -206,7 +206,7 @@ Scroll up to the *__Builds & Repository__* section,
 
 During the build it will generate the API documentation (ApiDoc); it is shown as the _Generate Doc_ step during the build.
 
-![Build output with 4 steps: Git Init, Generate Doc, Building, and Success](assets/examples/todo-list/kintoblock-api-built.png)
+![Build output with 4 steps: Git Init, Generate Doc, Building, and Success](/docs/assets/examples/todo-list/kintoblock-api-built.png)
 
 Now the build is ready, the Todo List API KintoBlock can be added to our existing project:
  - press the __Add to Project__ button,
@@ -214,37 +214,38 @@ Now the build is ready, the Todo List API KintoBlock can be added to our existin
 
 You will be redirected to the __Project__ page, where the _Todo List API_ KintoBlock has been added to the list of KintoBlocks.
 
-![Listing of MongoDB and Todo List API KintoBlocks](assets/examples/todo-list/deployment-mongodb-and-api-kintoblocks.png)
+![Listing of MongoDB and Todo List API KintoBlocks](/docs/assets/examples/todo-list/deployment-mongodb-and-api-kintoblocks.png)
 
 Proceed to deploy the added KintoBlock by
  - pressing the __Deploy__ button.
 
 When you press __Expand Project History__ you can see the new project in progress:
 
-![Project #2 in progress](assets/examples/todo-list/deployment-2-in-progress.png)
+![Project #2 in progress](/docs/assets/examples/todo-list/deployment-2-in-progress.png)
 
 And when the project completes, all project steps are listed out:
 
-![Project #2 complete, with succesful Project, Route and Results steps](assets/examples/todo-list/deployment-2-complete.png)
+![Project #2 complete, with succesful Project, Route and Results steps](/docs/assets/examples/todo-list/deployment-2-complete.png)
 
 Since the API has been documented with ApiDoc, its generated documentation can be viewed when you
  - press __View Endpoints__ on the _Todo List API_ KintoBlock.
 
-![Endpoint Documentation page with 6 REST endpoints listed out, and for the first selected endpoint the parameter information is displayed](assets/examples/todo-list/api-docs.png)
+![Endpoint Documentation page with 6 REST endpoints listed out, and for the first selected endpoint the parameter information is displayed](/docs/assets/examples/todo-list/api-docs.png)
 
 ### Expose the Todo List API microservice to the internet
 
 Because the frontend will need to call this backend API, it needs to be exposed to the internet. By default all microservices KintoBlocks are only accessible over the private network.
 
 To expose the _Todo List API_ KintoBlock to the internet:
- - use the __gear icon__ on the _Todo List API_ KintoBlock to open the settings page.
- - Toggle __Is this API open to internet__ to `on`, and
- - __Save Changes__.
- - Use the __todolist__ link in the top navigation bar to return to the project.
+ - Use the __gear icon__ on the _Todo List API_ KintoBlock to open the settings popup.
+ - Toggle __Public API & Webhook Access__ to `On`, and
+ - Click on the __Done Configuring__ button to apply the changes.
+ - Settings popup will close.
+ - Click on __Deploy__ button to see the changes.
 
-![Todo List API KintoBlock with a gear icon in the bottom right corner](assets/examples/todo-list/deployment-todo-list-api-kintoblock.png)
+![Todo List API KintoBlock with a gear icon in the bottom right corner](/docs/assets/examples/todo-list/deployment-todo-list-api-kintoblock.png)
 
-![Settings page for the KintoBlock with 'Is this API open to internet' toggled on](assets/examples/todo-list/settings-todo-list-api.png)
+![Settings page for the KintoBlock with 'Is this API open to internet' toggled on](/docs/assets/examples/todo-list/settings-todo-list-api.png)
 
 ### Accessing the API from the internet
 
@@ -284,7 +285,7 @@ Return to the main menu by
 Since the frontend is a SPA web app that needs to be exposed to the internet by default,
  - select the __Website__ flavor this time.
 
-![3 choices of KintoBlocks: Microservice, Website, or Custom Service](assets/examples/todo-list/kintoblock-select-flavor.png)
+![3 choices of KintoBlocks: Microservice, Website, or Custom Service](/docs/assets/examples/todo-list/kintoblock-select-flavor.png)
 
 For the frontend KintoBlock, fill out:
  - a __KintoBlock name__ (e.g. `todolist-spa`),
@@ -309,7 +310,7 @@ Now all is ready,
 
 When the frontend web app is being built, it expects a URL to the backend API set in the `REACT_APP_API_BASE_URL` environment variable, since the URL is baked into the static website.
 
-Scroll down to the *__Environment Variables__* section, and
+Click on the __Settings__ button and scroll down to the *__Environment Variables__* section, and
 
  - enter __Variable__ `REACT_APP_API_BASE_URL` with as __Value__ the public URL of the __Todo List API__ KintoBlock as noted in a previous step. (e.g. `https://public.api.kintohub.com/61772163d72143719aebacaa4bb29985/todolist-api`), and
  - then press the __plus (+)__ button to confirm the pair.
@@ -331,14 +332,14 @@ Now the build is ready, the Todo List API KintoBlock can be added to our existin
 
 You will be redirected to the __Project__ page, where the _Todo List SPA_ KintoBlock has been added to the list of KintoBlocks.
 
-![Listing of MongoDB, Todo List API, and Todo List SPA KintoBlocks](assets/examples/todo-list/deployment-all-kintoblocks.png)
+![Listing of MongoDB, Todo List API, and Todo List SPA KintoBlocks](/docs/assets/examples/todo-list/deployment-all-kintoblocks.png)
 
 Proceed to deploy the added KintoBlock by
  - pressing the __Deploy__ button.
 
 When the project completes, all project steps are listed out, including the external routing setup steps:
 
-![Project #3 complete, with succesful Project, External Routing, Route, Undeploy and Results steps](assets/examples/todo-list/deployment-3-complete.png)
+![Project #3 complete, with succesful Project, External Routing, Route, Undeploy and Results steps](/docs/assets/examples/todo-list/deployment-3-complete.png)
 
 ## Visit the Todo List app
 
