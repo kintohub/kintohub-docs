@@ -110,7 +110,7 @@ A mongo database spread over a cluster of 3 replica sets, storing the todos.</li
 <li>press the <strong>Create New KintoBlock</strong> button.</li>
 </ul>
 <h3><a class="anchor" aria-hidden="true" id="configure-the-kintoblock"></a><a href="#configure-the-kintoblock" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure the KintoBlock</h3>
-<p>Scroll down to the <em><strong>Helm Arguments</strong></em> section. Here we can fill out key-value pairs to set variables in the template of the Helm chart.</p>
+<p>Click on the <strong>Settings</strong> button and scroll down to the <em><strong>Helm Arguments</strong></em> section. Here we can fill out key-value pairs to set variables in the template of the Helm chart.</p>
 <p>According to the <a href="https://github.com/helm/charts/tree/master/stable/mongodb-replicaset">documentation of the Helm chart</a>, it is possible to state the size of the storage volume for the data, and and other options. By default it asks for a 8 GB storage volume. For our small example app, we can make do with a much smaller volume, thus it can be set to 1 GB instead.</p>
 <ul>
 <li>Enter for <strong>Argument</strong> <code>persistentVolume.size</code> the <strong>Value</strong> <code>1Gi</code>, and</li>
@@ -201,7 +201,7 @@ A mongo database spread over a cluster of 3 replica sets, storing the todos.</li
 </ul>
 <h3><a class="anchor" aria-hidden="true" id="configure-the-kintoblock-1"></a><a href="#configure-the-kintoblock-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure the KintoBlock</h3>
 <p>When the backend service starts, it expects to connect to a MongoDB database. This is done with a connection string, which needs to be set as an environment variable, so that the service can load it during startup.</p>
-<p>Scroll down to the <em><strong>Environment Variables</strong></em> section, and set the following variable:</p>
+<p>Click on the <strong>Settings</strong> button and scroll down to the <em><strong>Environment Variables</strong></em> section, and set the following variable:</p>
 <ul>
 <li>enter <strong>Variable</strong> <code>MONGODB_CONNECTION_STRING</code> with <strong>Value</strong> <code>mongodb://cs-mongodb-mongodb-replicaset-0.cs-mongodb-mongodb-replicaset,cs-mongodb-mongodb-replicaset-1.cs-mongodb-mongodb-replicaset,cs-mongodb-mongodb-replicaset-2.cs-mongodb-mongodb-replicaset/todolist?replicaSet=rs0</code>, and</li>
 <li>then press the <strong>plus (+)</strong> button to confirm the pair.</li>
@@ -266,10 +266,11 @@ The replica set is named as follows:</p>
 <p>Because the frontend will need to call this backend API, it needs to be exposed to the internet. By default all microservices KintoBlocks are only accessible over the private network.</p>
 <p>To expose the <em>Todo List API</em> KintoBlock to the internet:</p>
 <ul>
-<li>use the <strong>gear icon</strong> on the <em>Todo List API</em> KintoBlock to open the settings page.</li>
-<li>Toggle <strong>Is this API open to internet</strong> to <code>on</code>, and</li>
-<li><strong>Save Changes</strong>.</li>
-<li>Use the <strong>todolist</strong> link in the top navigation bar to return to the project.</li>
+<li>Use the <strong>gear icon</strong> on the <em>Todo List API</em> KintoBlock to open the settings popup.</li>
+<li>Toggle <strong>Public API &amp; Webhook Access</strong> to <code>On</code>, and</li>
+<li>Click on the <strong>Done Configuring</strong> button to apply the changes.</li>
+<li>Settings popup will close.</li>
+<li>Click on <strong>Deploy</strong> button to see the changes.</li>
 </ul>
 <p><img src="/docs/assets/examples/todo-list/deployment-todo-list-api-kintoblock.png" alt="Todo List API KintoBlock with a gear icon in the bottom right corner"></p>
 <p><img src="/docs/assets/examples/todo-list/settings-todo-list-api.png" alt="Settings page for the KintoBlock with 'Is this API open to internet' toggled on"></p>
@@ -330,7 +331,7 @@ Remember though, your Client ID will be different.</p>
 </ul>
 <h3><a class="anchor" aria-hidden="true" id="configure-the-kintoblock-2"></a><a href="#configure-the-kintoblock-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure the KintoBlock</h3>
 <p>When the frontend web app is being built, it expects a URL to the backend API set in the <code>REACT_APP_API_BASE_URL</code> environment variable, since the URL is baked into the static website.</p>
-<p>Scroll down to the <em><strong>Environment Variables</strong></em> section, and</p>
+<p>Click on the <strong>Settings</strong> button and scroll down to the <em><strong>Environment Variables</strong></em> section, and</p>
 <ul>
 <li>enter <strong>Variable</strong> <code>REACT_APP_API_BASE_URL</code> with as <strong>Value</strong> the public URL of the <strong>Todo List API</strong> KintoBlock as noted in a previous step. (e.g. <code>https://public.api.kintohub.com/61772163d72143719aebacaa4bb29985/todolist-api</code>), and</li>
 <li>then press the <strong>plus (+)</strong> button to confirm the pair.</li>
