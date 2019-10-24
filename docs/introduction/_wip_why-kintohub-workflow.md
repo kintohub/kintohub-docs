@@ -25,4 +25,4 @@ There has been a growing list of cloud-native technologies in the last few years
 ![Cloud Native Computing Foundation's cloud-native landscape, with hundreds of logos of projects divided into
 groups](assets/introduction/getting-started/cloud-native-landscape.png)
 
-We really like the innovation that has happened in this space, and would love to bring this to the masses.
+We really like the innovation that has happened in this space, and would love to bring the power of cloud native into the hands of developers.  Unfortunately today, cloud native methodologies require large teams to put together a platform of tools to help support the iterations of rapidly deploying updates at massive scale.

@@ -2,16 +2,24 @@
 title: Getting Started with KintoHub
 sidebar_label: Getting Started
 ---
+<video autoplay loop muted width="100%">
+    <source src="/docs/assets/introduction/workflow-intro.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+<br>
 
 KintoHub is a __cloud-native workflow__ which manages your entire application’s lifecycle from source to production.
 
-Get started in seconds and __build__, __combine__, __deploy__ and __manage__ APIs, microservices, databases, tasks and more in clicks versus weeks.
+Get started in seconds and __build__, __combine__, __deploy__ and __operate__ APIs, microservices, websites, databases, cron jobs and more in clicks versus weeks.
 
-Explore all features on the [KintoHub website](https://www.kintohub.com).
-
+Most importantly, KintoHub is **not** a framework. Your existing applications can work with KintoHub, be it a microservice or monolithic application, you can instantly port your existing services to KintoHub which optimises your cloud costs and boosts developer productivity with powerful debugging tools and a next-generation cloud-native workflow.
 ## Try an example app
 
-Quickly see KintoHub in action by _trying out a project_ with one of our _example app templates_ in your favorite language of choice:
+Checkout __example code__ in your favorite language, follow a full example __step by step guide__ guide or watch our videos on our [youtube channel](https://www.youtube.com/channel/UCpJJc0zcfzdHPw64BSP3GyQ/featured).
+
+### Example code
 
 <!-- Icons from: https://konpa.github.io/devicon/ -->
 
@@ -184,8 +192,15 @@ Go</span>](introduction/try-deploying/go-app.md)
 Elixir</span>](introduction/try-deploying/elixir-app.md)
 
 <div style="clear: both"></div>
+<br>
 
-## The KintoHub Workflow
+### Full step-by-step guides
+
+* Fullstack Backend, Frontend and Database [Todolist App](examples/todo-list/tutorial.md)
+* Production grade dev & production [Hasura Graphql Engine](examples/hasura/tutorial.md)
+* Compile and build and output [Angular Static Website](examples/static-website/tutorial.md)
+
+## Dive Deeper into KintoHub
 
 KintoHub makes it easy to deploy cloud-native applications by _simplifying the workflow from source to production_. It's a quick 4-step process:
 
@@ -196,10 +211,4 @@ KintoHub makes it easy to deploy cloud-native applications by _simplifying the w
 
 ![The KintoHub workflow; build KintoBlocks, add to Projects, deploy and call APIs](assets/introduction/getting-started/kintohub-workflow.svg)
 
-The KintoHub workflow in action:
-
-<video autoplay loop muted width="100%">
-    <source src="/docs/assets/introduction/workflow-intro.mp4"
-            type="video/mp4">
-    Sorry, your browser doesn't support embedded videos.
-</video>
+To understand in depth on how the KintoHub workflow works, click on __"The KintoHub Workflow"__ at the bottom right of the screen
