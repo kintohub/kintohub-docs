@@ -19,7 +19,7 @@ Your Project is made of blocks that are deployed in a serverless way, meaning it
 
    ![Screenshot](/docs/assets/project_create_options.png)
 
-3. In the **Basic Info** form, specify details on `name`, `description`, and `environment` name.
+3. In the **Basic Info** form, specify details on `Project name`, `Internal name`, `Description`, and `Environment` name.
 
    ![Screenshot](/docs/assets/basic-info-project.png)
 
