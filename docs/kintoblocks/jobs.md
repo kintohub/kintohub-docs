@@ -27,7 +27,7 @@ sidebar_label: Job
 
    ![Create Job](/docs/assets/create-job.png)
 
-## CRON Job or Configuration of Job
+## Configure a Job
 
 Jobs created in KintoHub can be configured as `Run Once` or `Repeat Schedule`.
 
@@ -37,7 +37,7 @@ The **Run Once** option can be configured in two ways:
 
 2. **Post-Deployment**: This Job will be run after the project deployed is completed.
 
-Pre-Deployment and Post-deployment jobs can be used in cases where a specific set of commands needs to be executed. For e.g. Running a package.json file for hosting a website.
+Pre-Deployment and Post-deployment jobs can be used in cases where a specific set of commands needs to be executed. For e.g. Running a database migration or sending a slack message.
 
 The **Repeat Scheduling** option is used in cases where the job is required to run often or repeatedly. This job option can be used in creating a daily back-up of databases or in test execution of an application on a daily basis.
 
