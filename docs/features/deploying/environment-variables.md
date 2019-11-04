@@ -13,9 +13,9 @@ It is recommended to add **Environment value** while a variable is created. The 
 
 The Environment variables can be added to a KintoBlock on the **KintoBlock Manage** page by following the steps mentioned below:
 
-1. Open the KintoBlock.
+1. Open the **KintoBlock**.
 
-2. Select the required branch in your repository.
+2. Click on **Settings** button displayed in sidebar to modify the Environment Variable.
 
 3. Scroll down to the **Environment Variable** section at the bottom of the form.
 
@@ -26,13 +26,15 @@ The Environment variables can be added to a KintoBlock on the **KintoBlock Manag
 5. Click on the **+** button.
 
 6. By default, each variable added will be regarded as an optional variable. If you would like to mandate the use of any specific variable, enable the **This is a required value option**.
+
+7. Click on **Save Changes** button.
  
 
 ## Manage Environment Variables
 
 It is possible to edit and delete an Environment variable in KintoBlock at any required point. The edit and delete operations are also carried out in the **KintoBlocks Manage** page:
 
-1. Open the KintoBlock.
+1. Open the **KintoBlock**.
 
 2. Select the required branch in your repository.
 
