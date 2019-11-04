@@ -5,23 +5,35 @@ sidebar_label: Websites
 
 ## Creating a Website
 
-1. If you are creating a Website, select the corresponding option in the type of KintoBlocks.
+1. Select **KintoBlock** from the sidebar.
 
-2. Fill in the `KintoBlock name`, `Internal name` and `Description` in the **Basic Info form**.
+2. Click on the **Create New KintoBlock** card.
 
-   ![Screenshot](/docs/assets/kb-website-basic-info.png)
+3. Select the **Website KintoBlock** flavor.
 
-3. Select the **Website Type** in the drop-down. We support both **Static Website** and **Dynamic Web Applications**. 
+4. Fill the **Choose Repository** form by specifying the details pertaining to the linked repo.
 
-   ![Screenshot](/docs/assets/website-options.png)
+   ![Website-Choose-Repository](/docs/assets/website-choose-repository.png)
 
-4. Proceed to the **Advanced Options** form to specify  `Port`, `Build command` and `Run command` details.
+5. Click on the **Continue** button. 
 
-5. The final step requires you to provide the repo source details in the **Repository form**. The repository can either be an existing source or a newly created one.
+6. Next, specify the details on `Name` and  `Internal Name`.
 
-6. In the Repository form, make sure to specify the git repository service used by your Organization. KintoBlocks supports GitHub and Bitbucket services.
+7. Select the **Website** in `Choose a Type`.
 
-7. Click on the **Create New KintoBlock** button.
+8. If **Static** type is selected in `Choose a Type` then, click on **Create Website** button to successfully create a KintoBlock.
+
+   ![Static Website](/docs/assets/website-static.png)
+
+9. In the case of **Static from Build** type, specify the `Language`, `Version`, `Build Command` and `Build Output Folder`.
+
+   ![Static Website from build](/docs/assets/static-from-build.png)
+
+10. In the case of **Dynamic Web App** type, specify the `Language`, `Version`, `Build Command`, `Start Command` and `Port`.
+   
+      ![Dynamic Web App](/docs/assets/dynamic-web-app.png)
+
+11. Click on the **Create Website** button to successfully create a KintoBlock.
 
 ## Settings for Website
 
