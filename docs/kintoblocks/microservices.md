@@ -5,26 +5,22 @@ sidebar_label: Microservices
 
 ## Creating a Microservice
 
-1. If you have selected Microservices as the KintoBlock type, start-off by filling the **Basic Info form**.
+1. Select **KintoBlock** from the sidebar.
 
-2. In Basic Info form, specify details on `KintoBlock name`, `Internal name` , `Description`, `Programming Language` and `Version` you would like to use.
+2. Click on the **Create New KintoBlock** card.
 
-   ![Screenshot](/docs/assets/kb-basic-info-section.png)
+3. Select the **Microservice KintoBlock** flavor.
 
-3. Next, specify the details pertaining to your repo sources in the **Repository form**.
+4. Fill the **Choose Repository** form by specifying the details pertaining to the linked repo.
 
-   > Note: You can create a **new repository** or specify an **existing repository**.
+   ![Microservice Choose Repository](/docs/assets/microservice-choose-repository.png)   
 
-4. Enable the **Prepopulate repository switch** if you wish to import an example project to your repository. The example project will vary depending on the selected language.
+5. Click on the **Continue** button.
 
-5. Select your git repo service. **GitHub** and **Bitbucket** services are currently supported by KintoBlocks.
+6. Next, specify the details on `Name`, `Internal Name`, `Language`, `Version`, `Build Command`, `Start Command` and `Port`.
 
-6. The other properties `Protocol`, `Port`, `Build command`, `Run command` and `DOC format` are auto-filled based on the chosen language. These values are editable and can be changed if required.
+   ![Create a Microservice](/docs/assets/create-microservice.png)
 
-   ![Screenshot](/docs/assets/advanced-options.png)
+7. Click on the **Create Microservice** button to successfully create a KintoBlock.
 
-   > API documentation for a KintoBlock is created when the **ApiDoc** option is selected in the **DOC format** dropdown. In case, documentation is not required, select the option **None** in the same dropdown. It is important to note that the build can fail if ApiDoc is not enabled.
-   
-7. Click on the **Create New KintoBlock** button to successfully create your KintoBlock for microservices.
-
-   > Note: When the KintoBlock is created, the real-time status of the builds can be viewed by expanding the build row. The **Open Log** button in the build row displays the events corresponding to each build. Logs are especially useful in identifying root causes when a build failure occurs.
+> Note: When the KintoBlock is created, the real-time status of the builds can be viewed by expanding the build row. The Open Log button in the build row displays the events corresponding to each build. Logs are especially useful in identifying root causes when a build failure occurs.
