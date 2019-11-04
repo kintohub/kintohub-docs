@@ -1,5 +1,5 @@
 ---
-title: Static Websites
+title: Serve Static Files
 ---
 
 ## Quick-start tutorial

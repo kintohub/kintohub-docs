@@ -78,10 +78,28 @@
       "plans-and-billing/upgrading",
       "plans-and-billing/billing"
     ],
-    "Tutorials": [
-      "examples/todo-list/tutorial",
-      "examples/static-website/tutorial",
-      "examples/hasura/tutorial"
+    "Quickstarts": [{
+      "type": "subcategory",
+      "label": "Websites",
+      "ids": [
+        "examples/ionic/tutorial",
+        "examples/static-website/tutorial"
+      ]
+    },
+      {
+        "type": "subcategory",
+        "label": "GraphQL",
+        "ids": [
+          "examples/hasura/tutorial"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Full-Stack",
+        "ids": [
+          "examples/todo-list/tutorial"
+        ]
+      }
     ],
     "Notes & Experiments": [
       "release-notes",

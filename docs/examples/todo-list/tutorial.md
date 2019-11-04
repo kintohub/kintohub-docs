@@ -1,6 +1,6 @@
 ---
 title: Todo List example app
-sidebar_label: Todo List App
+sidebar_label: Todo List
 ---
 
 ![Todo List app with input box](/docs/assets/examples/todo-list/todos.png)

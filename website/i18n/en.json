@@ -87,15 +87,19 @@
         "title": "Workspaces"
       },
       "examples/hasura/tutorial": {
-        "title": "Multi-environment Hasura",
-        "sidebar_label": "Multi-env Hasura"
+        "title": "Hasura",
+        "sidebar_label": "Hasura"
+      },
+      "examples/ionic/tutorial": {
+        "title": "Ionic Web Progressive App Example",
+        "sidebar_label": "Ionic WPA"
       },
       "examples/static-website/tutorial": {
-        "title": "Static Websites"
+        "title": "Serve Static Files"
       },
       "examples/todo-list/tutorial": {
         "title": "Todo List example app",
-        "sidebar_label": "Todo List App"
+        "sidebar_label": "Todo List"
       },
       "experimental/dockerfiles": {
         "title": "Dockerfile support"
@@ -266,7 +270,7 @@
       "Projects": "Projects",
       "Features": "Features",
       "Plans & Billing": "Plans & Billing",
-      "Tutorials": "Tutorials",
+      "Quickstarts": "Quickstarts",
       "Notes & Experiments": "Notes & Experiments"
     }
   },

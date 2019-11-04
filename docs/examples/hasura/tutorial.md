@@ -1,6 +1,6 @@
 ---
-title: Multi-environment Hasura
-sidebar_label: Multi-env Hasura
+title: Hasura
+sidebar_label: Hasura
 ---
 
 The [open-source project Hasura](https://hasura.io) makes it incredibly easy to setup a [GraphQL API](https://graphql.org) that has async processing patterns built-in.
