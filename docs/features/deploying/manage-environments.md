@@ -14,7 +14,7 @@ To delete an environment, follow the steps mentioned below:
 
 4. Click on **Delete Environment** button.
 
-5. Enter **DELETE** in the confirm field.
+5. Enter the **Environment Name** in the confirmation field.
 
 6. Click on **Delete Environment** button.
 
