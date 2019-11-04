@@ -17,4 +17,4 @@ To promote an environment, follow the steps mentioned below:
 
 4. Click on the **Deploy** button displayed in Promote pop-up.
 
-The environment gets deployed with the latest KintoBlocks available in the parent environment.
+The environment is deployed with the latest KintoBlocks available in the parent environment.
