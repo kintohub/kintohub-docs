@@ -17,6 +17,21 @@ KintoBlocks come with __additional logic and infrastructure plumbing__, dependin
 
 Each KintoBlock is self-contained, containerized, universally compatible, combinable and shareable. This makes it easy to __compose a application out of multiple KintoBlocks__, and scale them as needed.
 
+## How to create a KintoBlock 
+
+1. Select __KintoBlocks__ from the sidebar.
+
+2. Press the __Create New KintoBlock__ card or the __+__ icon.
+
+   ![Screenshot](/docs/assets/kb-create-options.png)
+
+   > _Note:_ If you haven't linked your workspace to a _Git source_ like GitHub or Bitbucket yet, you will be prompted to connect first.
+
+3. Choose the KintoBlock flavor that meets your needs.
+
+   ![Screenshot](/docs/assets/select-kb-flavour.png)
+
+
 ## KintoBlock flavors
 
 We offer various KintoBlock flavors that add specialized functionality or bring your services to life.
@@ -82,17 +97,3 @@ If you need to call into a service from the internet, the [KintoHub API gateway]
 KintoBlocks are an abstraction that implements our opinionated approach on how to configure and deploy cloud-native applications. We do that to simplify how you compose and deploy applications.
 
 We use several open-source cloud-native technologies to make that possible. Under the hood we build code and services into [Docker containers](https://www.docker.com/resources/what-container) and handle the [orchestration with Kubernetes](https://kubernetes.io). Thus we stand on the shoulders of giants. We bring you the same modern cloud technologies that big companies like Google, Amazon and Microsoft use, without a big learning curve and make them readily accessible.
-
-## How to create a KintoBlock 
-
-1. Select __KintoBlocks__ from the sidebar.
-
-2. Press the __Create New KintoBlock__ card or the __+__ icon.
-
-   ![Screenshot](/docs/assets/kb-create-options.png)
-
-   > _Note:_ If you haven't linked your workspace to a _Git source_ like GitHub or Bitbucket yet, you will be prompted to connect first.
-
-3. Choose the KintoBlock flavor that meets your needs.
-
-   ![Screenshot](/docs/assets/select-kb-flavour.png)
