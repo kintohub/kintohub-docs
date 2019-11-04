@@ -128,3 +128,5 @@ To launch a Website Project, follow the steps mentioned below:
 4. Enter the `Username` and `Password` to access the website.
 
     ![Screenshot](/docs/assets/website_basic_auth.png)
+
+On successful sign-in the user will gain access to the protected website.
