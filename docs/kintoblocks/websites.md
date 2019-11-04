@@ -77,7 +77,7 @@ To edit a **Dynamic Website** KintoBlock, follow the steps mentioned below:
 
 4. Click on the **Save Changes** button.
 
-To edit hardware configuration for website, follow the steps mentioned below:
+To edit hardware configuration of a website, follow the steps mentioned below:
 
 1. Open a Website KintoBlock.
 
