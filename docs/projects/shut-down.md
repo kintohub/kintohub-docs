@@ -10,7 +10,7 @@ To shut down an environment, follow the steps mentioned below:
 
 1. Open a **Project**.
 
-2. Click on the **Shut Down** button displayed on the top right of the page.
+2. Click on the **Shut Down** button displayed in the **Danger Zone** at bottom of the page.
 
 3. Click on **Shut Down Anyway** button displayed in the shut down pop up.
 
