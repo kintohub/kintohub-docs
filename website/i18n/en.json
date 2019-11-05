@@ -94,6 +94,22 @@
         "title": "Ionic Web Progressive App Example",
         "sidebar_label": "Ionic WPA"
       },
+      "examples/nodejs/express": {
+        "title": "Express Example",
+        "sidebar_label": "Express"
+      },
+      "examples/nodejs/fastify": {
+        "title": "Fastify Example",
+        "sidebar_label": "Fastify"
+      },
+      "examples/nodejs/hapi": {
+        "title": "Hapi Example",
+        "sidebar_label": "Hapi"
+      },
+      "examples/nodejs/koa": {
+        "title": "Koa Example",
+        "sidebar_label": "Koa"
+      },
       "examples/static-website/tutorial": {
         "title": "Serve Static Files"
       },
