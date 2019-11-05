@@ -84,6 +84,7 @@
       "label": "Websites",
       "ids": [
         "examples/ionic/tutorial",
+        "examples/gatsby/tutorial",
         "examples/static-website/tutorial"
       ]
     },
