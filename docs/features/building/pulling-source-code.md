@@ -21,17 +21,13 @@ To link GitHub, follow the steps mentioned below:
 
 4. Specify `GitHub` credentials and login successfully.
 
-5. Click on the **Install** button to confirm the installation of **KintoHub's GitHub Auth** app.
-
-    ![Screenshot](/docs/assets/GitHub_app.png)
-
-6. Choose your repository.
+5. Choose your repository.
 
     ![Screenshot](/docs/assets/select_repo_options.png)
 
->Note: There are two options say access to all repositories or for specific repositories.
+>Note: Ensure to select the appropriate option regarding repository access i.e. all repositories or specific repositories.
 
-7. Click on the **Install** button to complete the installation setup.
+6. Click on the **Install** button to complete the installation setup.
 
 Once the **KintoHub's GitHub Auth** app is installed and linked to your GitHub account, there is no need to install it again for linking with other **Workspaces**. The only required step is to configure and associate the **GitHub Auth** app.
 

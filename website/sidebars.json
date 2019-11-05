@@ -22,7 +22,8 @@
       "kintoblocks/introduction",
       "kintoblocks/websites",
       "kintoblocks/microservices",
-      "kintoblocks/custom-services"
+      "kintoblocks/custom-services",
+      "kintoblocks/jobs"
     ],
     "Projects": [
       "projects/introduction",

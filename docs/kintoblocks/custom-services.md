@@ -5,23 +5,27 @@ sidebar_label: Custom Services
 
 ## Creating a Custom Service
 
-1. If you are creating a Custom Service, select the corresponding option in the type of KintoBlocks.
+1. Select **KintoBlock** from the sidebar.
 
-2. Fill in the `KintoBlock name`, `Internal name` and `Description` in the **Basic Info form**.
+2. Click on the **Create New KintoBlock** card.
 
-   ![Screenshot](/docs/assets/kb-custom-service-basic-info.png)
+3. Select the **Custom Service KintoBlock** flavor.
 
-3. Select the **Helm** option in the **Service Project Format** drop-down. 
+4. Fill the **Choose Repository** form by specifying the details pertaining to the linked repo.
 
-   ![Screenshot](/docs/assets/kb-custom-service-options.png)
+   ![Custom Service choose repository](/docs/assets/custom-choose-repository.png)
 
-   >Note: Right now, we only support **Helm**. The support for **Docker File** and **Docker Hub**  will be coming up soon!
+5. Click on the **Continue** button.
 
-4. The final step requires you to provide the repo source details in the **Repository form**.
+6. Next, specify the details on `Name` and `Internal Name`.
 
-5. In the Repository form, make sure to specify the git repository service used by your Organization.
+7. Select the **Helm** or **Docker File** option in **Source Type** drop-down.
 
-6. Click on the **Create New KintoBlock** button. 
+   ![Create Custom Service](/docs/assets/create-custom-service.png)
+
+   >Note: Right now, we only support **Helm** and **Docker File**. The support for **Docker Hub** will be coming soon!
+
+8. Click on the **Create Custom Service** button.
 
 You are all set. The KintoBlock for a Custom Service has been created successfully.
 

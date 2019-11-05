@@ -217,6 +217,10 @@
       "kintoblocks/introduction2": {
         "title": "KintoBlocks"
       },
+      "kintoblocks/jobs": {
+        "title": "Job KintoBlock",
+        "sidebar_label": "Job"
+      },
       "kintoblocks/microservices": {
         "title": "Microservice KintoBlock",
         "sidebar_label": "Microservices"
