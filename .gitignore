@@ -11,3 +11,5 @@ website/i18n/*
 !website/i18n/en.json
 
 website/.env
+
+.idea
