@@ -87,7 +87,10 @@
           "examples/nodejs/express",
           "examples/nodejs/koa",
           "examples/nodejs/fastify",
-          "examples/nodejs/hapi"
+          "examples/nodejs/hapi",
+          "examples/go/fasthttp",
+          "examples/python/flask"
+
         ]
       },
       {
