@@ -22,7 +22,7 @@ You're now good to go! Click **Create Microservice**. Now click **Build Latest C
 
 Once complete, Click **Add to Project**
 
-Follow the instruction to creating a new project. Once created, you can then click **Open** on your Ionic block and see it running live!
+Follow the instruction to create a new project. Once created, you should be able to [access your API endpoints](https://docs.kintohub.com/docs/features/operating/accessing-endpoints).
 
 ## Installation & Local Run
 Ensure you have node 10 or higher.
