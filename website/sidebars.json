@@ -90,7 +90,6 @@
           "examples/nodejs/hapi",
           "examples/go/fasthttp",
           "examples/python/flask"
-
         ]
       },
       {
