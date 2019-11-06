@@ -24,9 +24,9 @@ The conference app example shows off the power of Ionic, thus we have forked it 
 
 You're now good to go! Click **Create Website**. Now click **Build Latest Commit**
 
-... The build takes about 5 minutes. Once complete, Click *Add to Project*
+... The build takes about 5 minutes. Once complete, Click **Add to Project**
 
-Follow the instruction to creating a new project. Once created, you can then click *Open* on your Ionic block and see it running live!
+Follow the instruction to creating a new project. Once created, you can then click **Open** on your Ionic block and see it running live!
 
 ## What's Next?
 
