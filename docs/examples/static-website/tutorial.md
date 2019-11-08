@@ -18,41 +18,58 @@ There are two examples, one with standard HTML files, and one where the static w
 
 ### Create a Website KintoBlock
 
- - Navigate to the KintoHub dashboard.
- - Click __KintoBlocks__ in the menu.
- - Select __Create New KintoBlock__.
- - Choose the __Website__ KintoBlock type.
+1. Navigate to the KintoHub home page.
+2. Select **KintoBlocks** from the sidebar.
+3. Click on the **Create New KintoBlock** card.
+4. Choose the **Website** KintoBlock type.
 
-The *__Create New KintoBlock__* page appears where we can set the configuration of the Website KintoBlock.
 
- - Enter a __KintoBlock Name__.
- - Enter a __Description__.
- - Select for __Website Type__ the `Static Website`.
- - Enter the name of the repository where the static files are in the root of the repository.
- - Click __Create New KintoBlock__.
+Once the **Choose Repository** page is displayed, specify the repository details as suggested below:
 
-The *__KintoBlock__* page appears for the newly created KintoBlock.
 
- - Click __Build Latest Commit__ to make a build that holds the static website files.
- - Next, click __Add to Project__ and a menu with projects appears.
- - Click the __New Project__ button.
- - Enter a project name.
- - Click __Create__.
+5. Enter the name of the repository where the static files are in the root of the repository.
+6. Click on the **Continue** button.
+
+
+In the **Create Website page**, specify the configuration details of the Website KintoBlock by following these steps:
+
+
+7. Enter a unique **Name**.
+8. Choose the `Static Website` in **Choose a Type**.
+9. Click on **Create Website** button.
+
+
+View the newly created KintoBlock in the **KintoBlock** page and proceed as follows:
+
+
+10. Click on **Build Latest Commit** to make a build that holds the static website files.
+11. Next, click **Add to Project** and a menu with projects appears.
+12. Click the **New Project** button.
+13. Enter a project name.
+14. Click **Create**.
+
+
+A build is successfully created in the KintoBlock.
+
 
 ### Create a project with the KintoBlock
 
-The *__New Project__* page appears for the newly created project.
+1. Navigate to **Create New Project** page
+2. Enter the **Project Name**
+3. Add the KintoBlock in the **KintoBlocks** section.
+4. Click **Create New Project**.
 
- - Notice that the KintoBlock has been added to the *__KintoBlocks__* section.
- - Click __Create New Project__.
 
-The *__Project__* page appears, and a new deployment is in progress.
+The **Project** page is displayed, and a new deployment is shown as in-progress.
 
- - Wait for the deployment to complete.
- - Once completed, scroll down to the *__KintoBlocks__* section.
- - Click the __Open__ button on the website KintoBlock to navigate to the URL.
 
-You'll see the static files hosted on the internet.
+5. Wait for the deployment to complete.
+6. Once completed, scroll down to the **KintoBlocks** section.
+7. Click the Open button on the website KintoBlock to navigate to the URL.
+
+
+You'll see the static files are successfully hosted on the internet.
+
 
 ## Static Angular website
 
@@ -64,46 +81,58 @@ You'll see the static files hosted on the internet.
 
 ### Create a Website KintoBlock
 
- - Navigate to the KintoHub dashboard.
- - Click __KintoBlocks__ in the menu.
- - Select __Create New KintoBlock__.
- - Choose the __Website__ KintoBlock type.
+1. Navigate to the KintoHub home page.
+2. Select **KintoBlocks** from the sidebar.
+3. Click on the **Create New KintoBlock** card.
+4. Choose the **Website** KintoBlock type.
 
-The *__Create New KintoBlock__* page appears where we can set the configuration of the Website KintoBlock.
 
- - Enter a __KintoBlock Name__.
- - Enter a __Description__.
- - Select for __Website Type__ the `Static Website`.
- - Activate the __Build Required__ toggle.
+Once the **Choose Repository** page is displayed, specify the repository details as suggested below:
+
+
+5. Enter the name of the repository where the static files are in the root of the repository.
+6. Click on the **Continue** button.
  
-Additional settings appear in the *__Advanced Options__* section.
 
- - The __Build Command__ allows to call the framework's command to trigger a static site build. In the case of Angular, make sure you have added `@angular/cli` as a dev dependency, and call the CLI with the `npx` command. E.g. `npm install && npx ng build --prod`.
- - The __Path to Build Folder__ is where the generated files reside. After the _Build Command_ completes, in the case of Angular CLI, this will be the `dist/` folder, with the workspace name. E.g. `dist/myworkspace`.
- - For __Language__ select `Node.js` since Angular depends on Node.js.
- - Select an appropriate __Version__ of Node.js.
- - Next, enter the name of the repository that contains the Angular application.
- - Click __Create New KintoBlock__.
+In the **Create Website page**, specify the configuration details of the Website KintoBlock by following these steps:
 
-The *__KintoBlock__* page appears for the newly created KintoBlock.
 
- - Click __Build Latest Commit__ to build the static website using the _Build Command_ from the previous steps.
- - Next, click __Add to Project__ and a menu with projects appears.
- - Click the __New Project__ button.
- - Enter a project name.
- - Click __Create__.
+7. Enter a unique **Name**.
+8. Choose the `Static from Build` in **Choose a Type**.
+9. For **Language**, select `Node.js` since Angular depends on Node.js.
+10. Select an appropriate **Version** of Node.js.
+11. The **Build Command** allows calling the framework's command to trigger a static site build. In the case of Angular, make sure you have added `@angular/cli` as a dev dependency, and call the CLI with the npx command. E.g. `npm install && npx ng build --prod`.
+12. The **Build Output Folder** is where the generated files reside. After the **Build Command** completes, in the case of Angular CLI, this will be the `dist/ folder`, with the workspace name. E.g. `dist/myworkspace`.
+13. Click on **Create Website** button.
+
+
+View the newly created KintoBlock in the **KintoBlock** page and proceed as follows:
+
+
+14. Click on **Build Latest Commit** to make a build that holds the static website files.
+15. Next, click **Add to Project** and a menu with projects appears.
+16. Click the **New Project** button.
+17. Enter a project name.
+18. Click **Create**.
+
+
+A build is successfully created in the KintoBlock.
+
 
 ### Create a project with the KintoBlock
 
-The *__New Project__* page appears for the newly created project.
+1. Navigate to **Create New Project** page
+2. Enter the **Project Name**
+3. Add the KintoBlock in the **KintoBlocks** section.
+4. Click **Create New Project**.
 
- - Notice that the KintoBlock has been added to the *__KintoBlocks__* section.
- - Click __Create New Project__.
 
-The *__Project__* page appears, and a new deployment is in progress.
+The **Project** page is displayed, and a new deployment is shown as in-progress.
 
- - Wait for the deployment to complete.
- - Once completed, scroll down to the *__KintoBlocks__* section.
- - Click the __Open__ button on the website KintoBlock to navigate to the URL.
 
-You'll see the Angular app hosted on the internet.
+5. Wait for the deployment to complete.
+6. Once completed, scroll down to the **KintoBlocks** section.
+7. Click the **Open** button on the Website KintoBlock to navigate to the URL.
+
+
+You'll see the Angular app is successfully hosted on the internet.
