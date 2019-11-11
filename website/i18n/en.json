@@ -86,6 +86,10 @@
       "_legacy/workspaces": {
         "title": "Workspaces"
       },
+      "examples/go/fasthttp": {
+        "title": "FastHttp Example",
+        "sidebar_label": "FastHttp"
+      },
       "examples/hasura/tutorial": {
         "title": "Hasura",
         "sidebar_label": "Hasura"
@@ -93,6 +97,26 @@
       "examples/ionic/tutorial": {
         "title": "Ionic Web Progressive App Example",
         "sidebar_label": "Ionic WPA"
+      },
+      "examples/nodejs/express": {
+        "title": "Express Example",
+        "sidebar_label": "Express"
+      },
+      "examples/nodejs/fastify": {
+        "title": "Fastify Example",
+        "sidebar_label": "Fastify"
+      },
+      "examples/nodejs/hapi": {
+        "title": "Hapi Example",
+        "sidebar_label": "Hapi"
+      },
+      "examples/nodejs/koa": {
+        "title": "Koa Example",
+        "sidebar_label": "Koa"
+      },
+      "examples/python/flask": {
+        "title": "Flask Example",
+        "sidebar_label": "Flask"
       },
       "examples/static-website/tutorial": {
         "title": "Serve Static Files"
