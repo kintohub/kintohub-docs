@@ -10,8 +10,8 @@
 <img src="/docs/assets/talking-to-applications-4.png" alt="Screenshot - Client ID and Secret Key"></li>
 <li>Authenticate to KintoHub with:</li>
 </ol>
-<pre><code class="hljs">POST api<span class="hljs-selector-class">.kintohub</span><span class="hljs-selector-class">.com</span>/auth
-BODY { <span class="hljs-string">"clientId"</span>:<span class="hljs-string">"&lt;clientId&gt;"</span>, <span class="hljs-string">"clientSecret"</span>:<span class="hljs-string">"&lt;clientSecret&gt;"</span> }
+<pre><code class="hljs">POST api.kintohub.com/auth
+<span class="hljs-keyword">BODY</span> { <span class="hljs-string">"clientId"</span>:<span class="hljs-string">"&lt;clientId&gt;"</span>, <span class="hljs-string">"clientSecret"</span>:<span class="hljs-string">"&lt;clientSecret&gt;"</span> }
 </code></pre>
 <p>You will get a response that looks like this:</p>
 <pre><code class="hljs">{ <span class="hljs-attr">"data"</span>: { <span class="hljs-attr">"token"</span>: <span class="hljs-string">"asdfajflsfjaf.asdfklafjdlkjafklfja"</span> } }
@@ -21,7 +21,7 @@ BODY { <span class="hljs-string">"clientId"</span>:<span class="hljs-string">"&l
 </blockquote>
 <p>Once authenticated, you can talk to your application (and its KintoBlock dependencies)!
 Simply make a call to:</p>
-<pre><code class="hljs">api<span class="hljs-selector-class">.kintohub</span><span class="hljs-selector-class">.com</span>/{block-name}
+<pre><code class="hljs">api.kintohub.com/{<span class="hljs-keyword">block</span>-<span class="hljs-keyword">name</span>}
 </code></pre>
 <p>Be sure to include in the Kinto-Authorization header. Example:</p>
 <pre><code class="hljs"><span class="hljs-symbol">Kinto</span>-Authorization: <span class="hljs-keyword">Bearer </span>&lt;token&gt;
