@@ -127,6 +127,27 @@ To view endpoint documentation:
        
    b. **Details section** - The details of the queried endpoints (E.g. URL parameters, Response code, and Response parameters) are displayed in the right pane.
 
+## Unlink Branch
+
+KintoBlocks can consist of one or more branches. The users can remove a branch by making use of the Unlink Branch feature. However, if the KintoBlock has only one branch, it cannot be unlinked.
+
+To unlink a branch from KintoBlock, follow the directions given below:
+
+1. Open a **KintoBlock** in your account.
+
+2. Scroll down to **Danger Zone** section displayed at the bottom of the **KintoBlock Manage** page.
+
+    ![Unlink Branch](/docs/assets/unlink-branch.png)
+
+3. Click on the **Unlink Branch** button in **Danger Zone**.
+
+4. Click on the **Unlink Branch** button in the Pop-up.
+
+    ![Unlink Branch Pop-up](/docs/assets/unlink-branch-pop-up.png)
+
+Once the confirmation is submitted, the selected branch will be unlinked in the application.
+
+>Note: The unlinked branch will be removed from the application but will continue to remain in the GitHub account. If an unlinked branch has to be readded, please contact the KintoHub team.
 
 ## Delete KintoBlock
 
