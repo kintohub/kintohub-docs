@@ -86,9 +86,21 @@
       "_legacy/workspaces": {
         "title": "Workspaces"
       },
+      "examples/go/beego": {
+        "title": "Beego Example",
+        "sidebar_label": "Beego"
+      },
       "examples/go/fasthttp": {
         "title": "FastHttp Example",
         "sidebar_label": "FastHttp"
+      },
+      "examples/go/gin": {
+        "title": "Gin Example",
+        "sidebar_label": "Gin"
+      },
+      "examples/go/iris": {
+        "title": "Iris Example",
+        "sidebar_label": "Iris"
       },
       "examples/hasura/tutorial": {
         "title": "Hasura",
@@ -114,9 +126,17 @@
         "title": "Koa Example",
         "sidebar_label": "Koa"
       },
+      "examples/python/django": {
+        "title": "Django Example",
+        "sidebar_label": "Django"
+      },
       "examples/python/flask": {
         "title": "Flask Example",
         "sidebar_label": "Flask"
+      },
+      "examples/static-website/jekyll": {
+        "title": "Jekyll Example",
+        "sidebar_label": "Jekyll"
       },
       "examples/static-website/tutorial": {
         "title": "Serve Static Files"

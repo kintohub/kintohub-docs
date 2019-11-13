@@ -24,12 +24,6 @@ Once complete, Click **Add to Project**
 
 Follow the instruction to create a new project. Once created, you should be able to [access your API endpoints](https://docs.kintohub.com/docs/features/operating/accessing-endpoints).
 
-## Installation & Local Run
-Ensure you have go 1.11 or higher.
-```
-go run .
-```
-
 ## Usage
 ### Optional Environment Variables
 Default value  = `Hello`, please refer to the `.env-example` file
@@ -38,12 +32,6 @@ GREETING=Hi
 ```
 
 ### API Call
-Local:
-```
-curl -X GET http://localhost/hello/world
-```
-
-On KintoHub:
 ```
 curl -X GET http://<EnvironmentHostName>/<KintoBlockName>/hello/world
 ```
