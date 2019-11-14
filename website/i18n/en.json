@@ -86,6 +86,10 @@
       "_legacy/workspaces": {
         "title": "Workspaces"
       },
+      "examples/docusaurus/tutorial": {
+        "title": "Docusaurus Example",
+        "sidebar_label": "Docusaurus"
+      },
       "examples/go/fasthttp": {
         "title": "FastHttp Example",
         "sidebar_label": "FastHttp"
