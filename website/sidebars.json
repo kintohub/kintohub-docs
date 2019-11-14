@@ -97,7 +97,8 @@
         "label": "Websites",
         "ids": [
           "examples/ionic/tutorial",
-          "examples/static-website/tutorial"
+          "examples/static-website/tutorial",
+          "examples/docusaurus/tutorial"
         ]
       },
       {
