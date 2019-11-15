@@ -83,7 +83,7 @@
       {
         "type": "subcategory",
         "label": "Microservices",
-        "ids": [          
+        "ids": [
           "examples/nodejs/express",
           "examples/nodejs/koa",
           "examples/nodejs/fastify",
@@ -101,10 +101,23 @@
         "type": "subcategory",
         "label": "Websites",
         "ids": [
-          "examples/ionic/tutorial",
           "examples/static-website/tutorial",
+          "examples/static-website/static",
+          "examples/ionic/tutorial",
           "examples/docusaurus/tutorial",
-          "examples/static-website/jekyll"
+          "examples/static-website/jekyll",
+          "examples/static-website/angular",
+          "examples/static-website/react",
+          "examples/static-website/preact",
+          "examples/static-website/vue",
+          "examples/static-website/nextjs"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Jobs",
+        "ids": [
+          "examples/jobs/puppeteer"
         ]
       },
       {

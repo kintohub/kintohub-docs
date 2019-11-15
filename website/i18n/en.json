@@ -111,8 +111,12 @@
         "sidebar_label": "Hasura"
       },
       "examples/ionic/tutorial": {
-        "title": "Ionic Web Progressive App Example",
-        "sidebar_label": "Ionic WPA"
+        "title": "Ionic Progressive Web App Example",
+        "sidebar_label": "Ionic PWA"
+      },
+      "examples/jobs/puppeteer": {
+        "title": "E2E test job example with puppeteer and Jest",
+        "sidebar_label": "Puppeteer"
       },
       "examples/nodejs/express": {
         "title": "Express Example",
@@ -138,12 +142,36 @@
         "title": "Flask Example",
         "sidebar_label": "Flask"
       },
+      "examples/static-website/angular": {
+        "title": "Angular Example",
+        "sidebar_label": "Angular"
+      },
       "examples/static-website/jekyll": {
         "title": "Jekyll Example",
         "sidebar_label": "Jekyll"
       },
+      "examples/static-website/nextjs": {
+        "title": "NextJs Example",
+        "sidebar_label": "NextJs"
+      },
+      "examples/static-website/preact": {
+        "title": "Preact Example",
+        "sidebar_label": "Preact PWA"
+      },
+      "examples/static-website/react": {
+        "title": "React Example",
+        "sidebar_label": "React"
+      },
+      "examples/static-website/static": {
+        "title": "Basic Static HTML Example",
+        "sidebar_label": "Static HTML Website"
+      },
       "examples/static-website/tutorial": {
         "title": "Serve Static Files"
+      },
+      "examples/static-website/vue": {
+        "title": "Vue Example",
+        "sidebar_label": "Vue"
       },
       "examples/todo-list/tutorial": {
         "title": "Todo List example app",
