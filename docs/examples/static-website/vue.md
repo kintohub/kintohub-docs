@@ -7,10 +7,6 @@ Vue (pronounced /vjuː/, like view) is a progressive framework for building user
 
 [Live Example](https://vue-example-1d0d2-8caf9.web.master.kintohub.com)
 
-__About KintoHub:__
-
-KintoHub aligns teams to ship & operate cloud native apps with ease. [Learn More](https://www.kintohub.com)
-
 ## Deployment
 1. Apply this template to your [Github](https://github.com/kintohub/vue-example/generate)
 2. Connect your GithubApp to KintoHub.
@@ -25,36 +21,7 @@ You're now good to go! Click **Create Website** and then on your Master branch c
 Once complete, Click  Now click `Add To Project`.
 And now you're ready to go live Click `Deploy` and once done -> you can view your website by clicking `Open`
 
-## Installation & Local Run
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-## Test
-
-```bash
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
 
 ## What's Next?
 

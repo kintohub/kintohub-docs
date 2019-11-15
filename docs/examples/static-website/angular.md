@@ -8,10 +8,6 @@ Angular is a **framework** for building client applications in HTML,CSS and Java
 
 [Live Example](https://angular-example-1d0d2-8caf9.web.master.kintohub.com/)
 
-__About KintoHub:__
-
-KintoHub aligns teams to ship & operate cloud native apps with ease. [Learn More](https://www.kintohub.com)
-
 ## Deployment
 1. Apply this template to your [Github](https://github.com/kintohub/angular-example/generate)
 2. Connect your GithubApp to KintoHub.
@@ -26,29 +22,6 @@ You're now good to go! Click **Create Website** and then on your Master branch c
 
 Once complete, Click  Now click `Add To Project`.
 And now you're ready to go live Click `Deploy` and once done -> you can view your website by clicking `Open`
-
-## Installation & Local Run
-
-``` bash
-# install dependencies
-npm install
-
-# run dev server with hot reload at localhost:3000
-npm start
-
-# build for production with minification
-npm run build
-```
-
-## Test
-
-```bash
-# run all tests
-npm test
-
-#run all e2e
-npm run e2e
-```
 
 ## What's Next?
 

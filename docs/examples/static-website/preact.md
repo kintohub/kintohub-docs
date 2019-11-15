@@ -7,10 +7,6 @@ Preact is a fast 3kB alternative to React with the same modern API.
 
 [Live Example](https://preact-example-1d0d2-8caf9.web.master.kintohub.com/)
 
-__About KintoHub:__
-
-KintoHub aligns teams to ship & operate cloud native apps with ease. [Learn More](https://www.kintohub.com)
-
 ## Deployment
 1. Apply this template to your [Github](https://github.com/kintohub/preact-example/generate)
 2. Connect your GithubApp to KintoHub.
@@ -25,31 +21,7 @@ You're now good to go! Click **Create Website** and then on your Master branch c
 Once complete, Click  Now click `Add To Project`.
 And now you're ready to go live Click `Deploy` and once done -> you can view your website by clicking `Open`
 
-## Installation & Local Run
-
-``` bash
-# Installs dependencies
-npm install
-# Runs `serve` or `dev`, depending on `NODE_ENV` value. Defaults to `dev server`
-npm run start
-# Run a development, HMR server
-npm run dev
-# Run a production-like server
-npm run serve
-# Production-ready build
-npm run build
-```
-
 For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
-
-## Test
-
-```bash
-# Pass TypeScript files using TSLint
-npm run lint
-# Run Jest and [`preact-render-spy`](https://github.com/mzgoddard/preact-render-spy) for your tests
-npm run test
-```
 
 ## What's Next?
 

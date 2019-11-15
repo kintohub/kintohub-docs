@@ -10,10 +10,6 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity. It
 So together they both make a nice full suite for testing and this simple example shows exactly that.
 And often you want to have something to run your e2e tests before or after your cloud deployment and that's exactly what [KintoHub Jobs](https://docs.kintohub.com/docs/kintoblocks/jobs) are for.
 
-__About KintoHub:__
-
-KintoHub aligns teams to ship & operate cloud native apps with ease. [Learn More](https://www.kintohub.com)
-
 ## Requirements
 
 - Make sure you set 256mb minimum for this job to run -> required to start chrome
@@ -37,16 +33,6 @@ Once complete, Click  Now click `Add To Project`.
 
 And now you're ready to go live Click `Deploy` and once done -> go to **Logs** to see your job running.
 *make sure you select **history** logs to monitor your job (since real-time logs only crab logs while pod is running which in case of a jon being killed immediately after script's execution)
-
-## Installation & Local Run
-
-``` bash
-# Installs dependencies
-npm install
-
-# Will run small unit and e2e test
-npm test
-```
 
 For detailed explanation on how things work, checkout the [Jest](https://jestjs.io) and [puppeteer](https://github.com/GoogleChrome/puppeteer).
 

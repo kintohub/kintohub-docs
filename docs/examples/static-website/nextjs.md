@@ -8,10 +8,6 @@ This particular example rolls around using nextjs with [React](https://reactjs.o
 
 [Live Example](https://next-apollo-example-1d0d2-8caf9.web.master.kintohub.com/)
 
-__About KintoHub:__
-
-KintoHub aligns teams to ship & operate cloud native apps with ease. [Learn More](https://www.kintohub.com)
-
 ## Deployment
 1. Apply this template to your [Github](https://github.com/kintohub/preact-example/generate)
 2. Connect your GithubApp to KintoHub.
@@ -27,18 +23,6 @@ You're now good to go! Click **Create Website** and then on your Master branch c
 Once complete, Click  Now click `Add To Project`.
 And now you're ready to go live Click `Deploy` and once done -> you can view your website by clicking `Open`
 
-## Installation & Local Run
-
-``` bash
-# Installs dependencies
-npm install
-# builds a production server. run it before running npm start
-npm run build
-# Runs production server
-npm start
-# Run a development server
-npm run dev
-```
 [Apollo](https://www.apollographql.com/client/) is a GraphQL client that allows you to easily query the exact data you need from a GraphQL server. In addition to fetching and mutating data, Apollo analyzes your queries and their results to construct a client-side cache of your data, which is kept up to date as further queries and mutations are run, fetching more results from the server.
 
 This example relies on [graph.cool](https://www.graph.cool) for its GraphQL backend.

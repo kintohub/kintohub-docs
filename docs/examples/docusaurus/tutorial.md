@@ -11,10 +11,6 @@ Docusaurus can be used as a framework to quickly generation documentation for yo
 
 [View Live Example](...)
 
-__About KintoHub:__
-
-KintoHub aligns teams to ship & operate cloud native apps with ease. [Learn More](https://www.kintohub.com)
-
 ## Deployment
 1. Apply this template to your [Github](https://github.com/kintohub/docusaurus-example/generate)
 2. Create a [Website KintoBlock](https://beta.kintohub.com/app/dashboard/)

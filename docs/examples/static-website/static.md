@@ -7,10 +7,6 @@ A simplest possible static html example with all styles and markup embedded in a
 
 [Live Example](https://static-website-example-1d0d2-8caf9.web.master.kintohub.com/)
 
-__About KintoHub:__
-
-KintoHub aligns teams to ship & operate cloud native apps with ease. [Learn More](https://www.kintohub.com)
-
 ## Deployment
 1. Apply this template to your [Github](https://github.com/kintohub/static-website-example/generate)
 2. Connect your GithubApp to KintoHub.
