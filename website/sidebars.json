@@ -89,7 +89,12 @@
           "examples/nodejs/fastify",
           "examples/nodejs/hapi",
           "examples/go/fasthttp",
-          "examples/python/flask"
+          "examples/go/gin",
+          "examples/go/iris",
+          "examples/go/beego",
+          "examples/python/flask",
+          "examples/python/django",
+          "examples/java/springboot"
         ]
       },
       {
@@ -98,7 +103,8 @@
         "ids": [
           "examples/ionic/tutorial",
           "examples/static-website/tutorial",
-          "examples/docusaurus/tutorial"
+          "examples/docusaurus/tutorial",
+          "examples/static-website/jekyll"
         ]
       },
       {

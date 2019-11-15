@@ -1,21 +1,21 @@
 ---
-title: Koa Example
-sidebar_label: Koa
+title: Django Example
+sidebar_label: Django
 ---
 ## Overview
 
-Koa is one of the widely used web frameworks in Node.js. It can be built easily for microservice on KintoHub!
+Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. It can be built easily for microservice on KintoHub!
 
-[Live Example](https://8caf94bb-c2e5-45cf-898d-ca5b19954cda.api.master.kintohub.com/koa-example/hello/world)
+[Live Example](https://8caf94bb-c2e5-45cf-898d-ca5b19954cda.api.master.kintohub.com/django-example/hello/world/)
 
 ## Deployment
-1. Apply this template to your [Github](https://github.com/kintohub/koa-example/generate)
+1. Apply this template to your [Github](https://github.com/kintohub/django-example/generate)
 2. Create a [Microservice Block](https://docs.kintohub.com/docs/kintoblocks/microservices) on KintoHub
 3. Connect your GithubApp to KintoHub and select the Repository you just generated on your account.
 4. Set the **name** of your kinto block
-5. Choose `Node.js` as the **language** and `11.7.0` as the **version**
-6. Set the **Build Command** as `npm install`
-7. Set the **Start Command** as `npm start`
+5. Choose `Python` as the **language** and `3.7.5-alpine` as the **version**
+6. Set the **Build Command** as `pip install -r requirements.txt`
+7. Set the **Start Command** as `python manage.py runserver 0.0.0.0:80`
 8. Set the **Port** as `80`
 
 You're now good to go! Click **Create Microservice**. Now click **Build Latest Commit**
@@ -32,12 +32,13 @@ GREETING=Hi
 ```
 
 ### API Call
+NOTE: The ending slash `/` is required for Django
 ```
-curl -X GET http://<EnvironmentHostName>/<KintoBlockName>/hello/world
+curl -X GET http://<EnvironmentHostName>/<KintoBlockName>/hello/world/
 ```
 Please refer to [Accessing API Endpoints](https://docs.kintohub.com/docs/features/operating/accessing-endpoints) for the setup instruction
 
-Try this [Live Example](https://8caf94bb-c2e5-45cf-898d-ca5b19954cda.api.master.kintohub.com/koa-example/hello/world) !
+Try this [Live Example](https://8caf94bb-c2e5-45cf-898d-ca5b19954cda.api.master.kintohub.com/django-example/hello/world/) !
 
 ### Response
 ```json
