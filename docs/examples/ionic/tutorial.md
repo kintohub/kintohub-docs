@@ -1,13 +1,13 @@
 ---
-title: Ionic Web Progressive App Example
-sidebar_label: Ionic WPA
+title: Ionic Progressive Web App Example
+sidebar_label: Ionic PWA
 ---
 
 ![Todo List app with input box](/docs/assets/examples/ionic/preview.png)
 
 
 ## Overview
-Ionic is an amazing mobile app framework making it easy to make native apps for any operating system. They support Web Progressive Apps which can easily be built and used on KintoHub!
+Ionic is an amazing mobile app framework making it easy to make native apps for any operating system. They support Progressive Web Apps which can easily be built and used on KintoHub!
 The conference app example shows off the power of Ionic, thus we have forked it with *zero* modifications so you can see it in action with KintoHub.
 
 [Live Example](https://ionic-example-1d0d2-8caf9.web.master.kintohub.com/)
@@ -24,9 +24,9 @@ The conference app example shows off the power of Ionic, thus we have forked it 
 
 You're now good to go! Click **Create Website**. Now click **Build Latest Commit**
 
-... The build takes about 5 minutes. Once complete, Click *Add to Project*
+... The build takes about 5 minutes. Once complete, Click **Add to Project**
 
-Follow the instruction to creating a new project. Once created, you can then click *Open* on your Ionic block and see it running live!
+Follow the instruction to creating a new project. Once created, you can then click **Open** on your Ionic block and see it running live!
 
 ## What's Next?
 

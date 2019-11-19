@@ -60,7 +60,27 @@ To view the changes related to the KintoBlock before deployment, follow the step
 4. Now you will be able to notice the changes made in **Compare Versions** screen.
 
 5. Click on the **Confirm Project** button.
-   
+ 
+## Automatically Deploy your Apps
+
+The **Auto Deployment** feature aids in the automatic deployment of changes made in a KintoBlock version. Once the feature is enabled, successive changes made in a KintoBlock are automatically deployed to the Project. It reduces the hassles of repeated manual deployments.
+
+To enable **Auto Deployment**, follow the instructions cited below:
+
+1. Open an existing **Project**.
+
+2. Scroll down to the **KintoBlocks** section.
+
+3. Now enable **Auto Deployment** toggle.
+
+    ![Enable Auto Deploy button](/docs/assets/enable-auto-deploy-button.png)
+
+4. Click on the **Deploy** button in **Project Manage** page.
+
+5. Click on the **Confirm Deployment** button in **Compare Versions** pop-up.
+
+Going forward, all new commits made to the **KintoBlock** will be automatically deployed to the **Project**.
+
 ## Configure KintoBlocks
 
 The Configuration pop-up screen consists of `Public API & Webhook Access`, `Highly Available`, `Environment Variables`, `Hardware Configuration` and `Security` fields that can be populated to customize the created KintoBlock. These values can be edited as and when it is required.

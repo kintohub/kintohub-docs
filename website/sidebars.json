@@ -79,15 +79,48 @@
       "plans-and-billing/upgrading",
       "plans-and-billing/billing"
     ],
-    "Quickstarts": [{
-      "type": "subcategory",
-      "label": "Websites",
-      "ids": [
-        "examples/ionic/tutorial",
-        "examples/gatsby/tutorial",
-        "examples/static-website/tutorial"
-      ]
-    },
+    "Quickstarts": [
+      {
+        "type": "subcategory",
+        "label": "Microservices",
+        "ids": [
+          "examples/nodejs/express",
+          "examples/nodejs/koa",
+          "examples/nodejs/fastify",
+          "examples/nodejs/hapi",
+          "examples/go/fasthttp",
+          "examples/go/gin",
+          "examples/go/iris",
+          "examples/go/beego",
+          "examples/python/flask",
+          "examples/python/django",
+          "examples/java/springboot"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Websites",
+        "ids": [
+          "examples/static-website/tutorial",
+          "examples/static-website/static",
+          "examples/ionic/tutorial",
+          "examples/docusaurus/tutorial",
+          "examples/static-website/jekyll",
+          "examples/static-website/angular",
+          "examples/static-website/react",
+          "examples/static-website/preact",
+          "examples/static-website/vue",
+          "examples/static-website/nextjs"
+          "examples/gatsby/tutorial",
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Jobs",
+        "ids": [
+          "examples/jobs/puppeteer"
+        ]
+      },
       {
         "type": "subcategory",
         "label": "GraphQL",
