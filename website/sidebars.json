@@ -23,7 +23,8 @@
       "kintoblocks/websites",
       "kintoblocks/microservices",
       "kintoblocks/custom-services",
-      "kintoblocks/jobs"
+      "kintoblocks/jobs",
+      "kintoblocks/build-logs"
     ],
     "Projects": [
       "projects/introduction",
@@ -110,8 +111,8 @@
           "examples/static-website/react",
           "examples/static-website/preact",
           "examples/static-website/vue",
-          "examples/static-website/nextjs"
-          "examples/gatsby/tutorial",
+          "examples/static-website/nextjs",
+          "examples/gatsby/tutorial"
         ]
       },
       {
