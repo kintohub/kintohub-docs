@@ -19,9 +19,9 @@ Gatsby makes it easy to build websites and apps based on React. Taking a static 
 
 You're now good to go! Click **Create Website**. Now click **Build Latest Commit**
 
-... The build takes about 4 minutes. Once complete, Click *Add to Project*
+... The build takes about 4 minutes. Once complete, Click **Add to Project**
 
-Follow the instruction to creating a new project. Once created, you can then click *Open* on your Gatsby block and see it running live!
+Follow the instruction to creating a new project. Once created, you can then click **Open** on your Gatsby block and see it running live!
 
 ## What's Next?
 
