@@ -111,6 +111,7 @@
           "examples/static-website/preact",
           "examples/static-website/vue",
           "examples/static-website/nextjs"
+          "examples/gatsby/tutorial",
         ]
       },
       {
