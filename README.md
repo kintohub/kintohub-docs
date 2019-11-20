@@ -1,15 +1,15 @@
 # [KintoHub](https://www.kintohub.com) [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg?style=social)](https://www.kintohub.com) [![Tweet](assets/twitter-button.svg)](https://www.twitter.com/kintohub)
 <br/>
 
-![KintoHub Screenshot](assets/kintohub-screenshot.png)
+![KintoHub Screenshot](assets/kintohub-screenshot-2.png)
 
-![KintoHub Logo](assets/kintohub-project-logo.png)
+![KintoHub Logo](assets/kintohub-project-logo-2.png)
 
 <br/>
 
 We build online tools to make developers’ lives easier. You code microservices - we take care of hosting, infra, CI / CD, discovery, compatibility, documentation and dependencies.
 
-<p><a href="https://www.kintohub.com">Learn More</a> · <a href="https://www.kintohub.com/faqs/">FAQs</a> · <a href="https://blog.kintohub.com">Blog</a> · <a href="https://www.kintohub.com/aboutus/">About Us</a> · <a href="https://www.kintohub.com/contactus/">Contact Us</a></p>
+<p><a href="https://www.kintohub.com">Learn More</a> · <a href="https://blog.kintohub.com/">Blog</a> · <a href="https://www.kintohub.com/company">About Us</a> · <a href="https://www.kintohub.com/contact-us">Contact Us</a></p>
 
 
 ## Table of Contents
@@ -30,9 +30,9 @@ KintoHub's goal is to create a community of developers building and sharing micr
 Got a bug or a feature request? Please [open a new issue](https://github.com/kintohub/kintohub-docs/issues/new).
 
 ## Release Status & Notes
-We're currently in "Private Alpha".  We will open a public Alpha release soon.  Our Alpha phase will have massive changes, but we have a fair amount of features we've built.  We expect to have a stable Beta offering by October 2018.
+We're currently in Open Beta.
 
-For people participating in our alpha, you may find the release notes [here](release-notes/Alpha.md).
+For people participating in our beta, you may find the release notes [here](https://feedback.kintohub.com/changelog).
 
 ## Features
 
@@ -73,8 +73,7 @@ Get updates on our platform development and chat with our staff and community me
 
 - Follow [@KintoHub on Twitter](https://twitter.com/kintohub)
 - Read and follow [our blog on Medium](https://blog.kintohub.com)
-- Chat on [our Slack channel](https://join.slack.com/t/kintohub/shared_invite/enQtMzIxNDU2OTE4NTYyLWJmNWM1ZTQ3YTFlMzJkYWUzMWE2ZTlmZjk3ZGQ1NWFlMDRkYzhhODNmNDZlMDZmNjhlMzBhNWRiYWIxMTVjMmU)
-- Join the discussions on [Discourse](https://community.kintohub.com)
+- Chat on [our Discord Server](https://discord.gg/TMfrYDK)
 
 
 ## Getting Started
@@ -316,9 +315,28 @@ Should return
 
 ## Example Projects
 
-| Project Name | Author |
-|:-------------|:------:|
-| **[Coming soon](https://github.com/)** <br/> Description | [Author](http://github.com/) |
-| **[Coming soon](https://github.com/)** <br/> Description | [Author](http://github.com/) |
-| **[Coming soon](https://github.com/)** <br/> Description | [Author](http://github.com/) |
-| **[Coming soon](https://github.com/)** <br/> Description | [Author](http://github.com/) |
+| Example Type |
+|:-------------|
+| **[Express](https://docs.kintohub.com/docs/examples/nodejs/express)** |
+| **[Koa](https://docs.kintohub.com/docs/examples/nodejs/koa)** |
+| **[Fastify](https://docs.kintohub.com/docs/examples/nodejs/fastify)** |
+| **[Hapi](https://docs.kintohub.com/docs/examples/nodejs/hapi)** |
+| **[FastHttp](https://docs.kintohub.com/docs/examples/go/fasthttp)** |
+| **[Gin](https://docs.kintohub.com/docs/examples/go/gin)** |
+| **[Iris](https://docs.kintohub.com/docs/examples/go/iris)** |
+| **[Beego](https://docs.kintohub.com/docs/examples/go/beego)** |
+| **[Flask](https://docs.kintohub.com/docs/examples/python/flask)** |
+| **[Django](https://docs.kintohub.com/docs/examples/python/django)** |
+| **[Serve Static Files](https://docs.kintohub.com/docs/examples/static-website/tutorial)** |
+| **[Static HTML Website](https://docs.kintohub.com/docs/examples/static-website/static)** |
+| **[Ionic PWA](https://docs.kintohub.com/docs/examples/ionic/tutorial)** |
+| **[Docusaurus](https://docs.kintohub.com/docs/examples/docusaurus/tutorial)** |
+| **[Jekyll](https://docs.kintohub.com/docs/examples/static-website/jekyll)** |
+| **[Angular](https://docs.kintohub.com/docs/examples/static-website/angular)** |
+| **[React](https://docs.kintohub.com/docs/examples/static-website/react)** |
+| **[Preact PWA](https://docs.kintohub.com/docs/examples/static-website/preact)** |
+| **[Vue](https://docs.kintohub.com/docs/examples/static-website/vue)** |
+| **[NextJs](https://docs.kintohub.com/docs/examples/static-website/nextjs)** |
+| **[Puppeteer](https://docs.kintohub.com/docs/examples/jobs/puppeteer)** |
+| **[Hasura](https://docs.kintohub.com/docs/examples/hasura/tutorial)** |
+| **[Todo List](https://docs.kintohub.com/docs/examples/todo-list/tutorial)** |
