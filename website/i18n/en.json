@@ -90,6 +90,10 @@
         "title": "Docusaurus Example",
         "sidebar_label": "Docusaurus"
       },
+      "examples/gatsby/tutorial": {
+        "title": "Gatsby Example",
+        "sidebar_label": "Gatsby"
+      },
       "examples/go/beego": {
         "title": "Beego Example",
         "sidebar_label": "Beego"
@@ -211,7 +215,8 @@
         "title": "Environment Variables"
       },
       "features/deploying/high-availability": {
-        "title": "High Availability"
+        "title": "High Availability",
+        "sidebar_label": "High Availability"
       },
       "features/deploying/manage-environments": {
         "title": "Manage Environments"
@@ -279,6 +284,10 @@
         "title": "Deploy your first Ruby app",
         "sidebar_label": "Ruby"
       },
+      "kintoblocks/build-logs": {
+        "title": "Build Logs",
+        "sidebar_label": "Build Logs"
+      },
       "kintoblocks/custom-services": {
         "title": "Custom Service KintoBlock",
         "sidebar_label": "Custom Services"
@@ -289,9 +298,6 @@
       "kintoblocks/introduction": {
         "title": "Introducing KintoBlocks",
         "sidebar_label": "Introduction"
-      },
-      "kintoblocks/introduction2": {
-        "title": "KintoBlocks"
       },
       "kintoblocks/jobs": {
         "title": "Job KintoBlock",
