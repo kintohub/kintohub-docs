@@ -53,7 +53,8 @@
         "ids": [
           "features/deploying/manage-projects",
           "features/deploying/manage-environments",
-          "features/deploying/environment-variables"
+          "features/deploying/environment-variables",
+          "features/deploying/high-availability"
         ]
       },
       {

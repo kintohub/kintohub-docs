@@ -215,7 +215,8 @@
         "title": "Environment Variables"
       },
       "features/deploying/high-availability": {
-        "title": "High Availability"
+        "title": "High Availability",
+        "sidebar_label": "High Availability"
       },
       "features/deploying/manage-environments": {
         "title": "Manage Environments"
