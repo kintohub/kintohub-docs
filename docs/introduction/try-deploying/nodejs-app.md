@@ -89,83 +89,68 @@ To keep this example simple, we will deploy it as a website only. Of course in t
 
 ## Creating the KintoBlock on KintoHub
 
-> If you don't have a KintoHub account yet, [sign up for free](https://app.kintohub.com/sign-up) to proceed.
+> If you don't have a KintoHub account yet, [sign up for free](https://beta.kintohub.com/sign-up) to proceed.
 
- - Navigate to https://app.kintohub.com.
- - If it is the first time, you can __Skip Tutorial__.
- - In the sidebar, select __KintoBlocks__.
- - Press __Create New KintoBlock__.
+1. Navigate to https://beta.kintohub.com.
+2. Select **KintoBlocks** from the sidebar.
+3. Click on the **Create New KintoBlock** card. 
 
 ### Connect your GitHub account
 
-You'll get prompted with the below dialog to link to a Git repository source.
-
- - Press the __Link__ button of the __GitHub__ option.
+Once the **Connect Your Repository** page is displayed, click on the **Connect Github** button.
 
 ![Link Repo Source dialog, with GitHub, Bitbucket and GitLab options](/docs/assets/introduction/try-deploying/link-repo-sources.png)
 
-You'll be redirected to the GitHub website, where you have to __grant permissions for the KintoHub App to access your repositories__.
+The page will redirect to the GitHub website. In GitHub, ensure that **necessary permissions are granted to the KintoHub App** as suggested below:
 
- - Follow the prompts and __give access__ to:
-   - either all repositories, or
-   - only to the one you created in the beginning of this quick-start.
- - Press __Save__ on the GitHub website to be redirected back to KintoHub.
+1. Follow the prompts and __give access__ to:
+  - either all repositories, or
+  - only to the one you created in the beginning of this quick-start.
+2. Click the __Save__ button on the GitHub website to go back to KintoHub.
 
 ### Select a KintoBlock flavor
 
-The *__Link Repo Sources__* dialog will reappear, and you should see that GitHub is now connected successfully.
+In the **Choose KintoBlock Type** page, there is an option to select the type applicable to the project.
 
- - Press __I'm Done__ to proceed.
+1. Select the **Website** KintoBlock flavor.
 
-Next, you'll see the *__Create New KintoBlock__* page where you get the option to choose what type of KintoBlock to create.
-
- - Select the __Website__ KintoBlock flavor.
-
-![3 KintoBlock options: Microservice, Website, or Custom Service](/docs/assets/introduction/try-deploying/select-kintoblock.png)
+  ![4 KintoBlock options: Microservice, Website, Custom Service or Job](/docs/assets/introduction/try-deploying/select-kintoblock.png)
 
 ### Configure the KintoBlock
 
-The new KintoBlock page is where we define and configure the KintoBlock. This page looks different depending on the selected flavor.
+Once the **Choose Repository** page is displayed, specify the repository details as suggested below:
 
-First, refer to the *__Repository__* section, where __Repository Source__ is already `GitHub` and __Repository Type__ is `Existing Repositories`.
-
- - Type in the __Repository__ field the name you used previously. (e.g. `node-app`)
- - __Select the repository__ from the list that appears.
-   > _Tip:_ Other repositories with similar names may show up in the list, if you have opted to grant access to all repositories in your GitHub account. If that is undesirable, you can always [restrict access to only specific repositories](https://help.github.com/en/articles/reviewing-your-organizations-installed-integrations) under your GitHub account from the GitHub website.
-
-![Screen shot of the Repository section](/docs/assets/introduction/try-deploying/nodejs-app/repository-section.png)
+1. Enter the name of the repository where the static files are in the root of the repository.
+  ![Screen shot of the Repository section](/docs/assets/introduction/try-deploying/nodejs-app/repository-section.png)
+2. Click on the **Continue** button.
 
 Next, we're going to configure how the Website KintoBlock should _build and run the Node.js app_.
 
-Refer to the *__Basic Info__* section, and:
+3. Enter a unique Name, e.g. `My App`. 
+4. Enter an Internal Name, e.g. `my-app`.
+   > Note: The KintoBlock name must be _lower-case_, and _only include alphanumerical characters or hyphens_. The reason for that is that _the name is used as an identifier_ and may appear in the service logs, URLs and other places where it needs to be uniform.
+5. Choose the `Dynamic Web App` in **Choose a Type**.
+  ![Screen shot of the Create Website form](/docs/assets/introduction/try-deploying/nodejs-app/my-app.png)
 
- - Enter a __KintoBlock Name__, e.g. `nodeapp`.
-   > _Note:_ The KintoBlock name must be _lower-case_, and _only include alphanumerical characters or hyphens_. The reason for that is that _the name is used as an identifier_ and may appear in the service logs, URLs and other places where it needs to be uniform.
- - Enter a __Display Name__, e.g. `Node App`.
- - Add a __Description__, e.g. `My first Node.js app on KintoHub!`.
- - For the __Website Type__ select `Dynamic Web App`.
+Selecting _Dynamic Web App_ caused an extra *__Options__* section to appear.
 
-Selecting _Dynamic Web App_ caused an extra *__Advanced Options__* section to appear.
+6. Set `Node.js` as the __Language__.
+7. Select the appropriate __Version__, For e.g. `11.7.0-alpine`.
+8. Set the __Build Command__ as `npm install`, so that all required dependencies get installed.
+9. Update the __Run__ field to `npm run prod`, since we want to use the script that sets the port to 80.
+10. Leave the __Port__ field set to `80`, since that matches our production-ready configuration. 
+  ![Screen shot of the Basic Info section](/docs/assets/introduction/try-deploying/nodejs-app/basic-info-section.png)
 
- - Leave the __Port__ field set to `80`, since that matches our production-ready configuration.
- - Keep the __Build Command__ set as `npm install`, so that all required dependencies get installed.
- - Update the __Run__ field to `npm run prod`, since we want to use the script that sets the port to 80.
- - Set `Node.js` as the __Language__.
- - Select the appropriate __Version__, For e.g. `11.7.0`.
+Now that everything is configured, we are ready to proceed with the creation of the website.
 
-![Screen shot of the Basic Info section](/docs/assets/introduction/try-deploying/nodejs-app/basic-info-section.png)
-
-Now that everything is configured, we are ready to proceed:
-
- - Press the __Create New KintoBlock__ button in the bottom right corner.
+11. Click on **Create Website** button.
 
 ### Build the source code
 
 We now see that the KintoBlock has been created, and that _No build was built successfully yet._ Let's change that:
 
- - Press __Build Latest Commit__, to trigger a new build.
-
-![KintoBlock page with the message that: No build was built successfully yet](/docs/assets/introduction/try-deploying/nodejs-app/no-builds-yet.png)
+1. Press __Build Latest Commit__, to trigger a new build.
+  ![KintoBlock page with the message that: No build was built successfully yet](/docs/assets/introduction/try-deploying/nodejs-app/no-builds-yet.png)
 
 This triggers KintoHub to pull the source code from GitHub and build a cloud-native package out of it.
 
@@ -187,15 +172,15 @@ Now that you have a KintoBlock and it has been built, the KintoBlock is ready to
 
 From the KintoBlock page, in the bottom right corner:
 
- - Press __Add to Project__, this will pop up a dialog.
+1. Press __Add to Project__, this will pop up a dialog.
 
 > _Tip:_ If you have existing projects, this dialog allows you to select one of its existing environments.
 
 Because we do not have any projects yet:
 
- - Press the __New Project__ button.
- - Enter in the _Enter project name_ field a new project name. (e.g. `myapp`)
- - Press the __Create__ button.
+2. Press the __New Project__ button.
+3. Enter in the _Enter project name_ field a new project name. (e.g. `myapp`)
+4. Press the __Create__ button.
 
 ![Add to Project dialog](/docs/assets/introduction/try-deploying/nodejs-app/add-to-deployment.png)
 
@@ -203,8 +188,8 @@ Because we do not have any projects yet:
 
 The *__Create New Project__* page, has already been filled out with some of the information you've provided:
 
- - The __Project Name__ has been set.
- - A `default` __Environment Name__ has been preset, and can be adjusted if necessary.
+1. The __Project Name__ has been set.
+2. A `default` __Environment Name__ has been preset, and can be adjusted if necessary.
 
 Scroll down to the *__KintoBlocks__* section, where you can see that your _Node App_ KintoBlock has already been added. It has been preset to use the build from the `master` branch. It is also possible to [select other branches and tags](features/building/branches-and-tags.md).
 
@@ -214,7 +199,7 @@ If you have more KintoBlocks that should be part of this project, then you can a
 
 For this quick-start however, we are going to deploy only this single KintoBlock.
 
- - Press __Create New Project__ to start the project.
+3. Press __Create New Project__ to start the project.
 
 ## Project progress
 
@@ -234,7 +219,7 @@ During the project KintoHub will push your KintoBlock to a cloud server and setu
 
 To access the deployed Node.js sever, scroll down to the *__KintoBlocks__* section, and:
 
- - Press the __Open__ button on the Website KintoBlock.
+5. Press the __Open__ button on the Website KintoBlock.
 
 This will open a new tab in your browser pointing to the URL of the website that was deployed, for example:
 ```plaintext
