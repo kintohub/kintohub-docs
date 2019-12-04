@@ -6,7 +6,7 @@ title: Build Arguments
 
 **Build Arguments** are unique variables that are passed as environment variables during build-time. They can be passed by adding `Arguments` and `Values` and can be of use during the build process of KintoBlock. They are specific to a **branch** of a KintoBlock and in case you switch branches and want to use a particular branch in `KintoBlock`, then you will need to input the `Build Arguments` on that branch too.
 
->Note: The Build Arguments can be added to **Microservice**, **Website** and **Custom Service** on the `KintoBlock Manage` page.
+>Note: The Build Arguments can be added to **Microservice**, **Website**, **Custom Service** and **Job** on the `KintoBlock Manage` page.
 
 ## How to add Build Arguments in KintoBlock?
 
