@@ -2,17 +2,17 @@
 title: High Availability
 ---
 
-This toggle gives the ability to enable high availability on a service. When `High Availability` toggle is turned on, your instances will spread across multiple servers and availability zones, thus helping you with better performance and reliable service.
+This toggle is designed to allow a service to be set as highly available. When **High Availability** toggle is switched **On**, the instances in the project will be distributed across multiple servers and availability zones. Thus, allowing the service to have improved performance and more reliability.
 
-This toggle can be easily configured and can be configured per environment. You may want to have high availability disabled for test environments, but staging and production may want this to be enabled.
+This toggle is easily configurable and can be specified on an environment basis. It is recommended to enable this option in production environments and leave them disabled on staging or testing environments.
 
-To enable High Availability, follow the steps mentioned below:
-1. Open an existing or new **Deployment**.
-
+To enable **High Availability**, follow the steps mentioned below:
+1. Open a **Project**.
 2. Scroll down to the **KintoBlocks** section.
-
-3. Now enable **High Availability** toggle.
-
-4. Currently, to save the changes made, we need to either re-build the blocks or make changes to the environment variables.
+3. Click on the **Configure KintoBlocks** button.
+4. Enable the toggle displayed for **High Availability**.
+5. Click on the **Done Configuration** button.
 
    ![Screenshot](/docs/assets/High-Availability.png)
+
+> Note: After enabling the toggle for **High Availability** please make sure to redeploy the Project for applying the changes made.
