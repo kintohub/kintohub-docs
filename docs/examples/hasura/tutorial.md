@@ -35,64 +35,65 @@ Now there is a forked _charts_ repository under your own GitHub account, KintoHu
 
 In KintoHub:
 
- - Select __KintoBlocks__ from the sidebar.
- - Press __Create New KintoBlock__.
- - Select the __Custom Service__ KintoBlock flavor.
+  1. Select **KintoBlocks** from the sidebar.
+  2. Click on the **Create New KintoBlock** card.
+  3. Select the **Custom Service** KintoBlock flavor.
 
-On the *__Create KintoBlocks__* page:
+Once the **Choose Repository** page is displayed, specify the repository details as suggested below:
 
- - Enter a __KintoBlock Name__ e.g. `Postgres`, the __Internal Name__ will be automatically filled with `postgres`.
- - Fill out a __Description__ e.g. `PostgreSQL database server`.
- - Next, as __Service Project Format__ choose `Helm`.
- - Set the __Helm Chart Source Folder__ to `stable/postgresql`.
- - Next, under the *__Repository__* section, type in the __Repository__ field `charts`. A drop-down list appears and your forked `charts` repository should be in it, select the repository from the list.
- - Finally, press __Create New KintoBlock__.
+  4. Enter the name of the repository as `charts` in the **Repository** field.
+  5. Set the **Source Folder Path** to `stable/postgresql`.
+  6. Click on the **Continue** button.
 
-You'll see in a new page the KintoBlock for the PostgreSQL database, and it points to the `master` branch of the repository by default.
+In the Create Custom Service page, specify the details of the Custom Service KintoBlock by following these steps:
+
+  7. Next, enter the **Name** e.g.`PostgreSQL`, the **Internal Name** will be automatically filled with `postgres`.
+  8. Select the `Helm` in **Source Type** drop-down.
+  9. Click on the **Create Custom Service** button.
+
+View the KintoBlock newly created for the PostgreSQL database. Note that it points to the `master` branch of the repository by default.
 
 #### Configure Helm arguments
 
-Before we can start the build, we'll specify some arguments for the Helm template first.
+Before the build is started, some arguments should be configured for the Helm template first.
 
- - Select __Settings__ in the top left of the screen.
- - Scroll down to the *__Helm Arguments (defaults)__* section, and enter the below 4 arguments:
-   1. __Argument__ `postgresqlPassword` with a password for the __Value__, e.g. `SuperS3cr3t`.
-   2. __Argument__ `postgresqlDatabase` with a __Value__ of `hasura`.
-   3. __Argument__ `persistence.size` with a __Value__ of `1Gi`, to override the default 8GB disk space. You can adjust this as needed.
-   4. __Argument__ `fullnameOverride` with a __Value__ of `cs-postgres`, to override the service name to be used in the connection string.
-   > _Tip:_ You can also copy/paste the below multi-line configuration in the _Enter Helm Argument_ field, and it will set them at once:
-   > ```ini
-   > postgresqlPassword=SuperS3cr3t
-   > postgresqlDatabase=hasura
-   > persistence.size=1Gi
-   > fullnameOverride=cs-postgres
-   > ```
- - Press the __Save Changes__ to store the arguments.
+  1. Click on the __Settings__ button displayed in the sidebar to modify the Helm arguments.
+  2. Scroll down to the *__Helm Arguments (defaults)__* section, and enter the following arguments:
+    1. __Argument__ `postgresqlPassword` with a password for the __Value__, e.g. `SuperS3cr3t`.
+    2. __Argument__ `postgresqlDatabase` with a __Value__ of `hasura`.
+    3. __Argument__ `persistence.size` with a __Value__ of `1Gi`, to override the default 8GB disk space. You can adjust this as needed.
+    4. __Argument__ `fullnameOverride` with a __Value__ of `cs-postgres`, to override the service name to be used in the connection string.
+  > _Tip:_ The below mentioned multi-line configuration can also be copied/pasted in the _Enter Helm Argument_ field, and it will set them at once:
+  > ```ini
+  > postgresqlPassword=SuperS3cr3t
+  > postgresqlDatabase=hasura
+  > persistence.size=1Gi
+  > fullnameOverride=cs-postgres
+  > ```
+  3. Click the __Save Changes__ to store the Helm Argument.
 
 #### Build the KintoBlock
 
- - Select the `master` branch under __Branches__ tab in the sidebar on the left.
- - In the *__Builds & Repository__* section press the __Build Latest Commit__ button to start the build with the provided Helm arguments.
+  4. Select the master branch under __Branches__ tab in the sidebar.
+  5. Click on __Build Latest Commit__ button to start the build with the provided Helm arguments.
 
 Once the build is completed, it is ready to be deployed.
 
 ### Deploy PostgreSQL
 
-From the KintoBlock page, we can immediately add this KintoBlock to a new deployment.
+The KintoBlock for a new deployment can be instantly added from the KintoBlock page:
 
- - Press __Add to Project__, and press the __New Project__ button.
- - Enter a name in the _Enter project name_ field, e.g. `hasura`.
- - Press the __Create__ button.
+  1. Click on the __Add to Project__ button and the menu with the projects appears.
+  2. Click the __New Project__ button.
+  3. Enter a name in the __Enter project name__ field, e.g. `hasura` and click on __Create__ button.
 
-This will bring up the *__Create New Project__* page. The _Project Name_ (`hasura`) and _Environment Name_ (`dev`) have already been filled out.
+This will bring up the *__Create New Project__* page with the _Project Name_ (`hasura`) and _Environment Name_ (`dev`) already been filled out. In the KintoBlocks section, it can also be seen that the __Postgres__ KintoBlock has been added.
 
-In the *__KintoBlocks__* section, you can see that the _Postgres_ KintoBlock has been added.
+  4. Click on the __Create New Project__ to proceed.
 
- - Next, press __Create New Project__ to proceed.
+Now, note that in the __Project Manage__ page, and the __Status & History__ section, the deployment is in progress.
 
-Now we see the _Hasura_ project page, and in the *__Status & History__* section we can see that a deployment is in progress.
-
- - Wait until the deployment succeeds.
+  5. Wait until the deployment is successful.
 
 ## Setup Hasura
 
@@ -119,105 +120,109 @@ FROM hasura/graphql-engine:latest
 
 In KintoHub:
 
- - Select __KintoBlocks__ from the sidebar.
- - Press __Create New KintoBlock__.
- - Select the __Website__ KintoBlock flavor.
+  1. Select __KintoBlocks__ from the sidebar.
+  2. Click on the __Create New KintoBlock__ card.
+  3. Select the __Website__ KintoBlock flavor.
 
-We choose a _Website_ flavor because it will provide a HTTPS endpoint for us so that we can reach the GraphQL API and Hasura's console.
+The _Website_ flavor is chosen because it will provide an HTTPS endpoint that can be reached via the GraphQL API and Hasura's console.
 
-On the *__Create KintoBlocks__* page:
+Once the __Choose Repository__ page is displayed, specify the repository details as suggested below:
 
- - Enter a __KintoBlock Name__ e.g. `Hasura`, and this fills out the __Internal Name__ as `hasura` automatically.
- - Fill out a __Description__ e.g. `Hasura GraphQL API`.
- - Next, as __Website Type__ choose `Dynamic Web App`.
+  4. Enter the name of the repository as `hasura-block` in the **Repository** field.
+  5. Click on the **Continue** button.
 
-This will bring up the *__Advanced Options__* section for the _Dynamic Web App_. Some settings will be irrelevant, since the Dockerfile will override these options. However, due to Dockerfiles being an experimental feature, some options are still required to complete, therefore we set them to dummy values:
+In the __Create Website__ page, specify the details of the Website KintoBlock by following these steps:
 
- - Set __Language__ and __Version__ to the first values in the drop-lists, e.g. `Node.js` and `11.7.0`.
+  6. Next, enter the **Name** e.g.`Hasura`, the **Internal Name** will be automatically filled with `hasura`.
+  7. Select the `Helm` in **Source Type** drop-down.
+  8. Choose the `Dynamic Web App` in **Choose a Type**.
+
+This will bring up the additional section for the _Dynamic Web App_. Some settings will be irrelevant since the Dockerfile will override these options. However, due to Dockerfiles being an experimental feature, some options are still required to complete, therefore they are set to dummy values:
+
+  9. Set the __Language__ and __Version__ e.g. `Node.js` and `11.7.0-alpine`.
 
 Selecting _Node.js_ has changed the __Port__ value to `80`. Hasura listens on port `8080` instead, thus:
 
- - Change __Port__ to `8080`.
- - Finally, press __Create New KintoBlock__.
+  10. Change __Port__ to `8080`.
+  11. Click on the __Create Website__ button.
 
-You'll see in a new page the KintoBlock for the Hasura API, and it points to the `master` branch of the repository by default.
+View the newly created KintoBlock for the Hasura API, and note that it points to the `master` branch of the repository by default.
 
 #### Configure environment variables
 
-Before we can start the build, we'll need to specify some environment arguments that are associated with the build.
+Before starting the build, some environment variables associated with the build are required to be specified:
 
- - Select __Settings__ in the top left of the screen.
- - Scroll down to the *__Environment Variables (defaults)__* section, and enter the below 4 arguments:
-   1. __Variable__ `HASURA_GRAPHQL_DATABASE_URL` with the connection string to the database, If you followed the tutorial to setup the database, use as __Value__ the connection string `postgres://postgres:SuperS3cr3t@cs-postgres:5432/postgres`. This entry can be marked as required with the __This is required__ toggle.
-   2. __Variable__ `HASURA_GRAPHQL_ENABLE_CONSOLE` with a __Value__ of `true` to enable the Hasura console.
-   3. __Variable__ `HASURA_GRAPHQL_ADMIN_SECRET` with a password value to protect the Console from being accessed publicly, e.g. `dev_secret`. This entry can be marked as required with the __This is required__ toggle.
-   > _Tip:_ You can also copy/paste the below multi-line configuration in the _Enter Variable_ field, and it will set them at once:
-   > ```ini
-   > HASURA_GRAPHQL_DATABASE_URL=postgres://postgres:SuperS3cr3t@cs-postgres:5432/postgres
-   > HASURA_GRAPHQL_ENABLE_CONSOLE=true
-   > HASURA_GRAPHQL_ADMIN_SECRET=dev_secret
-   > ```
- - Press the __Save Changes__ to store the arguments.
+  1. Click on the __Settings__ button displayed in the sidebar to modify the Helm arguments.
+  2. Scroll down to the *__Environment Variables (defaults)__* section, and enter the arguments mentioned below:
+    1. __Variable__ `HASURA_GRAPHQL_DATABASE_URL` with the connection string to the database. If you followed the tutorial to set up the database, use as the connection string `postgres://postgres:SuperS3cr3t@cs-postgres:5432/postgres` __Value__. This entry can be marked as required with the __Required__ checkbox.
+    2. __Variable__ `HASURA_GRAPHQL_ENABLE_CONSOLE` with a __Value__ of `true` to enable the Hasura console.
+    3. __Variable__ `HASURA_GRAPHQL_ADMIN_SECRET` with a password value to protect the Console from being accessed publicly, e.g. `dev_secret`. This entry can be marked as required with the This is __Required__ checkbox.
+  > _Tip_: The below-mentioned multi-line configuration can also be copied/pasted in the _Enter Variable_ field, and it will set them at once:
+  > ```ini
+  > HASURA_GRAPHQL_DATABASE_URL=postgres://postgres:SuperS3cr3t@cs-postgres:5432/postgres
+  > HASURA_GRAPHQL_ENABLE_CONSOLE=true
+  > HASURA_GRAPHQL_ADMIN_SECRET=dev_secret
+  > ```
+  3. Click the __Save Changes__ to store the Environment Variables.
 
 #### Build the KintoBlock
 
- - Select the `master` branch under __Branches__ tab in the sidebar on the left.
- - In the *__Builds & Repository__* section press the __Build Latest Commit__ button to start the build with the provided Helm arguments.
+  4. Select the `master` branch under the __Branches__ tab in the sidebar.
+  5. Click on *__Build Latest Commit__* button to start the build with the provided Environment Variables.
 
 Once the build is completed, it is ready to be deployed.
 
 ### Deploy Hasura
 
-Depending on whether you already created a project in the PostgreSQL steps, either A) add to that existing one, or B) create a new project.
+Depending on whether you already created a project in the PostgreSQL steps, either 
+(A) add to that existing one, or 
+(B) create a new project.
 
 #### A) Add to existing project
 
-From the KintoBlock page, we can immediately add this KintoBlock to an existing deployment.
+The KintoBlock for an existing deployment can be added instantly from the KintoBlock page.
 
- - Press the __Add to Project__ button.
- - Select under the desired project the environment. (e.g. `dev` under `hasura`)
+  1. Click on the __Add to Project__ button and the menu with the projects appears.
+  2. Select under the desired project in the environment. (e.g. `dev` under `hasura`)
 
-Now we see the existing _Hasura_ project page, and in the *__KintoBlocks__* section, you can see that the _Hasura_ KintoBlock has been added.
+The existing _Hasura_ project page appears, and in the *__KintoBlocks__* section, it can be seen that the _Hasura_ KintoBlock has been added.
 
- - Next, press __Deploy__ to proceed.
+  3. Next, press __Deploy__ to proceed.
 
-This brings up the *__Compare Versions__* slide panel. In it you can see the added _Hasura_ block.
+The *__Compare Versions__* slide panel is displayed with the added _Hasura_ KintoBlock.
 
- - Press __Confirm Deployment__ to start the deployment.
+  4. Click on the __Confirm Deployment__ to start the deployment.
 
-In the *__Status & History__* section we can see that a deployment is in progress.
+In the *__Status & History__* section, we can see that the deployment is in progress.
 
- - Wait until the deployment succeeds.
+  5. Wait until the deployment is successful.
 
 #### B) Create new project
 
-From the KintoBlock page, we can immediately add this KintoBlock to a new deployment.
+The KintoBlock for an existing deployment can be added instantly from the KintoBlock page.
 
- - Press __Add to Project__, and press the __New Project__ button.
- - Enter a name in the _Enter project name_ field, e.g. `hasura`.
- - Press the __Create__ button.
+  1. Click on the __Add to Project__ and the menu with the projects appears.
+  2. Click the __New Project__ button.
+  3. Enter a name in the __Enter project name__ field, e.g. `hasura` and click on the __Create__ button.
 
-This will bring up the *__Create New Project__* page. The _Project Name_ (`hasura`) and _Environment Name_ (`dev`) have already been filled out.
+This will bring up the *__Create New Project__* page with the _Project Name_ (`hasura`) and _Environment Name_ (`dev`) already filled out.
 
-In the *__KintoBlocks__* section, you can see that the _Postgres_ KintoBlock has been added.
+In the *__KintoBlocks__* section, it can be seen that the _Postgres_ KintoBlock has been added.
 
- - Next, press __Create New Project__ to proceed.
+  4. Click on the *__Create New Project__* to proceed.
 
-Now we see the _Hasura_ project page, and in the *__Status & History__* section we can see that a deployment is in progress.
+The deployment in progress can be seen in the *__Status & History__* section of the _Hasura_ project page.
 
- - Wait until the deployment succeeds.
+  5. Wait until the deployment is successful.
 
 ### Accessing the Hasura Console
 
 On the _Hasura_ project page, scroll down to the *__KintoBlocks__* section.
 
- - Press __Open__ on the _Hasura_ KintoBlock to open it's endpoint in a new browser tab.
+  1. Click on the __Open__ button on the _Hasura_ KintoBlock to open its endpoint in a new browser tab.
+  2. Once the Hasura login screen is displayed, enter the _admin secret_ from the configuration, e.g. dev_secret.
 
-You'll get prompted with Hasura's login screen.
-
- - Enter the _admin secret_ from the configuration, e.g. `dev_secret`.
-
-![Hasura login screen asking for the admin secret](assets/examples/hasura/hasura-login.png)
+![Hasura login screen asking for the admin secret](/docs/assets/examples/hasura/hasura-login.png)
 
 Congratulations, you have Hasura up and running on KintoHub!
 
@@ -225,63 +230,65 @@ Next up, let's create another environment for production use.
 
 ## Multiple environments
 
-In the previous steps we have deployed into the _dev_ environment. This is great for testing development activities. For production workloads we would likely use a separate production environment called `prod`, so that the two don't interfere with each other.
+In the previous steps, the deployments were done in the `dev` environment. This is great for testing development activities. For production workloads, it more likely that a separate production environment called `prod` will be used so that the two don't interfere with each other.
 
 ### Create a production environment
 
 In the sidebar of the _Hasura_ project page:
 
- - Press the __Add New Environment__ button.
+  1. Click on the __Add New Environment__ button.
 
 This brings up a *__Add New Environment__* dialog.
 
- - Enter in the __Enviroment Name__ field the value `prod`.
- - Press the __Add New Environment__ button to confirm.
+  2. Enter in the __Environment Name__ field the value `prod`.
+  3. Click on the __Add New Environment__ button to confirm.
 
-![Add New Environment dialog](assets/examples/hasura/add-new-environment.png)
+![Add New Environment dialog](/docs/assets/examples/hasura/add-new-environment.png)
 
 This creates a new _PROD_ environment in the sidebar, below the _DEV_ environment.
 
- - Use the __drag & drop handle__ next to the environment name to drag the _PROD_ environment above the _DEV_ environment.
+  4. Use the *__drag & drop handle__* next to the environment name to drag the _PROD_ environment above the _DEV_ environment.
 
-![DEV and PROD environments in the sidebar](assets/examples/hasura/two-environments-sidebar.png)
+![DEV and PROD environments in the sidebar](/docs/assets/examples/hasura/two-environments-sidebar.png)
 
-Now the environments are in the right order, you can promote KintoBlocks from one environment to the other.
+Since the environments are in the right order, the KintoBlocks can be promoted from one environment to the other.
 
- - Press the __Promote__ button.
+  5. Click on the __Promote__ button.
 
-This brings up the *__Promote__* dialog, with a confirmation message to indicate that you're about to promote the _dev_ environment to the _prod_ environment.
+This brings up the *__Promote__* dialog, with a confirmation message to indicate that the _dev_ environment is ready to be promoted as the _prod_ environment.
 
- - Press the __Deploy__ button to start the new deployment into the _prod_ environment.
+  6. Click on the __Deploy__ button.
+  7. __Compare Version__ slide panel displays the changes made during the promoting.
+  8. Click on the __Confirm Deployment__ to start the new deployment into the _prod_ environment.
 
-You'll see that the first deployment for the _PROD_ environment is in progress.
+Note that the first deployment for the **PROD** environment is in progress.
 
- - Wait for the deployment to succeed.
- - Press the __Open__ button on the _Hasura_ KintoBlock to see that the Hasura Console can be accessed.
+  9. Wait for the deployment to succeed.
+  10. Click on the **Open** button on the **Hasura** KintoBlock to see that the Hasura Console can be accessed.
 
-![PROD environment deployment in progress](assets/examples/hasura/prod-environment-deployment.png)
+![PROD environment deployment in progress](/docs/assets/examples/hasura/prod-environment-deployment.png)
 
-This deployment to _prod_ has used exactly the same environment variables as we have defined for the _dev_ environment. However, it is common to change these per environment. Let's do that next.
+This deployment to _prod_ has used exactly the same environment variables as it has been defined for the _dev_ environment. However, it is common to change these per environments. Let's do that next.
 
 ### Override environment variables
 
- - Scroll down to the *__KintoBlocks__* section of the _Hasura_ project page in the _prod_ environment.
- - Press the __gear icon__ in the _Hasura_ KintoBlock.
+  1. Scroll down to the __KintoBlocks__ section of the _Hasura_ project in the project manage page of the _prod_ environment.
+  2. Click on the __gear icon__ in the _Hasura_ KintoBlock.
 
-This brings up the _Prod Configurations_ for the KintoBlock, and in the slide panel you can see a *__Environment Variables__* section.
+This brings up the _Prod Configurations_ for the KintoBlock, and in the slide panel, an *__Environment Variables__* section can be seen.
 
- - Update the value of the `HASURA_GRAPHQL_ADMIN_SECRET` variable to another password. (e.g. `prod_secret`)
- - Press __Done Configuring__ in the top right corner to confirm the change.
- - Finally, press the __Deploy__ button in the bottom right corner to start the deployment of the change.
+  3. Modify the existing value of the `HASURA_GRAPHQL_ADMIN_SECRET` variable to another password. (e.g. `prod_secret`)
+  4. Click on the __Done Configuring__ in the top right corner to confirm the change.
+  5. Click on the __Deploy__ button.
 
-![Hasura KintoBlock configuration slide panel](assets/examples/hasura/hasura-config-slide-panel.png)
+  ![Hasura KintoBlock configuration slide panel](/docs/assets/examples/hasura/hasura-config-slide-panel.png)
 
-You'll get prompted with the *__Compare Versions__* slide panel that shows into detail the changes that will be applied with this deployment. Here we can see that the environment variables of the _Hasura_ KintoBlock will be modified.
+The *__Compare Versions__* slide panel will show details of the changes that will be applied with this deployment. Here it can be seen that the environment variables of the _Hasura_ KintoBlock will be modified.
 
- - Press __Confirm Project__ to start the deployment.
- - Wait for the deployment to complete.
- - Press the __Open__ button on the _Hasura_ KintoBlock and log in with the new password to confirm the changes were applied.
+  1. Click on the __Confirm Project__ to start the deployment.
+  2. Wait for the deployment to complete.
+  3. Click on the __Open__ button on the _Hasura_ KintoBlock and log in with the new password to confirm the changes were applied.
 
-![Compare Versions slide panel for the environment variables change](assets/examples/hasura/confirm-prod-deploy.png)
+![Compare Versions slide panel for the environment variables change](/docs/assets/examples/hasura/confirm-prod-deploy.png)
 
 Congratulations, you have completed this tutorial where you've deployed two separate instances of Hasura in their own respective environments.
