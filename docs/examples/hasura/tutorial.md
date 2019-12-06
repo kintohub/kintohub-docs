@@ -19,65 +19,15 @@ Since Hasura depends on PostgreSQL, we'll first need to prepare a database.
 
 > Already got an existing PostgreSQL database? Skip to the [next section](#setup-hasura).
 
-### Fork Helm charts
-
-With [Custom Service KintoBlocks](kintoblocks/custom-services.md) it is easy to deploy ready-made cloud-native packages using [Helm charts](https://helm.sh). PostgreSQL is available as a Helm chart from the [Helm Hub](https://hub.helm.sh/charts/stable/postgresql).
-
-To proceed deploying a new PostgreSQL database:
- - Browse to the [`helm/charts` repository on GitHub](https://github.com/helm/charts).
- - Use the __Fork__ button to add the repo to your own GitHub account.
-
-![Fork button on GitHub](https://github-images.s3.amazonaws.com/help/bootcamp/Bootcamp-Fork.png)
-
-Now there is a forked _charts_ repository under your own GitHub account, KintoHub can refer to it.
-
-### Create a PostgreSQL KintoBlock
+### Use the existing PostgreSQL KintoBlock
 
 In KintoHub:
 
-  1. Select **KintoBlocks** from the sidebar.
-  2. Click on the **Create New KintoBlock** card.
-  3. Select the **Custom Service** KintoBlock flavor.
+ 1. Select **KintoBlocks** from the sidebar.
+ 2. Click on **Catlog** tab in _KintoBlock List_ page.
+ 3. Select the **Postgres** kintoBlock from the Catalog KintoBlock List.
 
-Once the **Choose Repository** page is displayed, specify the repository details as suggested below:
-
-  4. Enter the name of the repository as `charts` in the **Repository** field.
-  5. Set the **Source Folder Path** to `stable/postgresql`.
-  6. Click on the **Continue** button.
-
-In the Create Custom Service page, specify the details of the Custom Service KintoBlock by following these steps:
-
-  7. Next, enter the **Name** e.g.`PostgreSQL`, the **Internal Name** will be automatically filled with `postgres`.
-  8. Select the `Helm` in **Source Type** drop-down.
-  9. Click on the **Create Custom Service** button.
-
-View the KintoBlock newly created for the PostgreSQL database. Note that it points to the `master` branch of the repository by default.
-
-#### Configure Helm arguments
-
-Before the build is started, some arguments should be configured for the Helm template first.
-
-  1. Click on the __Settings__ button displayed in the sidebar to modify the Helm arguments.
-  2. Scroll down to the *__Helm Arguments (defaults)__* section, and enter the following arguments:
-    1. __Argument__ `postgresqlPassword` with a password for the __Value__, e.g. `SuperS3cr3t`.
-    2. __Argument__ `postgresqlDatabase` with a __Value__ of `hasura`.
-    3. __Argument__ `persistence.size` with a __Value__ of `1Gi`, to override the default 8GB disk space. You can adjust this as needed.
-    4. __Argument__ `fullnameOverride` with a __Value__ of `cs-postgres`, to override the service name to be used in the connection string.
-  > _Tip:_ The below mentioned multi-line configuration can also be copied/pasted in the _Enter Helm Argument_ field, and it will set them at once:
-  > ```ini
-  > postgresqlPassword=SuperS3cr3t
-  > postgresqlDatabase=hasura
-  > persistence.size=1Gi
-  > fullnameOverride=cs-postgres
-  > ```
-  3. Click the __Save Changes__ to store the Helm Argument.
-
-#### Build the KintoBlock
-
-  4. Select the master branch under __Branches__ tab in the sidebar.
-  5. Click on __Build Latest Commit__ button to start the build with the provided Helm arguments.
-
-Once the build is completed, it is ready to be deployed.
+KintoBlock is already built and ready to be deployed in a Project.
 
 ### Deploy PostgreSQL
 
