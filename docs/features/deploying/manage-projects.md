@@ -34,7 +34,7 @@ To add the same KintoBlock multiple times in a Project, follow the instructions 
 
 Alias feature can be used while _Creating a new Project_ or after the _Project is created_.
 
-> Note: Once the KintoBlock is deployed, the hostname cannot be changed (hostname is locked). The hostname replaces the internal name of the KintoBlock only in the project but not in the main KintoBlock. 
+> Note: Once the KintoBlock is deployed, the hostname cannot be changed (hostname is locked). The hostname replaces the internal name of the KintoBlock only in the project but not in the original KintoBlock. 
 
 ## Add or Remove KintoBlocks
 
