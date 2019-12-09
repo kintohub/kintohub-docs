@@ -2,6 +2,40 @@
 title: Manage Projects
 ---
 
+## Hostname / Alias
+
+The **Alias** feature gives the ability to add the same KintoBlock more than once in a single project by changing the hostname. The changes made to the original KintoBlock will be applied to all the aliases.
+
+To add the same KintoBlock multiple times in a Project, follow the instructions below:
+
+1. Select **Projects** from the sidebar.
+
+2. Click **Create New Project** card or the **+** icon.
+
+3. In the **Basic Info** form, specify details on `Project Name`, `Internal Name` and `Environment Name`.
+
+4. Under the KintoBlocks section, search for the Kintoblock you would like to add. E.g. Microservice Example.
+
+5. Again search for the same KintoBlock and add it to the Project.
+
+6. Click on **Configure KintoBlock** button.
+   
+   ![Add the same KintoBlock more than once](/docs/assets/add-same-kb.png)
+   
+   >Note: By modifying the Environment Variables of a KintoBlock, the same KintoBlock can be used for multiple purposes like deployments across multiple environments.
+   
+7. Enter the unique `Hostname`.
+
+   ![Host name](/docs/assets/host-name.png)
+   
+8. Click on the **Done Configuration** button.
+
+9. Click on the **Create New Project** button.
+
+Alias feature can be used while _Creating a new Project_ or after the _Project is created_.
+
+> Note: Once the KintoBlock is deployed, the hostname cannot be changed (hostname is locked). The hostname replaces the internal name of the KintoBlock only in the project but not in the main KintoBlock. 
+
 ## Add or Remove KintoBlocks
 
 A Project can consist of one or more KintoBlocks. The KintoBlocks can be added or removed from project as and when the features are augmented. 
