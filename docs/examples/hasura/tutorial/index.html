@@ -64,75 +64,29 @@
 <blockquote>
 <p>Already got an existing PostgreSQL database? Skip to the <a href="#setup-hasura">next section</a>.</p>
 </blockquote>
-<h3><a class="anchor" aria-hidden="true" id="fork-helm-charts"></a><a href="#fork-helm-charts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fork Helm charts</h3>
-<p>With <a href="/docs/kintoblocks/custom-services">Custom Service KintoBlocks</a> it is easy to deploy ready-made cloud-native packages using <a href="https://helm.sh">Helm charts</a>. PostgreSQL is available as a Helm chart from the <a href="https://hub.helm.sh/charts/stable/postgresql">Helm Hub</a>.</p>
-<p>To proceed deploying a new PostgreSQL database:</p>
-<ul>
-<li>Browse to the <a href="https://github.com/helm/charts"><code>helm/charts</code> repository on GitHub</a>.</li>
-<li>Use the <strong>Fork</strong> button to add the repo to your own GitHub account.</li>
-</ul>
-<p><img src="https://github-images.s3.amazonaws.com/help/bootcamp/Bootcamp-Fork.png" alt="Fork button on GitHub"></p>
-<p>Now there is a forked <em>charts</em> repository under your own GitHub account, KintoHub can refer to it.</p>
-<h3><a class="anchor" aria-hidden="true" id="create-a-postgresql-kintoblock"></a><a href="#create-a-postgresql-kintoblock" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a PostgreSQL KintoBlock</h3>
+<h3><a class="anchor" aria-hidden="true" id="use-the-existing-postgresql-kintoblock"></a><a href="#use-the-existing-postgresql-kintoblock" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Use the existing PostgreSQL KintoBlock</h3>
 <p>In KintoHub:</p>
-<ul>
-<li>Select <strong>KintoBlocks</strong> from the sidebar.</li>
-<li>Press <strong>Create New KintoBlock</strong>.</li>
-<li>Select the <strong>Custom Service</strong> KintoBlock flavor.</li>
-</ul>
-<p>On the <em><strong>Create KintoBlocks</strong></em> page:</p>
-<ul>
-<li>Enter a <strong>KintoBlock Name</strong> e.g. <code>Postgres</code>, the <strong>Internal Name</strong> will be automatically filled with <code>postgres</code>.</li>
-<li>Fill out a <strong>Description</strong> e.g. <code>PostgreSQL database server</code>.</li>
-<li>Next, as <strong>Service Project Format</strong> choose <code>Helm</code>.</li>
-<li>Set the <strong>Helm Chart Source Folder</strong> to <code>stable/postgresql</code>.</li>
-<li>Next, under the <em><strong>Repository</strong></em> section, type in the <strong>Repository</strong> field <code>charts</code>. A drop-down list appears and your forked <code>charts</code> repository should be in it, select the repository from the list.</li>
-<li>Finally, press <strong>Create New KintoBlock</strong>.</li>
-</ul>
-<p>You'll see in a new page the KintoBlock for the PostgreSQL database, and it points to the <code>master</code> branch of the repository by default.</p>
-<h4><a class="anchor" aria-hidden="true" id="configure-helm-arguments"></a><a href="#configure-helm-arguments" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure Helm arguments</h4>
-<p>Before we can start the build, we'll specify some arguments for the Helm template first.</p>
-<ul>
-<li>Select <strong>Settings</strong> in the top left of the screen.</li>
-<li>Scroll down to the <em><strong>Helm Arguments (defaults)</strong></em> section, and enter the below 4 arguments:
 <ol>
-<li><strong>Argument</strong> <code>postgresqlPassword</code> with a password for the <strong>Value</strong>, e.g. <code>SuperS3cr3t</code>.</li>
-<li><strong>Argument</strong> <code>postgresqlDatabase</code> with a <strong>Value</strong> of <code>hasura</code>.</li>
-<li><strong>Argument</strong> <code>persistence.size</code> with a <strong>Value</strong> of <code>1Gi</code>, to override the default 8GB disk space. You can adjust this as needed.</li>
-<li><strong>Argument</strong> <code>fullnameOverride</code> with a <strong>Value</strong> of <code>cs-postgres</code>, to override the service name to be used in the connection string.</li>
+<li>Select <strong>KintoBlocks</strong> from the sidebar.</li>
+<li>Click on <strong>Catlog</strong> tab in <em>KintoBlock List</em> page.</li>
+<li>Select the <strong>Postgres</strong> kintoBlock from the Catalog KintoBlock List.</li>
 </ol>
-<blockquote>
-<p><em>Tip:</em> You can also copy/paste the below multi-line configuration in the <em>Enter Helm Argument</em> field, and it will set them at once:</p>
-<pre><code class="hljs css language-ini"><span class="token constant">postgresqlPassword</span><span class="token attr-value"><span class="token punctuation">=</span>SuperS3cr3t</span>
-<span class="token constant">postgresqlDatabase</span><span class="token attr-value"><span class="token punctuation">=</span>hasura</span>
-<span class="token constant">persistence.size</span><span class="token attr-value"><span class="token punctuation">=</span>1Gi</span>
-<span class="token constant">fullnameOverride</span><span class="token attr-value"><span class="token punctuation">=</span>cs-postgres</span>
-</code></pre>
-</blockquote></li>
-<li>Press the <strong>Save Changes</strong> to store the arguments.</li>
-</ul>
-<h4><a class="anchor" aria-hidden="true" id="build-the-kintoblock"></a><a href="#build-the-kintoblock" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Build the KintoBlock</h4>
-<ul>
-<li>Select the <code>master</code> branch under <strong>Branches</strong> tab in the sidebar on the left.</li>
-<li>In the <em><strong>Builds &amp; Repository</strong></em> section press the <strong>Build Latest Commit</strong> button to start the build with the provided Helm arguments.</li>
-</ul>
-<p>Once the build is completed, it is ready to be deployed.</p>
+<p>KintoBlock is already built and ready to be deployed in a Project.</p>
 <h3><a class="anchor" aria-hidden="true" id="deploy-postgresql"></a><a href="#deploy-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deploy PostgreSQL</h3>
-<p>From the KintoBlock page, we can immediately add this KintoBlock to a new deployment.</p>
-<ul>
-<li>Press <strong>Add to Project</strong>, and press the <strong>New Project</strong> button.</li>
-<li>Enter a name in the <em>Enter project name</em> field, e.g. <code>hasura</code>.</li>
-<li>Press the <strong>Create</strong> button.</li>
-</ul>
-<p>This will bring up the <em><strong>Create New Project</strong></em> page. The <em>Project Name</em> (<code>hasura</code>) and <em>Environment Name</em> (<code>dev</code>) have already been filled out.</p>
-<p>In the <em><strong>KintoBlocks</strong></em> section, you can see that the <em>Postgres</em> KintoBlock has been added.</p>
-<ul>
-<li>Next, press <strong>Create New Project</strong> to proceed.</li>
-</ul>
-<p>Now we see the <em>Hasura</em> project page, and in the <em><strong>Status &amp; History</strong></em> section we can see that a deployment is in progress.</p>
-<ul>
-<li>Wait until the deployment succeeds.</li>
-</ul>
+<p>The KintoBlock for a new deployment can be instantly added from the KintoBlock page:</p>
+<ol>
+<li>Click on the <strong>Add to Project</strong> button and the menu with the projects appears.</li>
+<li>Click the <strong>New Project</strong> button.</li>
+<li>Enter a name in the <strong>Enter project name</strong> field, e.g. <code>hasura</code> and click on <strong>Create</strong> button.</li>
+</ol>
+<p>This will bring up the <em><strong>Create New Project</strong></em> page with the <em>Project Name</em> (<code>hasura</code>) and <em>Environment Name</em> (<code>dev</code>) already been filled out. In the KintoBlocks section, it can also be seen that the <strong>Postgres</strong> KintoBlock has been added.</p>
+<ol start="4">
+<li>Click on the <strong>Create New Project</strong> to proceed.</li>
+</ol>
+<p>Now, note that in the <strong>Project Manage</strong> page, and the <strong>Status &amp; History</strong> section, the deployment is in progress.</p>
+<ol start="5">
+<li>Wait until the deployment is successful.</li>
+</ol>
 <h2><a class="anchor" aria-hidden="true" id="setup-hasura"></a><a href="#setup-hasura" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setup Hasura</h2>
 <p>With an existing PostgreSQL database ready, we can setup the Hasura API endpoint.</p>
 <h3><a class="anchor" aria-hidden="true" id="fork-hasura-dockerfile"></a><a href="#fork-hasura-dockerfile" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fork Hasura Dockerfile</h3>
@@ -150,155 +104,161 @@
 </blockquote>
 <h3><a class="anchor" aria-hidden="true" id="create-a-hasura-kintoblock"></a><a href="#create-a-hasura-kintoblock" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a Hasura KintoBlock</h3>
 <p>In KintoHub:</p>
-<ul>
-<li>Select <strong>KintoBlocks</strong> from the sidebar.</li>
-<li>Press <strong>Create New KintoBlock</strong>.</li>
-<li>Select the <strong>Website</strong> KintoBlock flavor.</li>
-</ul>
-<p>We choose a <em>Website</em> flavor because it will provide a HTTPS endpoint for us so that we can reach the GraphQL API and Hasura's console.</p>
-<p>On the <em><strong>Create KintoBlocks</strong></em> page:</p>
-<ul>
-<li>Enter a <strong>KintoBlock Name</strong> e.g. <code>Hasura</code>, and this fills out the <strong>Internal Name</strong> as <code>hasura</code> automatically.</li>
-<li>Fill out a <strong>Description</strong> e.g. <code>Hasura GraphQL API</code>.</li>
-<li>Next, as <strong>Website Type</strong> choose <code>Dynamic Web App</code>.</li>
-</ul>
-<p>This will bring up the <em><strong>Advanced Options</strong></em> section for the <em>Dynamic Web App</em>. Some settings will be irrelevant, since the Dockerfile will override these options. However, due to Dockerfiles being an experimental feature, some options are still required to complete, therefore we set them to dummy values:</p>
-<ul>
-<li>Set <strong>Language</strong> and <strong>Version</strong> to the first values in the drop-lists, e.g. <code>Node.js</code> and <code>11.7.0</code>.</li>
-</ul>
-<p>Selecting <em>Node.js</em> has changed the <strong>Port</strong> value to <code>80</code>. Hasura listens on port <code>8080</code> instead, thus:</p>
-<ul>
-<li>Change <strong>Port</strong> to <code>8080</code>.</li>
-<li>Finally, press <strong>Create New KintoBlock</strong>.</li>
-</ul>
-<p>You'll see in a new page the KintoBlock for the Hasura API, and it points to the <code>master</code> branch of the repository by default.</p>
-<h4><a class="anchor" aria-hidden="true" id="configure-environment-variables"></a><a href="#configure-environment-variables" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure environment variables</h4>
-<p>Before we can start the build, we'll need to specify some environment arguments that are associated with the build.</p>
-<ul>
-<li>Select <strong>Settings</strong> in the top left of the screen.</li>
-<li>Scroll down to the <em><strong>Environment Variables (defaults)</strong></em> section, and enter the below 4 arguments:
 <ol>
-<li><strong>Variable</strong> <code>HASURA_GRAPHQL_DATABASE_URL</code> with the connection string to the database, If you followed the tutorial to setup the database, use as <strong>Value</strong> the connection string <code>postgres://postgres:SuperS3cr3t@cs-postgres:5432/postgres</code>. This entry can be marked as required with the <strong>This is required</strong> toggle.</li>
+<li>Select <strong>KintoBlocks</strong> from the sidebar.</li>
+<li>Click on the <strong>Create New KintoBlock</strong> card.</li>
+<li>Select the <strong>Website</strong> KintoBlock flavor.</li>
+</ol>
+<p>The <em>Website</em> flavor is chosen because it will provide an HTTPS endpoint that can be reached via the GraphQL API and Hasura's console.</p>
+<p>Once the <strong>Choose Repository</strong> page is displayed, specify the repository details as suggested below:</p>
+<ol start="4">
+<li>Enter the name of the repository as <code>hasura-block</code> in the <strong>Repository</strong> field.</li>
+<li>Click on the <strong>Continue</strong> button.</li>
+</ol>
+<p>In the <strong>Create Website</strong> page, specify the details of the Website KintoBlock by following these steps:</p>
+<ol start="6">
+<li>Next, enter the <strong>Name</strong> e.g.<code>Hasura</code>, the <strong>Internal Name</strong> will be automatically filled with <code>hasura</code>.</li>
+<li>Select the <code>Helm</code> in <strong>Source Type</strong> drop-down.</li>
+<li>Choose the <code>Dynamic Web App</code> in <strong>Choose a Type</strong>.</li>
+</ol>
+<p>This will bring up the additional section for the <em>Dynamic Web App</em>. Some settings will be irrelevant since the Dockerfile will override these options. However, due to Dockerfiles being an experimental feature, some options are still required to complete, therefore they are set to dummy values:</p>
+<ol start="9">
+<li>Set the <strong>Language</strong> and <strong>Version</strong> e.g. <code>Node.js</code> and <code>11.7.0-alpine</code>.</li>
+</ol>
+<p>Selecting <em>Node.js</em> has changed the <strong>Port</strong> value to <code>80</code>. Hasura listens on port <code>8080</code> instead, thus:</p>
+<ol start="10">
+<li>Change <strong>Port</strong> to <code>8080</code>.</li>
+<li>Click on the <strong>Create Website</strong> button.</li>
+</ol>
+<p>View the newly created KintoBlock for the Hasura API, and note that it points to the <code>master</code> branch of the repository by default.</p>
+<h4><a class="anchor" aria-hidden="true" id="configure-environment-variables"></a><a href="#configure-environment-variables" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure environment variables</h4>
+<p>Before starting the build, some environment variables associated with the build are required to be specified:</p>
+<ol>
+<li>Click on the <strong>Settings</strong> button displayed in the sidebar to modify the Helm arguments.</li>
+<li>Scroll down to the <em><strong>Environment Variables (defaults)</strong></em> section, and enter the arguments mentioned below:</li>
+<li><strong>Variable</strong> <code>HASURA_GRAPHQL_DATABASE_URL</code> with the connection string to the database. If you followed the tutorial to set up the database, use as the connection string <code>postgres://postgres:SuperS3cr3t@cs-postgres:5432/postgres</code> <strong>Value</strong>. This entry can be marked as required with the <strong>Required</strong> checkbox.</li>
 <li><strong>Variable</strong> <code>HASURA_GRAPHQL_ENABLE_CONSOLE</code> with a <strong>Value</strong> of <code>true</code> to enable the Hasura console.</li>
-<li><strong>Variable</strong> <code>HASURA_GRAPHQL_ADMIN_SECRET</code> with a password value to protect the Console from being accessed publicly, e.g. <code>dev_secret</code>. This entry can be marked as required with the <strong>This is required</strong> toggle.</li>
+<li><strong>Variable</strong> <code>HASURA_GRAPHQL_ADMIN_SECRET</code> with a password value to protect the Console from being accessed publicly, e.g. <code>dev_secret</code>. This entry can be marked as required with the This is <strong>Required</strong> checkbox.</li>
 </ol>
 <blockquote>
-<p><em>Tip:</em> You can also copy/paste the below multi-line configuration in the <em>Enter Variable</em> field, and it will set them at once:</p>
+<p><em>Tip</em>: The below-mentioned multi-line configuration can also be copied/pasted in the <em>Enter Variable</em> field, and it will set them at once:</p>
 <pre><code class="hljs css language-ini"><span class="token constant">HASURA_GRAPHQL_DATABASE_URL</span><span class="token attr-value"><span class="token punctuation">=</span>postgres://postgres:SuperS3cr3t@cs-postgres:5432/postgres</span>
 <span class="token constant">HASURA_GRAPHQL_ENABLE_CONSOLE</span><span class="token attr-value"><span class="token punctuation">=</span>true</span>
 <span class="token constant">HASURA_GRAPHQL_ADMIN_SECRET</span><span class="token attr-value"><span class="token punctuation">=</span>dev_secret</span>
 </code></pre>
-</blockquote></li>
-<li>Press the <strong>Save Changes</strong> to store the arguments.</li>
-</ul>
-<h4><a class="anchor" aria-hidden="true" id="build-the-kintoblock-1"></a><a href="#build-the-kintoblock-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Build the KintoBlock</h4>
-<ul>
-<li>Select the <code>master</code> branch under <strong>Branches</strong> tab in the sidebar on the left.</li>
-<li>In the <em><strong>Builds &amp; Repository</strong></em> section press the <strong>Build Latest Commit</strong> button to start the build with the provided Helm arguments.</li>
-</ul>
+</blockquote>
+<ol start="3">
+<li>Click the <strong>Save Changes</strong> to store the Environment Variables.</li>
+</ol>
+<h4><a class="anchor" aria-hidden="true" id="build-the-kintoblock"></a><a href="#build-the-kintoblock" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Build the KintoBlock</h4>
+<ol start="4">
+<li>Select the <code>master</code> branch under the <strong>Branches</strong> tab in the sidebar.</li>
+<li>Click on <em><strong>Build Latest Commit</strong></em> button to start the build with the provided Environment Variables.</li>
+</ol>
 <p>Once the build is completed, it is ready to be deployed.</p>
 <h3><a class="anchor" aria-hidden="true" id="deploy-hasura"></a><a href="#deploy-hasura" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deploy Hasura</h3>
-<p>Depending on whether you already created a project in the PostgreSQL steps, either A) add to that existing one, or B) create a new project.</p>
+<p>Depending on whether you already created a project in the PostgreSQL steps, either
+(A) add to that existing one, or
+(B) create a new project.</p>
 <h4><a class="anchor" aria-hidden="true" id="a-add-to-existing-project"></a><a href="#a-add-to-existing-project" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A) Add to existing project</h4>
-<p>From the KintoBlock page, we can immediately add this KintoBlock to an existing deployment.</p>
-<ul>
-<li>Press the <strong>Add to Project</strong> button.</li>
-<li>Select under the desired project the environment. (e.g. <code>dev</code> under <code>hasura</code>)</li>
-</ul>
-<p>Now we see the existing <em>Hasura</em> project page, and in the <em><strong>KintoBlocks</strong></em> section, you can see that the <em>Hasura</em> KintoBlock has been added.</p>
-<ul>
+<p>The KintoBlock for an existing deployment can be added instantly from the KintoBlock page.</p>
+<ol>
+<li>Click on the <strong>Add to Project</strong> button and the menu with the projects appears.</li>
+<li>Select under the desired project in the environment. (e.g. <code>dev</code> under <code>hasura</code>)</li>
+</ol>
+<p>The existing <em>Hasura</em> project page appears, and in the <em><strong>KintoBlocks</strong></em> section, it can be seen that the <em>Hasura</em> KintoBlock has been added.</p>
+<ol start="3">
 <li>Next, press <strong>Deploy</strong> to proceed.</li>
-</ul>
-<p>This brings up the <em><strong>Compare Versions</strong></em> slide panel. In it you can see the added <em>Hasura</em> block.</p>
-<ul>
-<li>Press <strong>Confirm Deployment</strong> to start the deployment.</li>
-</ul>
-<p>In the <em><strong>Status &amp; History</strong></em> section we can see that a deployment is in progress.</p>
-<ul>
-<li>Wait until the deployment succeeds.</li>
-</ul>
+</ol>
+<p>The <em><strong>Compare Versions</strong></em> slide panel is displayed with the added <em>Hasura</em> KintoBlock.</p>
+<ol start="4">
+<li>Click on the <strong>Confirm Deployment</strong> to start the deployment.</li>
+</ol>
+<p>In the <em><strong>Status &amp; History</strong></em> section, we can see that the deployment is in progress.</p>
+<ol start="5">
+<li>Wait until the deployment is successful.</li>
+</ol>
 <h4><a class="anchor" aria-hidden="true" id="b-create-new-project"></a><a href="#b-create-new-project" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>B) Create new project</h4>
-<p>From the KintoBlock page, we can immediately add this KintoBlock to a new deployment.</p>
-<ul>
-<li>Press <strong>Add to Project</strong>, and press the <strong>New Project</strong> button.</li>
-<li>Enter a name in the <em>Enter project name</em> field, e.g. <code>hasura</code>.</li>
-<li>Press the <strong>Create</strong> button.</li>
-</ul>
-<p>This will bring up the <em><strong>Create New Project</strong></em> page. The <em>Project Name</em> (<code>hasura</code>) and <em>Environment Name</em> (<code>dev</code>) have already been filled out.</p>
-<p>In the <em><strong>KintoBlocks</strong></em> section, you can see that the <em>Postgres</em> KintoBlock has been added.</p>
-<ul>
-<li>Next, press <strong>Create New Project</strong> to proceed.</li>
-</ul>
-<p>Now we see the <em>Hasura</em> project page, and in the <em><strong>Status &amp; History</strong></em> section we can see that a deployment is in progress.</p>
-<ul>
-<li>Wait until the deployment succeeds.</li>
-</ul>
+<p>The KintoBlock for an existing deployment can be added instantly from the KintoBlock page.</p>
+<ol>
+<li>Click on the <strong>Add to Project</strong> and the menu with the projects appears.</li>
+<li>Click the <strong>New Project</strong> button.</li>
+<li>Enter a name in the <strong>Enter project name</strong> field, e.g. <code>hasura</code> and click on the <strong>Create</strong> button.</li>
+</ol>
+<p>This will bring up the <em><strong>Create New Project</strong></em> page with the <em>Project Name</em> (<code>hasura</code>) and <em>Environment Name</em> (<code>dev</code>) already filled out.</p>
+<p>In the <em><strong>KintoBlocks</strong></em> section, it can be seen that the <em>Postgres</em> KintoBlock has been added.</p>
+<ol start="4">
+<li>Click on the <em><strong>Create New Project</strong></em> to proceed.</li>
+</ol>
+<p>The deployment in progress can be seen in the <em><strong>Status &amp; History</strong></em> section of the <em>Hasura</em> project page.</p>
+<ol start="5">
+<li>Wait until the deployment is successful.</li>
+</ol>
 <h3><a class="anchor" aria-hidden="true" id="accessing-the-hasura-console"></a><a href="#accessing-the-hasura-console" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Accessing the Hasura Console</h3>
 <p>On the <em>Hasura</em> project page, scroll down to the <em><strong>KintoBlocks</strong></em> section.</p>
-<ul>
-<li>Press <strong>Open</strong> on the <em>Hasura</em> KintoBlock to open it's endpoint in a new browser tab.</li>
-</ul>
-<p>You'll get prompted with Hasura's login screen.</p>
-<ul>
-<li>Enter the <em>admin secret</em> from the configuration, e.g. <code>dev_secret</code>.</li>
-</ul>
+<ol>
+<li>Click on the <strong>Open</strong> button on the <em>Hasura</em> KintoBlock to open its endpoint in a new browser tab.</li>
+<li>Once the Hasura login screen is displayed, enter the <em>admin secret</em> from the configuration, e.g. dev_secret.</li>
+</ol>
 <p><img src="/docs/assets/examples/hasura/hasura-login.png" alt="Hasura login screen asking for the admin secret"></p>
 <p>Congratulations, you have Hasura up and running on KintoHub!</p>
 <p>Next up, let's create another environment for production use.</p>
 <h2><a class="anchor" aria-hidden="true" id="multiple-environments"></a><a href="#multiple-environments" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Multiple environments</h2>
-<p>In the previous steps we have deployed into the <em>dev</em> environment. This is great for testing development activities. For production workloads we would likely use a separate production environment called <code>prod</code>, so that the two don't interfere with each other.</p>
+<p>In the previous steps, the deployments were done in the <code>dev</code> environment. This is great for testing development activities. For production workloads, it more likely that a separate production environment called <code>prod</code> will be used so that the two don't interfere with each other.</p>
 <h3><a class="anchor" aria-hidden="true" id="create-a-production-environment"></a><a href="#create-a-production-environment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a production environment</h3>
 <p>In the sidebar of the <em>Hasura</em> project page:</p>
-<ul>
-<li>Press the <strong>Add New Environment</strong> button.</li>
-</ul>
+<ol>
+<li>Click on the <strong>Add New Environment</strong> button.</li>
+</ol>
 <p>This brings up a <em><strong>Add New Environment</strong></em> dialog.</p>
-<ul>
-<li>Enter in the <strong>Enviroment Name</strong> field the value <code>prod</code>.</li>
-<li>Press the <strong>Add New Environment</strong> button to confirm.</li>
-</ul>
+<ol start="2">
+<li>Enter in the <strong>Environment Name</strong> field the value <code>prod</code>.</li>
+<li>Click on the <strong>Add New Environment</strong> button to confirm.</li>
+</ol>
 <p><img src="/docs/assets/examples/hasura/add-new-environment.png" alt="Add New Environment dialog"></p>
 <p>This creates a new <em>PROD</em> environment in the sidebar, below the <em>DEV</em> environment.</p>
-<ul>
-<li>Use the <strong>drag &amp; drop handle</strong> next to the environment name to drag the <em>PROD</em> environment above the <em>DEV</em> environment.</li>
-</ul>
+<ol start="4">
+<li>Use the <em><strong>drag &amp; drop handle</strong></em> next to the environment name to drag the <em>PROD</em> environment above the <em>DEV</em> environment.</li>
+</ol>
 <p><img src="/docs/assets/examples/hasura/two-environments-sidebar.png" alt="DEV and PROD environments in the sidebar"></p>
-<p>Now the environments are in the right order, you can promote KintoBlocks from one environment to the other.</p>
-<ul>
-<li>Press the <strong>Promote</strong> button.</li>
-</ul>
-<p>This brings up the <em><strong>Promote</strong></em> dialog, with a confirmation message to indicate that you're about to promote the <em>dev</em> environment to the <em>prod</em> environment.</p>
-<ul>
-<li>Press the <strong>Deploy</strong> button to start the new deployment into the <em>prod</em> environment.</li>
-</ul>
-<p>You'll see that the first deployment for the <em>PROD</em> environment is in progress.</p>
-<ul>
+<p>Since the environments are in the right order, the KintoBlocks can be promoted from one environment to the other.</p>
+<ol start="5">
+<li>Click on the <strong>Promote</strong> button.</li>
+</ol>
+<p>This brings up the <em><strong>Promote</strong></em> dialog, with a confirmation message to indicate that the <em>dev</em> environment is ready to be promoted as the <em>prod</em> environment.</p>
+<ol start="6">
+<li>Click on the <strong>Deploy</strong> button.</li>
+<li><strong>Compare Version</strong> slide panel displays the changes made during the promoting.</li>
+<li>Click on the <strong>Confirm Deployment</strong> to start the new deployment into the <em>prod</em> environment.</li>
+</ol>
+<p>Note that the first deployment for the <strong>PROD</strong> environment is in progress.</p>
+<ol start="9">
 <li>Wait for the deployment to succeed.</li>
-<li>Press the <strong>Open</strong> button on the <em>Hasura</em> KintoBlock to see that the Hasura Console can be accessed.</li>
-</ul>
+<li>Click on the <strong>Open</strong> button on the <strong>Hasura</strong> KintoBlock to see that the Hasura Console can be accessed.</li>
+</ol>
 <p><img src="/docs/assets/examples/hasura/prod-environment-deployment.png" alt="PROD environment deployment in progress"></p>
-<p>This deployment to <em>prod</em> has used exactly the same environment variables as we have defined for the <em>dev</em> environment. However, it is common to change these per environment. Let's do that next.</p>
+<p>This deployment to <em>prod</em> has used exactly the same environment variables as it has been defined for the <em>dev</em> environment. However, it is common to change these per environments. Let's do that next.</p>
 <h3><a class="anchor" aria-hidden="true" id="override-environment-variables"></a><a href="#override-environment-variables" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Override environment variables</h3>
-<ul>
-<li>Scroll down to the <em><strong>KintoBlocks</strong></em> section of the <em>Hasura</em> project page in the <em>prod</em> environment.</li>
-<li>Press the <strong>gear icon</strong> in the <em>Hasura</em> KintoBlock.</li>
-</ul>
-<p>This brings up the <em>Prod Configurations</em> for the KintoBlock, and in the slide panel you can see a <em><strong>Environment Variables</strong></em> section.</p>
-<ul>
-<li>Update the value of the <code>HASURA_GRAPHQL_ADMIN_SECRET</code> variable to another password. (e.g. <code>prod_secret</code>)</li>
-<li>Press <strong>Done Configuring</strong> in the top right corner to confirm the change.</li>
-<li>Finally, press the <strong>Deploy</strong> button in the bottom right corner to start the deployment of the change.</li>
-</ul>
+<ol>
+<li>Scroll down to the <strong>KintoBlocks</strong> section of the <em>Hasura</em> project in the project manage page of the <em>prod</em> environment.</li>
+<li>Click on the <strong>gear icon</strong> in the <em>Hasura</em> KintoBlock.</li>
+</ol>
+<p>This brings up the <em>Prod Configurations</em> for the KintoBlock, and in the slide panel, an <em><strong>Environment Variables</strong></em> section can be seen.</p>
+<ol start="3">
+<li>Modify the existing value of the <code>HASURA_GRAPHQL_ADMIN_SECRET</code> variable to another password. (e.g. <code>prod_secret</code>)</li>
+<li>Click on the <strong>Done Configuring</strong> in the top right corner to confirm the change.</li>
+<li>Click on the <strong>Deploy</strong> button.</li>
+</ol>
 <p><img src="/docs/assets/examples/hasura/hasura-config-slide-panel.png" alt="Hasura KintoBlock configuration slide panel"></p>
-<p>You'll get prompted with the <em><strong>Compare Versions</strong></em> slide panel that shows into detail the changes that will be applied with this deployment. Here we can see that the environment variables of the <em>Hasura</em> KintoBlock will be modified.</p>
-<ul>
-<li>Press <strong>Confirm Project</strong> to start the deployment.</li>
+<p>The <em><strong>Compare Versions</strong></em> slide panel will show details of the changes that will be applied with this deployment. Here it can be seen that the environment variables of the <em>Hasura</em> KintoBlock will be modified.</p>
+<ol>
+<li>Click on the <strong>Confirm Project</strong> to start the deployment.</li>
 <li>Wait for the deployment to complete.</li>
-<li>Press the <strong>Open</strong> button on the <em>Hasura</em> KintoBlock and log in with the new password to confirm the changes were applied.</li>
-</ul>
+<li>Click on the <strong>Open</strong> button on the <em>Hasura</em> KintoBlock and log in with the new password to confirm the changes were applied.</li>
+</ol>
 <p><img src="/docs/assets/examples/hasura/confirm-prod-deploy.png" alt="Compare Versions slide panel for the environment variables change"></p>
 <p>Congratulations, you have completed this tutorial where you've deployed two separate instances of Hasura in their own respective environments.</p>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/examples/jobs/puppeteer"><span class="arrow-prev">← </span><span>Puppeteer</span></a><a class="docs-next button" href="/docs/examples/todo-list/tutorial"><span>Todo List</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#prepare-a-postgresql-database">Prepare a PostgreSQL database</a><ul class="toc-headings"><li><a href="#fork-helm-charts">Fork Helm charts</a></li><li><a href="#create-a-postgresql-kintoblock">Create a PostgreSQL KintoBlock</a></li><li><a href="#deploy-postgresql">Deploy PostgreSQL</a></li></ul></li><li><a href="#setup-hasura">Setup Hasura</a><ul class="toc-headings"><li><a href="#fork-hasura-dockerfile">Fork Hasura Dockerfile</a></li><li><a href="#create-a-hasura-kintoblock">Create a Hasura KintoBlock</a></li><li><a href="#deploy-hasura">Deploy Hasura</a></li><li><a href="#accessing-the-hasura-console">Accessing the Hasura Console</a></li></ul></li><li><a href="#multiple-environments">Multiple environments</a><ul class="toc-headings"><li><a href="#create-a-production-environment">Create a production environment</a></li><li><a href="#override-environment-variables">Override environment variables</a></li></ul></li></ul></nav></div><div class="footer-background"><div class="line"></div><div class="footerWrapper wrapper"><footer><div class="content"><div class="footer"><div class="left"><ul class="unstyled-list"></ul><h6 class="byline">Copyright © 2019 KintoHub. All rights reserved</h6></div><div class="right"><ul class="social-icons unstyled-list"><li class="social-icon"><a href="https://twitter.com/kintohub" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-twitter.svg" alt=""/></a></li><li class="social-icon"><a href="https://github.com/kintohub" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-github.svg" alt=""/></a></li><li class="social-icon"><a href="https://www.linkedin.com/company/13376177/" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-linkedin.svg" alt=""/></a></li></ul><a href="/"><div class="footer-logo"><img src="/img/logo-grey-single-color.svg" alt=""/></div></a></div></div></div></footer></div></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/examples/jobs/puppeteer"><span class="arrow-prev">← </span><span>Puppeteer</span></a><a class="docs-next button" href="/docs/examples/todo-list/tutorial"><span>Todo List</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#prepare-a-postgresql-database">Prepare a PostgreSQL database</a><ul class="toc-headings"><li><a href="#use-the-existing-postgresql-kintoblock">Use the existing PostgreSQL KintoBlock</a></li><li><a href="#deploy-postgresql">Deploy PostgreSQL</a></li></ul></li><li><a href="#setup-hasura">Setup Hasura</a><ul class="toc-headings"><li><a href="#fork-hasura-dockerfile">Fork Hasura Dockerfile</a></li><li><a href="#create-a-hasura-kintoblock">Create a Hasura KintoBlock</a></li><li><a href="#deploy-hasura">Deploy Hasura</a></li><li><a href="#accessing-the-hasura-console">Accessing the Hasura Console</a></li></ul></li><li><a href="#multiple-environments">Multiple environments</a><ul class="toc-headings"><li><a href="#create-a-production-environment">Create a production environment</a></li><li><a href="#override-environment-variables">Override environment variables</a></li></ul></li></ul></nav></div><div class="footer-background"><div class="line"></div><div class="footerWrapper wrapper"><footer><div class="content"><div class="footer"><div class="left"><ul class="unstyled-list"></ul><h6 class="byline">Copyright © 2019 KintoHub. All rights reserved</h6></div><div class="right"><ul class="social-icons unstyled-list"><li class="social-icon"><a href="https://twitter.com/kintohub" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-twitter.svg" alt=""/></a></li><li class="social-icon"><a href="https://github.com/kintohub" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-github.svg" alt=""/></a></li><li class="social-icon"><a href="https://www.linkedin.com/company/13376177/" target="_blank" rel="noopener noreferrer"><img src="/img/footer-socials-linkedin.svg" alt=""/></a></li></ul><a href="/"><div class="footer-logo"><img src="/img/logo-grey-single-color.svg" alt=""/></div></a></div></div></div></footer></div></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;
