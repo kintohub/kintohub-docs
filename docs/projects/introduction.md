@@ -39,6 +39,12 @@ Your Project is made of blocks that are deployed in a serverless way, meaning it
 
    >Note: When the **Automatically deploy when new KintoBlock commits are available** option is set to `ON`, new commits in the KintoBlock are automatically deployed. By default, the toggle switch is set to `OFF`.
 
+## View Projects
+
+The projects created by a user are listed under My Projects in Projects List page. Each stack in My Project represents a project. To view the details of the project, click on the stack corresponding to it.
+
+   ![Screenshot](/docs/assets/project-card-options.png)
+
 
 ## Edit Project
 
@@ -53,16 +59,3 @@ To edit a project, follow the steps mentioned below:
    ![Screenshot](/docs/assets/edit-icon-project.png)
 
 3. Click on the **Save Changes** button to apply the changes.
-
-
-## View Projects
-
-The Project card gives a quick overview of the project. It displays the following details:
-
-- KintoBlocks of the project in a stacked view.
-
-- The Dependencies dropdown displays the full list of KintoBlocks in the project.
-
-   ![Screenshot](/docs/assets/project-card-options.png)
-
-    > Note: When a KintoBlock in the Dependencies dropdown is selected, you will be redirected to the **KintoBlock Manage page**.
