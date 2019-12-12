@@ -2,9 +2,9 @@
 title: Manage Projects
 ---
 
-## Hostname / Alias
+## Hostname
 
-The **Alias** feature gives the ability to add the same KintoBlock more than once in a single project by changing the hostname. The changes made to the original KintoBlock will be applied to all the aliases.
+The **Hostname** feature gives the ability to add the same KintoBlock more than once in a single project by changing the hostname. The changes made to the original KintoBlock will be applied to all the KintoBlock with the hostname. Hostnames can only be set before deploying the KintoBlock. If you wish to change a KintoBlock's name, you must undeploy it first then redeploy, or deploy the same block with a different hostname first, and then remove the old one.
 
 To add the same KintoBlock multiple times in a Project, follow the instructions below:
 
