@@ -44,7 +44,8 @@
           "features/building/manage-blocks",
           "features/building/api-docs",
           "features/building/build-arguments",
-          "features/building/helm-arguments"
+          "features/building/helm-arguments",
+          "features/building/custom-dockerfile"
         ]
       },
       {
