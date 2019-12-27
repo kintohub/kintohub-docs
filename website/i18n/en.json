@@ -199,6 +199,10 @@
       "features/building/continuous-integration": {
         "title": "Continuous Integration"
       },
+      "features/building/custom-dockerfile": {
+        "title": "Custom Dockerfile",
+        "sidebar_label": "Custom Dockerfile"
+      },
       "features/building/helm-arguments": {
         "title": "Helm Arguments"
       },
