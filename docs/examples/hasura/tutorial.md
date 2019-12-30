@@ -1,4 +1,7 @@
-# KintoHub Hasura Example
+---
+title: Hasura Example
+sidebar_label: Hasura
+---
 
 ## Overview
 Hasura is a graphql engine which makes it easy to create CRUD graphql on top of postgres aside from stitching together APIs providing and eventing queue!
