@@ -111,7 +111,7 @@
         "sidebar_label": "Iris"
       },
       "examples/hasura/tutorial": {
-        "title": "Hasura",
+        "title": "Hasura Example",
         "sidebar_label": "Hasura"
       },
       "examples/ionic/tutorial": {
@@ -179,7 +179,7 @@
       },
       "examples/todo-list/tutorial": {
         "title": "Todo List example app",
-        "sidebar_label": "Todo List"
+        "sidebar_label": "Todo List App"
       },
       "experimental/dockerfiles": {
         "title": "Dockerfile support"
