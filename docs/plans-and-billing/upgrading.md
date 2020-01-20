@@ -15,7 +15,8 @@ KintoHub offers a [free plan](plans.md) that is great for exploring how KintoHub
  - More storage (disk) needed
  - Custom Services with Helm charts
  - More than 3 team members
- - Access to support over email and Slack
+ - "Always on" services
+ - Access to support over email and private channels on [Discord](https://discordapp.com/invite/QVgqWuw)
 
 ### Encountering limitations
 

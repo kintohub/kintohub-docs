@@ -78,7 +78,7 @@ To link GitHub organization, follow the steps mentioned below:
 
 8. Click on the **Install** button to complete the installation setup.
 
-After establishing a link between GitHub and Workspace, if a new organization is added to the GitHub account, the newly added item may not appear in the organization list in Workspace. In such an event, contact KintoHub Support via [Slack](https://kintohub.slack.com/) and after confirmation from Support follow the steps mentioned above to gain access to all currently available organizations in GitHub account.
+After establishing a link between GitHub and Workspace, if a new organization is added to the GitHub account, the newly added item may not appear in the organization list in Workspace. In such an event, contact KintoHub Support via [Discord](https://discordapp.com/invite/QVgqWuw) and after confirmation from Support follow the steps mentioned above to gain access to all currently available organizations in GitHub account.
 
 
 ## Linking to Bitbucket

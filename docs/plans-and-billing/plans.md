@@ -63,7 +63,7 @@ The Pro plan supports advanced project scenarios, including Always On Projects a
 
 With [Custom Services and Helm charts](kintoblocks/custom-services.md) you can easily deploy services like replicated databases, caches and queues. (e.g. MongoDB, PostgreSQL, Redis and RabbitMQ)
 
-This plan allows unlimited collaboration with as many team members as needed. We are ready to assist via email and Slack if you need support.
+This plan allows unlimited collaboration with as many team members as needed. We are ready to assist via email and [Discord](https://discordapp.com/invite/QVgqWuw) if you need support.
 
 ### Enterprise plan
 

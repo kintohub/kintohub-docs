@@ -24,7 +24,7 @@ It shows how to deploy the following 3 services:
 
 The Todo List app stores all todos in a MongoDB database. It persists the data with a storage volume, so your data are safe, even when the service restarts. To deploy a mongo database, we can use the KintoHub Catalog.
 
-Note: In order to keep this tutorial as simple as possible, the MongoDB deployed will have the basic configuration -> standalone, no authentication and no persistent storage. However you can change the environment variables during the deployment to change that. Contact us on [Discord](https://discord.gg/EHexBW) if you need help.
+Note: In order to keep this tutorial as simple as possible, the MongoDB deployed will have the basic configuration -> standalone, no authentication and no persistent storage. However you can change the environment variables on the deployment page and make it High Available. Contact us on [Discord](https://discordapp.com/invite/QVgqWuw) if you need help.
 
 ## Setup the Backend API
 
@@ -72,7 +72,7 @@ The frontend app that calls out to the backend service can be created next.
  - Browse to the [`kintohub/todolist-spa-example` repository on GitHub](https://github.com/kintohub/todolist-spa-example)
  - use the __Fork__ button to add the repo to your own GitHub account.
 
-## Create the KintoBlock
+### Create the KintoBlock
 
 On KintoHub:
  - choose __KintoBlocks__ in the sidebar
@@ -150,4 +150,4 @@ When you enter, modify, delete or complete Todos in the web app UI, it will send
 _Well done,_ and congrats on completing this tutorial! 🎉
 
 > If you had any issues during this tutorial, *__we're here to help!__*  
-Contact us on [Discord](https://discord.gg/EHexBW).
+Contact us on [Discord](https://discordapp.com/invite/QVgqWuw).
