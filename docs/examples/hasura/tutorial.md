@@ -8,14 +8,14 @@ Hasura is a graphql engine which makes it easy to create CRUD graphql on top of 
 
 ## Deployment
 
-1. Apply this template to your [Github](https://github.com/kintohub/hasura-template/generate)
+1. Apply [this template](https://github.com/kintohub/hasura-template/generate) to your GitHub
 2. Create a [Website Block](https://beta.kintohub.com) on KintoHub:
 3. Set the name of your block
 4. Select `Dynamic Web App`
 5. For `language` select `Custom Dockerfile`
 6. Set the port to 8080
 7. Hit the `Create` button
-8. You're now good to build! Click `Build Latest Commit`. Once complete, Click  Now click `Add To Project` and Create a new Project.
+8. You're now good to build! Click `Build Latest Commit`. Once complete, click `Deploy Now` and Create a new Project.
 9. Scroll to "KintoBlocks" section and in the Search Box type "Postgres" and select it to add a Postgres Database.
 10. Click `Create New Project` at bottom right
 
