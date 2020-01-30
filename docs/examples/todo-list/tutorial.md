@@ -5,6 +5,14 @@ sidebar_label: Todo List App
 
 ![Todo List app with input box](assets/examples/todo-list/todos.png)
 
+## Quick-start
+
+<div class="iframe-container">
+  <iframe width="100%"
+  src="https://www.youtube.com/embed/7gzeeIicRwQ" allowfullscreen>
+  </iframe>
+</div>
+
 ## Quick-start tutorial
 
 This tutorial walks you through the process of deploying a _Todo List_ example app on KintoHub.

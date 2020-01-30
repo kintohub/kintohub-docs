@@ -419,3 +419,13 @@ input#search_input_react {
   float: left;
   padding-right: 1em;
   padding-top: 1em; }
+
+.iframe-container {
+  position: relative;
+  padding-top: 56.25%; }
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
