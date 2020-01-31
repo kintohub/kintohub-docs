@@ -90,7 +90,7 @@ In the __Create Website__ page
  - press __Dynamic Web app__
  - select as __Language__ the value `Custom Dockerfile` from the list
  - type the __Port__ `5000`
- - press __Create Microservice__
+ - press __Create Website__
 
 The build will automatically start on the default branch (`master`), it takes about 2 minutes to finish successfully.
 
