@@ -17,15 +17,14 @@ sidebar_label: Wordpress
 ## FAQ
 
 **Q: Why the deployment fails?**  
-A: Check the `HASURA_GRAPHQL_DATABASE_URL`. If your specify username/password on you `Postgres` block, please make sure it is the same on `HASURA_GRAPHQL_DATABASE_URL` as well.  
+A: Check the `WORDPRESS_DB_USER`,`WORDPRESS_DB_PASSWORD` and `WORDPRESS_DB_NAME` match the one you set on `mysql` catalog. And specify the value for `WORDPRESS_DB_HOST` by clicking the connect button on deployed `mysql` catalog. Ensure you already subscribed to `PRO` plan.
 
-**Q: Why cannot connect to the website?**  
-A: Please make sure `HASURA_GRAPHQL_ENABLE_CONSOLE` is set to `true`. And make sure `Custom Domain` and `Security` is not enabled.  
+**Q: How to setup custom domain?**  
+A: After deployment you can click on the gear icon on `wordpress` block. Follow the instructions on `custom domain` section, and deploy again.
 
 ## Environment Variables
 
-The list below shows only supported environment variables. You can check out the full list [here](https://github.com/kintohub/kinto-catalog/tree/master/redis#configuration), or [contact us](https://discord.gg/QVgqWuw) if the environment variable you want is not on the list.
-
+The list below shows only supported environment variables. You can [contact us](https://discord.gg/QVgqWuw) if the environment variable you want is not on the list.
 
 | Key        | Default Value           | Description  |
 | ---  | --- | --- |
