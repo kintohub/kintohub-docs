@@ -10,8 +10,8 @@ This is an example of a simple microservice. You can deploy and test the behavio
 ## Deployment
 
 - This takes around 30 seconds to deploy
-- you can try to copy the access by clicking `Connect` Button
-- you can test with the endpoint `GET hello/{name}`
+- copy the access URL by clicking the `Connect` Button
+- visit the endpoint `GET hello/{name}`
 
 ## FAQ
 

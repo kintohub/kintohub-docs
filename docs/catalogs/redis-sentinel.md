@@ -14,7 +14,7 @@ This catalog ensures High-Avaliability by default. For a more lightweight redis,
 
 ## Deployment
 
-- This takes around 5 minutes to deploy (together with postgres)
+- This takes around 5 minutes to deploy
 - **You can deploy this catalog with default environment variables*
 
 ## FAQ

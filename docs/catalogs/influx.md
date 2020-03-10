@@ -9,7 +9,7 @@ sidebar_label: InfluxDB
 
 ## Deployment
 
-- This takes around 3 minutes to deploy (together with postgres)
+- This takes around 3 minutes to deploy
 - **You can deploy this catalog with default environment variables*
 
 ## FAQ

@@ -9,12 +9,12 @@ sidebar_label: Redis
 
 ## Deployment
 
-- This takes around 3 minutes to deploy (together with postgres)
+- This takes around 3 minutes to deploy
 - **You can deploy this catalog with default environment variables*
 
 ## FAQ
 
-**Q: Why cannot connect to Redis Sentinel?**  
+**Q: Why cannot connect to Redis?**  
 A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect to the catalog.
 
 ## Environment Variables
