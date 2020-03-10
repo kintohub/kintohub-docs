@@ -22,7 +22,7 @@ A: Copy the connection string by clicking `Connect` button. Only blocks that are
 
 ## Environment Variables
 
-The list below shows only supported environment variables. You can check out the full list [here], or [contact us] if the environment variable you want is not on the list.
+The list below shows only supported environment variables. You can check out the full list [here](https://github.com/kintohub/kinto-catalog/tree/master/postgresql#parameters), or [contact us](https://discord.gg/QVgqWuw) if the environment variable you want is not on the list.
 
 
 | Key        | Default Value           | Description  |

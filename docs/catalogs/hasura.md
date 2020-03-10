@@ -23,7 +23,7 @@ A: Please make sure `HASURA_GRAPHQL_ENABLE_CONSOLE` is set to `true`. And make s
 
 ## Environment Variables
 
-The list below shows only supported environment variables. You can check out the full list [here], or [contact us] if the environment variable you want is not on the list.
+The list below shows only supported environment variables. You can check out the full list [here](https://hasura.io/docs/1.0/graphql/manual/deployment/graphql-engine-flags/reference.html#command-flags), or [contact us](https://discord.gg/QVgqWuw) if the environment variable you want is not on the list.
 
 
 | Key        | Default Value           | Description  |

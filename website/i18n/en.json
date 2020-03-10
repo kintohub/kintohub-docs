@@ -91,8 +91,8 @@
         "sidebar_label": "Elasticsearch"
       },
       "catalogs/example": {
-        "title": "PostgreSQL",
-        "sidebar_label": "PostgreSQL"
+        "title": "Microservice Example",
+        "sidebar_label": "Microservice Example"
       },
       "catalogs/hasura": {
         "title": "Hasura",
