@@ -86,6 +86,62 @@
       "_legacy/workspaces": {
         "title": "Workspaces"
       },
+      "catalogs/elasticsearch": {
+        "title": "Elasticsearch",
+        "sidebar_label": "Elasticsearch"
+      },
+      "catalogs/example": {
+        "title": "PostgreSQL",
+        "sidebar_label": "PostgreSQL"
+      },
+      "catalogs/hasura": {
+        "title": "Hasura",
+        "sidebar_label": "Hasura"
+      },
+      "catalogs/influx": {
+        "title": "InfluxDB",
+        "sidebar_label": "InfluxDB"
+      },
+      "catalogs/introduction": {
+        "title": "Catalogs",
+        "sidebar_label": "Introduction"
+      },
+      "catalogs/minio": {
+        "title": "Minio",
+        "sidebar_label": "Minio"
+      },
+      "catalogs/mongodb": {
+        "title": "MongoDB",
+        "sidebar_label": "MongoDB"
+      },
+      "catalogs/mysql": {
+        "title": "MySQL",
+        "sidebar_label": "MySQL"
+      },
+      "catalogs/nats": {
+        "title": "NATS",
+        "sidebar_label": "NATS"
+      },
+      "catalogs/postgres": {
+        "title": "PostgreSQL",
+        "sidebar_label": "PostgreSQL"
+      },
+      "catalogs/rabbitmq": {
+        "title": "RabbitMQ",
+        "sidebar_label": "RabbitMQ"
+      },
+      "catalogs/redis-sentinel": {
+        "title": "Redis Sentinel",
+        "sidebar_label": "Redis Sentinel"
+      },
+      "catalogs/redis": {
+        "title": "Redis",
+        "sidebar_label": "Redis"
+      },
+      "catalogs/wordpress": {
+        "title": "Wordpress",
+        "sidebar_label": "Wordpress"
+      },
       "examples/docusaurus/tutorial": {
         "title": "Docusaurus Example",
         "sidebar_label": "Docusaurus"
@@ -355,6 +411,7 @@
     "categories": {
       "Introduction": "Introduction",
       "KintoBlocks": "KintoBlocks",
+      "Catalogs": "Catalogs",
       "Projects": "Projects",
       "Features": "Features",
       "Plans & Billing": "Plans & Billing",
