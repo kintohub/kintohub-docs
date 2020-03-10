@@ -3,9 +3,9 @@ title: Catalogs
 sidebar_label: Introduction
 ---
 
-Catalogs on Kintohub provide the best experience on deploying complicated architecture. We simplified the configuration for various framework, allowing users can deploy deploy with just simple clicks.
+Catalogs on Kintohub provide the best experience on deploying complicated architecture. We simplify the configurations needed for various framework, allowing users to deploy with just simple clicks.
 
-We currently support the following catalogs, but you can [request](https://discord.gg/QVgqWuw) us for the services you want!
+We currently support the following catalogs, but you can [request](https://discord.gg/QVgqWuw) the service/framework you want!
 
 - [Elasticsearch](/docs/catalogs/elasticsearch)
 - [Hasura](/docs/catalogs/hasura)
