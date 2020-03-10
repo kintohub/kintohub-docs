@@ -17,7 +17,7 @@ sidebar_label: MySQL
 **Q: Why the deployment fails?**  
 A: Check the environment variable `resources.requests.memory`, `resources.limit.memory` and the memory of the block are equal. Provide at least 512MB memory.
 
-**Q: Why cannot connect to postgres?**  
+**Q: Why cannot connect to mysql?**  
 A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect to the catalog.
 
 
