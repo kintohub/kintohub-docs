@@ -9,14 +9,14 @@ sidebar_label: Elasticsearch
 
 ## Deployment
 
-- This takes around 3 minutes to deploy
+- This takes about 3 minutes to deploy
 - *\*You can deploy Elasticsearch with default environment variables*
 - *\*Some environment variables cannot be changed after deployment*
 
 ## FAQ
 
 **Q: How to connect to ElasticSearch?**  
-A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect to the catalog.
+A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect to each other.
 
 ## Environment Variables
 

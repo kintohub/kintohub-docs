@@ -1,6 +1,6 @@
 ---
-title: InfluxDB
-sidebar_label: InfluxDB
+title: Influx
+sidebar_label: Influx
 ---
 
 ## Overview
@@ -9,12 +9,12 @@ sidebar_label: InfluxDB
 
 ## Deployment
 
-- This takes around 3 minutes to deploy
-- **You can deploy this catalog with default environment variables*
+- This takes about 3 minutes to deploy
+- **You can deploy Influx with default environment variables*
 
 ## FAQ
 
-**Q: Why cannot connect to influxdb?**  
+**Q: How to connect to influx?**  
 A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect to the catalog.
 
 ## Environment Variables
@@ -24,10 +24,12 @@ The list below shows only supported environment variables. You can [contact us](
 
 | Key        | Default Value           | Description  |
 | ---  | --- | --- |
-| **image.repository** |  influxdb | image repository |
-| **image.tag**     | 1.7.6-alpine |  image tag |
+| **resources.memory** |  512Mi | memory allocated to your influx node |
+| **resources.cpu**     | 500m | cpu allocated to your influx node |
 | **persistence.enabled** |  true  |  persistence data to disk |
 | **persistence.size** |  8Gi  |  persistence disk size  |
 | **setDefaultUser.enabled** |  true  |  set the default user/password when first deploy |
-| **setDefaultUser.user.username** |  admin  |  default username |
-| **setDefaultUser.user.password** |  coolpass  |  default password  |
+| **setDefaultUser.user.username\*** |  admin  |  default username |
+| **setDefaultUser.user.password\*** |  changeme  |  default password  |
+
+\* Cannot be changed after deployment.

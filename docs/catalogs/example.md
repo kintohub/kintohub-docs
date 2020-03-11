@@ -9,7 +9,7 @@ This is an example of a simple microservice. You can deploy and test the behavio
 
 ## Deployment
 
-- This takes around 30 seconds to deploy
+- This takes about 30 seconds to deploy
 - copy the access URL by clicking the `Connect` Button
 - visit the endpoint `GET hello/{name}`
 

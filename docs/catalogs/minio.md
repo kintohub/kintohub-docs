@@ -9,14 +9,14 @@ sidebar_label: Minio
 
 ## Deployment
 
-- This takes around 1 minute to deploy
+- This takes about 1 minute to deploy
 - *\*You can deploy Minio with default environment variables*
 - *\*Some environment variables cannot be changed after deployment*
 
 ## FAQ
 
 **Q: How to connect to Minio?**
-A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect between each other.
+A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect to each other.
 
 ## Environment Variables
 
@@ -30,8 +30,8 @@ The list below shows only supported environment variables. You can check out the
 | **persistence.size** | 10Gi | size of the disk  |
 | **resources.memory** | 256Mi | memory allocated to every minio node |
 | **resources.cpu** | 250m | memory allocated to every minio node |
-| **accessKey\*** | false | minio access key |
-| **secretKey\*** | admin | minio secret key |
+| **accessKey\*** | AKIAIOSFODNN7EXAMPLE | minio access key |
+| **secretKey\*** | wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY | minio secret key |
 | **environment.MINIO_BROWSER** | on | `off` if you want to disable the web UI |
 
 \* Cannot be changed after deployment.

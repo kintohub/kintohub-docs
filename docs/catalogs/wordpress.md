@@ -11,7 +11,7 @@ sidebar_label: Wordpress
 
 - This catalog requires `PRO` plan as it exceeds 512MB memory (Mysql + Wordpress)
 - This catalog requires [Mysql](/docs/catalogs/mysql)
-- This takes around 5 minutes to deploy (together with mysql)
+- This takes about 5 minutes to deploy (together with mysql)
 - **Please change the environment variables for username/password/database before deploying this catalog*
 
 ## FAQ
@@ -32,3 +32,5 @@ The list below shows only supported environment variables. You can [contact us](
 | **WORDPRESS_DB_PASSWORD** | wordpress |  password |
 | **WORDPRESS_DB_USER** | wordpress | username |
 | **WORDPRESS_DB_HOST** | cs-mysql:3306 |  hostname for mysql catalog |
+
+\* Cannot be changed after deployment.

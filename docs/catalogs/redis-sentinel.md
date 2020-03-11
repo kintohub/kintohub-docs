@@ -14,13 +14,14 @@ This catalog ensures **High-Avaliability** by default. For a lightweight redis, 
 
 ## Deployment
 
-- This takes around 5 minutes to deploy
-- **You can deploy this catalog with default environment variables*
+- This takes about 5 minutes to deploy
+- *\*You can deploy Redis Sentinel with default environment variables*
+- *\*Some environment variables cannot be changed after deployment*
 
 ## FAQ
 
-**Q: Why cannot connect to Redis Sentinel?**  
-A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect to the catalog.
+**Q: How to connect to Redis Sentinel?**  
+A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect to each other.
 
 ## Environment Variables
 
@@ -31,9 +32,11 @@ The list below shows only supported environment variables. You can check out the
 | ---  | --- | --- |
 | **replicas** |  3 | number of master/slave nodes |
 | **auth** | false |  enables or disables redis AUTH (Requires redisPassword to be set) |
-| **redisPassword** | `nil` | client password |
+| **redisPassword\*** | `nil` | client password |
 | **persistence.enabled** | false |  persist data to disk or not |
 | **persistence.size** | 10Gi  |  size of persistent disk |
 | **resources.cpu** |  100m  |  cpu |
 | **resources.memory** |  256Mi  |  memory |
 | **sentinel.quorum** |  2  |  minimum number of servers necessary to maintain quorum |
+
+\* Cannot be changed after deployment.

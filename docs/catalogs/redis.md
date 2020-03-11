@@ -9,13 +9,14 @@ sidebar_label: Redis
 
 ## Deployment
 
-- This takes around 3 minutes to deploy
-- **You can deploy this catalog with default environment variables*
+- This takes about 3 minutes to deploy
+- *\*You can deploy Redis with default environment variables*
+- *\*Some environment variables cannot be changed after deployment*
 
 ## FAQ
 
 **Q: Why cannot connect to Redis?**  
-A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect to the catalog.
+A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect to each other.
 
 ## Environment Variables
 
@@ -35,4 +36,6 @@ The list below shows only supported environment variables. You can check out the
 | **master.resources.memory** | 256M  |  memory request for master node |
 | **master.persistence.enabled** |  false  |  persist data on disk or not on master node |
 | **master.persistence.size** |  8Gi  |  size of presistence disk |
-| **password** | `nil` | client password |
+| **password\*** | `nil` | client password |
+
+\* Cannot be changed after deployment.

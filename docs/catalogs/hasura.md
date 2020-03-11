@@ -9,16 +9,16 @@ sidebar_label: Hasura
 
 ## Deployment
 
-- This catalog requires [Postgres](/docs/catalogs/postgres)
-- This takes around 3 minutes to deploy (together with postgres)
-- **You can deploy this catalog with default environment variables*
+- Hasura requires [Postgres](/docs/catalogs/postgres)
+- This takes about 3 minutes to deploy (together with postgres)
+- **You can deploy Hasura with default environment variables*
 
 ## FAQ
 
 **Q: Why the deployment fails?**  
-A: Check the `HASURA_GRAPHQL_DATABASE_URL`. If your specify username/password on you `Postgres` block, please make sure it is the same on `HASURA_GRAPHQL_DATABASE_URL` as well.  
+A: Check the `HASURA_GRAPHQL_DATABASE_URL`. If you specify username/password on your `Postgres` block, please make sure it is the same on `HASURA_GRAPHQL_DATABASE_URL` as well.  
 
-**Q: Why cannot connect to web console?**  
+**Q: How to connect to the web console?**  
 A: Please make sure `HASURA_GRAPHQL_ENABLE_CONSOLE` is set to `true`. And make sure `Custom Domain` and `Security` is not enabled.  
 
 ## Environment Variables

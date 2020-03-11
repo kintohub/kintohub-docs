@@ -10,32 +10,31 @@ sidebar_label: MySQL
 ## Deployment
 
 - This takes around 3 minutes to deploy
-- **You can deploy this catalog with default environment variables*
+- **You can deploy Mysql with default environment variables*
 
 ## FAQ
 
 **Q: Why the deployment fails?**  
-A: Check the environment variable `resources.requests.memory`, `resources.limit.memory` and the memory of the block are equal. Provide at least 512MB memory.
+A: Check the environment variable `resources.memory`. Provide at least 512MB memory.
 
-**Q: Why cannot connect to mysql?**  
-A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect to the catalog.
-
+**Q: How to connect to mysql?**  
+A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect to each other.
 
 ## Environment Variables
 
 The list below shows only supported environment variables. You can check out the full list [here](https://github.com/kintohub/kinto-catalog/tree/master/mysql#configuration), or [contact us](https://discord.gg/QVgqWuw) if the environment variable you want is not on the list.
 
-
 | Key        | Default Value           | Description  |
 | ---  | --- | --- |
-| **root.password** |  rootpassword | root password. cannot be changed once deployed |
-| **db.user**     | user      |  default db user name |
-| **db.password** |  password  |  default db password |
 | **replication.enabled** |  false  | enable replication or not  |
-| **imageTag** |  5.7.14  |  the image version that use |
-| **persistence.size** |  8Gi  |  persistence disk size |
-| **db.name** |  defaultdb  |  default database that will be created when first deployed |
-| **resources.limits.cpu** |  500m  |  cpu limit |
-| **resources.limits.memory** |  512Mi  |  memory limit |
-| **resources.requests.cpu** |  500m  |  request cpu|
-| **resources.requests.memory** |  512Mi  |  request memory |
+| **slave.replicas** |  1  |  number of slaves to run |
+| **persistence.enabled** |  false  | whether or not your datas are persisted in a disk |
+| **persistence.size** |  10Gi  |  persistence disk size |
+| **root.password\*** |  changeme | root password. |
+| **db.user\***     | admin  |  default db user name |
+| **db.password\*** |  changeme  |  default db password |
+| **db.name\*** |  defaultdb  |  default database that will be created when first deployed |
+| **resources.cpu** |  500m  |  memory allocated to every mysql node |
+| **resources.memory** |  512Mi  |  memory allocated to every mysql node |
+
+\* Cannot be changed after deployment.
