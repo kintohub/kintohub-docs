@@ -11,12 +11,12 @@ sidebar_label: MongoDB
 
 - This takes around 1 minute to deploy
 - This MongoDB even with 1 node is deployed as a replicaset so you will need to add `replicaSet` at the end of the [connection uri](https://docs.mongodb.com/manual/reference/connection-string/#urioption.replicaSet).
-- *\*You can deploy this catalog with default environment variables*
+- *\*You can deploy MongoDB with default environment variables*
 - *\*Some environment variables cannot be changed after deployment*
 
 ## FAQ
 
-**Q: Why cannot connect to MongoDB?**
+**Q: How to connect to MongoDB?**
 A: Copy the connection string by clicking `Connect` button. Only blocks that are deployed in the same environment can connect between each other.
 
 ## Environment Variables
