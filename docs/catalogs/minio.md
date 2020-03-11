@@ -35,4 +35,3 @@ The list below shows only supported environment variables. You can check out the
 | **environment.MINIO_BROWSER** | on | `off` if you want to disable the web UI |
 
 \* Cannot be changed after deployment.
-
