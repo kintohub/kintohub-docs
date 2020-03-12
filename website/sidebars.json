@@ -26,6 +26,22 @@
       "kintoblocks/jobs",
       "kintoblocks/build-logs"
     ],
+    "Catalogs": [
+      "catalogs/introduction",
+      "catalogs/elasticsearch",
+      "catalogs/hasura",
+      "catalogs/influx",
+      "catalogs/example",
+      "catalogs/minio",
+      "catalogs/mongodb",
+      "catalogs/mysql",
+      "catalogs/nats",
+      "catalogs/postgres",
+      "catalogs/rabbitmq",
+      "catalogs/redis",
+      "catalogs/redis-sentinel",
+      "catalogs/wordpress"
+    ],
     "Projects": [
       "projects/introduction",
       "projects/environments",
