@@ -9,7 +9,7 @@ sidebar_label: PostgreSQL
 
 ## Deployment
 
-- This takes about 3 minutes to deploy (together with postgres)
+- This takes about 1 minutes to deploy (together with postgres)
 - *\*You can deploy Postgres with default environment variables*
 - *\*Some environment variables cannot be changed after deployment*
 

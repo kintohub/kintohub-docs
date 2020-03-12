@@ -9,7 +9,7 @@ sidebar_label: NATS
 
 ## Deployment
 
-- This takes about 3 minutes to deploy
+- This takes about 1 minutes to deploy
 - *\*You can deploy Nats with default environment variables*
 - *\*Some environment variables cannot be changed after deployment*
 

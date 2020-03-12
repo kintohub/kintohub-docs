@@ -11,7 +11,7 @@ This chart ensures High-Avaliability by default.
 
 ## Deployment
 
-- This takes about 3 minutes to deploy
+- This takes about 1 minutes to deploy
 - *\*You can deploy RabbitMQ with default environment variables*
 - *\*Some environment variables cannot be changed after deployment*
 

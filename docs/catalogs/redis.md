@@ -9,7 +9,7 @@ sidebar_label: Redis
 
 ## Deployment
 
-- This takes about 3 minutes to deploy
+- This takes about 1 minutes to deploy
 - *\*You can deploy Redis with default environment variables*
 - *\*Some environment variables cannot be changed after deployment*
 
