@@ -5,7 +5,10 @@ sidebar_label: Introduction
 
 Catalog on Kintohub provides the best experience while deploying complicated architecture. We simplify the configurations needed for various frameworks, allowing users to deploy in just a few clicks.
 
+\
 We currently support the following catalogs, but you can [request](https://discord.gg/QVgqWuw) the service/framework you want!
+
+
 
 - [Elasticsearch](/docs/catalogs/elasticsearch)
 - [Hasura](/docs/catalogs/hasura)

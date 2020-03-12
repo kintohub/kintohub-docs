@@ -9,9 +9,9 @@ sidebar_label: Hasura
 
 ## Deployment
 
-- Hasura requires [Postgres](/docs/catalogs/postgres)
+- Hasura requires [Postgres](/docs/catalogs/postgres) to be deployed
 - This takes about 3 minutes to deploy (together with postgres)
-- **You can deploy Hasura with default environment variables*
+- *\*You can deploy Hasura with default environment variables*
 
 ## FAQ
 

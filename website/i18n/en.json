@@ -99,11 +99,11 @@
         "sidebar_label": "Hasura"
       },
       "catalogs/influx": {
-        "title": "InfluxDB",
-        "sidebar_label": "InfluxDB"
+        "title": "Influx",
+        "sidebar_label": "Influx"
       },
       "catalogs/introduction": {
-        "title": "Catalogs",
+        "title": "Catalog",
         "sidebar_label": "Introduction"
       },
       "catalogs/minio": {

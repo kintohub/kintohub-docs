@@ -10,7 +10,8 @@ sidebar_label: MySQL
 ## Deployment
 
 - This takes around 3 minutes to deploy
-- **You can deploy Mysql with default environment variables*
+- *\*You can deploy Mysql with default environment variables*
+- *\*Some environment variables cannot be changed after deployment*
 
 ## FAQ
 

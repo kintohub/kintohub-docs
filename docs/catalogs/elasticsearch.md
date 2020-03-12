@@ -5,7 +5,7 @@ sidebar_label: Elasticsearch
 
 ## Overview
 
-[Elasticsearch](https://www.elastic.co/elasticsearch/) Elasticsearch is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data so you can discover the expected and uncover the unexpected.
+[Elasticsearch](https://www.elastic.co/elasticsearch/) is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data so you can discover the expected and uncover the unexpected.
 
 ## Deployment
 
@@ -42,4 +42,4 @@ You can check out the full list [here](https://github.com/kintohub/kinto-catalog
 | **data.resources.memory** | 512Mi | memory allocated to every data node |
 | **data.resources.cpu** | 500m | cpu allocated to every data node |
 
-\* Cannot be changed after deployment.
+
