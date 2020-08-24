@@ -1,6 +1,8 @@
 # [KintoHub](https://www.kintohub.com) [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg?style=social)](https://www.kintohub.com) [![Tweet](assets/twitter-button.svg)](https://www.twitter.com/kintohub)
 <br/>
 
+**Deprecated. Check [https://github.com/kintohub/kintohub](https://github.com/kintohub/kintohub) instead.**
+
 ![KintoHub Screenshot](assets/kintohub-screenshot-2.png)
 
 ![KintoHub Logo](assets/kintohub-project-logo-2.png)
